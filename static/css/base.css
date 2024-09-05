@@ -1,5 +1,126 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/bg_englishgrows.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: "Roboto Mono", monospace;
+}
+
+#topnav {
+    background-color: #003366;
+}
+
+.logo {
+    margin-top: 0;
+    padding-top: 0;
+    height: 6rem;
+    width: 6rem;
+}
+
+.icon-nav {
+    color: #fff;
+}
+
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.font-upper {
+    text-transform: uppercase;
+}
+
+.logo-link {
+    width: fit-content;
+}
+
+.btn-custom {
+    background: #003366;
+    color: white;
+}
+
 .index-cta-button {
-    background: black;
+    background-color: #003366;
     color: white;
     min-width: 260px;
+}
+
+.index-cta-button:hover,
+.index-cta-button:active,
+.index-cta-button:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+    background: #222;
+    color: white;
+}
+
+.btn-outline-custom {
+    background: white;
+    color: #003366; !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #003366;;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:active,
+.btn-outline-custom:focus {
+    background: #003366;;
+    color: white !important;
+}
+
+.text-grey {
+    color: #555 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-custom {
+    background: #003366 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+}
+
+
+  /* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
 }
