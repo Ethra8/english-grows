@@ -68,7 +68,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
 
 ### As Shopper
-#### Viewing nd Navigation
+#### Viewing and Navigation
 * I want to easily sign up for an account, after a conscient decision, to buy some services.
 * I want to view a list of services, so that I can easily choose what service suits me best.
 * I want to be able to view specific category products, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
