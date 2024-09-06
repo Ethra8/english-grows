@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header%}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+    <div class="container header-container">
+        <div class="overlay"></div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="allauth-form-inner-content">
+                    <h2 class="font-upper mb-4 allauth-headings-custom">{% block head_title %}{% endblock %}</h2>
+                    <hr>
+                    {% block inner_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
