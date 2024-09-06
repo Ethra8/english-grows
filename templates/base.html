@@ -36,25 +36,22 @@
     {% block extra_js %}
     {% endblock %}
 
-
     <title>English Grows{% block extra_title %}{% endblock %}</title>
   </head>
+  
   <body>
-    
-    <header class="container-fluid fixed-top">
-      <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
-        <div class="col-12 col-md-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+    <header class="container-fluid fixed-top w-100 p-0">
+      <div id="topnav" class="row pt-lg-2 d-none d-lg-flex m-0">
+        <div class="col-12 col-md-4 my-auto py-1 py-lg-0 text-center text-lg-left pl-5">
           <a href="{% url 'home' %}" class="nav-link logo-link">
-            <!-- <h2 class="my-0">English Grows -->
               <img src="../../media/logo_englishgrows.png" alt="logo" class="logo">
-            <!-- </h2> -->
           </a>
         </div>
         <div class="col-12 col-md-4 my-auto py-1 py-lg-0"></div>
         <div class="col-12 col-md-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
-                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                <a class="text-black nav-link pt-0 pb-0" href="#" id="user-options" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <div class="text-center">
                         <div><i class="fas fa-user fa-lg icon-nav"></i></div>
@@ -74,12 +71,12 @@
                     {% endif %}
                 </div>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item pr-5">
                 <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
                     href="">
                     <div class="text-center">
                         <div><i class="fas fa-shopping-bag fa-lg icon-nav"></i></div>
-                        <p class="my-0 text-white">
+                        <p class="my-0 text-white turquoise-hover">
                             {% if grand_total %}
                             ${{ grand_total|floatformat:2 }}
                             {% else %}
@@ -92,6 +89,16 @@
         </ul>
         </div>
       </div>
+      <div class="row bg-custom-dark">
+        <nav class="navbar navbar-dark navbar-expand-lg w-100 pl-5">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            {% include 'includes/mobile_top_header.html' %}
+            {% include 'includes/main_nav.html' %}
+        </nav>
+    </div>
     </header>
 
     {% if messages %}

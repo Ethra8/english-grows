@@ -10,19 +10,36 @@ body {
     font-family: "Roboto Mono", monospace;
 }
 
-#topnav {
+#topnav,
+#main-nav {
     background-color: #003366;
+    /* width: 100%; */
 }
 
 .logo {
     margin-top: 0;
     padding-top: 0;
-    height: 6rem;
-    width: 6rem;
+    height: 6.5rem;
+    width: 6.5rem;
 }
 
 .icon-nav {
     color: #fff;
+}
+
+.navbar-toggler {
+    padding: .6rem .6rem;
+    font-size: 1rem;
+}
+
+/* .navbar-toggler-icon {
+    color: white;
+    background-color: white;
+} */
+
+.fas:hover,
+.turquoise-hover:hover {
+    color: turquoise;
 }
 
 
@@ -35,12 +52,24 @@ body {
     width: 1.5rem;
 }
 
+.bg-custom-dark {
+    background-color: #003366;
+}
+
+.text-dark {
+    color: #003366;
+}
+
 .font-upper {
     text-transform: uppercase;
 }
 
 .logo-link {
     width: fit-content;
+}
+
+.dropdown-menu {
+    background-color: #c1f7e3;
 }
 
 .btn-custom {
@@ -60,8 +89,8 @@ body {
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:focus {
-    background: #222;
-    color: white;
+    background: #c1f7e3;
+    color: #003366;
 }
 
 .btn-outline-custom {
@@ -95,7 +124,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: turquoise;
 	z-index: -1;
 }
 
@@ -121,6 +150,19 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 184px;
     }
 }
+
+@media (max-width: 475px) {
+    #user-options {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 220px;
+    }
+}
+
