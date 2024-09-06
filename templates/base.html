@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Charmonman:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -46,7 +47,8 @@
               <img src="../../media/logo_englishgrows.png" alt="logo" class="logo">
           </a>
         </div>
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        {% block search_bar %}
+        <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <form action="" method="GET">
               <div class="input-group w-100">
                   <input type="text" class="form-control border border-black rounded-0" name="q"
@@ -60,14 +62,15 @@
                   </div>
               </div>
           </form>
-        </div>        
-      <div class="col-12 col-md-4 my-auto py-1 py-lg-0">
+        </div> -->
+        {% endblock %}       
+      <div class="col-12 col-md-8 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
                 <a class="text-black nav-link pt-0 pb-0" href="#" id="user-options" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <div class="text-center">
-                        <div><i class="fas fa-user fa-lg icon-nav"></i></div>
+                        <div><i class="fas fa-user fa-lg icon-nav"></i></div> 
                         <p class="my-0 text-white">My Account</p>
                     </div>
                 </a>

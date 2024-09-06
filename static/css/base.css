@@ -10,10 +10,6 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-larger {
-    font-size: 5rem;
-}
-
 #topnav,
 #main-nav {
     background-color: #003366;
@@ -21,7 +17,7 @@ larger {
 }
 
 .eg-font {
-    font-family: "Big Shoulders Text", sans-serif;
+    font-family: "Big Shoulders Display", sans-serif;
     font-weight: bold;
 }
 
@@ -152,10 +148,80 @@ larger {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: turquoise;
+	background: #c1f7e3;;
 	z-index: -1;
 }
 
+
+/* Allauth form formatting */
+
+.allauth-headings-custom {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 500;
+    color: #003366;
+    font-size: 3rem;
+}
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #555; /* text-secondary */
+}
+
+.allauth-form-inner-content input:not([type='checkbox']) {
+    border-color: #003366;
+    border-radius: 5px;
+    min-width: 280px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #003366;
+    border: 2px solid #fff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 25px;
+    padding: 5px 25px;
+    margin: 10px 0 20px;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #003366; /* text-info */
+    font-weight: 500;
+}
+
+.allauth-form-inner-content a:hover {
+    text-decoration: none;
+    font-weight: 600;
+}
 
 /* -------------------------------- Media Queries */
 
