@@ -28,23 +28,57 @@ EDNA TORRES MUNILL
 
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site. 
-
 ## Target Audience
 ### B2B
 Any company interested in improving their employees' level of English for one of the following reasons:
 * Wants to compete in the international market
 * Locally works with international customers
+
 ### B2C  
 Any individual person wanting to improve their level of English tfor one of the following reasons:  
 * Travel
 * Careers
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
 
-
 ## Project Goal
   1. The site aims at providing the user with services they can buy: live online lessons in individual or reduced groups format.
-  2. Users can check the FAQS section for commonly asked questions.
-  3. Users can subscribe to the monthly newsletter.
-  4. Members of the monthly newsletter are informed of interesting cultural events, and interesting social and historic facts.
+  3. Users can check the FAQS section for commonly asked questions.
+  4. Users can subscribe to the monthly newsletter.
+  5. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts.
+
+## User Stories
+### As a first-time visitor:   
+* I want to check all the services available, depending on whether I'm a company or an individual buyer.
+* I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
+* I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
+* I want to know if the site has an interesting newsletter.
+* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
+
+### As a returning visitor  
+* I want to subscribe to the monthly newsletter to receive information about interesting cultural events, social and historic facts related to the English Commonwhealth countries.
+* I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
+* I want to easily sign up for an account, after a conscient decision, to buy some services.
+
+### As User  
+* I want to be able to easily register for an account, so that I can have a personal account and view my personal profile.
+* I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
+* I want to be able to easily login and logout, so that I can access my personal account information.
+* I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
+* I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
+* I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
+
+### As Shopper
+#### Viewing nd Navigation
+* I want to easily sign up for an account, after a conscient decision, to buy some services.
+* I want to view a list of services, so that I can easily choose what service suits me best.
+* I want to be able to view specific category products, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
+* I want to be able to view individual product details, so that I can identify the price and description.
+* I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+#### Sorting and Searching
+* I want to sort the list of available services, so that I can easily identify the best priced and categorically sorted products.
+* I want to sort a specific category of product, so that I can find the best-priced services in a specific category.
+* I want to sort multiple categories of products simultaneously, so that I can find the best-priced services across broad categories, such as 'unipersonal' or 'reduced groups'.
+
+
 
 
