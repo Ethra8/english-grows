@@ -7,7 +7,7 @@ This site is an e-commerce that sells services. The services provided are the fo
 - You can view the deployed site [here]()
 
 ## Repository
-- You can check the Github repository [here](https://github.com/Ethra8/english_grows)
+- You can check the Github repository [here](https://github.com/Ethra8/english-grows)
 
 ## Author
 EDNA TORRES MUNILL
