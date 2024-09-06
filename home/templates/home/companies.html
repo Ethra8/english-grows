@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header%}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block nav %}
+<div class="row bg-custom-dark">
+  <nav class="navbar navbar-dark navbar-expand-lg w-100 pl-5">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-comp"
+          aria-controls="main-nav-comp" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      {% include 'includes/mobile_top_header.html' %}
+      {% include 'includes/main_nav_companies.html' %}
+  </nav>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-7 col-md-6 my-auto">
+            <h1 class="display-4 text-white ">
+                <strong>Perfect Plans</strong> for your Business
+            </h1>
+            <div class="my-5">
+                <div class="row">
+                    <div class="col col-12 col-lg-6">
+                        <h4>
+                            <a href="" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">Unipersonal</a>
+                        </h4>
+                    </div>
+                    <div class="col col-12 col-lg-6">
+                        <h4>
+                            <a href="" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">Reduced Groups</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% include 'includes/main_nav.html' %}
