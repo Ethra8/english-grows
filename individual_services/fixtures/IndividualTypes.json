@@ -3,16 +3,32 @@
        "pk":1,
        "model":"individual_services.IndividualType",
        "fields":{
-          "name":"individual_packs",
+          "name":"individuals_private",
           "friendly_name":"Individual Lesson Packs"
        }
     },
     {
-       "pk":2,
+      "pk":2,
+      "model":"individual_services.IndividualType",
+      "fields":{
+         "name":"individuals_groups",
+         "friendly_name":"Reduced Groups"
+      }
+   },
+   {
+       "pk":3,
        "model":"individual_services.IndividualType",
        "fields":{
-          "name":"reduced_groups",
-          "friendly_name":"Reduced Group Lessons"
+          "name":"companies_individual",
+          "friendly_name":"Individual Lessons"
        }
-    }
+    },
+    {
+      "pk":4,
+      "model":"individual_services.IndividualType",
+      "fields":{
+         "name":"companies_groups",
+         "friendly_name":"Reduced Groups by Level"
+      }
+   }
 ]
