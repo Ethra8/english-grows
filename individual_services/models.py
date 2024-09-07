@@ -2,8 +2,8 @@ import uuid
 from django.db import models
 
 
-class IndividualService(models.Model):
-    # category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL) # on_delete category, product don't delete, but set category to null
+class IndivService(models.Model):
+    type = models.ForeignKey('IndividualType', null=True, blank=True, on_delete=models.SET_NULL) # on_delete type, product don't delete, but set type to null
     id = models.CharField(max_length=100, primary_key=True, unique=True, editable=False)
     name = models.CharField(max_length=255, unique=True)  
     price = models.DecimalField(max_digits=10, decimal_places=2)
@@ -15,3 +15,15 @@ class IndividualService(models.Model):
     
     def __str__(self):
         return self.name
+
+
+class IndividualType(models.Model):
+
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True) # is optional: null/blank=True
+
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name

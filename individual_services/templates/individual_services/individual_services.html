@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block nav %}
+<div class="row bg-custom-dark">
+  <nav class="navbar navbar-dark navbar-expand-lg w-100">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      {% include 'includes/mobile_top_header.html' %}
+      {% include 'includes/main_nav_individuals.html' %}
+  </nav>
+</div>
+</div>
+{% endblock %}
+
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,13 +26,65 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
-            <div class="product-container col-10 offset-1">
+            <div class="col text-center mt-3">
+                <h2 class="font-upper">Packs Made for You</h2>
+                {% for t in current_types %}
+                    <a class="type-badge text-decoration-none" href="{% url 'individual_services' %}?type={{ t.name }}">
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ t.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+                <hr class="w-50 mb-1">
+            </div>
+            <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+                <form action="{% url 'individual_services' %}" method="GET">
+                    <div class="input-group w-100">
+                        <input type="text" class="form-control border border-black rounded-0" name="q"
+                            placeholder="Search our site">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                        <div class="sort-select-wrapper w-50">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                <option value="type_asc" {% if current_sorting == 'type_asc' %}selected{% endif %}>Type (A-Z)</option>
+                                <option value="type_desc" {% if current_sorting == 'type_desc' %}selected{% endif %}>Type (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-first">
+                        <p class="text-muted mt-3 text-center text-md-left">
+                            {% if search_term or current_types or current_sorting != 'None_None' %}
+                                <span class="small"><a href="{% url 'individual_services' %}">Packs Home</a> | </span>
+                            {% endif %}
+                            {{ services|length }} Services{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                </div>
+                
                 <div class="row">
                     {% for service in services %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
+                        {% if current_types == individual_packs %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mt-5">
+                            <div class="card h-100">
                                 {% if service.image %}
                                 <a href="#">
                                     <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
@@ -46,6 +113,7 @@
                                     </div>
                                 </div>
                             </div>
+                        {% endif %}
                         </div>
                         {% if forloop.counter|divisibleby:1 %}
                             <div class="col-12 d-sm-none mb-5">
@@ -72,10 +140,12 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm rounded-0 border border-black">
-        <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-        </a>	
+    <div class="row">
+        <div class="col-2 btt-button shadow-sm">
+            <a class="btt-link d-flex h-100 text-black mx-auto my-auto">
+                <i class="fas fa-arrow-up"></i>
+            </a>	
+        </div>    
     </div>
 {% endblock %}
 

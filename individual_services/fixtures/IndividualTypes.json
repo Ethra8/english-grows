@@ -1,0 +1,18 @@
+[
+    {
+       "pk":1,
+       "model":"individual_services.IndividualType",
+       "fields":{
+          "name":"individual_packs",
+          "friendly_name":"Individual Lesson Packs"
+       }
+    },
+    {
+       "pk":2,
+       "model":"individual_services.IndividualType",
+       "fields":{
+          "name":"reduced_groups",
+          "friendly_name":"Reduced Group Lessons"
+       }
+    }
+]

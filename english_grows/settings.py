@@ -153,7 +153,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# needed to avoid initial error:
+# Needed to avoid initial error:
 CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-eutkotunc3f.ws.codeinstitute-ide.net']
 
 
