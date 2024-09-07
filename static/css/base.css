@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background:  url('/media/birds_2.png') no-repeat center center, url('/media/bg_4.png') no-repeat center center;
+    background: url('/media/bg_4.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -186,6 +186,8 @@ a.text-white:hover {
 .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    width: fit-content;
+    height: 200px;
 }
 
 .btt-button {
