@@ -154,7 +154,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # needed to avoid initial error:
-CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-ei4tc9ehk6j.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-eutkotunc3f.ws.codeinstitute-ide.net']
 
 
 # Static files (CSS, JavaScript, Images)
