@@ -9,8 +9,16 @@ from .models import IndivService, IndividualType
 def individual_services(request):
     """ A view to return the individual services """
     services = IndivService.objects.all()
+    print(services)
+
+    # for s in services:
+    #     get_indivservice_type()
+
+    # service_type = [(s.id, s.get_indivservice_type()) for s in services]
+    # print(f'This is var service_type: {service_type}')
+
     # to avoid errors when loading individual_services page if there is no value on GET yet, set all GET vars to None:
-    # query = None
+    query = None
     types = None
     sort = None
     direction = None
@@ -31,21 +39,19 @@ def individual_services(request):
                     sortkey = f'-{sortkey}'
             
             services = services.order_by(sortkey)
+            print(services)
 
-        if 'type' in request.GET:
-            types = request.GET['type']
-            
-            services = services.filter(type__name__in=types)
-            types = IndividualType.objects.filter(name__in=types)
-            print(type)
+            if 'type' in request.GET:
+                types = request.GET['type']
+                services = services.filter(type__name__in=types)
+                categories = IndividualType.objects.filter(name__in=types)
 
-            query = request.GET['type']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('individual_services'))
-
-            queries = Q(name__icontains=query) | Q(description__icontains=query) # ! the '|' is= OR, avoiding django logic which would need to find the query BOTH in name & description.
-            services = services.filter(queries)
+            if 'q' in request.GET:
+                query = request.GET['q']
+                queries = Q(type__icontains=query) | Q(description__icontains=query)
+                services = services.filter(queries)
+                
+                # services = services.filter(types)   type=individuals_private
 
     current_sorting = f'{sort}_{direction}'
 

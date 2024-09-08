@@ -15,6 +15,12 @@ class IndivService(models.Model):
     
     def __str__(self):
         return self.name
+        
+    def get_indivservice_type(self): 
+        return self.type
+        
+    def get_indivservice_id():
+        return self.id
 
 
 class IndividualType(models.Model):

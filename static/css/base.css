@@ -10,10 +10,18 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-#topnav,
-#main-nav {
+#index {
+    background: url('/media/birds_3.png') center center fixed;
+    background-size: cover;
+}
+
+#topnav {
     background-color: #003366;
-    /* width: 100%; */
+}
+
+#main-nav {
+    background-color: teal;
+    margin-left: -15px !important;
 }
 
 .navbar-dark {
@@ -167,16 +175,20 @@ a.text-white:hover {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: #c1f7e3;;
+	background: azure;
 	z-index: -1;
 }
 
 /* service card */
+.card{
+    margin: 15px;
+}
+
 .card,
 .card-footer  {
     border-radius: 20px !important;
     border: inset 3px #333;
-    width: 300px;
+    min-width: fit-content;
 }
 
 .card-body {
@@ -188,7 +200,7 @@ a.text-white:hover {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     max-height: 220px;
-    width: 300px;
+    min-width: fit-content;
 }
 
 .btt-button {
