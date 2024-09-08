@@ -26,11 +26,16 @@ hr {
 
 #main-nav {
     background-color: teal;
-    margin-left: -15px !important;
+    /* margin-left: -15px !important; */
 }
 
 .navbar-dark {
     padding-left: 0;
+}
+
+.navbar-expand-lg {
+    margin-left: -20px !important;
+    width: 100% !important;
 }
 
 .nav-item {
@@ -216,6 +221,24 @@ a.text-white:hover {
     padding: 0  0 0 15px;
 }
 
+.rounded-searchbar {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 50px !important;
+    height: 40px;
+    padding: 0  0 0 15px;
+}
+
+.rounded-searchicon {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 50px !important;
+    height: 40px;
+    padding: 0  0 0 15px;
+}
+
 
 /* service card */
 .card{
@@ -246,6 +269,10 @@ a.text-white:hover {
     max-width: fit-content; */
 }
 
+.service-name {
+    font-size: 2rem;
+}
+
 .btt-button {
     height: 42px;
     width: 42px;
@@ -274,6 +301,12 @@ a.btt-link:hover {
 a.type-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+
+/* BAG */
+.img-bag {
+    border-bottom-right-radius: 50px !important;
 }
 
 
@@ -376,7 +409,7 @@ a.type-badge > span.badge:hover {
 
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 220px;
+        padding-top: 70px;
     }
 }
 

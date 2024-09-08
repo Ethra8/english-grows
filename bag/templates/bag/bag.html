@@ -37,15 +37,13 @@
                                 <tr>
                                     <td class="p-3 w-25">
                                         {% if item.service.image %}
-                                        <img class="img-fluid rounded" src="{{ item.service.image.url }}" alt="{{ item.service.name }}">
+                                        <img class="img-fluid img-bag" src="{{ item.service.image.url }}" alt="{{ item.service.name }}">
                                         {% else %}
                                         <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.service.name }}">
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.service.name }}</strong></p>
-                                        <p class="my-0"><strong>Size: </strong>{% if item.service.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.service.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.service.price }}</p>

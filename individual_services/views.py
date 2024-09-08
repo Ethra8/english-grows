@@ -11,6 +11,7 @@ def individual_services(request):
     
     services = IndivService.objects.all()  # Get all individual services
     categories = IndividualType.objects.all()  # Get all individual service types
+
     query = None
     category_filter = None
     sort = None
@@ -46,6 +47,8 @@ def individual_services(request):
         'search_term': query,
         'current_category': category_filter,
         'current_sorting': current_sorting,
+        'is_individual_services_view': True,
+
     }
 
     return render(request, 'individual_services/individual_services.html', context)

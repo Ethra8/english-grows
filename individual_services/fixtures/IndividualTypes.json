@@ -24,10 +24,34 @@
        }
     },
     {
-      "pk":4,
+      "pk":5,
       "model":"individual_services.IndividualType",
       "fields":{
-         "name":"companies_groups",
+         "name":"companies_cambridge_groups",
+         "friendly_name":"Reduced Groups by Level"
+      }
+   },
+   {
+      "pk":6,
+      "model":"individual_services.IndividualType",
+      "fields":{
+         "name":"companies_cambridge_individual",
+         "friendly_name":"Individual Lessons"
+      }
+   },
+   {
+     "pk":7,
+     "model":"individual_services.IndividualType",
+     "fields":{
+        "name":"individuals_cambridge_individual",
+        "friendly_name":"Reduced Groups by Level"
+     }
+  },
+  {
+      "pk":7,
+      "model":"individual_services.IndividualType",
+      "fields":{
+         "name":"individuals_cambridge_group",
          "friendly_name":"Reduced Groups by Level"
       }
    }

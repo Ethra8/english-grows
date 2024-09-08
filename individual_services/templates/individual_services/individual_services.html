@@ -3,8 +3,8 @@
 
 {% block nav %}
 <div class="row bg-custom-dark">
-  <nav class="navbar navbar-dark navbar-expand-lg w-100 pb-0">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+  <nav class="navbar navbar-dark navbar-expand-lg w-100 pb-0 ml-5">
+      <button class="navbar-toggler d-block d-md-none ml-5" type="button" data-toggle="collapse" data-target="#main-nav"
           aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -29,7 +29,7 @@
 
     <div class="overlay"></div>
       <div class="container-fluid">
-        <div class="row pl-5">
+        <div class="row pl-md-5">
             <div class="col text-center mt-2">
                 <h2 class="pt-5"><span class="text-uppercase">Packs Made for </span><span class="charmonman-bold larger-title">you</span></h2>
                 {% for c in current_types %}
@@ -37,15 +37,15 @@
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <hr class="w-50 mb-5">
+                <hr class="w-75 mb-3 mb-md-1">
             </div>
-            <!-- <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
+            <!-- <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form action="{% url 'individual_services' %}" method="GET">
                     <div class="input-group w-100">
-                        <input type="text" class="form-control border border-black rounded-0" name="q"
+                        <input type="text" class="form-control rounded-searchbar" name="q"
                             placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-light rounded-searchicon" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -75,7 +75,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_types or current_sorting != 'None_None' %}
-                                <span class="small clean-link "><a class="text-white" href="{% url 'individual_services' %}">All Packs</a> | </span>
+                                <span class="small clean-link "><a class="text-dark" href="{% url 'individual_services' %}">All Packs</a> | </span>
                             {% endif %}
                             {{ services|length }}{% if services|length == 1 %} Pack{% else %} Packs{% endif %}{% if search_term %} found for <strong>{{ search_term }}</strong>{% endif %}
                         </p>
