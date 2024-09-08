@@ -4,7 +4,7 @@
        "model":"individual_services.IndivService",
        "fields":{
           "type":1,
-          "name":"INDIVIDUAL: 5 Hours",
+          "name":"INDIVIDUAL LESSONS: 5 Hours",
           "number_hours":"5",
           "duration_weeks":"999",
           "description":"Improve your English with this 5 hour lesson pack. Its use is unlimited in time, with no expiration date. Book each lesson at your own convience!",
@@ -18,7 +18,7 @@
        "model":"individual_services.IndivService",
        "fields":{
           "type":1,
-          "name":"INDIVIDUAL: 10 Hours",
+          "name":"INDIVIDUAL LESSONS: 10 Hours",
           "number_hours":"10",
           "duration_weeks":"999",
           "description":"Improve your English with this 10 hour lesson pack. Its use is unlimited in time, with no expiration date. Book each lesson at your own convience!",
@@ -32,7 +32,7 @@
        "model":"individual_services.IndivService",
        "fields":{
           "type":1,
-          "name":"INDIVIDUAL: 25 Hours",
+          "name":"INDIVIDUAL LESSONS: 25 Hours",
           "number_hours":"25",
           "duration_weeks":"999",
           "description":"Improve your English with this 25 hour lesson pack. Its use is unlimited in time, with no expiration date. Book each lesson at your own convience!",

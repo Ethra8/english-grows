@@ -179,6 +179,35 @@ a.text-white:hover {
 	z-index: -1;
 }
 
+.overlay1 {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    background: url('/media/birds_3.png') no-repeat center center fixed;
+    background-size: cover;
+	z-index: -1;
+}
+
+.clean-link {
+    color: #003366;
+    font-size: 1rem; 
+}
+
+.clean-link a:hover {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#sort-selector,
+.sort-select-wrapper {
+    border-radius: 50px !important;
+    height: 40px;
+    padding: 0  0 0 15px;
+}
+
+
 /* service card */
 .card{
     margin: 15px;
@@ -194,13 +223,18 @@ a.text-white:hover {
 .card-body {
     border-radius: 0;
     border-top: solid 2px #003366;
+    background-color: #003366;
+    color: white;
+    min-height: 60px;
 }
 
 .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-height: 220px;
+    /* max-height: 220px;
+    min-height: fit-content;
     min-width: fit-content;
+    max-width: fit-content; */
 }
 
 .btt-button {
