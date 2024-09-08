@@ -10,8 +10,13 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+hr {
+    border: outset 3px #003366;
+    border-radius: 50%;
+}
+
 #index {
-    background: url('/media/birds_3.png') center center fixed;
+    background: url('/media/birds_3.png') top -120 bottom 100px absolute;
     background-size: cover;
 }
 
@@ -26,6 +31,10 @@ body {
 
 .navbar-dark {
     padding-left: 0;
+}
+
+.nav-item {
+    font-size: 1.5rem;
 }
 
 .nav-link {
@@ -87,6 +96,10 @@ a.text-white:hover {
     background-color: #003366;
 }
 
+.larger-title {
+    font-size: 2.8rem;
+}
+
 .charmonman-regular {
     font-family: "Charmonman", cursive;
     font-weight: 400;
@@ -108,10 +121,6 @@ a.text-white:hover {
 
 .text-dark {
     color: #003366;
-}
-
-.font-upper {
-    text-transform: uppercase;
 }
 
 .logo-link {
@@ -175,7 +184,7 @@ a.text-white:hover {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: azure;
+	background: rgba(240, 255, 255, 0.7);
 	z-index: -1;
 }
 
@@ -187,6 +196,16 @@ a.text-white:hover {
 	position: fixed;
     background: url('/media/birds_3.png') no-repeat center center fixed;
     background-size: cover;
+	z-index: -1;
+}
+
+.overlay2 {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: rgba(216, 236, 231, 0.8);
 	z-index: -1;
 }
 
@@ -216,14 +235,14 @@ a.text-white:hover {
 .card,
 .card-footer  {
     border-radius: 20px !important;
-    border: inset 3px #333;
+    border: inset 3px teal;
     min-width: fit-content;
 }
 
 .card-body {
     border-radius: 0;
     border-top: solid 2px #003366;
-    background-color: #003366;
+    background-color: teal;
     color: white;
     min-height: 60px;
 }

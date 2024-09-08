@@ -32,11 +32,6 @@ def individual_services(request):
             if direction == 'desc':
                 services = services.reverse()  # Reverse the sorted queryset
 
-        # Filter by category
-        if 'category' in request.GET:
-            category_filter = request.GET['category']
-            services = services.filter(category__name=category_filter)
-
         # Search functionality
         if 'q' in request.GET:
             query = request.GET['q']
@@ -48,7 +43,6 @@ def individual_services(request):
     # Context to pass to the template
     context = {
         'services': services,
-        'categories': categories,
         'search_term': query,
         'current_category': category_filter,
         'current_sorting': current_sorting,
@@ -57,3 +51,12 @@ def individual_services(request):
     return render(request, 'individual_services/individual_services.html', context)
 
 
+def pack_details(request, service_id):
+    """ A view to return the pack details page """
+    service = get_object_or_404(IndivService, pk=service_id)
+
+    context = {
+        'service': service,
+    }
+
+    return render(request, 'individual_services/pack_details.html', context)
