@@ -30,4 +30,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('individual_services/', include('individual_services.urls')),
     path('bag/', include('bag.urls')),
+    path('company_services/', include('company_services.urls')),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + staticfiles_urlpatterns()

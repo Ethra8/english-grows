@@ -199,16 +199,6 @@ a.text-white:hover {
 	z-index: -1;
 }
 
-.overlay2 {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: rgba(216, 236, 231, 0.8);
-	z-index: -1;
-}
-
 .clean-link {
     color: #003366;
     font-size: 1rem; 
