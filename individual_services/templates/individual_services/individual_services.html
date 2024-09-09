@@ -65,7 +65,7 @@
                             {% if search_term or current_types or current_sorting != 'None_None' %}
                                 <span class="small clean-link "><a class="text-dark" href="{% url 'individual_services' %}">All Packs</a> | </span>
                             {% endif %}
-                            {{ services|length }}{% if services|length == 1 %} Pack{% else %} Packs{% endif %}{% if search_term %} found for <strong>{{ search_term }}</strong>{% endif %}
+                            {{ services|length }}{% if services|length == 1 %} Pack{% else %} Packs{% endif %}{% if current_types %} found for <strong>{{ current_types }}</strong>{% endif %}
                         </p>
                     </div>
                 </div>

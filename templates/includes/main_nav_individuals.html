@@ -22,8 +22,9 @@
                     Individual
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="individual-packs-link">
-                    <a href="{% url 'individual_services' %}?type=individuals_private,individuals_cambridge_individual" class="dropdown-item">Private Lesson Packs</a>
+                    <a href="{% url 'individual_services' %}?type=individuals_private" class="dropdown-item">Private Lesson Packs</a>
                     <a href="{% url 'individual_services' %}?type=individuals_cambridge_individual" class="dropdown-item">Cambridge Exam Preparation</a>
+                    <a href="{% url 'individual_services' %}?type=individuals_private,individuals_cambridge_individual" class="dropdown-item">All Lesson Packs</a>
                 </div>
             </li>
     
@@ -32,8 +33,9 @@
                     Groups
                 </a>
                 <div class="dropdown-menu border-0" aria-labelledby="individuals-groups-link">
-                    <a href="{% url 'individual_services' %}?type=individuals_groups,individuals_cambridge_group" class="dropdown-item">Reduced Groups</a>
+                    <a href="{% url 'individual_services' %}?type=individuals_groups" class="dropdown-item">Reduced Groups</a>
                     <a href="{% url 'individual_services' %}?type=individuals_cambridge_group" class="dropdown-item">Cambridge Exam Preparation</a>
+                    <a href="{% url 'individual_services' %}?type=individuals_groups,individuals_cambridge_group" class="dropdown-item">All Courses</a>
                 </div>
             </li>
         </ul>    

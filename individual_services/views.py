@@ -10,11 +10,13 @@ def individual_services(request):
     """A view to return the list of individual services with sorting and filtering"""
     
     services = IndivService.objects.all()  # Get all individual services
-    types = IndividualType.objects.all()  # Get all individual service types
+    all_types = IndividualType.objects.all()  # Get all individual service types
+
+    # Create a dictionary mapping type names to their friendly names
+    type_friendly_names = {type.name: type.friendly_name for type in all_types}
 
     query = None
-    # category_filter = None
-    types = None
+    selected_types = None
     sort = None
     direction = None
 
@@ -34,31 +36,39 @@ def individual_services(request):
             if direction == 'desc':
                 services = services.reverse()  # Reverse the sorted queryset
 
+        # Filter by service type
         if 'type' in request.GET:
-            types = request.GET['type'].split(',')
-            services = services.filter(type__name__in=types)
-            types = IndividualType.objects.filter(name__in=types)
-
+            selected_types = request.GET['type'].split(',')
+            services = services.filter(type__name__in=selected_types)
+        
         # Search functionality
         if 'q' in request.GET:
             query = request.GET['q']
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             services = services.filter(queries)
 
-    current_sorting = f'{sort}_{direction}'  # Keep track of current sorting
+    current_sorting = f'{sort}_{direction}'  # Track current sorting
+
+    # Map selected types to their friendly names
+    selected_type_friendly_names = [type_friendly_names.get(t, t) for t in (selected_types or [])]
+
+     # Join the friendly names into a comma-separated string
+    selected_type_friendly_names_str = ' & '.join(selected_type_friendly_names)
+
 
     template = 'individual_services/individual_services.html'
     
     context = {
         'services': services,
         'search_term': query,
-        'type': type,
+        'current_types': selected_type_friendly_names_str,  # Clean comma-separated string
         'current_sorting': current_sorting,
+        'all_types': type_friendly_names.values(),  # All types with friendly names
         'is_individual_services_view': True,
-
     }
 
     return render(request, template, context)
+
 
 
 def pack_details(request, service_id):
