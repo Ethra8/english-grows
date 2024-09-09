@@ -30,19 +30,12 @@ textarea {
 }
 
 #topnav {
-    background-color: #003366;
-    /* margin-left: -15px !important;  */
-    /* padding-right: 0;
-    padding-left: 75px !important;
-    padding-left: 75px !important; */
-    
+    background-color: #003366;    
 }
 
 #main-nav {
     background-color: teal;
     margin-right: -22px !important; 
-    /* padding-right: 0;
-    padding-left: 75px !important; */
 }
 
 #contact-form {
@@ -51,6 +44,10 @@ textarea {
     padding: 25px 15px;
     border-radius: 25px;
     margin-bottom: 36px;
+}
+
+.header-container {
+    padding-top: 184px;
 }
 
 .navbar-dark {
@@ -63,7 +60,7 @@ textarea {
 }
 
 .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .nav-link {
@@ -98,7 +95,8 @@ a.text-white:hover {
 
 .navbar-toggler {
     padding: .6rem .6rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    border-color: rgba(255, 255, 255, .5);
 }
 
 /* .navbar-toggler-icon {
@@ -155,6 +153,7 @@ a.text-white:hover {
 .logo-link {
     width: fit-content;
     text-align: left !important;
+    padding-left: 50px;
 }
 
 .dropdown-menu {
@@ -423,22 +422,17 @@ a.type-badge > span.badge:hover {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
+        z-index: 9999;
     }
 
-    .header-container {
-        padding-top: 184px;
-    }
+    
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 450px) {
     .header-container {
-        padding-top: 170px;
+        padding-top: 250px;
     }
 
-    html {
-        height: fit-content;
-    }
 }
 

@@ -1,70 +1,58 @@
-<div class="collapse navbar-collapse pl-5" id="main-nav">
-    <ul class="navbar-nav pl-5">
-        <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
-                Home
-            </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="text-uppercase font-weight-bold nav-link text-white mr-5" href="#" id="all-services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Packs
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'individual_services' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'individual_services' %}?sort=type&direction=asc" class="dropdown-item ">By Type</a>
-                <a href="{% url 'individual_services' %}" class="dropdown-item">All Services</a>
+<div class="collapse navbar-collapse pl-5 row" id="main-nav">
+    <div class="col-md-9">
+        <ul class="navbar-nav pl-5 col-12">
+            <li class="nav-item d-block d-md-none">
+                <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item dropdown col-12 col-lg-4">
+                <a class="text-uppercase nav-link text-white mr-5" href="#" id="all-services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Packs
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                    <a href="{% url 'individual_services' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                    <a href="{% url 'individual_services' %}?sort=type&direction=asc" class="dropdown-item ">By Type</a>
+                    <a href="{% url 'individual_services' %}" class="dropdown-item">All Services</a>
+                </div>
+            </li>
+    
+            <li class="nav-item dropdown col-12 col-lg-4">
+                <a class="text-uppercase nav-link text-white mr-5" href="#" id="individual-packs-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Individual
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="individual-packs-link">
+                    <a href="{% url 'individual_services' %}?q=INDIVIDUAL" class="dropdown-item">Private Lesson Packs</a>
+                    <a href="{% url 'individual_services' %}?q=EXAMS" class="dropdown-item">Cambridge Exam Preparation</a>
+                </div>
+            </li>
+    
+            <li class="nav-item dropdown col-12 col-lg-4">
+                <a class="text-uppercase nav-link text-white mr-5" href="#" id="individuals-groups-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Groups
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="individuals-groups-link">
+                    <a href="{% url 'individual_services' %}?q=GROUP" class="dropdown-item">Reduced Groups</a>
+                    <a href="{% url 'individual_services' %}?q=EXAMS&GROUP" class="dropdown-item">Cambridge Exam Preparation</a>
+                </div>
+            </li>
+        </ul>    
+    </div>
+
+    <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 mb-4 mb-md-0">
+        <form action="{% url 'individual_services' %}" method="GET">
+            <div class="input-group w-100">
+                <input type="text" class="form-control rounded-searchbar" name="q"
+                    placeholder="Search our site">
+                <div class="input-group-append">
+                    <button class="form-control btn btn-light rounded-searchicon" type="submit">
+                        <span class="icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
-        </li>
+        </form>
+    </div>  
 
-        <li class="nav-item dropdown">
-            <a class="text-uppercase nav-link text-white mr-5" href="#" id="individual-packs-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Individual
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="individual-packs-link">
-                <a href="{% url 'individual_services' %}?q=INDIVIDUAL" class="dropdown-item">Private Lesson Packs</a>
-                <a href="{% url 'individual_services' %}?q=EXAMS" class="dropdown-item">Cambridge Exam Preparation</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="text-uppercase nav-link text-white mr-5" href="#" id="individuals-groups-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Groups
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="individuals-groups-link">
-                <a href="{% url 'individual_services' %}?q=GROUP" class="dropdown-item">Reduced Groups</a>
-                <a href="{% url 'individual_services' %}?q=EXAMS&GROUP" class="dropdown-item">Cambridge Exam Preparation</a>
-            </div>
-        </li>
-
-        <li>
-            <div class="col-12 col-md-12 col-lg-12 my-auto py-1 py-lg-0 mb-4 mb-md-0">
-                <form action="{% url 'individual_services' %}" method="GET">
-                    <div class="input-group w-100">
-                        <input type="text" class="form-control rounded-searchbar" name="q"
-                            placeholder="Search our site">
-                        <div class="input-group-append">
-                            <button class="form-control btn btn-light rounded-searchicon" type="submit">
-                                <span class="icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>  
-        </li>
-
-
-        <!-- <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                On-demmand
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'individual_services' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'individual_services' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'individual_services' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'individual_services' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
-            </div>
-        </li> -->
-    </ul>
 </div>

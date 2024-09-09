@@ -20,7 +20,7 @@
      "model":"individual_services.IndividualType",
      "fields":{
         "name":"individuals_cambridge_individual",
-        "friendly_name":"Reduced Groups by Level"
+        "friendly_name":"Individual Exam Preparation"
      }
   },
   {
@@ -28,7 +28,7 @@
       "model":"individual_services.IndividualType",
       "fields":{
          "name":"individuals_cambridge_group",
-         "friendly_name":"Reduced Groups by Level"
+         "friendly_name":"Group Exam Preparation"
       }
    }
 ]
