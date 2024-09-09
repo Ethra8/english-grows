@@ -1,4 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
+
+from .models import CompanyContact
+from .forms import CompanyContactForm
 
 
 def index(request):
@@ -7,9 +11,13 @@ def index(request):
 
 
 def companies(request):
-    """ A view to return the companies page """
-    return render(request, 'home/companies.html')
+    """ A view to return the companies page with form"""
 
-def company_services(request):
-    """ A view to return the companies page """
-    return render(request, 'home/companies.html')
+    form = CompanyContactForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        messages.success(request, 'Your message has been sent successfully!')
+        return redirect('companies')
+    form = CompanyContactForm()
+
+    return render(request, 'home/companies.html', {'form': form})

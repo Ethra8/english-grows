@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags % }
+
 
 
 {% block page_header%}
@@ -26,34 +28,29 @@
                 </div>
             </div>
         </div>
-        <div  id="contact-form"  class="col-12 col-md-5" >
-            <form action="" method="POST">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="company_name" placeholder="Company Name ">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="company_name" placeholder="Name *">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="company_email" aria-describedby="emailHelp" placeholder="Email *">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-check">
-                    <p class="form-check-label mb3"><strong>I want information about:</strong></p>
-                    <br>
-                    <input type="checkbox" class="form-check-input" id="individual_company_packs">
-                    <label class="form-check-label mb3" for="individual_company_packs">Individual Packs</label>
-                    <br>
-                    <input type="checkbox" class="form-check-input" id="group_company_packs">
-                    <label class="form-check-label" for="group_company_packs">Reduced Groups</label>
-                </div>
-                <div>
-                    <label class="form-check-label mt-4" for="message">Optional message:</label>
-                    <br>
-                    <textarea id="w3review" name="w3review" rows="4">Share your thoughts!</textarea>
-                </div>
-                <button type="submit" class="btn btn-custom mt-4">Submit</button>
-              </form>
+        <div class="col-12 col-md-5" >
+            {% if messages %}
+            <div class="alert alert-dismissible fade show">
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }}" role="alert">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+            {% endif %} 
+            <form class="mt-3" action="{% url 'companies' %}" method="POST" id="contact-form">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button id="submit-button" class="btn btn-lg rounded-pill">
+                    <span class="font-weight-bold">Send</span>
+                    <span class="icon">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </button>
+            </form>
         </div>
     </div>
 </div>

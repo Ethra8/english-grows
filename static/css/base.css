@@ -48,7 +48,7 @@ textarea {
 }
 
 .header-container {
-    padding-top: 184px;
+    padding-top: 144px;
 }
 
 .navbar-dark {
@@ -327,6 +327,12 @@ a.btt-link:hover {
     background: #212529 !important;
     color: #fff !important;
 } */
+
+
+/* Django Messages */
+.alert{
+    background-color: white;
+}
 
 
 /* BAG */
