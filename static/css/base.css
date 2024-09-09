@@ -35,7 +35,8 @@ textarea {
 
 #main-nav {
     background-color: teal;
-    margin-right: -22px !important; 
+    margin-right: -22px !important;
+    padding: 10px 0;
 }
 
 #contact-form {
@@ -303,7 +304,7 @@ a.text-white:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    border: medium solid turquoise;
+    border: medium solid teal;
     background-color: #003366;
     border-radius: 10px !important;
 }
@@ -322,10 +323,10 @@ a.btt-link:hover {
     text-decoration: none;
 }
 
-a.type-badge > span.badge:hover {
+/* a.type-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
-}
+} */
 
 
 /* BAG */

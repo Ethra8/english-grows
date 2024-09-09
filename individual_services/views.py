@@ -10,10 +10,11 @@ def individual_services(request):
     """A view to return the list of individual services with sorting and filtering"""
     
     services = IndivService.objects.all()  # Get all individual services
-    categories = IndividualType.objects.all()  # Get all individual service types
+    types = IndividualType.objects.all()  # Get all individual service types
 
     query = None
-    category_filter = None
+    # category_filter = None
+    types = None
     sort = None
     direction = None
 
@@ -33,6 +34,11 @@ def individual_services(request):
             if direction == 'desc':
                 services = services.reverse()  # Reverse the sorted queryset
 
+        if 'type' in request.GET:
+            types = request.GET['type'].split(',')
+            services = services.filter(type__name__in=types)
+            types = IndividualType.objects.filter(name__in=types)
+
         # Search functionality
         if 'q' in request.GET:
             query = request.GET['q']
@@ -41,17 +47,18 @@ def individual_services(request):
 
     current_sorting = f'{sort}_{direction}'  # Keep track of current sorting
 
-    # Context to pass to the template
+    template = 'individual_services/individual_services.html'
+    
     context = {
         'services': services,
         'search_term': query,
-        'current_category': category_filter,
+        'type': type,
         'current_sorting': current_sorting,
         'is_individual_services_view': True,
 
     }
 
-    return render(request, 'individual_services/individual_services.html', context)
+    return render(request, template, context)
 
 
 def pack_details(request, service_id):
