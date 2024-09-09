@@ -1,16 +1,16 @@
 
 
-<li class="list-inline-item">
+<li class="list-inline-item d-block ">
     <div class="col-12 col-md-3 my-auto py-1 py-lg-0 text-left d-block d-lg-none">
-        <a href="{% url 'home' %}" class="nav-link logo-link d-none d-sm-block">
+        <a href="{% url 'home' %}" class="nav-link logo-link d-block">
             
             <img src="../../media/logo_englishgrows.png" alt="logo" class="logo">
             
         </a>
     </div>
 </li>
-<ul class="d-block ">
-    <li class="list-inline-item dropdown">
+<ul class="d-block  d-lg-none">
+    <li class="list-inline-item dropdown d-lg-none">
         <a class="text-white nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -32,6 +32,7 @@
         </div>
     </li>
 
+    {% if user.is_authenticated %}
     <li class="list-inline-item">
         <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none"
             href="">
@@ -39,12 +40,13 @@
                 <div><i class="fas fa-shopping-bag fa-lg icon-nav"></i></div>
                 <p class="my-0 text-white">
                     {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
+                        ${{ grand_total|floatformat:2 }}
                     {% else %}
-                    $0.00
+                        $0.00
                     {% endif %}
                 </p>
             </div>
         </a>
     </li>
+    {% endif %}
 </ul>

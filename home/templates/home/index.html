@@ -2,7 +2,6 @@
 {% load static %}
 
 
-
 {% block page_header%}
 <div class="container header-container">
     <div class="row">
@@ -11,11 +10,12 @@
 </div>
 {% endblock %}
 
+
 {% block content %}
 <div id="index"></div>
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-12 col-md-8 my-auto ml-3 mr-3 ml-md-0 mr-md-0">
+        <div class="col-12 col-md-12 my-auto ml-md-0 mr-md-0">
             <h1 class="display-4 text-white charmonman-title">
                 your<br> <span class="eg-font text-uppercase">English grows</span><br> <span class="charmonman-title ml-5">anywhere</span>
             </h1>
@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-4">
                         <h4>
-                            <a href="{% url 'company_services' %}" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">For Companies</a>
+                            <a href="{% url 'companies' %}" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">For Companies</a>
                         </h4>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -36,5 +36,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}

@@ -16,31 +16,7 @@
       }
    },
    {
-       "pk":3,
-       "model":"individual_services.IndividualType",
-       "fields":{
-          "name":"companies_individual",
-          "friendly_name":"Individual Lessons"
-       }
-    },
-    {
-      "pk":5,
-      "model":"individual_services.IndividualType",
-      "fields":{
-         "name":"companies_cambridge_groups",
-         "friendly_name":"Reduced Groups by Level"
-      }
-   },
-   {
-      "pk":6,
-      "model":"individual_services.IndividualType",
-      "fields":{
-         "name":"companies_cambridge_individual",
-         "friendly_name":"Individual Lessons"
-      }
-   },
-   {
-     "pk":7,
+     "pk":3,
      "model":"individual_services.IndividualType",
      "fields":{
         "name":"individuals_cambridge_individual",
@@ -48,7 +24,7 @@
      }
   },
   {
-      "pk":7,
+      "pk":4,
       "model":"individual_services.IndividualType",
       "fields":{
          "name":"individuals_cambridge_group",

@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
+
 {% block page_header%}
 <div class="container header-container">
     <div class="row">
@@ -10,40 +11,49 @@
 {% endblock %}
 
 
-{% block nav %}
-<div class="row bg-custom-dark">
-  <nav class="navbar navbar-dark navbar-expand-lg w-100 pl-5">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-comp"
-          aria-controls="main-nav-comp" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      {% include 'includes/mobile_top_header.html' %}
-      {% include 'includes/main_nav_companies.html' %}
-  </nav>
-</div>
-{% endblock nav %}
-
 {% block content %}
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-12 col-md-9 my-auto ml-3 mr-3 ml-md-0 mr-md-0">
+        <div class="col-12 col-md-7 my-auto ml-3 mr-3 ml-md-0 mr-md-0">
             <h1 class="display-4 text-white">
                 <strong>Professional Training</strong> <br>for your Business
             </h1>
             <div class="my-5">
                 <div class="row">
                     <div class="col-12 col-lg-6 mb-4">
-                        <h4>
-                            <a href="#" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">Unipersonal</a>
-                        </h4>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <h4>
-                            <a href="#" class="index-cta-button btn btn-lg rounded-pill text-uppercase py-3">Reduced Groups</a>
-                        </h4>
+                        <h4 class="text-white">Let professional tutors guide your team where you want it to be.</h4>
                     </div>
                 </div>
             </div>
+        </div>
+        <div  id="contact-form"  class="col-12 col-md-5" >
+            <form action="" method="POST">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="company_name" placeholder="Company Name ">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="company_name" placeholder="Name *">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="company_email" aria-describedby="emailHelp" placeholder="Email *">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-check">
+                    <p class="form-check-label mb3"><strong>I want information about:</strong></p>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="individual_company_packs">
+                    <label class="form-check-label mb3" for="individual_company_packs">Individual Packs</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="group_company_packs">
+                    <label class="form-check-label" for="group_company_packs">Reduced Groups</label>
+                </div>
+                <div>
+                    <label class="form-check-label mt-4" for="message">Optional message:</label>
+                    <br>
+                    <textarea id="w3review" name="w3review" rows="4">Share your thoughts!</textarea>
+                </div>
+                <button type="submit" class="btn btn-custom mt-4">Submit</button>
+              </form>
         </div>
     </div>
 </div>
