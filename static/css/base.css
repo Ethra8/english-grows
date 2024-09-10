@@ -26,7 +26,6 @@ textarea {
 
 #index {
     background: url('/media/birds_3.png') top -120px right -200px fixed;
-    /* background-size: cover; */
 }
 
 #topnav {
@@ -45,6 +44,7 @@ textarea {
     padding: 25px 15px;
     border-radius: 25px;
     margin-bottom: 36px;
+    margin-right: -30px !important;
 }
 
 .header-container {
@@ -100,15 +100,40 @@ a.text-white:hover {
     border-color: rgba(255, 255, 255, .5);
 }
 
-/* .navbar-toggler-icon {
-    color: white;
-    background-color: white;
-} */
-
-.fas:hover,
-.turquoise-hover:hover {
+.fa-user:hover {
     color: turquoise;
 }
+
+
+/* style searchbar */
+
+.fa-search {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.rounded-searchbar {
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 50px !important;
+    height: 40px;
+    padding: 0  0 0 15px;
+}
+
+.rounded-searchicon {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 50px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 50px !important;
+    height: 40px;
+    padding: 0  0 0 15px;
+}
+
+
 
 
 /* from Bulma */
@@ -122,6 +147,10 @@ a.text-white:hover {
 
 .bg-custom-dark {
     background-color: #003366;
+}
+
+.bg-teal {
+    background-color: rgba(0,128,128, .4);
 }
 
 .larger-title {
@@ -162,6 +191,7 @@ a.text-white:hover {
 }
 
 /** BUTTTONS **/
+
 .btn-custom {
     background: #003366;
     color: white;
@@ -176,12 +206,16 @@ a.text-white:hover {
 
 .index-cta-button:hover,
 .index-cta-button:active,
-.index-cta-button:focus,
+.index-cta-button:focus {
+    background: #c1f7e3;
+    color: #003366;
+}
+
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:focus {
-    background: #c1f7e3;
-    color: #003366;
+    background: teal;
+    color: white;
 }
 
 .btn-outline-custom {
@@ -195,6 +229,12 @@ a.text-white:hover {
 .btn-outline-custom:focus {
     background: #003366;
     color: white !important;
+}
+
+.btn-bg-light {
+    background-color: aquamarine;
+    color: black;
+    border: inset 2px teal;
 }
 
 .text-grey {
@@ -232,13 +272,14 @@ a.text-white:hover {
 
 .overlay2 {
 	height: 100%;
-	width: 100%;
+	width: 80%;
 	top: 0;
 	left: 0;
 	position: fixed;
-    background: white;
+    background: rgba(255,235,235,0.8);
     background-size: cover;
 	z-index: -1;
+    left: 0;
 }
 
 .clean-link {
@@ -254,24 +295,6 @@ a.text-white:hover {
 #sort-selector,
 .sort-select-wrapper {
     border-radius: 50px !important;
-    height: 40px;
-    padding: 0  0 0 15px;
-}
-
-.rounded-searchbar {
-    border-top-right-radius: 0 !important;
-    border-top-left-radius: 50px !important;
-    border-bottom-right-radius: 0 !important;
-    border-bottom-left-radius: 50px !important;
-    height: 40px;
-    padding: 0  0 0 15px;
-}
-
-.rounded-searchicon {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 50px !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 50px !important;
     height: 40px;
     padding: 0  0 0 15px;
 }
@@ -331,6 +354,10 @@ a.text-white:hover {
     text-decoration: none;
 }
 
+.remove-item {
+    margin-bottom: 15px;
+}
+
 .update-link,
 .remove-item {
     cursor: pointer;
@@ -363,7 +390,6 @@ a.btt-link:hover {
 .img-bag {
     border-radius: 25px !important;
 }
-
 
 
 /* Allauth form formatting */
@@ -460,10 +486,32 @@ a.btt-link:hover {
 }
 
 
+@media (max-width: 575.98px) { /* Extra small devices (max-width: 575.98px) */
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #index {
+        padding: 60px 30px !important;
+    }
+
+    .font-xs-small {
+      font-size: 2.5rem;
+    }
+
+    #contact-form {
+        margin-right: -10px !important;
+        margin-left: auto;
+    }
+
+  }
+
+
 @media (max-width: 450px) {
     .header-container {
         padding-top: 250px;
     }
-
+    
 }
 

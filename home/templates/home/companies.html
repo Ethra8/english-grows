@@ -3,7 +3,6 @@
 {% load crispy_forms_tags % }
 
 
-
 {% block page_header%}
 <div class="container header-container">
     <div class="row">
@@ -16,8 +15,8 @@
 {% block content %}
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-12 col-md-7 my-auto ml-3 mr-3 ml-md-0 mr-md-0">
-            <h1 class="display-4 text-white">
+        <div class="col-12 col-md-7 my-auto ml-3 mr-3 ml-md-0 mr-md-0 pl-0 pr-0 pl-xs-1 pr-xs-1">
+            <h1 class="display-4 text-white font-xs-small">
                 <strong>Professional Training</strong> <br>for your Business
             </h1>
             <div class="my-5">
@@ -29,29 +28,33 @@
             </div>
         </div>
         <div class="col-12 col-md-5 my-auto" >
-            {% if messages %}
-            <div class="alert alert-dismissible fade show">
-                {% for message in messages %}
-                    <div class="alert alert-{{ message.tags }}" role="alert">
-                        {{ message }}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                {% endfor %}
-            </div>
-            {% endif %} 
-            <form class="mt-3" action="{% url 'companies' %}" method="POST" id="contact-form">
+           
+            <form id="contact-form" class="mt-3" action="{% url 'companies' %}" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button id="submit-button" class="btn btn-lg rounded-pill btn-custom">
+                <button id="submit-button-companies" class="btn btn-block rounded-pill btn-custom">
                     <span class="font-weight-bold">Send</span>
                     <span class="icon">
                         <i class="fas fa-envelope"></i>
                     </span>
                 </button>
             </form>
+
         </div>
     </div>
 </div>
+{% if messages %}
+<div class="alert alert-dismissible fade show">
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+</div>
+{% endif %} 
+
+
 {% endblock %}

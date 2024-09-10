@@ -22,7 +22,6 @@
                 </a>
             </div>
         </div>
-
         <div class="row">
             <div class="col">
                 <hr>
@@ -41,7 +40,7 @@
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
+                                    <th scope="col" class="pl-3">Qty</th>
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
@@ -86,25 +85,32 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                        <a class="update-link text-info"><small><i class="fas fa-refresh"></i></small></a>
+                                        <!-- <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a> -->
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.service.price }}</p>
+                                        <p class="my-0">
+                                            ${{ item.service.price }} 
+                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fas fa-times-circle"></i></a>
+                                        </p>
+                                        
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
-                                <td colspan="5" class="pt-5 text-right bg-teal">
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            <tr class="bg-teal">
+                                <td colspan="5" class="pt-5 text-right">
+                                    <h4 class="my-auto mr-3 text-white "><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="" class="btn btn-custom  rounded-pill btn-lg">
+                                    <!-- <a href="{% url 'individual_services' %}" class="btn btn-bg-light rounded-pill btn-lg">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a> -->
+                                    <a href="" class="btn btn-bg-light rounded-pill btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
