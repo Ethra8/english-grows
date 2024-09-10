@@ -16,7 +16,7 @@ import dj_database_url
 
 from django.contrib.messages import constants as messages
 # Import env.py to set environment variables
-from env import *
+
 if os.path.isfile("env.py"):
     import env
 
