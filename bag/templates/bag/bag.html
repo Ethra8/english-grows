@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container header-container">
@@ -104,7 +105,7 @@
                                         </div>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.service.price }}</p>
+                                        <p class="my-0">${{ item.service.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
@@ -115,7 +116,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="" class="btn btn-custom-teal rounded-pill btn-lg  mt-5">
+                                    <a href="{% url 'checkout' %}" class="btn btn-custom-teal rounded-pill btn-lg  mt-5">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -127,12 +128,6 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <!-- <a href="{% url 'individual_services' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="text-uppercase">Keep Shopping</span>
-                    </a> -->
                 {% endif %}
             </div>
         </div>
