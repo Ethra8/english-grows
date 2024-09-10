@@ -18,7 +18,7 @@
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
-                    <span class="text-uppercase">Go BAck</span>
+                    <span class="text-uppercase">View Packs</span>
                 </a>
             </div>
         </div>
@@ -118,12 +118,12 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'individual_services' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <!-- <a href="{% url 'individual_services' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    </a> -->
                 {% endif %}
             </div>
         </div>
@@ -139,53 +139,36 @@
     // Update quantity on click
     $(document).ready(function() {
         $('.update-link').click(function(e) {
-            e.preventDefault(); // Prevent the default anchor behavior
+            e.preventDefault();
             
-            // Traverse up to the parent div (#cart_update), then find the previous form
             var form = $(this).closest('#cart-update').prev('.update-form');
             if (form.length) {
-                form.submit(); // Submit the form if found
+                form.submit(); 
             } else {
                 alert(request, 'No form found before the update link.');
             }
         });
     });
 
-
-    // $(document).ready(function() {
-    //     $('.remove-item').click(function(e) {
-    //         // e.preventDefault(); // Prevent the default anchor behavior
-            
-    //         // Traverse up to the parent div (#cart_update), then find the previous form
-    //         var form = $(this).closest('#cart-update').prev('.update-form');
-    //         if (form.length) {
-    //             form.submit(); // Submit the form if found
-    //         } else {
-    //             console.log('No form found before the update link.');
-    //         }
-    //     });
-    // });
-
     // Remove item and reload on click
     $(document).ready(function() {
         $('.remove-item').click(function(e) {
-            e.preventDefault(); // Prevent the default anchor behavior
+            e.preventDefault(); 
 
-            var csrfToken = "{{ csrf_token }}";  // Get CSRF token from Django template
-            var itemId = $(this).attr('id').split('remove_')[1]; // Extract the item ID from the ID attribute
-            var url = `/bag/remove_item/${itemId}/`;  // Define the URL to send the POST request
+            var csrfToken = "{{ csrf_token }}";  
+            var itemId = $(this).attr('id').split('remove_')[1]; 
+            var url = `/bag/remove_item/${itemId}/`;  
 
             var data = {
-                'csrfmiddlewaretoken': csrfToken  // Include the CSRF token in the data sent to the server
+                'csrfmiddlewaretoken': csrfToken  
             };
 
-            // Send the POST request to the server
             $.post(url, data)
             .done(function() {
-                location.reload();  // Reload the page after successful removal
+                location.reload();  
             })
             .fail(function() {
-                alert("Item could not be removed.");  // Handle failure
+                alert("Item could not be removed.");  
             });
         });
     });
