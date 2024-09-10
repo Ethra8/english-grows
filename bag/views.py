@@ -32,38 +32,26 @@ def add_to_bag(request, item_id):
         messages.success(request, f'Added {service.name} to your bag')
 
     request.session['bag'] = bag
-    print(request.session['bag'])
+    
     return redirect(redirect_url)
 
 
-# def adjust_bag(request, item_id):
-#     """Adjust the quantity of the specified product to the specified amount"""
+def adjust_bag(request, item_id):
+    """Adjust the quantity of the specified product to the specified amount"""
 
-#     product = get_object_or_404(Product, pk=item_id)
-#     quantity = int(request.POST.get('quantity'))
-#     size = None
-#     if 'product_size' in request.POST:
-#         size = request.POST['product_size']
-#     bag = request.session.get('bag', {})
+    service = get_object_or_404(IndivService, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    bag = request.session.get('bag', {})
 
-#     if size:
-#         if quantity > 0:
-#             bag[item_id]['items_by_size'][size] = quantity
-#             messages.success(request, f'Updated {size.upper()} {product.name} quantity to {bag[item_id]["items_by_size"][size]}')
-#         else:
-#             del bag[item_id]['items_by_size'][size]
-#             if not bag[item_id]['items_by_size']:
-#                 bag.pop(item_id)
-#                 messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
-#     else:
-#         if quantity > 0:
-#             bag[item_id] = quantity
-#         else:
-#             bag.pop(item_id)
-#             messages.success(request, f'Removed {product.name} from your bag')
 
-#     request.session['bag'] = bag
-#     return redirect(reverse('view_bag'))
+    if quantity > 0:
+        bag[item_id] = quantity
+    else:
+        bag.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your bag')
+
+    request.session['bag'] = bag
+    return redirect(reverse('bag'))
 
 
 # def remove_from_bag(request, item_id):

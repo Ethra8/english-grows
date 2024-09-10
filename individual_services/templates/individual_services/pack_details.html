@@ -18,16 +18,16 @@
             <div class="image-container my-5">
                 {% if service.image %}
                 <a href="{{ service.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
+                    <img class="img-details img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
+                    <img class="img-details img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
                 </a>
                 {% endif %}
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 ml-lg-5">
             <div class="product-details-container mb-5 mt-md-5">
                 <p class="mb-0 service-name">{{ service.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ service.price }}</p>
@@ -106,4 +106,5 @@
 {% endblock %}
 
 {% block postloadjs %}
+<script src="../../static/js/quantity_selector.js"></script>
 {% endblock %}

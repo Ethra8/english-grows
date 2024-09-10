@@ -230,6 +230,17 @@ a.text-white:hover {
 	z-index: -1;
 }
 
+.overlay1 {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    background: white;
+    background-size: cover;
+	z-index: -1;
+}
+
 .clean-link {
     color: #003366;
     font-size: 1rem; 
@@ -320,8 +331,16 @@ a.text-white:hover {
     text-decoration: none;
 }
 
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+a.update-link,
+a.remove-item, 
 a.btt-link:hover {
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* a.type-badge > span.badge:hover {
@@ -335,10 +354,14 @@ a.btt-link:hover {
     background-color: white;
 }
 
+/* Details */
+.img-details {
+    border-radius: 25px !important;
+}
 
 /* BAG */
 .img-bag {
-    border-bottom-right-radius: 50px !important;
+    border-radius: 25px !important;
 }
 
 
