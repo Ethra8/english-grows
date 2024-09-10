@@ -1,4 +1,6 @@
 # ENGLISH GROWS
+![image](https://github.com/user-attachments/assets/c79dd927-349c-4739-8204-a0a7df15a9ae)
+
 
 ## Overview
 This site is an e-commerce that sells services. The services provided are the following:
