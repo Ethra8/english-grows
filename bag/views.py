@@ -41,9 +41,9 @@ def adjust_bag(request, item_id):
 
     if quantity >= 1:
         bag[item_id] = quantity
+        messages.success(request, f'Quantity of {service.name} successfully updated')
     else:
-        bag.pop(item_id)
-        messages.success(request, f'Removed {product.name} from your bag')
+        messages.error(request, f'Failed to update {service.name}')
 
     request.session['bag'] = bag
     return redirect(reverse('bag'))
@@ -55,15 +55,12 @@ def remove_bag_item(request, item_id):
         service = get_object_or_404(IndivService, pk=item_id)
         bag = request.session.get('bag', {})
 
-        # Remove the item from the bag
-        bag.pop(item_id)  # Use .pop() with a default to avoid KeyError if item_id is not found
-        messages.success(request, f'Removed {service.name} from your bag')
-
-        # Update the session
+        bag.pop(item_id)  
+        messages.success(request, f'Successfully removed {service.name} from your bag')
         request.session['bag'] = bag
-
-        return HttpResponse(status=200)  # Return success status
+        return HttpResponse(status=200)
 
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)  # Return error status
+        return HttpResponse(status=500)
+

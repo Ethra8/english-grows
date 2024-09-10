@@ -14,12 +14,21 @@
     <div class="container mb-2 ml-0">
         <div class="row">
             <div class="col">
+                {% if bag_items %}
+                <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-sm">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">View Packs</span>
+                </a>
+                {% else %}
                 <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-lg">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span class="text-uppercase">View Packs</span>
                 </a>
+                {% endif %}
             </div>
         </div>
 
@@ -100,13 +109,13 @@
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right bg-teal">
+                                <td colspan="5" class="text-right bg-custom-dark py-auto pr-3">
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="" class="btn btn-custom  rounded-pill btn-lg">
+                                    <a href="" class="btn btn-custom-teal rounded-pill btn-lg  mt-5">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -132,8 +141,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-
-<script src=".././static/js/quantity_selector.js"></script>
+<script src="{% static 'js/quantity_selector.js' %}"></script>
 
 <script type="text/javascript">
     // Update quantity on click

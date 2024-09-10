@@ -53,6 +53,7 @@ textarea {
 
 .header-container {
     padding-top: 144px;
+    z-index: 1;
 }
 
 .navbar-dark {
@@ -148,6 +149,7 @@ a.text-white:hover {
 
 .bg-custom-dark {
     background-color: #003366;
+    color: white;
 }
 
 .bg-teal {
@@ -197,6 +199,32 @@ a.text-white:hover {
     background: #003366;
     color: white;
     text-transform: uppercase;
+    padding-right: 1rem;
+    border: outset 2px aquamarine;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+    background: teal;
+    color: white;
+}
+
+.btn-custom-teal {
+    background: teal;
+    color: white;
+    text-transform: uppercase;
+    padding-right: 1rem;
+    border: outset 2px aquamarine;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-custom-teal:hover {
+    background: #003366;
+    color: white;
 }
 
 .index-cta-button {
@@ -212,23 +240,16 @@ a.text-white:hover {
     color: #003366;
 }
 
-.btn-custom:hover,
-.btn-custom:active,
-.btn-custom:focus {
-    background: teal;
-    color: white;
-}
-
 .btn-outline-custom {
-    background: white;
-    color: #003366 !important; /* use important to override link colors for <a> elements */
-    /* border: 1px solid #003366; */
+    background: teal;
+    color: white !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #003366;
 }
 
 .btn-outline-custom:hover,
 .btn-outline-custom:active,
 .btn-outline-custom:focus {
-    background: #003366;
+    background: aquamarine;
     color: white !important;
 }
 
@@ -358,6 +379,8 @@ a.text-white:hover {
     right: 13px;
     z-index: 999;
     text-decoration: none;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .remove-item {
@@ -383,6 +406,15 @@ a.btt-link:hover {
 
 
 /* Django Messages */
+.messages {
+    position: fixed;  /* Fixes the position relative to the viewport */
+    top: 120px;        /* Adjust top spacing */
+    right: 10px;       /* Adjust right spacing */
+    z-index: 9999;     /* Make sure it appears on top of other elements */
+    max-width: 300px;  /* Optional: Limit the width */
+    padding: 10px;     /* Optional: Add some padding */
+}
+
 .alert{
     background-color: white;
 }
