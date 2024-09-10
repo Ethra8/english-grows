@@ -47,6 +47,10 @@ textarea {
     margin-right: -30px !important;
 }
 
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+  }
+
 .header-container {
     padding-top: 144px;
 }
@@ -132,9 +136,6 @@ a.text-white:hover {
     height: 40px;
     padding: 0  0 0 15px;
 }
-
-
-
 
 /* from Bulma */
 .icon {
@@ -318,6 +319,11 @@ a.text-white:hover {
     background-color: teal;
     color: white;
     min-height: 60px;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+    padding: 5px 35px;,
 }
 
 .card-img-top {

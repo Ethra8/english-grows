@@ -89,8 +89,10 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                        <div id="cart-update" class="row d-flex justify-content-space-evenly">
+                                            <a class="update-link text-info"><i class="fas fa-cart-arrow-down"></i></a>
+                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fas fa-times-circle"></i></a>    
+                                        </div>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.service.price }}</p>
@@ -135,21 +137,58 @@
 
 <script type="text/javascript">
     // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form.submit();
-    })
+    $(document).ready(function() {
+        $('.update-link').click(function(e) {
+            e.preventDefault(); // Prevent the default anchor behavior
+            
+            // Traverse up to the parent div (#cart_update), then find the previous form
+            var form = $(this).closest('#cart-update').prev('.update-form');
+            if (form.length) {
+                form.submit(); // Submit the form if found
+            } else {
+                alert(request, 'No form found before the update link.');
+            }
+        });
+    });
+
+
+    // $(document).ready(function() {
+    //     $('.remove-item').click(function(e) {
+    //         // e.preventDefault(); // Prevent the default anchor behavior
+            
+    //         // Traverse up to the parent div (#cart_update), then find the previous form
+    //         var form = $(this).closest('#cart-update').prev('.update-form');
+    //         if (form.length) {
+    //             form.submit(); // Submit the form if found
+    //         } else {
+    //             console.log('No form found before the update link.');
+    //         }
+    //     });
+    // });
 
     // Remove item and reload on click
-    $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/bag/remove_item/${itemId}/`;
+    $(document).ready(function() {
+        $('.remove-item').click(function(e) {
+            e.preventDefault(); // Prevent the default anchor behavior
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+            var csrfToken = "{{ csrf_token }}";  // Get CSRF token from Django template
+            var itemId = $(this).attr('id').split('remove_')[1]; // Extract the item ID from the ID attribute
+            var url = `/bag/remove_item/${itemId}/`;  // Define the URL to send the POST request
+
+            var data = {
+                'csrfmiddlewaretoken': csrfToken  // Include the CSRF token in the data sent to the server
+            };
+
+            // Send the POST request to the server
+            $.post(url, data)
+            .done(function() {
+                location.reload();  // Reload the page after successful removal
+            })
+            .fail(function() {
+                alert("Item could not be removed.");  // Handle failure
+            });
+        });
+    });
+
 </script>
 {% endblock %}

@@ -93,15 +93,20 @@
                                             {% if service.type %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'individual_services' %}/?type={{ service.type.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ service.type.friendly_name }}
+                                                    {% if service.type.name == "individuals_private" or service.type.name == "individuals_groups" %}
+                                                    <i class="fas fa-desktop mr-1"></i>
+                                                    {% else %}
+                                                    <i class="fas fa-graduation-cap mr-1"></i>
+                                                    {% endif %}
+                                                    {{ service.type.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <p>
-                                                    <a href="">Edit</a> | 
-                                                    <a class="text-danger font-weight-bold" href="">Delete</a>    
+                                                    <a href=""><i class="fas fa-pencil-square"></i></a> | 
+                                                    <a class="text-danger font-weight-bold" href=""><i class="fas fa-times-circle"></i></a>    
                                                 </p>
                                             </small>
                                             {% endif %}
