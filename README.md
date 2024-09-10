@@ -4,6 +4,9 @@
 
 ## Overview
 This site is an e-commerce that sells services. The services provided are the following:
+- Live online lessons for B2B and B2C customers:
+  * Individual Lesson Packs
+  * Reduced Groups
 
 ## Live Site
 - You can view the deployed site [here]()
