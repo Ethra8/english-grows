@@ -125,8 +125,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 WSGI_APPLICATION = 'english_grows.wsgi.application'
 
 
-Database
-https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# Database
+# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 # for PostgreeSQL Database (for deployment in Heroku):
 if 'DATABASE_URL' in os.environ:
