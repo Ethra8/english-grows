@@ -36,7 +36,7 @@ EDNA TORRES MUNILL
     * [Contact Form](#contact-form)
     * [Service Sorting](#service-sorting)
     * [Shopping Bag](#shopping-bag)
-    * [Online Payments - Stripe)](#online-payments---stripe)
+    * [Online Payments - Stripe](#online-payments---stripe)
 
 
 # UX
