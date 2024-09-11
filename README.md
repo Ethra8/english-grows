@@ -38,6 +38,7 @@ EDNA TORRES MUNILL
     * [Shopping Bag](#shopping-bag)
     * [Online Payments - Stripe API](#online-payments---stripe)
     * [404 Error Page](#404-error-page)
+    * [SEO](#seo)
 
 
 # UX
@@ -149,5 +150,12 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
 ## 404 Error Page
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
-
+## SEO
+I have included the following meta tags and info:  
+        <meta name="theme-color" content="teal">
+        <meta name="description"
+            content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering individual lesson packs and reduced group formats">
+        <meta name="keywords"
+            content="English, teaching, learning, learn, lessons, tutor, teacher, education, private, groups, online groups, e-learning, corporate, reduced, live">
+        <meta name="author" content="Edna Torres Munill">
 
