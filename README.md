@@ -29,6 +29,12 @@ EDNA TORRES MUNILL
     * [Project Goals](#project-goal)
     * [User Stories](#user-stories)
     * [User Profiles](#user-profiles)
+ - [FEATURES]
+    * [Navbar](#navbar)
+    * [User Uthentication](#user-authentication)
+    * [Contact Form](#contact-form)
+    * [Shopping Bag](#shopping-bag)
+    * [Service Sorting](#service-sorting)
 
 
 # UX
