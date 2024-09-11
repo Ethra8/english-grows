@@ -50,10 +50,10 @@ def checkout(request):
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('bag'))
+                    return redirect(reverse('view_bag'))
 
             # Save the info to the user's profile if all is well
-            request.session['save_info'] = 'save-info' in request.POST
+            # request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
@@ -62,7 +62,7 @@ def checkout(request):
         bag = request.session.get('bag', {})
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
-            return redirect(reverse('products'))
+            return redirect(reverse('individual_services'))
 
         current_bag = bag_contents(request)
         total = current_bag['grand_total']
@@ -74,7 +74,7 @@ def checkout(request):
         )
 
         order_form = OrderForm()
-    
+        
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
