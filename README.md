@@ -57,7 +57,7 @@ Any individual person wanting to improve their level of English tfor one of the 
   1. The site aims at providing the user with services they can buy: live online lessons in individual or reduced groups format.
   3. Users can check the FAQS section for commonly asked questions.
   4. Users can subscribe to the monthly newsletter.
-  5. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts.
+  5. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
 
 ## User Stories
 ### As a first-time visitor:   
