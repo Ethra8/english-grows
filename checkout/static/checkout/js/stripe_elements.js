@@ -5,8 +5,8 @@
     CSS from here: 
     https://stripe.com/docs/stripe-js
 */
-let full_name = $('#id_full_name').value();
-let email = $('#id_email').value();
+let full_name = $('#id_full_name').text();
+let email = $('#id_email').text();
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
@@ -53,7 +53,6 @@ form.addEventListener('submit', function(ev) {
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
-    $('#loading-overlay').fadeToggle(100);
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
@@ -65,7 +64,7 @@ form.addEventListener('submit', function(ev) {
         'full_name': full_name,
         'email': email,
     };
-    var url = '/checkout/';
+    var url = '/checkout/cache_checkout_data/';
 
     $.post(url, postData).done(function () {
         stripe.confirmCardPayment(clientSecret, {
@@ -86,7 +85,6 @@ form.addEventListener('submit', function(ev) {
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
                 $('#payment-form').fadeToggle(100);
-                $('#loading-overlay').fadeToggle(100);
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
             } else {
