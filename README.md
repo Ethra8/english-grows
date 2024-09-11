@@ -91,5 +91,12 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to sort multiple categories of products simultaneously, so that I can find the best-priced services across broad categories, such as 'unipersonal' or 'reduced groups'.
 
 
+# FEATURES
+## Navbar
+## User Authentication
+## Contact Form
+## Shopping Bag
+https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
 
+## Product Sorting
 
