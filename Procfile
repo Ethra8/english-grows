@@ -1,1 +1,1 @@
-web: gunicorn english-grows.wsgi:application
+web: gunicorn english_grows.wsgi:application
