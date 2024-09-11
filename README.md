@@ -1,5 +1,4 @@
 
-https://github.com/user-attachments/assets/efc96d2b-0172-4373-8a85-59bfd9997085
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/c79dd927-349c-4739-8204-a0a7df15a9ae)
 
