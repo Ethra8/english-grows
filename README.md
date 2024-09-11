@@ -167,6 +167,8 @@ I have included the following meta tags and info:
 The following tests have been run for this project:  
 
 ## Lighthouse Report  
+**To improve my first report, the following actions have been taken:**  
+- To improve the best practices, I have included a ***site.manifest***
 
 
 
