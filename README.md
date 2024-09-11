@@ -37,6 +37,7 @@ EDNA TORRES MUNILL
     * [Service Sorting](#service-sorting)
     * [Shopping Bag](#shopping-bag)
     * [Online Payments - Stripe](#online-payments---stripe)
+    * [404 Error Page](#404-error-page)
 
 
 # UX
@@ -54,10 +55,12 @@ Any individual person wanting to improve their level of English tfor one of the 
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
 
 ## Project Goal
-  1. The site aims at providing the user with services they can buy: live online lessons in individual or reduced groups format.
-  3. Users can check the FAQS section for commonly asked questions.
-  4. Users can subscribe to the monthly newsletter.
-  5. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
+  1. The site aims at providing B2B and B2C users with services they can buy: live online lessons in individual or reduced groups format.
+  2. All users can register for an account.
+  3. B2B users can send a contact form to receive customized offers on the type of service desired.
+  4. B2C services available can be stored in a shopping bag and bought online through Stripe API.
+  5. All users can subscribe to the monthly newsletter.
+  6. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
 
 ## User Stories
 ### As a first-time visitor:   
@@ -118,16 +121,7 @@ https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10
 
  
 
-https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
-
-
-
-
-
-
-
-
-
+ https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
 
 
 ## Contact Form
@@ -152,5 +146,6 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
   ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)
 
 
+## 404 Error Page
 
 
