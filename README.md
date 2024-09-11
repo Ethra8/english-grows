@@ -97,16 +97,19 @@ Any individual person wanting to improve their level of English tfor one of the 
 ## Navbar
 ## User Authentication
 ## Contact Form
+
+https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
+
 ## Product Sorting
 
-https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98
+https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
 
 ## Shopping Bag
 https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
 
 ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
 
-![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)
+![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
 
 
 ## Online Payments - STRIPE  
