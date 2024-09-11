@@ -161,8 +161,8 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 MEDIAFILES_LOCATION = 'media'
 
 STORAGES = {
-"default": {"BACKEND": "custom_storages.MediaStorage"},
-"staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
+    "default": {"BACKEND": "custom_storages.MediaStorage"},
+    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
 }
 
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
