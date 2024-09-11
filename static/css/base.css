@@ -411,7 +411,7 @@ a.btt-link:hover {
     top: 120px;        /* Adjust top spacing */
     right: 10px;       /* Adjust right spacing */
     z-index: 9999;     /* Make sure it appears on top of other elements */
-    max-width: 300px;  /* Optional: Limit the width */
+    width: fit-content;  /* Optional: Limit the width */
     padding: 10px;     /* Optional: Add some padding */
 }
 
@@ -498,6 +498,46 @@ a.btt-link:hover {
 .allauth-form-inner-content a:hover {
     text-decoration: none;
     font-weight: 600;
+}
+
+/* Stripe */
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
 }
 
 /* -------------------------------- Media Queries */
