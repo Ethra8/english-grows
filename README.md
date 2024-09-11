@@ -96,7 +96,10 @@ Any individual person wanting to improve their level of English tfor one of the 
 ## User Authentication
 ## Contact Form
 ## Shopping Bag
-https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
+https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
+
+![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
+
 
 ## Product Sorting
 
