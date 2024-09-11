@@ -31,7 +31,7 @@ EDNA TORRES MUNILL
     * [User Profiles](#user-profiles)
  - [FEATURES]
     * [Navbar](#navbar)
-    * [User Uthentication](#user-authentication)
+    * [User Authentication](#user-authentication)
     * [Contact Form](#contact-form)
     * [Service Sorting](#service-sorting)
     * [Shopping Bag](#shopping-bag)
@@ -83,13 +83,13 @@ Any individual person wanting to improve their level of English tfor one of the 
 #### Viewing and Navigation
 * I want to easily sign up for an account, after a conscient decision, to buy some services.
 * I want to view a list of services, so that I can easily choose what service suits me best.
-* I want to be able to view specific category products, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
-* I want to be able to view individual product details, so that I can identify the price and description.
+* I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
+* I want to be able to view individual service details, so that I can identify the price and description.
 * I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
 #### Sorting and Searching
-* I want to sort the list of available services, so that I can easily identify the best priced and categorically sorted products.
-* I want to sort a specific category of product, so that I can find the best-priced services in a specific category.
-* I want to sort multiple categories of products simultaneously, so that I can find the best-priced services across broad categories, such as 'unipersonal' or 'reduced groups'.
+* I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
+* I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
+* I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
 
 
 # FEATURES
