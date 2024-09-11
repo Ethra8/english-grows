@@ -26,31 +26,61 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
+    # def update_total(self):
+    #     """
+    #     Update grand total each time a line item is added,
+    #     accounting for delivery costs.
+    #     """
+    #     self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
+    #     self.grand_total = self.order_total
+    #     self.save()
+
+    # def save(self, *args, **kwargs):
+    #     """
+    #     Override the original save method to set the order number
+    #     if it hasn't been set already.
+    #     """
+    #         # self.update_total()
+    #         # if not self.order_number:
+    #         #     self.order_number = self._generate_order_number()
+    #         # super().save(*args, **kwargs)
+    #     if not self.pk:
+    #         super().save(*args, **kwargs)
+    #     if not self.order_number:
+    #         self.order_number = self._generate_order_number()
+    #     super().save(*args, **kwargs)
+    #     self.update_total()
+
     def update_total(self):
         """
-        Update grand total each time a line item is added,
-        accounting for delivery costs.
+        Update grand total each time a line item is added.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] # or 0
-        # print("this is order_total in model method = ",self.order_total)
-        self.grand_total = self.order_total
+        order_total_sum = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        print(f"Calculated order total: {order_total_sum}")
+        
+        self.order_total = order_total_sum
+        self.grand_total = self.order_total  # Adjust this if needed
+        print(f"Updated order_total: {self.order_total}, grand_total: {self.grand_total}")
+
         # self.save()
+        print("Order saved with updated totals")
 
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
         if it hasn't been set already.
         """
-        self.update_total()
+        
         if not self.pk:
             super().save(*args, **kwargs)
         if not self.order_number:
             self.order_number = self._generate_order_number()
+        self.update_total(*args, **kwargs)
+        # self.save()
         super().save(*args, **kwargs)
-        self.update_total()
-        
 
     def __str__(self):
+        
         return self.order_number
 
 
@@ -67,6 +97,3 @@ class OrderLineItem(models.Model):
         """
         self.lineitem_total = self.service.price * self.quantity
         super().save(*args, **kwargs)
-
-    def __str__(self):
-        return f'PACK {self.service.name} on order {self.order.order_number}'
