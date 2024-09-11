@@ -24,13 +24,14 @@ if os.path.isfile("env.py"):
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net']
 
 # Application definition
 
@@ -65,6 +66,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'english_grows.urls'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
@@ -126,9 +128,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 WSGI_APPLICATION = 'english_grows.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 # for PostgreeSQL Database (for deployment in Heroku):
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
@@ -144,9 +143,30 @@ else:
     }
 
 
+# Cache control
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000'
+}
+AWS_STORAGE_BUCKET_NAME = 'english-grows'
+AWS_S3_REGION_NAME = 'us-east-1'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-# Password validation
-# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
+# Static and media files
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+
+STORAGES = {
+"default": {"BACKEND": "custom_storages.MediaStorage"},
+"staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
+}
+
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -163,7 +183,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -175,45 +194,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
-STATIC_URL = 'static/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Needed to avoid initial error:
-CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net']
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = 'english-grows'
-    AWS_S3_REGION_NAME = 'us-east-1'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-    # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+
+
