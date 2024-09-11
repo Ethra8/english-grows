@@ -14,9 +14,6 @@ from pathlib import Path
 import os
 import dj_database_url
 
-from django.contrib.messages import constants as messages
-# Import env.py to set environment variables
-
 if os.path.isfile("env.py"):
     import env
 
@@ -27,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
 
@@ -66,6 +63,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'english_grows.urls'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -142,32 +140,6 @@ else:
         }
     }
 
-
-# Cache control
-AWS_S3_OBJECT_PARAMETERS = {
-    'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
-    'CacheControl': 'max-age=94608000'
-}
-AWS_STORAGE_BUCKET_NAME = 'english-grows1'
-AWS_S3_REGION_NAME = 'eu-west-3'
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-
-# Static and media files
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-STATICFILES_LOCATION = 'static'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-MEDIAFILES_LOCATION = 'media'
-
-STORAGES = {
-    "default": {"BACKEND": "custom_storages.MediaStorage"},
-    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
-}
-
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -197,5 +169,44 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+if 'USE_AWS' in os.environ:
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000'
+    }
+
+    # Bucket config
+    AWS_STORAGE_BUCKET_NAME = 'english-grows1'
+    AWS_S3_REGION_NAME = 'eu-west-3'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+
+    STORAGES = {
+    "default": {"BACKEND": "custom_storages.MediaStorage"},
+    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
+    }
+
+
+
+
+
 
 
