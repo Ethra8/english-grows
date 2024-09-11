@@ -102,6 +102,11 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
 
 ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
 
-## ONLINE PAYMENTS - STRIPE
+## ONLINE PAYMENTS - STRIPE  
+  ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
+
+  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)
+
+
 
 
