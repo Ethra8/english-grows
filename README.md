@@ -30,7 +30,7 @@ EDNA TORRES MUNILL
     * [Project Goals](#project-goal)
     * [User Stories](#user-stories)
     * [User Profiles](#user-profiles)
- - [FEATURES]
+ - [FEATURES](#features)
     * [Navbar](#navbar)
     * [User Authentication](#user-authentication)
     * [Contact Form](#contact-form)
@@ -39,6 +39,8 @@ EDNA TORRES MUNILL
     * [Online Payments - Stripe API](#online-payments---stripe)
     * [404 Error Page](#404-error-page)
     * [SEO](#seo)
+ - [TESTING](#testing)
+    * [Lighthouse Report](#lighthouse-report) 
 
 
 # UX
@@ -160,4 +162,11 @@ I have included the following meta tags and info:
    learning, corporate, reduced, live">
 <meta name="author" content="Edna Torres Munill">
 ```
+
+# TESTING  
+The following tests have been run for this project:  
+
+## Lighthouse Report  
+
+
 
