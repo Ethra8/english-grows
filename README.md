@@ -95,6 +95,9 @@ Any individual person wanting to improve their level of English tfor one of the 
 
 # FEATURES
 ## Navbar
+
+https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
+
 ## User Authentication
 ## Contact Form
 
