@@ -99,6 +99,37 @@ Any individual person wanting to improve their level of English tfor one of the 
 https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
 
 ## User Authentication
+
+ ![image](https://github.com/user-attachments/assets/90ed2427-bbf5-4117-bf76-0ca0f0859436)  
+
+ ![image](https://github.com/user-attachments/assets/0324af75-5a15-4b25-bd67-de054fe30373)  
+
+ ![image](https://github.com/user-attachments/assets/cbbcab9d-a5f5-4bdb-8c66-0e01795f29e5)  
+
+ ![image](https://github.com/user-attachments/assets/19f04349-82f4-4bbe-b33e-f674599d5a9e)  
+
+ ![image](https://github.com/user-attachments/assets/c654fa7b-8e72-4d86-9eef-f7ebfb2d6bdb)  
+
+ ![image](https://github.com/user-attachments/assets/eafc5285-6a9e-45d7-975a-5d61768fa0a5)  
+
+ ![image](https://github.com/user-attachments/assets/ed6abc95-9488-4eaa-958d-a5305101eefd)  
+
+ ![image](https://github.com/user-attachments/assets/42bf8fa0-b1b4-479d-b47e-b05a3afac143)  
+
+ 
+
+https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
+
+
+
+
+
+
+
+
+
+
+
 ## Contact Form
 
 https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
