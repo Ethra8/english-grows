@@ -36,7 +36,7 @@ EDNA TORRES MUNILL
     * [Contact Form](#contact-form)
     * [Service Sorting](#service-sorting)
     * [Shopping Bag](#shopping-bag)
-    * [Online Payments - Stripe](#online-payments---stripe)
+    * [Online Payments - Stripe API](#online-payments---stripe)
     * [404 Error Page](#404-error-page)
 
 
@@ -140,12 +140,14 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
 ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
 
 
-## Online Payments - STRIPE  
+## Online Payments - STRIPE API  
   ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
 
   ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)
 
 
 ## 404 Error Page
+ ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
+
 
 
