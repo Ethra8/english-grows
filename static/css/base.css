@@ -296,7 +296,7 @@ a.text-white:hover {
 
 .overlay2 {
 	height: 100%;
-	width: 80%;
+	width: 90%;
 	top: 0;
 	left: 0;
 	position: fixed;
@@ -401,25 +401,23 @@ a.btt-link:hover {
     font-weight: bold;
 }
 
-/* a.type-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-} */
-
-
 /* Django Messages */
 .messages {
-    position: fixed;  /* Fixes the position relative to the viewport */
-    top: 120px;        /* Adjust top spacing */
-    right: 10px;       /* Adjust right spacing */
-    z-index: 9999;     /* Make sure it appears on top of other elements */
-    width: fit-content;  /* Optional: Limit the width */
-    padding: 10px;     /* Optional: Add some padding */
+    position: fixed; 
+    top: 120px;        
+    right: 10px;       
+    z-index: 9999;     
+    width: fit-content;  
+    padding: 10px;     
 }
 
 .alert{
-    background-color: white;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    padding-right: 15px;
 }
+
 
 /* Details */
 .img-details {
@@ -584,6 +582,12 @@ a.btt-link:hover {
         margin-right: -10px !important;
         margin-left: auto;
     }
+
+    .logo {
+        height: 5rem;
+        width: 5rem;
+    }
+    
 
   }
 
