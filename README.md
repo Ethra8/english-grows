@@ -222,10 +222,10 @@ No critical errors were found whe passing the [W3C validator](https://jigsaw.w3.
 
 ## JS ES6
 No critical errors were found whe passing the validator [JShint](http://www.jshint.com)  
-- **stripe-elementss.js** :  
+- **checkout/static/checkout/js/stripe_elementss.js** :  
   ![image](https://github.com/user-attachments/assets/08cc8fd3-6fad-4f7c-993e-fa3ab76f9be9)
 
-- **quantity selector** :
+- **static/js/quantity_selector.js** :
   ![image](https://github.com/user-attachments/assets/f67fed89-1d45-4f2e-a343-4f05fb732e02)
 
 
