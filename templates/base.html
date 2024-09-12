@@ -4,16 +4,16 @@
 <html lang="en">
   <head>
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="teal">
-        <meta name="description"
-            content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering individual lesson packs and reduced group formats">
-        <meta name="keywords"
-            content="English, teaching, learning, learn, lessons, tutor, teacher, education, private, groups, online groups, e-learning, corporate, reduced, live">
-        <meta name="author" content="Edna Torres Munill">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="teal">
+    <meta name="description"
+        content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering individual lesson packs and reduced group formats">
+    <meta name="keywords"
+        content="English, teaching, learning, learn, lessons, tutor, teacher, education, private, groups, online groups, e-learning, corporate, reduced, live">
+    <meta name="author" content="Edna Torres Munill">
     {% endblock %}
 
     {% block extra_meta %}
@@ -59,14 +59,16 @@
   <body>
     
     <header class="container-fluid fixed-top w-100 p-0">
-      <div clas="row">
+      <!-- <div clas="row"> -->
         <div id="topnav" class="row pt-lg-2 d-none d-lg-flex m-0">
           <div class="col-12 col-sm-3 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a href="{% url 'home' %}" class="nav-link">
-              <img src="../../media/logo_englishgrows.png" alt="logo" class="logo ">
+            <!-- <a href="{% url 'home' %}" class="nav-link">
+              <img src="../media/logo_englishgrows.png" alt="logo" class="logo ">
+            </a> -->
+            <a href="{% url 'home' %}">
+              <img class="logo" src="{{ MEDIA_URL }}logo_englishgrows.png" alt="logo">
             </a>
           </div>
-
           <div class="col-12 col-md-9 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
               <li class="list-inline-item dropdown">
@@ -141,8 +143,6 @@
 
     {% block postloadjs %}
     {% endblock %}
-
-
 
   </body>
 </html>
