@@ -81,18 +81,16 @@ Any individual person wanting to improve their level of English tfor one of the 
   5. All users can subscribe to the monthly newsletter.
   6. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
 
-## User Stories
-### As a first-time visitor:   
-* I want to check all the services available, depending on whether I'm a company or an individual buyer.
-* I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
-* I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
-* I want to know if the site has an interesting newsletter.
-* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
+## USER STORIES
 
-### As a returning visitor  
-* I want to subscribe to the monthly newsletter to receive information about interesting cultural events, social and historic facts related to the English Commonwhealth countries.
-* I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
+### As a visitor 
+* FUTURE IMPLEMENTATION:I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
 * I want to easily sign up for an account, after a conscient decision, to buy some services.
+* I want to check all the services available, depending on whether I'm a company or an individual buyer.
+* FUTURE IMPLEMENTATION: I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
+* FUTURE IMPLEMENTATION: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
+* FUTURE IMPLEMENTATION: I want to know if the site has an interesting newsletter.
+* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
 
 ### As User  
 * I want to be able to easily register for an account, so that I can have a personal account and view my personal profile.
@@ -100,7 +98,8 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to be able to easily login and logout, so that I can access my personal account information.
 * I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
 * I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
-* I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
+* FUTURE IMPLEMENTATION: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
+
 
 ### As Shopper
 #### Viewing and Navigation
