@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = False #'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
@@ -131,18 +131,18 @@ WSGI_APPLICATION = 'english_grows.wsgi.application'
 
 
 # for PostgreeSQL Database (for deployment in Heroku):
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
-    # if we're using IDE Gitpod (sqlite3)
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+# if 'DATABASE_URL' in os.environ:
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
+# else:
+#     # if we're using IDE Gitpod (sqlite3)
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         }
+#     }
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -176,38 +176,38 @@ DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
 
 
-if 'USE_AWS' in os.environ:
+# if 'USE_AWS' in os.environ:
 # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000'
-    }
+AWS_S3_OBJECT_PARAMETERS = {
+    'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000'
+}
 
-    # Bucket config
-    AWS_STORAGE_BUCKET_NAME = 'english-grows1'
-    AWS_S3_REGION_NAME = 'eu-west-3'
-    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+# Bucket config
+AWS_STORAGE_BUCKET_NAME = 'english-grows1'
+AWS_S3_REGION_NAME = 'eu-west-3'
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-    # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
+# Static and media files
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+STATICFILES_LOCATION = 'static'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+MEDIAFILES_LOCATION = 'media'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
 
-    STORAGES = {
-    "default": {"BACKEND": "custom_storages.MediaStorage"},
-    "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
-    }
-else:
-    # Static files (CSS, JavaScript, Images)
-    # https://docs.djangoproject.com/en/3.2/howto/static-files/
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STORAGES = {
+"default": {"BACKEND": "custom_storages.MediaStorage"},
+"staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
+}
+# else:
+#     # Static files (CSS, JavaScript, Images)
+#     # https://docs.djangoproject.com/en/3.2/howto/static-files/
+#     STATIC_URL = '/static/'
+#     STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+#     MEDIA_URL = '/media/'
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
