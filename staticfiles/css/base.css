@@ -85,8 +85,9 @@ a.text-white:hover {
 .logo {
     margin-top: 0;
     padding-top: 0;
-    height: 6.5rem;
-    width: 6.5rem;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 3rem;
 }
 
 .icon-nav {
@@ -342,7 +343,7 @@ a.text-white:hover {
     min-height: 60px;
 }
 
-.card-body p {
+.card-body > p {
     font-size: 1.2rem;
     padding: 5px 35px;,
 }
