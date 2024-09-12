@@ -100,7 +100,6 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
 * FUTURE IMPLEMENTATION: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
 
-
 ### As Shopper
 #### Viewing and Navigation
 * I want to easily sign up for an account, after a conscient decision, to buy some services.
@@ -112,6 +111,8 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
 * I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
 * I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
+
+### [USER STORIES PROJECT](https://github.com/users/Ethra8/projects/7)
 
 
 # DESIGN CHOICES
