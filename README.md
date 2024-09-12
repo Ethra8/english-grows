@@ -30,6 +30,8 @@ EDNA TORRES MUNILL
     * [Project Goals](#project-goal)
     * [User Stories](#user-stories)
     * [User Profiles](#user-profiles)
+ - [AGILE DEVELOPMENT](#agile-development)
+ - [DESIGN CHOICES](#design-choices)
  - [FEATURES](#features)
     * [Navbar](#navbar)
     * [User Authentication](#user-authentication)
@@ -41,6 +43,7 @@ EDNA TORRES MUNILL
     * [404 Error Page](#404-error-page)
     * [SEO](#seo)
     * [Admin Console](#admin-console)
+ 
  - [TESTING](#testing)
    * [Defect Tracking](#defect-tracking)
      - [Github Issues](#github-issues)
@@ -51,6 +54,12 @@ EDNA TORRES MUNILL
    * [Accessibility](#accessibility)
     - [Contrast Validation Reports](#contrast-validation-reports)
     - [General WCAG 2.1 Report](#general-wcag-2.1-report)
+- [TECHNOLOGIES USED](#technologies-used)
+   * [Languages](#languages)
+   * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+ -[CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
+
+
 
 # UX
 You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site. 
@@ -74,18 +83,16 @@ Any individual person wanting to improve their level of English tfor one of the 
   5. All users can subscribe to the monthly newsletter.
   6. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
 
-## User Stories
-### As a first-time visitor:   
-* I want to check all the services available, depending on whether I'm a company or an individual buyer.
-* I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
-* I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
-* I want to know if the site has an interesting newsletter.
-* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
+## USER STORIES
 
-### As a returning visitor  
-* I want to subscribe to the monthly newsletter to receive information about interesting cultural events, social and historic facts related to the English Commonwhealth countries.
-* I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
+### As a visitor 
+* FUTURE IMPLEMENTATION:I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
 * I want to easily sign up for an account, after a conscient decision, to buy some services.
+* I want to check all the services available, depending on whether I'm a company or an individual buyer.
+* FUTURE IMPLEMENTATION: I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
+* FUTURE IMPLEMENTATION: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
+* FUTURE IMPLEMENTATION: I want to know if the site has an interesting newsletter.
+* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
 
 ### As User  
 * I want to be able to easily register for an account, so that I can have a personal account and view my personal profile.
@@ -93,7 +100,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to be able to easily login and logout, so that I can access my personal account information.
 * I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
 * I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
-* I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
+* FUTURE IMPLEMENTATION: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
 
 ### As Shopper
 #### Viewing and Navigation
@@ -106,6 +113,16 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
 * I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
 * I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
+
+### AGILE DEVELOPMENT
+As part of the Agile development method, user stories have been created and implemented one at a time. Future features will be created, and the *not now* column has been emptied as per learning purposes.
+[Kanba Project](https://github.com/users/Ethra8/projects/7)
+
+
+# DESIGN CHOICES
+The design of this site is thought to inspire professionality, trust, and the dark tones of blues provide foster a state of relaxation, of wellbeeing. Thi is the palette used, contrasting with white font:
+
+![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)
 
 
 # FEATURES
@@ -149,7 +166,6 @@ https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98
 The search bar is on the ***for you*** service page:
 
 
-
 ## Shopping Bag
 Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the follwoing videos and screen captures to see all these features in action.
 https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
@@ -158,11 +174,7 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
 
 ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
 
-
-
 https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
-
-
 
 
 ## Online Payments - STRIPE API  
@@ -193,18 +205,26 @@ The admin console reflects most of the models present in this site, and features
 - AUTHENTICATION AND AUTHORIZATION
   * These also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them.
  
-# STRUCTURE
+# STRUCTURE & 
 The site has been built using Django 5.1 in Python 3.12, and has the following structure:
 - The site contains four ***django apps*** (bag, checkout, home, individual_services) with several models.
 - You can check the code for further detail, and check the ***requirements.txt*** to know all the modules and their correspondent versions.
 
 # TESTING  
-The following tests have been run for this project:  
+## DEFECT TRACKING
+
+### GITHUB ISSUES
+All issues have been solved, and closed in Github by the creator of this site.
+## DEFECTS OF NOTE
+No defects of note have been detencted on this site.
+## OUTSTANDING DEFECTS
+No outstanding defects have been detected in this site.
 
 ## GENERAL PERFORMANCE
+The following tests have been run for this project:  
 ## Lighthouse Report  
 **To improve my first report, the following actions have been taken:**  
-- To improve the best practices, I have included a ***site.manifest***
+- Include a ***site.manifest***
 
 ### Tablet & Mobile Device
 
@@ -234,9 +254,10 @@ No critical errors were found whe passing the validator [JShint](http://www.jshi
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
 
 ### CONTRAST VALIDATION REPORTS
-All tests have passed at level AAA. The following reports have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php)
+Font and backgroud colors have passed at level AAA. The following reports have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php)
 
-![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374)
+![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374) ![image](https://github.com/user-attachments/assets/0502fbeb-d05e-4e57-843e-e883d2786fce)
+
 
 ### GENERAL WCAG 2.1 REPORT
 This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site.  
@@ -244,6 +265,32 @@ This website is compliant with all international standards, as proved after ***E
  ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)
 
 
+# TECHNOLOGIES USED
 
+## LANGUAGES
+- **Python 3.12**
+- **JS ES6**
+- **CSS3**
+- **HTML5**
+
+## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
+
+- The following have been used:
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to *requirements.py* on the root directory.
+  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
+  - [Remove.bg](https://www.remove.bg/) to remove background from logo image.
+  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
+  - [Font Awesome](https://fontawesome.com/) - For the icons used
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
+  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
+  - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
+  - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+ 
+# CREDITS & ACKNOWEDGEMENTS
+- All the images are free copyright, and have been taken from [Pexels.com].
+- I have researched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
+- I have found inspiration and revieved material from Code Institute Full Stack Web development course.
 
 
