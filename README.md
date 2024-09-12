@@ -43,7 +43,6 @@ EDNA TORRES MUNILL
     * [404 Error Page](#404-error-page)
     * [SEO](#seo)
     * [Admin Console](#admin-console)
- 
  - [TESTING](#testing)
    * [Defect Tracking](#defect-tracking)
      - [Github Issues](#github-issues)
@@ -52,8 +51,8 @@ EDNA TORRES MUNILL
    * [Core Web Vitals](#core-web-vitals)
      - [Lighthouse Reports](#lighthouse-reports)
    * [Accessibility](#accessibility)
-    - [Contrast Validation Reports](#contrast-validation-reports)
-    - [General WCAG 2.1 Report](#general-wcag-2.1-report)
+     - [Contrast Validation Reports](#contrast-validation-reports)
+     - [General WCAG 2.1 Report](#general-wcag-2.1-report)
 - [TECHNOLOGIES USED](#technologies-used)
    * [Languages](#languages)
    * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
