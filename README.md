@@ -35,6 +35,7 @@ EDNA TORRES MUNILL
     * [User Authentication](#user-authentication)
     * [Contact Form](#contact-form)
     * [Service Sorting](#service-sorting)
+    * [Search Bar](#search-bar)
     * [Shopping Bag](#shopping-bag)
     * [Online Payments - Stripe API](#online-payments---stripe)
     * [404 Error Page](#404-error-page)
@@ -100,7 +101,11 @@ Any individual person wanting to improve their level of English tfor one of the 
 
 
 # FEATURES
+
 ## Navbar
+There are two navigation bars and both are responsive:
+- The first, ***topnav*** has a dark blue ***#003366*** color, and is fixed on top of every single page of the site. It has three icons with links: logo(to home), user, bag.
+- The second nav is on the individual services page, accessed through "For You" button on the home page. It has a search bar to search to seach whithin all the services for specific words.
 
 https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
 
@@ -135,12 +140,24 @@ https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa
 
 https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
 
+##Search Bar
+The search bar is on the ***for you*** service page:
+
+
+
 ## Shopping Bag
+Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the follwoing videos and screen captures to see all these features in action.
 https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
 
 ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
 
 ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
+
+
+
+https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
+
+
 
 
 ## Online Payments - STRIPE API  
