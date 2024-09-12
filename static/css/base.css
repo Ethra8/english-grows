@@ -44,7 +44,6 @@ textarea {
     padding: 25px 15px;
     border-radius: 25px;
     margin-bottom: 36px;
-    /* margin-right: -30px !important; */
     width: inherit;
     max-width: 500px;
 }
@@ -346,16 +345,12 @@ a.text-white:hover {
 
 .card-body p {
     font-size: 1.2rem;
-    padding: 5px 35px;,
+    padding: 5px 35px;
 }
 
 .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    /* max-height: 220px;
-    min-height: fit-content;
-    min-width: fit-content;
-    max-width: fit-content; */
 }
 
 .service-name {
@@ -440,8 +435,8 @@ a.btt-link:hover {
 }
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #555; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #555;
 }
 
 .allauth-form-inner-content input:not([type='checkbox']) {
@@ -478,7 +473,6 @@ a.btt-link:hover {
     border-radius: 25px;
     padding: 5px 25px;
     margin: 10px 0 20px;
-
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -588,7 +582,6 @@ a.btt-link:hover {
         width: 5rem;
     }
     
-
   }
 
 

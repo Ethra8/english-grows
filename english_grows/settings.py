@@ -28,6 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
+
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-f7r44xpk31a.ws.codeinstitute-ide.net']
@@ -173,17 +174,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
-    MEDIA_URL = os.environ.get('MEDIA_URL')
 # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 dec 2099 20:00:00 GMT',
@@ -208,7 +201,13 @@ if 'USE_AWS' in os.environ:
     "default": {"BACKEND": "custom_storages.MediaStorage"},
     "staticfiles": {"BACKEND": "custom_storages.StaticStorage"},
     }
-
+else:
+    # Static files (CSS, JavaScript, Images)
+    # https://docs.djangoproject.com/en/3.2/howto/static-files/
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Stripe
 STRIPE_CURRENCY = 'usd'
