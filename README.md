@@ -30,6 +30,7 @@ EDNA TORRES MUNILL
     * [Project Goals](#project-goal)
     * [User Stories](#user-stories)
     * [User Profiles](#user-profiles)
+ - [AGILE DEVELOPMENT](#agile-development)
  - [DESIGN CHOICES](#design-choices)
  - [FEATURES](#features)
     * [Navbar](#navbar)
@@ -56,6 +57,7 @@ EDNA TORRES MUNILL
 - [TECHNOLOGIES USED](#technologies-used)
    * [Languages](#languages)
    * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+ -[CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
 
@@ -112,7 +114,9 @@ Any individual person wanting to improve their level of English tfor one of the 
 * I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
 * I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
 
-### [USER STORIES PROJECT](https://github.com/users/Ethra8/projects/7)
+### AGILE DEVELOPMENT
+As part of the Agile development method, user stories have been created and implemented one at a time. Future features will be created, and the *not now* column has been emptied as per learning purposes.
+[Kanba Project](https://github.com/users/Ethra8/projects/7)
 
 
 # DESIGN CHOICES
@@ -284,6 +288,9 @@ This website is compliant with all international standards, as proved after ***E
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
  
-# CREDITS
-All the images have been taken from [Pexels.com]:
+# CREDITS & ACKNOWEDGEMENTS
+- All the images are free copyright, and have been taken from [Pexels.com].
+- I have researched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
+- I have found inspiration and revieved material from Code Institute Full Stack Web development course.
+
 
