@@ -153,7 +153,7 @@ https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
 ## SEO
-I have included the following meta tags and info:  
+The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and info:  
 ```$python
 <meta name="theme-color" content="teal">
 <meta name="description" content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering     
