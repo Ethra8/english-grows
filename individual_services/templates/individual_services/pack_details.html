@@ -37,7 +37,7 @@
                 
                 {% if service.type %}
                 <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'individual_services' %}/?type={{ service.type.name }}">
+                    <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}">
                     {% if service.type.name == "individuals_private" or service.type.name == "individuals_groups" %}
                         <i class="fas fa-desktop mr-1"></i>
                     {% else %}

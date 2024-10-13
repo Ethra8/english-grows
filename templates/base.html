@@ -136,6 +136,18 @@
     {% block content %}
     {% endblock %}
 
+    <footer class="footer d-flex flex-column justify-content-center h-25">
+      <p class="m-0 text-center text-grey">
+      {% block copyright %}2024 EdnaTM{% endblock copyright %}
+      </p>
+      <p class="m-0 mt-1 text-center">
+          <a href="https://www.facebook.com" target= "_blank" aria-label="go to facebook site"><i class="fab fa-facebook-square icons-social"></i></a>
+          <a href="https://www.twitter.com" target= "_blank" aria-label="go to twitter site"><i class="fab fa-twitter-square ms-3 icons-social"></i></a>
+          <a href="https://www.instagram.com" target= "_blank" aria-label="go to instagram site"><i class="fab fa-instagram-square ms-3 icons-social"></i></a>
+          <a href="https://www.youtube.com" target= "_blank" aria-label="go to youtube site"><i class="fab fa-youtube-square ms-3 icons-social"></i></a>
+      </p>
+    </footer>
+
     {% block postloadjs %}
     {% endblock %}
 

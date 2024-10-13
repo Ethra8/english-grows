@@ -111,6 +111,19 @@ a.text-white:hover {
 }
 
 
+/* Footer */
+
+.footer {
+    background-color: #003366;
+    height: 100% !important;
+    max-height: 100px !important;
+}
+
+
+.icons-social {
+    color: #c1f7e3;
+}
+
 /* style searchbar */
 
 .fa-search {
