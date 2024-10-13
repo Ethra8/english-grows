@@ -53,6 +53,7 @@ EDNA TORRES MUNILL
    * [Accessibility](#accessibility)
      - [Contrast Validation Reports](#contrast-validation-reports)
      - [General WCAG 2.1 Report](#general-wcag-2.1-report)
+   * [Manual Testing](#manual-testing)
 - [TECHNOLOGIES USED](#technologies-used)
    * [Languages](#languages)
    * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
@@ -73,7 +74,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 * Travel
 * Careers
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
-
+  
 ## Project Goal
   1. The site aims at providing B2B and B2C users with services they can buy: live online lessons in individual or reduced groups format.
   2. All users can register for an account.
@@ -82,39 +83,45 @@ Any individual person wanting to improve their level of English tfor one of the 
   5. All users can subscribe to the monthly newsletter.
   6. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
 
+  
 ## USER STORIES
+  
+### As a first-time visitor 
+#### B2C and B2B
+1. [ ] MUST HAVE: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
+2. [ ] COULD HAVE: I want to check a FAQS section to find relevant information on the services provided, benefits to creating an account (e.g.: free on-demmand material, newsletter), etc.
+  
+#### B2C
+3. [X] MUST HAVE: I want to check all the services available.
+4. [X] MUST HAVE: I want to sort the services by categories, or by price, and also be able to view only one specific category of services.
+   
+#### B2B
+5. [X] MUST HAVE: I want to contact the site to receive a customized training plan and quote.
+   
+### As a Returning Visitor
+6. [ ] COULD HAVE: I want to subscribe to the newsletter to be informed about special offers, new courses or features.
+7. [X] I want to be able to easily register for an account, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
 
-### As a visitor 
-* FUTURE IMPLEMENTATION:I want to sign up for an account after a conscient decision, to check the free on-demmand materials.
-* I want to easily sign up for an account, after a conscient decision, to buy some services.
-* I want to check all the services available, depending on whether I'm a company or an individual buyer.
-* FUTURE IMPLEMENTATION: I want to have relevant information on the services provided, and therefore check the FAQS section to resolve main doubts before buying.
-* FUTURE IMPLEMENTATION: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
-* FUTURE IMPLEMENTATION: I want to know if the site has an interesting newsletter.
-* I want to know if there are some benefits to creating an account (e.g.: free on-demmand material).
-
-### As User  
-* I want to be able to easily register for an account, so that I can have a personal account and view my personal profile.
-* I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
-* I want to be able to easily login and logout, so that I can access my personal account information.
-* I want to be able to receive an email confirmation after registering, so that I can verify that my account registration was successful.
-* I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
-* FUTURE IMPLEMENTATION: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations, and save my billing information.
-
-### As Shopper
+### As an Authenticated User  
+8. [X] I want to be able to easily login and logout, so that I can access my personal account information.
+9. [X] I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
+10. [ ] MUST HAVE: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations.
+11. [ ] MUST HAVE: I want to be able to update and save my billing information on my user profile.
+  
 #### Viewing and Navigation
-* I want to easily sign up for an account, after a conscient decision, to buy some services.
-* I want to view a list of services, so that I can easily choose what service suits me best.
-* I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
-* I want to be able to view individual service details, so that I can identify the price and description.
-* I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+* [ ] I want to view a list of services, so that I can easily choose what service suits me best.
+* [ ] I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
+* [ ] I want to be able to view individual service details, so that I can identify the price and description.
+* [ ] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+    
 #### Sorting and Searching
-* I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
-* I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
-* I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
+* [ ] I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
+* [ ] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
+* [ ] I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
 
+  
 ### AGILE DEVELOPMENT
-As part of the Agile development method, user stories have been created and implemented one at a time. Future features will be created, and the *not now* column has been emptied as per learning purposes.
+As part of the Agile development method, user stories have been created and implemented one at a time. Future features will be created following the *'Could Have'* and *'Won't Have/Wish'* labels on the [stories](#user).
 [Kanba Project](https://github.com/users/Ethra8/projects/7)
 
 
@@ -246,9 +253,9 @@ No critical errors were found whe passing the validator [JShint](http://www.jshi
 
 - **static/js/quantity_selector.js** :
   ![image](https://github.com/user-attachments/assets/f67fed89-1d45-4f2e-a343-4f05fb732e02)
-
-
-
+  
+  
+   
 ## ACCESSIBILITY
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
 
@@ -262,6 +269,25 @@ Font and backgroud colors have passed at level AAA. The following reports have b
 This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site.  
 
  ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)
+
+
+## MANUAL TESTING
+### USER ACCOUNT
+1. Registration process completed:
+   * Form is posted to the databse reflected in the admin, as user is created.
+   * User receives verification email  
+     
+     ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)  
+
+   * Verification url works as expected
+    
+     
+  
+   * Once user clicks on 'verify', he is redirected to home page, already logged in.
+1. Password Reset / forgotten
+   * After user clicks on 'forgotten password", user inputs the account email, and receives an email with link to restore password.
+
+     ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
 
 
 # TECHNOLOGIES USED
