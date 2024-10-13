@@ -285,11 +285,15 @@ This website is compliant with all international standards, as proved after ***E
   
    * Once user clicks on 'verify', he is redirected to home page, already logged in.
 1. Password Reset / forgotten
-   * After user clicks on 'forgotten password", user inputs the account email, and receives an email with link to restore password.
-
+   * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:
+     
+     ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)
+     
+   * User receives an email with link to restore password.
+     
      ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
-
-
+     
+     
 # TECHNOLOGIES USED
 
 ## LANGUAGES
