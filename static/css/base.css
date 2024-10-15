@@ -26,9 +26,13 @@ textarea {
     width: 100%;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .main-bg {
     margin: 120px 0 70px;
-    /* padding-top: 120px; */
     flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
     min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
 }
@@ -607,6 +611,11 @@ a.btt-link:hover {
 
     #index {
         padding: 60px 30px !important;
+    }
+
+    .col-9 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
     }
 
     .font-xs-small {
