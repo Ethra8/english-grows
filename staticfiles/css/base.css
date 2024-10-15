@@ -74,9 +74,9 @@ textarea {
     display: none;
 }
 
-/* .navbar {
+.navbar {
     padding: .5rem 0 !important;
-} */
+}
 
 .navbar-dark {
     padding-left: 0;
