@@ -26,11 +26,15 @@ textarea {
     width: 100%;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .main-bg {
     margin: 120px 0 70px;
-    /* padding-top: 120px; */
     flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
-    min-height: calc(100vh - 244px) !important; /* nav + main nav + footer height */
+    min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
 }
 
 #index {
@@ -39,7 +43,8 @@ textarea {
 
 #topnav {
     background-color: #003366;
-    max-height: 126px;  
+    max-height: 126px;
+    width: 100%;
 }
 
 #main-nav {
@@ -69,9 +74,9 @@ textarea {
     display: none;
 }
 
-.navbar {
+/* .navbar {
     padding: .5rem 0 !important;
-}
+} */
 
 .navbar-dark {
     padding-left: 0;
@@ -134,6 +139,7 @@ a.text-white:hover {
     background-color: #003366;
     width: 100%;
     padding: 17px;
+    /* margin-right: 22px */
     /* height: 80px !important; */
 }
 
@@ -593,6 +599,12 @@ a.btt-link:hover {
         z-index: 9999;
     }
 
+    .logo {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 3rem;
+    }
+
     
 }
 
@@ -607,6 +619,11 @@ a.btt-link:hover {
         padding: 60px 30px !important;
     }
 
+    .col-9 {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
     .font-xs-small {
       font-size: 2.5rem;
     }
@@ -616,11 +633,6 @@ a.btt-link:hover {
         margin-left: auto;
     }
 
-    .logo {
-        height: 5rem;
-        width: 5rem;
-        margin-left: 3rem;
-    }
     
   }
 

@@ -76,11 +76,11 @@
                             <div class="card h-100">
                                 {% if service.image %}
                                 <a href="{% url 'pack_details' service.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}{{service.image}}" alt="{{ service.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'pack_details' service.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
+                                    <img class="card-img-top img-fluid" src="https:/{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
