@@ -377,7 +377,7 @@ a.text-white:hover {
 .card-footer  {
     border-radius: 20px !important;
     border: inset 3px teal;
-    min-width: fit-content;
+    /* min-width: fit-content; */
 }
 
 .card-body {
@@ -599,13 +599,15 @@ a.btt-link:hover {
         z-index: 9999;
     }
 
+}
+
+
+@media (max-width: 991px) {
     .logo {
         height: 5rem;
         width: 5rem;
         margin-left: 3rem;
     }
-
-    
 }
 
 
