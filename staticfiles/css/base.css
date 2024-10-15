@@ -1,14 +1,16 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
     background: url('/media/bg_4.png') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: "Montserrat", sans-serif;
-    padding:30px;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;  
 }
 
 h4 {
@@ -24,17 +26,25 @@ textarea {
     width: 100%;
 }
 
+.main-bg {
+    margin: 120px 0 70px;
+    /* padding-top: 120px; */
+    flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
+    min-height: calc(100vh - 244px) !important; /* nav + main nav + footer height */
+}
+
 #index {
     background: url('/media/birds_3.png') top -120px right -200px fixed;
 }
 
 #topnav {
-    background-color: #003366;    
+    background-color: #003366;
+    max-height: 126px;  
 }
 
 #main-nav {
     background-color: teal;
-    margin-right: -22px !important;
+    /* margin-right: -22px !important; */
     padding: 10px 0;
 }
 
@@ -44,7 +54,8 @@ textarea {
     padding: 25px 15px;
     border-radius: 25px;
     margin-bottom: 36px;
-    margin-right: -30px !important;
+    width: inherit;
+    max-width: 500px;
 }
 
 .justify-content-space-evenly {
@@ -52,8 +63,14 @@ textarea {
   }
 
 .header-container {
-    padding-top: 144px;
-    z-index: 1;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    height: calc(100vh - 206px);
+    display: none;
+}
+
+.navbar {
+    padding: .5rem 0 !important;
 }
 
 .navbar-dark {
@@ -85,9 +102,8 @@ a.text-white:hover {
 .logo {
     margin-top: 0;
     padding-top: 0;
-    height: 5rem;
-    width: 5rem;
-    margin-left: 3rem;
+    height: 6.5rem;
+    width: 6.5rem;
 }
 
 .icon-nav {
@@ -114,17 +130,26 @@ a.text-white:hover {
 /* Footer */
 
 .footer {
+    bottom: 0;
     background-color: #003366;
-    height: 100% !important;
-    max-height: 100px !important;
+    width: 100%;
+    padding: 17px;
+    /* height: 80px !important; */
 }
 
 
 .icons-social {
     color: #c1f7e3;
+    font-size: 1.5rem;
+    padding: 15px;
+    transition: all 0.15s linear;
 }
 
-
+.icons-social:hover {
+    color: white; 
+    transform: scale(1.2);
+    rotate: 4deg;
+}
 
 /* style searchbar */
 
@@ -310,14 +335,13 @@ a.text-white:hover {
 
 .overlay2 {
 	height: 100%;
-	width: 80%;
+	width: 100%;
 	top: 0;
 	left: 0;
 	position: fixed;
     background: rgba(255,235,235,0.8);
     background-size: cover;
 	z-index: -1;
-    left: 0;
 }
 
 .clean-link {
@@ -358,18 +382,14 @@ a.text-white:hover {
     min-height: 60px;
 }
 
-.card-body>p {
+.card-body > p {
     font-size: 1.2rem;
-    padding: 5px 35px;,
+    padding: 5px 35px;
 }
 
 .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    /* max-height: 220px;
-    min-height: fit-content;
-    min-width: fit-content;
-    max-width: fit-content; */
 }
 
 .service-name {
@@ -415,25 +435,23 @@ a.btt-link:hover {
     font-weight: bold;
 }
 
-/* a.type-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-} */
-
-
 /* Django Messages */
 .messages {
-    position: fixed;  
+    position: fixed; 
     top: 120px;        
-    right: 10px;      
+    right: 10px;       
     z-index: 9999;     
-    max-width: 300px;  
+    width: fit-content;  
     padding: 10px;     
 }
 
 .alert{
-    background-color: white;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    padding-right: 15px;
 }
+
 
 /* Details */
 .img-details {
@@ -456,8 +474,8 @@ a.btt-link:hover {
 }
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #555; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #555;
 }
 
 .allauth-form-inner-content input:not([type='checkbox']) {
@@ -494,7 +512,6 @@ a.btt-link:hover {
     border-radius: 25px;
     padding: 5px 25px;
     margin: 10px 0 20px;
-
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -516,14 +533,15 @@ a.btt-link:hover {
     font-weight: 600;
 }
 
-/* Stripe styles */
+/* Stripe */
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
   height: 40px;
   padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 0px;
+  border: 1px solid gray;
+  border-radius: 25px;
   background-color: white;
   box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
@@ -554,8 +572,6 @@ a.btt-link:hover {
     color: #000;
     border: 1px solid #000;
 }
-
-
 
 /* -------------------------------- Media Queries */
 
@@ -600,13 +616,13 @@ a.btt-link:hover {
         margin-left: auto;
     }
 
+    .logo {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 3rem;
+    }
+    
   }
 
 
-@media (max-width: 450px) {
-    .header-container {
-        padding-top: 250px;
-    }
-    
-}
 
