@@ -87,8 +87,8 @@ textarea {
 }
 
 .navbar-expand-lg {
-    margin-left: -20px !important;
     width: 100% !important;
+    padding-bottom: 0; 
 }
 
 .nav-item {
