@@ -37,6 +37,10 @@ textarea {
     min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
 }
 
+.main-bg .col-9 {
+    padding-left: 0;
+}
+
 #index {
     background: url('/media/birds_3.png') top -120px right -200px fixed;
 }
