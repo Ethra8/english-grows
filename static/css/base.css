@@ -79,7 +79,7 @@ textarea {
 }
 
 .navbar {
-    padding: .5rem 0 !important;
+    padding: .5rem 1rem !important;
 }
 
 .navbar-dark {
@@ -610,7 +610,7 @@ a.btt-link:hover {
     .logo {
         height: 5rem;
         width: 5rem;
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
 }
 
