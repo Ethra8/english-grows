@@ -4,6 +4,8 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
+from profiles.models import UserProfile
+
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 
@@ -33,6 +35,16 @@ def cache_checkout_data(request):
 
 
 
+from django.shortcuts import render, redirect, reverse
+from django.conf import settings
+from django.contrib import messages
+from .models import Order, OrderLineItem
+from profiles.models import UserProfile
+from individual_services.models import IndivService
+from .forms import OrderForm
+import stripe
+import json
+
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -47,15 +59,26 @@ def checkout(request):
         
         order_form = OrderForm(form_data)
         if order_form.is_valid():
+            # Create the order but don't commit yet
             order = order_form.save(commit=False)
+
+            # Add the authenticated user profile to the order if the user is authenticated
+            if request.user.is_authenticated:
+                profile = UserProfile.objects.get(user=request.user)
+                order.user_profile = profile
+
+            # Add Stripe Payment ID and the original bag (JSON serialized)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.save()
+
+            # Add line items to the order
             for item_id, item_data in bag.items():
                 try:
                     service = IndivService.objects.get(id=item_id)
                     if isinstance(item_data, int):
+                        # Create the OrderLineItem
                         order_line_item = OrderLineItem(
                             order=order,
                             service=service,
@@ -67,16 +90,29 @@ def checkout(request):
                         "One of the services in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
-                    order.delete()
+                    order.delete()  # Delete the incomplete order
                     return redirect(reverse('view_bag'))
 
-            # Save the info to the user's profile if all is well
+            # After adding all line items, update the order totals
+            order.update_total()
+
+            # Change the order status to 'processing' and save the order again
+            order.status = 'processing'
+            order.save()
+
+            # Send the confirmation email
+            order.send_confirmation_email()
+
+            # Clear the session bag after the order is successfully processed
+            request.session['bag'] = {}
+
+            # Redirect to checkout success page
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             print(order_form.errors)
-            messages.error(request, 'There was an error with your form. \
-                Please double check your information.')
+            messages.error(request, 'There was an error with your form. Please double-check your information.')
 
+        # If form is invalid, render the checkout page again
         template = 'checkout/checkout.html'
         context = {
             'order_form': order_form,
@@ -102,8 +138,7 @@ def checkout(request):
         order_form = OrderForm()
 
         if not stripe_public_key:
-            messages.warning(request, 'Stripe public key is missing. \
-                Did you forget to set it in your environment?')
+            messages.warning(request, 'Stripe public key is missing. Did you forget to set it in your environment?')
 
         template = 'checkout/checkout.html'
         context = {
@@ -113,6 +148,8 @@ def checkout(request):
         }
 
         return render(request, template, context)
+
+
 
 
 

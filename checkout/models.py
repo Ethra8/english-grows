@@ -1,9 +1,10 @@
 import uuid
-
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-
+from django.core.mail import send_mail
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
 from django_countries.fields import CountryField
 
 from individual_services.models import IndivService
@@ -11,6 +12,12 @@ from profiles.models import UserProfile
 
 
 class Order(models.Model):
+    ORDER_STATUS_CHOICES = [
+        ('pending', 'Pending'),
+        ('processing', 'Processing'),
+        ('complete', 'Complete'),
+    ]
+
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -20,6 +27,7 @@ class Order(models.Model):
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    status = models.CharField(max_length=20, choices=ORDER_STATUS_CHOICES, default='pending')
 
     def _generate_order_number(self):
         """
@@ -27,61 +35,52 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
-    # def update_total(self):
-    #     """
-    #     Update grand total each time a line item is added,
-    #     accounting for delivery costs.
-    #     """
-    #     self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
-    #     self.grand_total = self.order_total
-    #     self.save()
-
-    # def save(self, *args, **kwargs):
-    #     """
-    #     Override the original save method to set the order number
-    #     if it hasn't been set already.
-    #     """
-    #         # self.update_total()
-    #         # if not self.order_number:
-    #         #     self.order_number = self._generate_order_number()
-    #         # super().save(*args, **kwargs)
-    #     if not self.pk:
-    #         super().save(*args, **kwargs)
-    #     if not self.order_number:
-    #         self.order_number = self._generate_order_number()
-    #     super().save(*args, **kwargs)
-    #     self.update_total()
-
     def update_total(self):
         """
         Update grand total each time a line item is added.
         """
         order_total_sum = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
-        print(f"Calculated order total: {order_total_sum}")
-        
         self.order_total = order_total_sum
         self.grand_total = self.order_total  # Adjust this if needed
-        print(f"Updated order_total: {self.order_total}, grand_total: {self.grand_total}")
 
-        # self.save()
-        print("Order saved with updated totals")
+    def send_confirmation_email(self):
+        """
+        Send order confirmation email to the user.
+        """
+        subject = f"Order Confirmation - {self.order_number}"
+        message = render_to_string('checkout/order_confirmation_email.html', {
+            'order': self,
+            'order_number': self.order_number,
+            'full_name': self.full_name,
+            'grand_total': self.grand_total,
+        })
+        plain_message = strip_tags(message)
+        from_email = settings.DEFAULT_FROM_EMAIL
+        to_email = self.email
+
+        send_mail(subject, plain_message, from_email, [to_email], html_message=message)
 
     def save(self, *args, **kwargs):
         """
         Override the original save method to set the order number
-        if it hasn't been set already.
+        if it hasn't been set already and update totals.
         """
-        
+        # Generate order number if this is a new order (no primary key yet)
         if not self.pk:
-            super().save(*args, **kwargs)
-        if not self.order_number:
             self.order_number = self._generate_order_number()
-        self.update_total(*args, **kwargs)
-        # self.save()
+
+        # Save the order first to ensure it's in the database
         super().save(*args, **kwargs)
 
+        # Update totals based on related line items
+        self.update_total()
+
+        # Save the updated totals
+        super().save(*args, **kwargs)
+
+        # Note: Do not send email or change status here!
+
     def __str__(self):
-        
         return self.order_number
 
 

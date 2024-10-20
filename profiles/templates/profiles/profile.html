@@ -46,6 +46,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            {% if orders %}
                             {% for order in orders %}
                             <tr>
                                 <td>
@@ -67,6 +68,9 @@
                                 <td>${{ order.grand_total }}</td>
                             </tr>
                             {% endfor %}
+                            {% else %}
+                                <p>No orders found.</p>
+                            {% endif %}
                         </tbody>
                     </table>
                 </div>
