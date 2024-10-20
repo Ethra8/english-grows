@@ -141,18 +141,22 @@ def checkout(request):
 @login_required
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    Handle successful checkouts.
+    Only the authenticated user who placed the order can view it.
     """
     # Fetch the order based on the order_number from the URL
     order = get_object_or_404(Order, order_number=order_number)
 
-    # Debugging: Print the user information for debugging purposes
     if order.user_profile:
-        print(f"Order user: {order.user_profile.user}")
-        print(f"Request user: {request.user}")
+        print(f"Order's user: {order.user_profile.user}")
+        print(f"Request's user: {request.user}")
+    else:
+        print("Order does not have a user profile.")
 
-    # Check if the order has an associated user_profile and the user is the owner
-    if order.user_profile and order.user_profile.user != request.user:
+
+    # Check if the current authenticated user is the owner of the order
+    # Ensure the order has an associated user_profile and the user is the owner
+    if not order.user_profile or order.user_profile.user != request.user:
         # If the user is not the owner, show an error message and redirect
         messages.error(request, "You do not have permission to view this order.")
         return redirect('home')
@@ -161,6 +165,7 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     grand_total = order.grand_total
 
+    # Save the order (if necessary)
     order.save()
 
     # Show success message

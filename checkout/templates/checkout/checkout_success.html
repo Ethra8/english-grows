@@ -17,10 +17,15 @@
                 <hr>
                 <h2 class="logo-font mb-4">Thank You</h2>
                 <hr>
-                <p class="text-black">Your order information is below. You will receive a confirmation email to <strong>{{ order.email }}</strong></p>
+                {% if request.user.is_authenticated and order.user_profile.user == request.user %}
+                    <p class="text-black">Your order information is below. You will receive a confirmation email to <strong>{{ order.email }}</strong></p>
+                {% else %}
+                    <p class="text-danger">You do not have permission to view this order.</p>
+                {% endif %}
             </div>
         </div>
 
+        {% if request.user.is_authenticated and order.user_profile.user == request.user %}
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
@@ -112,5 +117,6 @@
                 </div>
             </div>
         </div>
+        {% endif %}
     </div>
 {% endblock %}
