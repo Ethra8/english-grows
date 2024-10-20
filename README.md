@@ -89,35 +89,46 @@ Any individual person wanting to improve their level of English tfor one of the 
 ### As a first-time visitor 
 #### B2C and B2B
 1. [ ] MUST HAVE: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
-2. [ ] COULD HAVE: I want to check a FAQS section to find relevant information on the services provided, benefits to creating an account (e.g.: free on-demmand material, newsletter), etc.
+2. [ ] MUST HAVE: I want to check the about page, to be informed of the site's purpose.
+
+##### Viewing and Navigation
+3. [X] I want to view a list of services, so that I can easily choose what service suits me best.
+4. [X] I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
+5. [X] I want to be able to view individual service details, so that I can identify the price and description.
+6. [X] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+    
+##### Sorting and Searching
+7. [X] I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
+8. [X] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
+9. [X] I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
   
 #### B2C
-3. [X] MUST HAVE: I want to check all the services available.
-4. [X] MUST HAVE: I want to sort the services by categories, or by price, and also be able to view only one specific category of services.
+10. [X] MUST HAVE: I want to check all the services available.
+11. [X] MUST HAVE: I want to sort the services by categories, or by price, and also be able to view only one specific category of services.
    
 #### B2B
-5. [X] MUST HAVE: I want to contact the site to receive a customized training plan and quote.
+12. [X] MUST HAVE: I want to contact the site to receive a customized training plan and quote.
    
 ### As a Returning Visitor
-6. [ ] COULD HAVE: I want to subscribe to the newsletter to be informed about special offers, new courses or features.
-7. [X] I want to be able to easily register for an account, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
+13. [ ] COULD HAVE: I want to subscribe to the newsletter to be informed about special offers, new courses or features.
+14. [X] I want to be able to easily register for an account, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
 
 ### As an Authenticated User  
-8. [X] I want to be able to easily login and logout, so that I can access my personal account information.
-9. [X] I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
-10. [ ] MUST HAVE: I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations.
-11. [ ] MUST HAVE: I want to be able to update and save my billing information on my user profile.
+15. [X] I want to be able to easily login and logout, so that I can access my personal account information.
+16. [X] I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
+17. [X] MUST HAVE: I want to be able to update and save my billing information on my user profile.
   
-#### Viewing and Navigation
-* [ ] I want to view a list of services, so that I can easily choose what service suits me best.
-* [ ] I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
-* [ ] I want to be able to view individual service details, so that I can identify the price and description.
-* [ ] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
-    
-#### Sorting and Searching
-* [ ] I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
-* [ ] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
-* [ ] I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
+### As a Shopper
+18. [X] I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations.
+19. [X] I want to receive a confirmation email after a purchase, with the details of my order.
+
+  
+### As a Site Owner or Admin User:
+* [X] I want to be able to view orders by users, so that I can easily check the orders related to a specific user.
+* [X] Each order is automatically linked to the authenticated user making it.
+* [X] I want to be able to store data in admin from contact forms that are sent, so that I can easily rewiew requests from users, and have their contact emails, name, company name, and request secured
+
+
 
   
 ### AGILE DEVELOPMENT
