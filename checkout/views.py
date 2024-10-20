@@ -10,8 +10,7 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 
 from individual_services.models import IndivService
-# from profiles.models import UserProfile
-# from profiles.forms import UserProfileForm
+
 from bag.contexts import bag_contents
 
 import stripe
@@ -33,17 +32,6 @@ def cache_checkout_data(request):
             processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
-
-
-from django.shortcuts import render, redirect, reverse
-from django.conf import settings
-from django.contrib import messages
-from .models import Order, OrderLineItem
-from profiles.models import UserProfile
-from individual_services.models import IndivService
-from .forms import OrderForm
-import stripe
-import json
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -148,9 +136,6 @@ def checkout(request):
         }
 
         return render(request, template, context)
-
-
-
 
 
 

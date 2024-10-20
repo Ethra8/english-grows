@@ -27,7 +27,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEVELOPMENT", "False") == "True"
-print('DEBUG: ', DEBUG)
 
 
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
