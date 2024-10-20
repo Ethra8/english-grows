@@ -299,18 +299,15 @@ This website is compliant with all international standards, as proved after ***E
 
 ## MANUAL TESTING
 ### USER ACCOUNT
-1. Registration process completed:
+1. [X] Registration process completed:
    * Form is posted to the databse reflected in the admin, as user is created.
    * User receives verification email  
      
      ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)  
 
    * Verification url works as expected
-    
-     
-  
    * Once user clicks on 'verify', he is redirected to home page, already logged in.
-1. Password Reset / forgotten
+2. [X] Password Reset / forgotten
    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:
      
      ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)
@@ -318,7 +315,17 @@ This website is compliant with all international standards, as proved after ***E
    * User receives an email with link to restore password.
      
      ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
-     
+
+### CHECKOUT PROCESS
+1. User includes service in bag
+2. User can Update service item quantity in bag
+3. User can Delete service item from bag
+4. User can easily access the checkout page and proceed to checkout
+5. User views his order confirmation on the screen
+6. Order is successfully accessible on the user profile
+7. Order confirmation email is sent to the user with the order details  
+   ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)
+
      
 # TECHNOLOGIES USED
 
