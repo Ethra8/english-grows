@@ -13,10 +13,7 @@ class UserProfileForm(forms.ModelForm):
         labels, and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
-        # Debugging: print choices for CountryField
-        # Debugging: check if CountryField is correctly populated
-        print("CountryField choices:", list(self.fields['default_country'].choices))
-        
+
         placeholders = {
             'default_full_name': 'Full Name',
             'default_email': 'Email',
