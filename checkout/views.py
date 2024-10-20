@@ -146,7 +146,12 @@ def checkout_success(request, order_number):
     # Fetch the order based on the order_number from the URL
     order = get_object_or_404(Order, order_number=order_number)
 
-    # Check if the current authenticated user is the owner of the order
+    # Debugging: Print the user information for debugging purposes
+    if order.user_profile:
+        print(f"Order user: {order.user_profile.user}")
+        print(f"Request user: {request.user}")
+
+    # Check if the order has an associated user_profile and the user is the owner
     if order.user_profile and order.user_profile.user != request.user:
         # If the user is not the owner, show an error message and redirect
         messages.error(request, "You do not have permission to view this order.")
@@ -157,7 +162,6 @@ def checkout_success(request, order_number):
     grand_total = order.grand_total
 
     order.save()
-    print(grand_total)
 
     # Show success message
     messages.success(request, f'Order successfully processed! \
