@@ -137,11 +137,26 @@ As part of the Agile development method, user stories have been created and impl
 
 
 # DESIGN CHOICES
-The design of this site is thought to inspire professionality, trust, and the dark tones of blues provide foster a state of relaxation, of wellbeeing. Thi is the palette used, contrasting with white font:
+The design of this site is thought to inspire professionality and trust. Dark tones of blues foster a state of relaxation and of wellbeeing. 
+
+## COLOUR PALETTE
+This is the palette used, contrasting with white fonts on darjker backgrounds:
 
 ![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)
 
+## TYPOGRAPHY
+The following fonts have been used, all from Google Fonts:
+- **Montserrat**: Used for all main text in the site
+- **Big Shoulders Display**: On the main heading on the landing page (index template), and the allauth headings:
+  ![image](https://github.com/user-attachments/assets/8b7761aa-fd76-4b64-bcc8-3252927468e4)
 
+- **Charmonman**: Used in main title, and in services page for 'you':  
+ ![image](https://github.com/user-attachments/assets/6b04f839-e95e-4aa0-a583-998f7cfa57d5)
+
+ ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
+
+
+  
 # FEATURES
 
 ## Navbar
