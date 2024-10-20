@@ -1,3 +1,4 @@
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
@@ -35,9 +36,6 @@ def cache_checkout_data(request):
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    
-    # Ensure intent is initialized outside the conditional blocks
-    intent = None
 
     if request.method == 'POST':
         bag = request.session.get('bag', {})
@@ -48,8 +46,6 @@ def checkout(request):
         }
         
         order_form = OrderForm(form_data)
-        order = order_form
-        # order.save()
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
@@ -75,12 +71,20 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             # Save the info to the user's profile if all is well
-            # request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
+            print(order_form.errors)
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
-    else:
+
+        template = 'checkout/checkout.html'
+        context = {
+            'order_form': order_form,
+            'stripe_public_key': stripe_public_key,
+        }
+        return render(request, template, context)
+
+    else:  # Handle GET request
         bag = request.session.get('bag', {})
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
@@ -96,19 +100,20 @@ def checkout(request):
         )
 
         order_form = OrderForm()
-        
-    if not stripe_public_key:
-        messages.warning(request, 'Stripe public key is missing. \
-            Did you forget to set it in your environment?')
 
-    template = 'checkout/checkout.html'
-    context = {
-        'order_form': order_form,
-        'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret if intent else '',  # Fallback if intent is None
-    }
+        if not stripe_public_key:
+            messages.warning(request, 'Stripe public key is missing. \
+                Did you forget to set it in your environment?')
 
-    return render(request, template, context)
+        template = 'checkout/checkout.html'
+        context = {
+            'order_form': order_form,
+            'stripe_public_key': stripe_public_key,
+            'client_secret': intent.client_secret,
+        }
+
+        return render(request, template, context)
+
 
 
 

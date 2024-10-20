@@ -68,6 +68,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
 ROOT_URLCONF = 'english_grows.urls'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
