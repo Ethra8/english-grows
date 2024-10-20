@@ -3,15 +3,14 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 
+from bag.contexts import bag_contents
+from individual_services.models import IndivService
 from profiles.models import UserProfile
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
-from individual_services.models import IndivService
-
-from bag.contexts import bag_contents
 
 import stripe
 import json
@@ -139,25 +138,37 @@ def checkout(request):
 
 
 
+@login_required
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
     """
-    save_info = request.session.get('save_info')
+    # Fetch the order based on the order_number from the URL
     order = get_object_or_404(Order, order_number=order_number)
+
+    # Check if the current authenticated user is the owner of the order
+    if order.user_profile and order.user_profile.user != request.user:
+        # If the user is not the owner, show an error message and redirect
+        messages.error(request, "You do not have permission to view this order.")
+        return redirect('home')
+
+    # Process the order
+    save_info = request.session.get('save_info')
     grand_total = order.grand_total
 
     order.save()
     print(grand_total)
 
-
+    # Show success message
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
 
+    # Clear the shopping bag from the session
     if 'bag' in request.session:
         del request.session['bag']
 
+    # Render the success page
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
