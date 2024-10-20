@@ -13,6 +13,10 @@ class UserProfileForm(forms.ModelForm):
         labels, and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
+        # Debugging: print choices for CountryField
+        # Debugging: check if CountryField is correctly populated
+        print("CountryField choices:", list(self.fields['default_country'].choices))
+        
         placeholders = {
             'default_full_name': 'Full Name',
             'default_email': 'Email',
@@ -23,7 +27,7 @@ class UserProfileForm(forms.ModelForm):
         self.fields['default_full_name'].widget.attrs['autofocus'] = True
         
         for field in self.fields:
-            if field != 'default_country':
+            if field != 'default_country':  # CountryField does not need a placeholder
                 if self.fields[field].required:
                     placeholder = f'{placeholders[field]} *'
                 else:
