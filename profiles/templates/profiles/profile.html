@@ -42,33 +42,39 @@
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
-                                <th>Order</th>
+                                <!-- <th>Order</th> -->
                                 <th>Date</th>
                                 <th>Items</th>
-                                <th>Order Total</th>
+                                <th>Qty</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% if orders %}
                             {% for order in orders %}
                             <tr>
-                                <td>
+                                <!-- <td>
                                     <a href="{% url 'order_history' order.order_number %}" 
                                     title="{{ order.order_number }}">
                                         {{ order.order_number|truncatechars:3 }}
                                     </a>
-                                </td>
-                                <td>{{ order.date|date:"d/m/Y" }}</td>
+                                </td> -->
+                                <td>
+                                    <a href="{% url 'order_history' order.order_number %}" 
+                                    title="{{ order.date }}">
+                                        {{ order.date|date:"d/m/Y" }}
+                                    </a>
+                                    </td>
                                 <td>
                                     <ul class="list-unstyled">
-                                        {% for item in order.lineitems.all %}
+                                {% for item in order.lineitems.all %}
                                         <li class="small">
-                                                {{ item.service.name }} x {{ item.quantity }}
+                                                {{ item.service.name }}
                                         </li>
-                                        {% endfor %}
+                                        
                                     </ul>
                                 </td>
-                                <td>${{ order.grand_total }}</td>
+                                <td>{{ item.quantity }}</td>
+                                {% endfor %}
                             </tr>
                             {% endfor %}
                             {% else %}

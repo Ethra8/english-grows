@@ -147,14 +147,6 @@ def checkout_success(request, order_number):
     # Fetch the order based on the order_number from the URL
     order = get_object_or_404(Order, order_number=order_number)
 
-    if order.user_profile:
-        print(f"Order's user: {order.user_profile.user}")
-        print(f"Request's user: {request.user}")
-    else:
-        print("Order does not have a user profile.")
-
-
-    # Check if the current authenticated user is the owner of the order
     # Ensure the order has an associated user_profile and the user is the owner
     if not order.user_profile or order.user_profile.user != request.user:
         # If the user is not the owner, show an error message and redirect

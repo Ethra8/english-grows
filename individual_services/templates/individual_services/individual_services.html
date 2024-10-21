@@ -32,7 +32,7 @@
 
     <div class="overlay"></div>
       <div class="container-fluid">
-        <div class="row pl-md-5">
+        <div class="row">
             <div class="col text-center mt-2">
                 <h2 class="pt-5"><span class="text-uppercase">Packs Made for </span><span class="charmonman-bold larger-title">you</span></h2>
                 {% for c in current_types %}
@@ -44,10 +44,10 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12">
                 <div class="row mt-2 mb-3 mt-md-1 mb-md-2">
-                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="col-12 col-md-6 col-lg-4 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-100 w-md-50 w-lg-25">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
@@ -60,7 +60,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 order-md-first">
+                    <div class="col-12 col-md-6 col-lg-8 float-left order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_types or current_sorting != 'None_None' %}
                                 <span class="small clean-link "><a class="text-dark" href="{% url 'individual_services' %}">All Packs</a> | </span>
