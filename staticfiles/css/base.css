@@ -45,10 +45,6 @@ textarea {
     padding-left: 0;
 }
 
-#index {
-    background: url('/media/birds_3.png') top -120px right -200px fixed;
-}
-
 #topnav {
     background-color: #003366;
     max-height: 126px;
@@ -147,7 +143,6 @@ a.text-white:hover {
     background-color: #003366;
     width: 100%;
     padding: 17px;
-    width: 100vw; /* Use full viewport width */
     position: relative;
     left: 0;
     right: 0;
@@ -625,6 +620,10 @@ a.btt-link:hover {
         z-index: 9999;
     }
 
+    #index {
+        padding: 60px 7%;
+    }
+
 }
 
 
@@ -633,6 +632,14 @@ a.btt-link:hover {
         height: 5rem;
         width: 5rem;
         margin-left: 0;
+    }
+
+    #index {
+        padding: 60px 12%;
+    }
+
+    #index h1 {
+        font-size: 4rem;
     }
 
     .main-bg {
@@ -648,7 +655,6 @@ a.btt-link:hover {
     .nav-link {
         padding: 25px 0 .5rem;
     }
-    
 }
 
 
@@ -659,7 +665,13 @@ a.btt-link:hover {
     }
 
     #index {
-        padding: 60px 30px !important;
+        padding: 60px 12% !important;
+    }
+
+    
+    #index h1 {
+        font-size: 3rem;
+        padding-left: 6%;
     }
 
     .col-9 {
@@ -675,5 +687,17 @@ a.btt-link:hover {
         margin-right: -10px !important;
         margin-left: auto;
     }
+}
 
+
+@media (max-width: 320px) {
+    .index-cta-button {
+        min-width: 100%;
+        font-size: 1rem;
+    }
+
+    #index h1 {
+        font-size: 2.5rem;
+        padding-left: 0;
+    }
 }
