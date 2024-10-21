@@ -18,7 +18,7 @@ hr {
 }
 
 p {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 textarea {
@@ -101,7 +101,6 @@ textarea {
 
 .nav-link {
     text-align: left;
-    padding-top: 25px;
 }
 
 a.text-white:hover {
@@ -148,8 +147,10 @@ a.text-white:hover {
     background-color: #003366;
     width: 100%;
     padding: 17px;
-    /* margin-right: 22px */
-    /* height: 80px !important; */
+    width: 100vw; /* Use full viewport width */
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 
@@ -313,19 +314,20 @@ a.text-white:hover {
 .btn-outline-custom {
     background: teal;
     color: white !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #003366;
+    border: 1px outset #003366;
 }
 
 .btn-outline-custom:hover,
 .btn-outline-custom:active,
 .btn-outline-custom:focus {
     background: aquamarine;
-    color: white !important;
+    color: #003366 !important;
+    font-weight: 700;
 }
 
 .btn-bg-light {
     background-color: aquamarine;
-    color: black;
+    color: #003366 !important;
     border: inset 2px teal;
 }
 
@@ -642,6 +644,11 @@ a.btt-link:hover {
     header ul {
         padding-left: 0 !important;
     }
+
+    .nav-link {
+        padding: 25px 0 .5rem;
+    }
+    
 }
 
 
