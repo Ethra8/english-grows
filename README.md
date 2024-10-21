@@ -88,55 +88,55 @@ Any individual person wanting to improve their level of English tfor one of the 
   
 ### AS A FIRST-TIME VISITOR 
 #### B2C and B2B
-1. [ ] **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, to look at photos from past events, and maybe follow.
-2. [ ] **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
-3. [X] **MUST:** I want to clearly ***see at first glance the part of the site that is dedicated to me (B2B or B2C)***
+- [ ] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, to look at photos from past events, and maybe follow.
+- [ ] 2. **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
+- [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***  
 
+#### B2B
+- [X] 4. **MUST:** I want to seamlessly ***contact the site*** to receive a customized training plan and quote.  
+   
 #### B2C
 ##### Viewing and Navigation
-4. [X] **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
-5. [X] **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
-6. [X] **MUST:** I want to be able to view individual service details, so that I can read a more detailed description, and check further details.
-7. [X] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+- [X] 5. **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
+- [X] 6. **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
+- [X] 7. **MUST:** I want to be able to ***view individual service details***, so that I can read a more detailed description, and check further details.
+- [X] 8. **SHOULD:** I want to be able to easily ***view the total of my purchase at any time***, so that I can avoid spending too much.
     
 ##### Sorting and Searching
-8. [X] SHOULD: I want to sort a specific list of available services, so that I can easily identify the best priced and sorted by types.
-9. [X] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
-    
-
-10. [X] **MUST:** I want to check all the services available.
-11. [X] **MUST:** I want to ***sort services by categories, or by price***, and also be able to view only one specific category of services.
-   
-#### B2B
-12. [X] **MUST:** I want to contact the site to receive a customized training plan and quote.
-   
-### As a Returning Visitor
-13. [ ] **SHOULD:** I want to **subscribe to the newsletter** to be informed about special offers, new courses or features.
-14. [X] **MUST:** I want to be able to easily **register for an account**, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
-
-### As an Authenticated User 
-15. [X] **MUST:** I want to be able to ***easily login and logout***, so that I can access my personal account information.
-16. [X] **MUST:** I want to be able to ***easily recover my password*** in case I forget it, so that I can recover access to my ccount.
-17. [X] **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
-18. [X] **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
+- [X] 9. **SHOULD:** I want to ***sort the full list*** of available services ***by categories*** or ***by price***, so that I can easily identify the one that suits me best.
+- [X] 9. **SHOULD:** I want to ***sort*** a ***specific category*** of services ***by price***, or ***alphabetically*** so that I can identify the best-priced services in a specific category.
+  
+### AS A RETURNING VISITOR
+- [ ] 10. **SHOULD:** I want to **subscribe to the newsletter** to be informed about special offers, new courses or features.
+- [X] 11. **MUST:** I want to be able to easily **register for an account**, and ***receive an email confirmation*** after registering, so that I can verify that my account registration was successful.
+  
+### AS AN AUTHENTICATED USER & SHOPPER
+- [X] 12. **MUST:** I want to be able to ***easily login and logout***, so that I can access my personal account information.
+- [X] 13. **MUST:** I want to be able to ***easily recover my password*** in case I forget it, so that I can recover access to my ccount.
+- [X] 14. **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
+- [X] 15. **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
+- [X] 16. **MUST:** I want to able to easily ***access my bag, and update or delete*** any items in it.
+- [X] 17. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
+- [X] 18. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
+- [x] 19. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
     
   
-### As a Shopper
-19. [X] **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
-20. [X] **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls.
-
-  
-### As a Site Owner or Admin User:
+### AS A SITE OWNER OR ADMIN USER:
 * [X] **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
 * [X] **MUST:** Each **order is automatically linked to the authenticated user** making it.
+* [x] **SHOULD:** Each user's email ias stored in an email list, to easen up future emailing campaigns.
 * [X] **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
+
+FUTURE FEATURES or 'WISHES'
+* [ ] **WISH**: I want to include additional fields in the user profile to track the student's progress.
 
 
 
   
 ### AGILE DEVELOPMENT
-As part of the Agile development method, user stories have been created and implemented one at a time. Future features will be created following the *'Could Have'* and *'Won't Have/Wish'* labels on the [stories](#user).
-[Kanba Project](https://github.com/users/Ethra8/projects/7)
+This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology at a hundred percent.
+- [User stories](#user-stories) have been created and implemented one at a time, and have been labelled following the **MoSCoW priorization logic**: ***Must*** & ***Should*** have. Future features have been, and will be, created following the same logic, adding ***Could*** and ***Won't/Wish*** labels.  
+- Keeping in line with the Agile development methodology, a Kanban board has been created, and used to track user sttories, and bugs during development: [Kanban Project](https://github.com/users/Ethra8/projects/7)
 
 
 # DESIGN CHOICES
