@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from .forms import IndivServiceForm
 from .models import IndivService, IndividualType
 
 
@@ -65,6 +67,36 @@ def individual_services(request):
         'current_sorting': current_sorting,
         'all_types': type_friendly_names.values(),  # All types with friendly names
         'is_individual_services_view': True,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def edit_service(request, service_id):
+    """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    
+    service = get_object_or_404(IndivService, pk=service_id)
+    
+    if request.method == 'POST':
+        form = IndivServiceForm(request.POST, request.FILES, instance=service)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Service updated successfully!')
+            return redirect(reverse('pack_details', args=[service.id]))
+        else:
+            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+    else:
+        form = IndivServiceForm(instance=service)
+        messages.info(request, f'You are editing {service.name}')
+
+    template = 'individual_services/edit_service.html'
+    context = {
+        'form': form,
+        'service': service,
     }
 
     return render(request, template, context)

@@ -12,7 +12,7 @@
         "sizes": "500x500",
         "type": "image/png"
       }
-    ],
+    ]
     {
         "src": "/static/icons/favicon.ico",
         "sizes": "32x32",

@@ -105,7 +105,7 @@
                                             {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <p>
-                                                    <a href=""><i class="fas fa-pencil-square"></i></a> | 
+                                                    <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square"></i></a> | 
                                                     <a class="text-danger font-weight-bold" href=""><i class="fas fa-times-circle"></i></a>    
                                                 </p>
                                             </small>
