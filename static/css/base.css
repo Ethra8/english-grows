@@ -477,9 +477,10 @@ a.btt-link:hover {
 }
 
 
-/* Service Details */
+/* Services & Details Pages */
 
-#pack-details {
+#pack-details,
+#individual-services {
     padding: 0 7%;
 }
 
@@ -612,7 +613,7 @@ a.btt-link:hover {
 }
 
 /* col with order list w. details */
-#profile .col-8 {
+#profile .col-lg-8 {
     padding-left: 60px;
 }
 
@@ -666,8 +667,8 @@ a.btt-link:hover {
     }
 
     /* col with order list w. details */
-    #profile .col-8 {
-        padding-left: 0;
+    #profile .col-lg-8 {
+        padding-left: 15px; /* returns value to default, to match information div */
         padding-top: 60px;
     }
 
@@ -700,6 +701,12 @@ a.btt-link:hover {
     .col-9 {
         padding-right: 0 !important;
         padding-left: 0 !important;
+    }
+
+    
+    #pack-details,
+    #individual-services {
+        padding: 0 4%;
     }
 
     .font-xs-small {
