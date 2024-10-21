@@ -9,7 +9,7 @@ body {
 }
 
 h4 {
-    line-height: 2.0rem;
+    line-height: 2;
 }
 
 hr {
@@ -610,7 +610,17 @@ a.btt-link:hover {
     .logo {
         height: 5rem;
         width: 5rem;
-        margin-left: 1rem;
+        margin-left: 0;
+    }
+
+    .main-bg {
+        margin: 70px 0 70px;
+        flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
+        min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
+    }
+
+    header ul {
+        padding-left: 0 !important;
     }
 }
 
@@ -639,8 +649,4 @@ a.btt-link:hover {
         margin-left: auto;
     }
 
-    
-  }
-
-
-
+}
