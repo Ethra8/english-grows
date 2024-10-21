@@ -159,7 +159,7 @@ def checkout_success(request, order_number):
     if not order.user_profile or order.user_profile.user != request.user:
         # If the user is not the owner, show an error message and redirect
         messages.error(request, "You do not have permission to view this order.")
-        return redirect('home')
+        # return redirect('home')
 
     # Process the order
     save_info = request.session.get('save_info')
