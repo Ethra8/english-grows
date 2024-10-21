@@ -86,47 +86,50 @@ Any individual person wanting to improve their level of English tfor one of the 
   
 ## USER STORIES
   
-### As a first-time visitor 
+### AS A FIRST-TIME VISITOR 
 #### B2C and B2B
-1. [ ] MUST HAVE: I want to check the social media links to see the website profile, to look at photos from past events, and maybe follow.
-2. [ ] MUST HAVE: I want to check the about page, to be informed of the site's purpose.
+1. [ ] **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, to look at photos from past events, and maybe follow.
+2. [ ] **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
+3. [X] **MUST:** I want to clearly ***see at first glance the part of the site that is dedicated to me (B2B or B2C)***
 
+#### B2C
 ##### Viewing and Navigation
-3. [X] I want to view a list of services, so that I can easily choose what service suits me best.
-4. [X] I want to be able to view specific type of service, so that I can quickly find services I'm interested in whitout having to go through all the services (e.g.: only ocmpany or individuals' services)
-5. [X] I want to be able to view individual service details, so that I can identify the price and description.
-6. [X] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
+4. [X] **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
+5. [X] **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
+6. [X] **MUST:** I want to be able to view individual service details, so that I can read a more detailed description, and check further details.
+7. [X] I want to be able to easily view the total of my purchase at any time, so that I can avoid spending too much.
     
 ##### Sorting and Searching
-7. [X] I want to sort the list of available services, so that I can easily identify the best priced and sorted by types.
-8. [X] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
-9. [X] I want to sort multiple types of services simultaneously, so that I can find the best-priced services across broad types, such as 'individual' or 'reduced groups'.
-  
-#### B2C
-10. [X] MUST HAVE: I want to check all the services available.
-11. [X] MUST HAVE: I want to sort the services by categories, or by price, and also be able to view only one specific category of services.
+8. [X] SHOULD: I want to sort a specific list of available services, so that I can easily identify the best priced and sorted by types.
+9. [X] I want to sort a specific type of service, so that I can find the best-priced services in a specific type.
+    
+
+10. [X] **MUST:** I want to check all the services available.
+11. [X] **MUST:** I want to ***sort services by categories, or by price***, and also be able to view only one specific category of services.
    
 #### B2B
-12. [X] MUST HAVE: I want to contact the site to receive a customized training plan and quote.
+12. [X] **MUST:** I want to contact the site to receive a customized training plan and quote.
    
 ### As a Returning Visitor
-13. [ ] COULD HAVE: I want to subscribe to the newsletter to be informed about special offers, new courses or features.
-14. [X] I want to be able to easily register for an account, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
+13. [ ] **SHOULD:** I want to **subscribe to the newsletter** to be informed about special offers, new courses or features.
+14. [X] **MUST:** I want to be able to easily **register for an account**, and receive an email confirmation after registering, so that I can verify that my account registration was successful.
 
-### As an Authenticated User  
-15. [X] I want to be able to easily login and logout, so that I can access my personal account information.
-16. [X] I want to be able to easily recover my password in case I forget it, so that I can recover access to my ccount.
-17. [X] MUST HAVE: I want to be able to update and save my billing information on my user profile.
+### As an Authenticated User 
+15. [X] **MUST:** I want to be able to ***easily login and logout***, so that I can access my personal account information.
+16. [X] **MUST:** I want to be able to ***easily recover my password*** in case I forget it, so that I can recover access to my ccount.
+17. [X] **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
+18. [X] **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
+    
   
 ### As a Shopper
-18. [X] I want to be able to have a personalized user profile, so that I can view my personal order history and order confirmations.
-19. [X] I want to receive a confirmation email after a purchase, with the details of my order.
+19. [X] **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
+20. [X] **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls.
 
   
 ### As a Site Owner or Admin User:
-* [X] I want to be able to view orders by users, so that I can easily check the orders related to a specific user.
-* [X] Each order is automatically linked to the authenticated user making it.
-* [X] I want to be able to store data in admin from contact forms that are sent, so that I can easily rewiew requests from users, and have their contact emails, name, company name, and request secured
+* [X] **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
+* [X] **MUST:** Each **order is automatically linked to the authenticated user** making it.
+* [X] **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
 
 
 
@@ -316,6 +319,10 @@ This website is compliant with all international standards, as proved after ***E
      
      ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
 
+### USER PROFILE
+
+
+
 ### CHECKOUT PROCESS
 1. User includes service in bag
 2. User can Update service item quantity in bag
@@ -326,6 +333,11 @@ This website is compliant with all international standards, as proved after ***E
 7. Order confirmation email is sent to the user with the order details  
    ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)
 
+20. User's ***personal data in order is secured***, and order url can only be accessed by the same authenticated user who made the order. Otherwise, warning message appears:
+    
+    ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)
+
+21. 
      
 # TECHNOLOGIES USED
 
