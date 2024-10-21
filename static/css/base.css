@@ -479,6 +479,10 @@ a.btt-link:hover {
 
 /* Service Details */
 
+#pack-details {
+    padding: 0 7%;
+}
+
 .img-details {
     border-radius: 25px !important;
 }
@@ -600,6 +604,19 @@ a.btt-link:hover {
 }
 
 
+/* Profile */
+
+#profile h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* col with order list w. details */
+#profile .col-8 {
+    padding-left: 60px;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Larger container on xl screens */
@@ -646,6 +663,12 @@ a.btt-link:hover {
         margin: 70px 0 70px;
         flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
         min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
+    }
+
+    /* col with order list w. details */
+    #profile .col-8 {
+        padding-left: 0;
+        padding-top: 60px;
     }
 
     header ul {

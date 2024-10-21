@@ -12,7 +12,7 @@
 {% block content %}
 <div class="overlay1"></div>
 <div class="overlay"></div>
-<div class="container-fluid">
+<div id="pack-details" class="container-fluid">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 pffset-lg-2">
             <div class="image-container my-5">
@@ -98,7 +98,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn btn-outline-custom rounded-pill text-uppercase mt-5" value="Add to Bag">
+                            <input type="submit" class="btn btn-outline-custom rounded-pill text-uppercase mt-5 float-right" value="Add to Bag">
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
