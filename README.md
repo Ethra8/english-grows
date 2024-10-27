@@ -1,6 +1,7 @@
 
 # ENGLISH GROWS
-![image](https://github.com/user-attachments/assets/c79dd927-349c-4739-8204-a0a7df15a9ae)
+![image](https://github.com/user-attachments/assets/517ccdea-208c-4cb9-bd9a-6dabc093e338)
+
 
 
 ## Overview
@@ -236,19 +237,51 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
   
   
 ## Admin Console
-The admin console reflects most of the models present in this site, and features from django-allauth. The models are detailed in a section below, and the allauth are as follows:  
-- ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)
-- EMAILS
-  * This is taken from django-allauth, and stores the emails of the registered users in the admin for future emailing campaigns, and to send the users the free monthly newsletter.
-- AUTHENTICATION AND AUTHORIZATION
-  * These also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them.
+The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
   
+ ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
+
+### Accounts
+From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
+   
+### Authenticatin and Authorization 
+ * These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current Englih language level, fr instance:  
+  
+   ![image](https://github.com/user-attachments/assets/da898b54-7842-40b4-aa9b-4ad09b7bdafd)  
+  
+### Profiles
+ * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:
+   
+   ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
+  
+### Individual Services
+ * The model for the Individual Services can be directly accessed via the admin. Thus, **Services can be created, updated, or deleted**:  
+  
+   ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)
+  
+   ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)  
+  
+  
+### Home
+As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
+ 
+ ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
+ 
+ ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
+ 
+### Checkout
+The orders created by the Order model are recorded in the admin panel:  
+  
+  ![image](https://github.com/user-attachments/assets/27bff2b5-0fdf-49f3-a2c0-b235e22f4017)  
+  
+  ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
+
   
 ## FUTURE FEATURES
 These future features are thought of as being user or admin ***wishes***:  
   
-* [ ] **WISH**: I want to be able to **subscribe to the newsletter**, so that I can **receive updated on special offers, new courses or extra contents**.
-* [ ] **WISH**: I want to include additional fields in the user profile to track the student's progress.
+* [ ] **WISH**: As a **returning visitor**, I want to be able to **subscribe to the newsletter**, so that I can **receive updated on special offers, new courses or extra contents**.
+* [ ] **WISH**: As an **admin user**,I want to include additional fields in the user profile to track the student's progress.
   
   
 # STRUCTURE
