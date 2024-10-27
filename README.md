@@ -56,7 +56,7 @@ EDNA TORRES MUNILL
    * [Manual Testing](#manual-testing)
 - [TECHNOLOGIES USED](#technologies-used)
    * [Languages](#languages)
-   * [Frameworks, Libraries and Programs Used](#frameworks,-libraries-and-programs-used)
+   * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 - [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
@@ -361,7 +361,10 @@ This website is compliant with all international standards, as proved after ***E
   - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
   - [Font Awesome](https://fontawesome.com/) - For the icons used
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
-  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
+  - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku
+  - [Heroku](https://heroku.com) - To deploy this python site.
+  - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all info related to this site, such as user info, orders, available services, users' contact requests, and more.
+  - [AWS](https://aws.amazon.com/) - Amazon Web Services has been used to create an ***s3 bucket*** to store all media and static files of this site.
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
