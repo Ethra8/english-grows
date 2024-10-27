@@ -148,6 +148,15 @@ a.text-white:hover {
     right: 0;
 }
 
+footer a {
+    color: aqua !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: 600;
+    text-decoration: none;
+}
 
 .icons-social {
     color: #c1f7e3;
@@ -617,6 +626,17 @@ a.btt-link:hover {
     padding-left: 60px;
 }
 
+
+/* About */
+#about a {
+    font-weight: 600;
+    color: #003366;
+}
+
+#about a:hover {
+    text-decoration: none;
+    font-weight: 600;
+}
 
 /* -------------------------------- Media Queries */
 

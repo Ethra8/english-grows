@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 DEBUG = os.getenv("DEVELOPMENT", "False") == "True"
 
 
-ALLOWED_HOSTS = ['8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com']
+ALLOWED_HOSTS = ['8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com', 'https://amiresponsive.co.uk/']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net']
 

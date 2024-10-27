@@ -21,3 +21,9 @@ def companies(request):
     form = CompanyContactForm()
 
     return render(request, 'home/companies.html', {'form': form})
+
+
+def about(request):
+    """ A view to return the about page """
+    return render(request, 'home/about.html')
+

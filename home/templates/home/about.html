@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header%}
+<div class="container header-container d-none">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="overlay2"></div>
+<div id="about" class="container h-100 w-100">
+    <div class="row h-100">
+        <div class="col-12 my-auto ml-md-0 mr-md-0 px-0">
+            <div class="my-auto">
+                <h1 class="eg-font text-uppercase mb-5">
+                  About Us
+                </h1>    
+            </div>  
+        </div>
+        <div class="col-12 col-lg-7 my-auto ml-md-0 mr-md-0 px-0">
+            <div class="my-auto">
+                <p>Welcome to English Grows, where we offer high-quality online lessons, tailored by our qualified team of 
+                    teachers, to meet the diverse needs of both individual learners and companies.</p>
+                <p>Whether you're an individual looking to advance your skills with flexible lesson packs or a business seeking 
+                    custom training solutions for your team, we're here to help you succeed.</p>
+                <p><strong class="text-uppercase">For B2C customers</strong>, we provide a range of options to suit your learning style and schedule. Choose from:</p>
+                <ul>
+                    <li class="mb-3"><strong>Individual Lesson Packs -</strong> ideal for those who prefer a one-on-one approach and the flexibility to learn at 
+                    their own pace.</li>
+                    <li><strong>Reduced Group Courses -</strong> small group courses with a maximum of six participants, ensuring a collaborative yet 
+                    focused environment to learn and connect with others.</li>
+                </ul>
+                <p><strong class="text-uppercase">For B2B clients</strong>, we offer customized training programs designed to elevate your team's skills in alignment 
+                    with your business goals. Simply fill out our contact form on the 
+                    <a href="{% url 'companies' %}" aria-label="go to the companies page"> Companies section</a>, and we'll work with you to create a 
+                    tailored training plan that enhances your employees' professional growth.</p>
+                    
+                <p>At English Grows, we're committed to delivering effective and engaging online education that empowers 
+                    individuals and organizations alike.</p> 
+                <p><strong>Join us and take the next step in your learning journey!</strong></p> 
+                   
+            </div>  
+        </div>
+    </div>
+</div>
+{% endblock %}
