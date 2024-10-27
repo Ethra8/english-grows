@@ -122,15 +122,14 @@ Any individual person wanting to improve their level of English tfor one of the 
     
   
 ### AS A SITE OWNER OR ADMIN USER:
-* [X] **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
-* [X] **MUST:** Each **order is automatically linked to the authenticated user** making it.
-* [x] **SHOULD:** Each user's email ias stored in an email list, to easen up future emailing campaigns.
-* [X] **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
-
-FUTURE FEATURES or 'WISHES' stated in [Future Features]()#future-features)
-
-
-
+- [X] 20. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
+- [X] 21. **MUST:** Each **order is automatically linked to the authenticated user** making it.
+- [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
+- [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
+- [X] 24. **SHOULD:** I want to be able to edit and delete existing services directly from the site, without having to access the lesser user-friendly admin panel.  
+  
+N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
+  
   
 ### AGILE DEVELOPMENT
 This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology at a hundred percent.
