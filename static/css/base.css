@@ -119,6 +119,10 @@ a.text-white:hover {
     color: #fff;
 }
 
+.list-inline-item {
+    padding-right: 14px;
+}
+
 .list-inline-item p:hover,
 .list-inline-item .icon-nav:hover {
     color: #c1f7e3 !important;
