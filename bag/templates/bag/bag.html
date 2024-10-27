@@ -12,24 +12,17 @@
 
 {% block content %}
     <div class="overlay2"></div>
-    <div class="container mb-2 ml-0 pl-0 pr-0 w-100">
+    <div class="container mb-2 ml-0 pl-0 pl-sm-3 pl-md-5 pr-0 w-100">
         <div class="row w-100">
             <div class="col">
-                {% if bag_items %}
-                <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-sm">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">View Packs</span>
-                </a>
-                {% else %}
+
                 <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-lg">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
-                    <span class="text-uppercase">View Packs</span>
+                    <span class="text-uppercase">View More Services</span>
                 </a>
-                {% endif %}
+
             </div>
         </div>
 
@@ -48,8 +41,8 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th class=" d-none d-sm-block " scope="col"></th>
+                                    <th class="w-25" scope="col">Product Info</th>
+                                    <th class="d-none d-sm-block" scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
                                     <th scope="col">Subtotal</th>
@@ -58,7 +51,7 @@
 
                             {% for item in bag_items %}
                                 <tr>
-                                    <td class="d-none d-sm-block p-3 w-50">
+                                    <td class="d-none d-sm-block p-3">
                                         {% if item.service.image %}
                                         <img class="img-fluid img-bag" src="{{ item.service.image.url }}" alt="{{ item.service.name }}">
                                         {% else %}
