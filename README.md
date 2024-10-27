@@ -56,8 +56,8 @@ EDNA TORRES MUNILL
    * [Manual Testing](#manual-testing)
 - [TECHNOLOGIES USED](#technologies-used)
    * [Languages](#languages)
-   * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
- -[CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
+   * [Frameworks, Libraries and Programs Used](#frameworks,-libraries-and-programs-used)
+- [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
 
 
 
