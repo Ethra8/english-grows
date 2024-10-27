@@ -126,9 +126,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 * [x] **SHOULD:** Each user's email ias stored in an email list, to easen up future emailing campaigns.
 * [X] **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
 
-FUTURE FEATURES or 'WISHES'
-* [ ] **WISH**: I want to be able to **subscribe to the newsletter**, so that I can **receive updated on special offers, new courses or extra contents**.
-* [ ] **WISH**: I want to include additional fields in the user profile to track the student's progress.
+FUTURE FEATURES or 'WISHES' stated in [Future Features]()#future-features)
 
 
 
@@ -223,7 +221,7 @@ https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
 ## 404 Error Page
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
-## SEO
+## SEO 
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
 
 The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and SEO relevant info:  
@@ -235,9 +233,8 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
    learning, corporate, reduced, live">
 <meta name="author" content="Edna Torres Munill">
 ```
-
-
-
+  
+  
 ## Admin Console
 The admin console reflects most of the models present in this site, and features from django-allauth. The models are detailed in a section below, and the allauth are as follows:  
 - ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)
@@ -245,8 +242,14 @@ The admin console reflects most of the models present in this site, and features
   * This is taken from django-allauth, and stores the emails of the registered users in the admin for future emailing campaigns, and to send the users the free monthly newsletter.
 - AUTHENTICATION AND AUTHORIZATION
   * These also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them.
-
-
+  
+  
+## FUTURE FEATURES
+These future features are thought of as being user or admin ***wishes***:  
+  
+* [ ] **WISH**: I want to be able to **subscribe to the newsletter**, so that I can **receive updated on special offers, new courses or extra contents**.
+* [ ] **WISH**: I want to include additional fields in the user profile to track the student's progress.
+  
   
 # STRUCTURE
 The site has been built using Django 5.1 in Python 3.12, and has the following structure:
