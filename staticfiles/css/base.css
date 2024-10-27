@@ -431,7 +431,7 @@ a.btt-link:hover {
 .sort-select-wrapper {
     border-radius: 50px !important;
     height: 40px;
-    padding: 0  0 0 15px;
+    padding: 0 15px;
 }
 
 
@@ -735,7 +735,13 @@ a.btt-link:hover {
     
     #pack-details,
     #individual-services {
-        padding: 0 4%;
+        padding: 0 2%;
+    }
+
+    #pack-details .col-12,
+    #individual-services .col-12 {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .card-body > p {
@@ -770,4 +776,10 @@ a.btt-link:hover {
         font-size: 2.5rem;
         padding-left: 0;
     }
+
+    #pack-details, #individual-services {
+        padding: 0%;
+    }
+
+
 }
