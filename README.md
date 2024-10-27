@@ -7,7 +7,7 @@
 This site is an e-commerce that sells services. The services provided are the following:
 - Live online lessons for B2B and B2C customers:
   * Individual Lesson Packs
-  * Reduced Groups
+  * Reduced Group courses
 
 ## Live Site
 - You can view the deployed site on Heroku [here](https://english-grows-477471d17e50.herokuapp.com/)
@@ -267,7 +267,8 @@ The following tests have been run for this project:
 
 ### Laptop and Desktop
  
- ![image](https://github.com/user-attachments/assets/007e1868-8a11-42d0-9cdf-0ec96034c779)  
+ ![image](https://github.com/user-attachments/assets/536ad464-d0c7-4a8c-b663-affdbc528ad7)
+  
 
 ## CODE
 ## CSS
