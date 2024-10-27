@@ -51,8 +51,8 @@
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <p>
-                        <a href="">Edit</a> | 
-                        <a class="text-danger" href="">Delete</a>    
+                        <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square"></i></a> | 
+                        <a href="{% url 'delete_service' service.id %}" class="text-danger"><i class="fas fa-times-circle"></i></a>    
                     </p>
                 </small>
                 {% endif %}

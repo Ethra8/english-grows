@@ -102,6 +102,36 @@ def edit_service(request, service_id):
     return render(request, template, context)
 
 
+@login_required
+def delete_service(request, service_id):
+    """Prompt user to confirm deletion and delete service if confirmed"""
+    # Check if the user is an admin or superuser
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    # Get the service or return a 404 if not found
+    service = get_object_or_404(IndivService, pk=service_id)
+
+    # If POST request and confirmation is 'Confirm', delete the service
+    if request.method == 'POST' and 'confirm_delete' in request.POST:
+        service.delete()
+        messages.success(request, f'Service "{service.name}" deleted successfully.')
+        return redirect(reverse('individual_services'))
+
+    # If POST request and confirmation is 'Keep', redirect to service details
+    elif request.method == 'POST' and 'cancel_delete' in request.POST:
+        messages.info(request, f'Service "{service.name}" was not deleted.')
+        return redirect(reverse('pack_details', args=[service.id]))
+
+    # Render confirmation page
+    template = 'individual_services/delete_confirmation.html'
+    context = {
+        'service': service,
+    }
+    return render(request, template, context)
+
+
 
 def pack_details(request, service_id):
     """ A view to return the pack details page """
