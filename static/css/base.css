@@ -36,9 +36,9 @@ textarea {
 }
 
 .main-bg {
-    margin: 120px 0 70px;
+    margin: 120px 0 40px;
     flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
-    min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
+    min-height: calc(100vh - 280px) !important;  /* nav + main nav + footer height */
 }
 
 .main-bg .col-9 {
@@ -683,7 +683,7 @@ a.btt-link:hover {
     .main-bg {
         margin: 70px 0 70px;
         flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
-        min-height: calc(100vh - 244px) !important;  /* nav + main nav + footer height */
+        min-height: calc(100vh - 280px) !important;  /* nav + main nav + footer height */
     }
 
     /* col with order list w. details */
@@ -706,6 +706,12 @@ a.btt-link:hover {
     body {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .logo {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 0;
     }
 
     #index {
@@ -744,7 +750,13 @@ a.btt-link:hover {
 }
 
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
+    .logo {
+        height: 5rem;
+        width: 5rem;
+        margin-left: 0;
+    }
+
     .index-cta-button {
         min-width: 100%;
         font-size: 1rem;
