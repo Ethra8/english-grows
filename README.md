@@ -378,6 +378,7 @@ This website is compliant with all international standards, as proved after ***E
 4. User can easily access the checkout page and proceed to checkout
 5. User views his order confirmation on the screen
 6. Order is successfully accessible on the user profile
+   
 7. Order confirmation email is sent to the user with the order details  
    ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)
 
