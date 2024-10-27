@@ -222,7 +222,9 @@ https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
 ## SEO
-The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and info:  
+To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
+
+The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and SEO relevant info:  
 ```$python
 <meta name="theme-color" content="teal">
 <meta name="description" content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering     
@@ -231,6 +233,8 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
    learning, corporate, reduced, live">
 <meta name="author" content="Edna Torres Munill">
 ```
+
+
 
 ## Admin Console
 The admin console reflects most of the models present in this site, and features from django-allauth. The models are detailed in a section below, and the allauth are as follows:  
@@ -359,9 +363,10 @@ This website is compliant with all international standards, as proved after ***E
   - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
   - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
-  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
-  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) - Tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorythm.
+  - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
  
 # CREDITS & ACKNOWEDGEMENTS
 - All the images are free copyright, and have been taken from [Pexels.com].
