@@ -193,7 +193,8 @@ The following fonts have been used, all from Google Fonts:
 <summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
 - HOME Page
   
-  - 
+  - ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
+
   
 - INDIVIDUAL SERVICES Page
   - 
