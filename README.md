@@ -1,9 +1,8 @@
 
 # ENGLISH GROWS
-![image](https://github.com/user-attachments/assets/517ccdea-208c-4cb9-bd9a-6dabc093e338)
+![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
-
-
+  
 ## Overview
 This site is an e-commerce that sells services. The services provided are the following:
 - Live online lessons for B2B and B2C customers:
@@ -378,6 +377,7 @@ This website is compliant with all international standards, as proved after ***E
 4. User can easily access the checkout page and proceed to checkout
 5. User views his order confirmation on the screen
 6. Order is successfully accessible on the user profile
+   
 7. Order confirmation email is sent to the user with the order details  
    ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)
 
