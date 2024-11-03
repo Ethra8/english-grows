@@ -284,15 +284,15 @@ These future features are thought of as being user or admin ***wishes***:
   
 # STRUCTURE
 The site has been built using Django 5.1 in Python 3.12, and has the following structure:
-- The site contains five ***django apps*** (profiles, bag, checkout, home, individual_services) with multiple models, views, urls, and templates in each app. Please check the code for further details.
-- You can , and check the ***requirements.txt*** to know all the modules and their correspondent versions.
+- **DJANGO APPS** : The site contains five ***django apps*** (profiles, bag, checkout, home, individual_services) with multiple models, views, urls, and templates in each app. Please check the code for further details.
+- **MODULES** : Please refer to the ***requirements.txt*** file to check all the modules used for the development of this site, and their correspondent versions.
+- **DATABASE** : PostgreSQL database has been used for this project.
+- **STORAGE** : Static and media files have been stored in a AWS s3 bucket.
 
-
-
-  
+      
 # TESTING  
 ## DEFECT TRACKING
-
+  
 ### GITHUB ISSUES
 All issues have been solved, and closed in Github by the creator of this site.
 ## DEFECTS OF NOTE
@@ -397,32 +397,27 @@ Any user can **Read** the service created:
 
 #### Update Service
 Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page, both with a success message to inform user of the action completed:  
-
   
   https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
-
-
-
+  
+  
 #### Delete Service
 Admin users can **Delete** a service, with confirmation step, and success message:  
-
-  https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
-
   
-
-
-     
+  https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
+  
+  
 # TECHNOLOGIES USED
-
+  
 ## LANGUAGES
 - **Python 3.12**
 - **JS ES6**
 - **CSS3**
 - **HTML5**
 
+  
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
-
-- The following have been used:
+The following have been used for the development of this site:  
   - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to *requirements.py* on the root directory.
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
   - [Remove.bg](https://www.remove.bg/) to remove background from logo image.
