@@ -4,7 +4,7 @@ from django.db import models
 
 class IndivService(models.Model):
     type = models.ForeignKey('IndividualType', null=True, blank=True, on_delete=models.SET_NULL) # on_delete type, product don't delete, but set type to null
-    id = models.CharField(max_length=100, primary_key=True, unique=True, editable=False, default=uuid.uuid4)  # Add default=uuid.uuid4
+    id = models.IntegerField(primary_key=True, unique=True, editable=False)  # Add default=uuid.uuid4
     name = models.CharField(max_length=255, unique=True)  
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
@@ -13,6 +13,15 @@ class IndivService(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     
+    def save(self, *args, **kwargs):
+        if not self.id:  # Only set the ID if it's a new instance
+            last_service = IndivService.objects.all().order_by('-id').first()
+            if last_service:
+                self.id = last_service.id + 1
+            else:
+                self.id = 1  # Start with 1 if no services exist
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.name
         

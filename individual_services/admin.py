@@ -1,27 +1,13 @@
 from django.contrib import admin
 from .models import IndivService, IndividualType
 
-
-
-admin.site.register(IndivService)
+# Register IndivService with IndivServiceAdmin
+@admin.register(IndivService)
 class IndivServiceAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'type',
-        'price',
-        'image',
-    )
+    list_display = ('id', 'name', 'type', 'price', 'image')
+    ordering = ('id',)
 
-    ordering = ('sku',)
-
-
-admin.site.register(IndividualType)
+# Register IndividualType with IndividualTypeAdmin
+@admin.register(IndividualType)
 class IndividualTypeAdmin(admin.ModelAdmin):
-    list_display = (
-        'friendly_name',
-        'name',
-    )
-
-
-
-
+    list_display = ('friendly_name', 'name')

@@ -74,18 +74,25 @@ def individual_services(request):
 
 @login_required
 def add_service(request):
+    service = None  # Initialize service to None for GET requests
     if request.method == 'POST':
         form = IndivServiceForm(request.POST)
         if form.is_valid():
-            indiv_service = form.save()
+            service = form.save()
             messages.success(request, "Service created successfully!")
-            return redirect(reverse('indiv_service_detail', args=[indiv_service.pk]))
+            return redirect(reverse('pack_details', args=[service.pk]))
         else:
             messages.error(request, "There was an error creating the service.")
     else:
         form = IndivServiceForm()
 
-    return render(request, 'add_service.html', {'form': form})
+    template = 'individual_services/add_service.html'
+    context = {
+        'form': form, 
+        'service': service,
+    }
+
+    return render(request, template, context )
 
 
 @login_required
