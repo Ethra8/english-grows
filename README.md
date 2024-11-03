@@ -199,6 +199,8 @@ https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98
 ## Search Bar
 The search bar is on the ***for you*** service page:
 
+  ![image](https://github.com/user-attachments/assets/58f3b28c-3e3d-46cc-a2fc-81a298bd6c82)
+
 
 ## Shopping Bag
 Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the follwoing videos and screen captures to see all these features in action.
