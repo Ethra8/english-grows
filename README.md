@@ -1,4 +1,3 @@
-
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
@@ -32,6 +31,7 @@ EDNA TORRES MUNILL
     * [User Profiles](#user-profiles)
  - [AGILE DEVELOPMENT](#agile-development)
  - [DESIGN CHOICES](#design-choices)
+ - [WIREFRAMES](#wireframes)
  - [FEATURES](#features)
     * [Navbar](#navbar)
     * [User Authentication](#user-authentication)
@@ -126,7 +126,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 21. **MUST:** Each **order is automatically linked to the authenticated user** making it.
 - [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
 - [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
-- [X] 24. **SHOULD:** I want to be able to edit and delete existing services directly from the site, without having to access the lesser user-friendly admin panel.  
+- [X] 24. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
   
@@ -153,11 +153,71 @@ The following fonts have been used, all from Google Fonts:
 
 - **Charmonman**: Used in main title, and in services page for 'you':  
  ![image](https://github.com/user-attachments/assets/6b04f839-e95e-4aa0-a583-998f7cfa57d5)
-
+  
  ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
+  
+# WIREFRAMES
 
+## MOBILE & TABLET (Portrait)
+
+<details>
+<summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
+- HOME Page
+  
+  - 
+  
+- INDIVIDUAL SERVICES Page
+  - 
+
+- SERVICE DETAILS Page
+  - 
+
+- SHOPPING BAG Page (form)
+  - 
+
+- MY PROFILE Page (list)
+  - 
+
+- COMPANIES CONTACT Page (form)
+  - 
+
+- ABOUT Page
+  - 
+
+
+</details>  
+
+## DESKTOP & TABLET (Landscape)
+
+<details>
+<summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
+- HOME Page
+    
+  ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
 
   
+- INDIVIDUAL SERVICES Page
+
+  ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
+
+
+- SERVICE DETAILS Page
+  
+
+  - SHOPPING BAG Page (form)
+  
+
+  - MY PROFILE Page
+   
+
+- COMPANIES CONTACT Page (form)
+  - 
+
+- ABOUT Page
+  - 
+
+
+</details>  
 # FEATURES
 The following features have been implemented in this site:
   
@@ -200,27 +260,33 @@ https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98
 ## Search Bar
 The search bar is on the ***for you*** service page:
 
+  ![image](https://github.com/user-attachments/assets/58f3b28c-3e3d-46cc-a2fc-81a298bd6c82)
+
 
 ## Shopping Bag
-Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the follwoing videos and screen captures to see all these features in action.
-https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
+Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the following videos and screen captures to see all these features in action.  
+  
+  https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05   
+  
+  ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
 
-![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
+  ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
 
-![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
-
-https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
+  https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
 
 ## Online Payments - STRIPE API  
+  
   ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
-
-  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)
-
-
+  
+  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)  
+  
+  
 ## 404 Error Page
+  
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
+  
 ## SEO 
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
 
@@ -239,10 +305,10 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
 The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
   
  ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
-
+  
 ### Accounts
 From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
-   
+     
 ### Authenticatin and Authorization 
  * These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current Englih language level, fr instance:  
   
@@ -285,15 +351,15 @@ These future features are thought of as being user or admin ***wishes***:
   
 # STRUCTURE
 The site has been built using Django 5.1 in Python 3.12, and has the following structure:
-- The site contains five ***django apps*** (profiles, bag, checkout, home, individual_services) with multiple models, views, urls, and templates in each app. Please check the code for further details.
-- You can , and check the ***requirements.txt*** to know all the modules and their correspondent versions.
+- **DJANGO APPS** : The site contains five ***django apps*** (profiles, bag, checkout, home, individual_services) with multiple models, views, urls, and templates in each app. Please check the code for further details.
+- **MODULES** : Please refer to the ***requirements.txt*** file to check all the modules used for the development of this site, and their correspondent versions.
+- **DATABASE** : PostgreSQL database has been used for this project.
+- **STORAGE** : Static and media files have been stored in a AWS s3 bucket.
 
-
-
-  
+      
 # TESTING  
 ## DEFECT TRACKING
-
+  
 ### GITHUB ISSUES
 All issues have been solved, and closed in Github by the creator of this site.
 ## DEFECTS OF NOTE
@@ -386,18 +452,39 @@ This website is compliant with all international standards, as proved after ***E
     ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)
 
 21. 
-     
-# TECHNOLOGIES USED
 
+### INDIVIDUAL SERVICE - CRUD Functionality
+#### Create Service
+The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.  
+  
+  ![image](https://github.com/user-attachments/assets/175c722c-0390-4285-b2c1-d90c178de847)  
+
+#### Read Service
+Any user can **Read** the service created:  
+
+#### Update Service
+Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page, both with a success message to inform user of the action completed:  
+  
+  https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
+  
+  
+#### Delete Service
+Admin users can **Delete** a service, with confirmation step, and success message:  
+  
+  https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
+  
+  
+# TECHNOLOGIES USED
+  
 ## LANGUAGES
 - **Python 3.12**
 - **JS ES6**
 - **CSS3**
 - **HTML5**
 
+  
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
-
-- The following have been used:
+The following have been used for the development of this site:  
   - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to *requirements.py* on the root directory.
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
   - [Remove.bg](https://www.remove.bg/) to remove background from logo image.
