@@ -1,4 +1,6 @@
 
+https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
+
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
@@ -126,7 +128,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 21. **MUST:** Each **order is automatically linked to the authenticated user** making it.
 - [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
 - [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
-- [X] 24. **SHOULD:** I want to be able to edit and delete existing services directly from the site, without having to access the lesser user-friendly admin panel.  
+- [X] 24. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
   
@@ -386,6 +388,31 @@ This website is compliant with all international standards, as proved after ***E
     ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)
 
 21. 
+
+### INDIVIDUAL SERVICE - CRUD Functionality
+#### Create Service
+The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.  
+  
+  ![image](https://github.com/user-attachments/assets/175c722c-0390-4285-b2c1-d90c178de847)  
+
+#### Read Service
+Any user can **Read** the service created:  
+
+#### Update Service
+Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page:  
+
+  Uploading English Grows - Google Chrome 2024-11-03 20-42-57.mp4…
+
+
+
+#### Delete Service
+Admin users can **Delete** a service  
+
+  https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
+
+  
+
+
      
 # TECHNOLOGIES USED
 
