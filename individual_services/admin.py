@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import IndivService, IndividualType
 
 
+
+admin.site.register(IndivService)
 class IndivServiceAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -12,14 +14,14 @@ class IndivServiceAdmin(admin.ModelAdmin):
 
     ordering = ('sku',)
 
+
+admin.site.register(IndividualType)
 class IndividualTypeAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
     )
 
-admin.site.register(IndivService)
-admin.site.register(IndividualType)
 
 
 

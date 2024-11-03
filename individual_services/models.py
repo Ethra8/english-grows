@@ -4,7 +4,7 @@ from django.db import models
 
 class IndivService(models.Model):
     type = models.ForeignKey('IndividualType', null=True, blank=True, on_delete=models.SET_NULL) # on_delete type, product don't delete, but set type to null
-    id = models.CharField(max_length=100, primary_key=True, unique=True, editable=False)
+    id = models.CharField(max_length=100, primary_key=True, unique=True, editable=False, default=uuid.uuid4)  # Add default=uuid.uuid4
     name = models.CharField(max_length=255, unique=True)  
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
@@ -19,7 +19,7 @@ class IndivService(models.Model):
     def get_indivservice_type(self): 
         return self.type
         
-    def get_indivservice_id():
+    def get_indivservice_id(self):
         return self.id
 
 

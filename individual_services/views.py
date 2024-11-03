@@ -73,6 +73,22 @@ def individual_services(request):
 
 
 @login_required
+def add_service(request):
+    if request.method == 'POST':
+        form = IndivServiceForm(request.POST)
+        if form.is_valid():
+            indiv_service = form.save()
+            messages.success(request, "Service created successfully!")
+            return redirect(reverse('indiv_service_detail', args=[indiv_service.pk]))
+        else:
+            messages.error(request, "There was an error creating the service.")
+    else:
+        form = IndivServiceForm()
+
+    return render(request, 'add_service.html', {'form': form})
+
+
+@login_required
 def edit_service(request, service_id):
     """ Edit a product in the store """
     if not request.user.is_superuser:
