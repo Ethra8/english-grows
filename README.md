@@ -398,12 +398,13 @@ Any user can **Read** the service created:
 #### Update Service
 Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page:  
 
-  Uploading English Grows - Google Chrome 2024-11-03 20-42-57.mp4…
+  
+  https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
 
 
 
 #### Delete Service
-Admin users can **Delete** a service  
+Admin users can **Delete** a service, with confirmation step, and success message:  
 
   https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
 
