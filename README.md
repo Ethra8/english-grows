@@ -192,21 +192,23 @@ The following fonts have been used, all from Google Fonts:
 <details>
 <summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
 - HOME Page
-  
-  - ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
+    
+  ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
 
   
 - INDIVIDUAL SERVICES Page
-  - 
+
+  ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
+
 
 - SERVICE DETAILS Page
-  - 
+  
 
-- SHOPPING BAG Page (form)
-  - 
+  - SHOPPING BAG Page (form)
+  
 
-- MY PROFILE Page (list)
-  - 
+  - MY PROFILE Page
+   
 
 - COMPANIES CONTACT Page (form)
   - 
