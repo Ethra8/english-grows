@@ -31,6 +31,7 @@ EDNA TORRES MUNILL
     * [User Profiles](#user-profiles)
  - [AGILE DEVELOPMENT](#agile-development)
  - [DESIGN CHOICES](#design-choices)
+ - [WIREFRAMES](#wireframes)
  - [FEATURES](#features)
     * [Navbar](#navbar)
     * [User Authentication](#user-authentication)
@@ -152,11 +153,68 @@ The following fonts have been used, all from Google Fonts:
 
 - **Charmonman**: Used in main title, and in services page for 'you':  
  ![image](https://github.com/user-attachments/assets/6b04f839-e95e-4aa0-a583-998f7cfa57d5)
-
- ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
-
-
   
+ ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
+  
+# WIREFRAMES
+
+## MOBILE & TABLET (Portrait)
+
+<details>
+<summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
+- HOME Page
+  
+  - 
+  
+- INDIVIDUAL SERVICES Page
+  - 
+
+- SERVICE DETAILS Page
+  - 
+
+- SHOPPING BAG Page (form)
+  - 
+
+- MY PROFILE Page (list)
+  - 
+
+- COMPANIES CONTACT Page (form)
+  - 
+
+- ABOUT Page
+  - 
+
+
+</details>  
+
+## DESKTOP & TABLET (Landscape)
+
+<details>
+<summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
+- HOME Page
+  
+  - 
+  
+- INDIVIDUAL SERVICES Page
+  - 
+
+- SERVICE DETAILS Page
+  - 
+
+- SHOPPING BAG Page (form)
+  - 
+
+- MY PROFILE Page (list)
+  - 
+
+- COMPANIES CONTACT Page (form)
+  - 
+
+- ABOUT Page
+  - 
+
+
+</details>  
 # FEATURES
 The following features have been implemented in this site:
   
