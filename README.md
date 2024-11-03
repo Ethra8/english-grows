@@ -396,7 +396,7 @@ The Admin user can easily create a service directly through the admin, with no n
 Any user can **Read** the service created:  
 
 #### Update Service
-Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page:  
+Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page, both with a success message to inform user of the action completed:  
 
   
   https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
