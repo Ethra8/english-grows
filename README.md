@@ -203,25 +203,29 @@ The search bar is on the ***for you*** service page:
 
 
 ## Shopping Bag
-Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the follwoing videos and screen captures to see all these features in action.
-https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05  
+Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the following videos and screen captures to see all these features in action.  
+  
+  https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05   
+  
+  ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
 
-![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
+  ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
 
-![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
-
-https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a
+  https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
 
 ## Online Payments - STRIPE API  
+  
   ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
-
-  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)
-
-
+  
+  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)  
+  
+  
 ## 404 Error Page
+  
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
+  
 ## SEO 
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
 
@@ -240,10 +244,10 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
 The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
   
  ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
-
+  
 ### Accounts
 From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
-   
+     
 ### Authenticatin and Authorization 
  * These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current Englih language level, fr instance:  
   
