@@ -13,23 +13,11 @@
 {% block content %}
     <div class="overlay2"></div>
     <div class="container mb-2 ml-0 pl-0 pl-sm-3 pl-md-5 pr-0 w-100">
-        <div class="row w-100">
-            <div class="col">
-
-                <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase">View More Services</span>
-                </a>
-
-            </div>
-        </div>
 
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="text-uppercase mb-4">Shopping Bag</h2>
+                <h2 class="text-uppercase mb-4 eg-font">Shopping Bag</h2>
                 <hr>
             </div>
         </div>
@@ -37,7 +25,8 @@
         <div class="row">
             <div class="col">
                 {% if bag_items %}
-                    <div class="table-wrapper" style="overflow-x: auto;"> <!-- Make table scrollable -->
+                <div class="table-wrapper" style="overflow-x: auto;">
+                    <div class="table-responsive"> <!-- Enables horizontal scroll on small screens -->
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
                                 <tr>
@@ -104,12 +93,19 @@
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="text-right bg-custom-dark py-auto pr-3">
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h4 class="mt-4 eg-font"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'checkout' %}" class="btn btn-custom-teal rounded-pill btn-lg  mt-5">
+                                    <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill btn-lg mt-5" aria-label="go back to services">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Go BAck</span>
+                                    </a>
+                    
+                                    <a href="{% url 'checkout' %}" class="btn btn-custom-teal rounded-pill btn-lg mt-5">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -121,6 +117,7 @@
                     </div>
                 {% else %}
                     <p class="lead mb-5">Your bag is empty.</p>
+                </div>
                 {% endif %}
             </div>
         </div>
