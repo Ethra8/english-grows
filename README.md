@@ -1,6 +1,3 @@
-
-https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
-
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
