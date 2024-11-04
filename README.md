@@ -167,42 +167,51 @@ The following fonts have been used, all from Google Fonts:
   - 
   
 - INDIVIDUAL SERVICES Page
+
   - 
 
 - SERVICE DETAILS Page
+
   - 
 
 - SHOPPING BAG Page (form)
+
   - 
 
 - MY PROFILE Page (list)
+
   - 
 
 - COMPANIES CONTACT Page (form)
+
   - 
 
 - ABOUT Page
+
   - 
-
-
+  
+  
 </details>  
-
+  
 ## DESKTOP & TABLET (Landscape)
-
+  
 <details>
 <summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
-- HOME Page
+
+  - HOME Page
     
-  ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
+    ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
 
   
-- INDIVIDUAL SERVICES Page
+  - INDIVIDUAL SERVICES Page
 
-  ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
+    ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
 
 
-- SERVICE DETAILS Page
-  
+  - PACK DETAILS Page
+
+    ![image](https://github.com/user-attachments/assets/65efcf9a-dd87-45d0-ba5c-a644dfd90075)
+
 
   - SHOPPING BAG Page (form)
   
