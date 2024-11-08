@@ -162,7 +162,7 @@ The following fonts have been used, all from Google Fonts:
 ## MOBILE & TABLET (Portrait)
   
 <details>
-<summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
+<summary>CLICK HERE to see the Mobile & Tablet (portrait) Wireframes</summary>
 - HOME Page
   
   - 
@@ -197,7 +197,7 @@ The following fonts have been used, all from Google Fonts:
 ## DESKTOP & TABLET (Landscape)
   
 <details>
-<summary>Click here to see the Desktop and Tablet (Landscape) Wireframes</summary>
+<summary>CLICK HERE to see the Desktop and Tablet (Landscape) Wireframes</summary>
 
   - HOME Page
     
@@ -398,22 +398,24 @@ These future features are thought of as being user or admin ***wishes***:
   
 # STRUCTURE
 The site has been built using Django 5.1 in Python 3.12, and has the following structure:
-- **DJANGO APPS** : The site contains five ***django apps*** (profiles, bag, checkout, home, individual_services) with multiple models, views, urls, and templates in each app. Please check the code for further details.
+- **DJANGO APPS** : The site contains five ***django apps*** (*profiles*, *bag*, *checkout*, *home*  and *individual_services*) with multiple ***models***, ***views***, ***urls***, and ***templates*** in each app. Please check each app's files for further reference.
 - **MODULES** : Please refer to the ***requirements.txt*** file to check all the modules used for the development of this site, and their correspondent versions.
-- **DATABASE** : PostgreSQL database has been used for this project.
+- **DATABASE** : PostgreSQL database has been used for this project, for being a relational database that supports both SQL (relational) and JSON (non-relational) querying.
 - **STORAGE** : Static and media files have been stored in a AWS s3 bucket.
-
-      
+  
+     
 # TESTING  
 ## DEFECT TRACKING
   
 ### GITHUB ISSUES
-All issues have been solved, and closed in Github by the creator of this site.
-## DEFECTS OF NOTE
-No defects of note have been detencted on this site.
-## OUTSTANDING DEFECTS
-No outstanding defects have been detected in this site.
-
+All issues have been solved, and closed in Github by the creator of this site.  
+  
+### DEFECTS OF NOTE
+No defects of note have been detected on this site.  
+  
+### OUTSTANDING DEFECTS
+No outstanding defects have been detected in this site.  
+  
 ## GENERAL PERFORMANCE
 The following tests have been run for this project:  
 ## Lighthouse Report  
@@ -461,8 +463,18 @@ This website is compliant with all international standards, as proved after ***E
 
 
 ## MANUAL TESTING
-### USER ACCOUNT
+Manual testing of the site has been performed following the user's stories:
 
+- [X] 1. **Check the social media links to see the site's social media profile**
+- [X] 2. **Check the about page**
+- [X] 3. **See at first glance the part of the site that is specially dedicated to me (B2B or B2C)**
+- [X] 4. **B2B can contact the site to receive a customized training plan**.  
+- [X] 5. **All available services are listed**
+- [X] 6. **View specific type of service**
+- [X] 7. **View individual service details**
+- [X] 8. **view the total of my pending purchase at any time**
+- [X] 9. **sort the full list of available services ***by categories*** or ***by price*****
+- [X] 10. **sort specific category of services *by price*, or *alphabetically***
 - [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
     * Form is posted to the database reflected in the admin, as user is created.
     * User receives verification email  
