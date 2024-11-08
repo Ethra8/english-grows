@@ -236,31 +236,40 @@ The following fonts have been used, all from Google Fonts:
 # FEATURES
 The following features have been implemented in this site:
   
-## Navbar
-There are two navigation bars and both are responsive:
-- The first, ***topnav*** has a dark blue ***#003366*** color, and is fixed on top of every single page of the site. It has three icons with links: logo(to home), user, bag.
-- The second nav is on the individual services page, accessed through "For You" button on the home page. It has a search bar to search to seach whithin all the services for specific words.  
+## Navigation Bar
+There are two navigation bars and both are fully responsive:
+1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
+  * [**user icon**](https://fontawesome.com/icons/user?f=classic&s=solid): Has a ***dropdown*** menu whose options link to the user's ***profile*** (when signed in) and ***logout*** (when signed in, ***login*** if logged out). When the user is logged in, the user name displays below the icon.
+  * [**bag icon**](https://fontawesome.com/icons/bag-shopping?f=classic&s=solid): Links to the shopping bag. Below the icon, the total amount of items stored in the bag is displayed.
+2. The second, ***nav***, is only present in the individual services page, accessed through the *For You* button on the home page. It has a search bar to search for specific words within all the services names and descriptions.  
   
 https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
+
   
 ## User Authentication
+Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
+
+  <details>
+  <summary>CLICK HERE to see the customised templates</summary>
   
- ![image](https://github.com/user-attachments/assets/90ed2427-bbf5-4117-bf76-0ca0f0859436)  
+   - ![image](https://github.com/user-attachments/assets/90ed2427-bbf5-4117-bf76-0ca0f0859436)   
+    
+   - ![image](https://github.com/user-attachments/assets/0324af75-5a15-4b25-bd67-de054fe30373)  
+    
+   - ![image](https://github.com/user-attachments/assets/cbbcab9d-a5f5-4bdb-8c66-0e01795f29e5)  
   
- ![image](https://github.com/user-attachments/assets/0324af75-5a15-4b25-bd67-de054fe30373)  
+   - ![image](https://github.com/user-attachments/assets/19f04349-82f4-4bbe-b33e-f674599d5a9e)  
   
- ![image](https://github.com/user-attachments/assets/cbbcab9d-a5f5-4bdb-8c66-0e01795f29e5)  
+   - ![image](https://github.com/user-attachments/assets/c654fa7b-8e72-4d86-9eef-f7ebfb2d6bdb)  
   
- ![image](https://github.com/user-attachments/assets/19f04349-82f4-4bbe-b33e-f674599d5a9e)  
+   - ![image](https://github.com/user-attachments/assets/eafc5285-6a9e-45d7-975a-5d61768fa0a5)  
   
- ![image](https://github.com/user-attachments/assets/c654fa7b-8e72-4d86-9eef-f7ebfb2d6bdb)  
+   - ![image](https://github.com/user-attachments/assets/ed6abc95-9488-4eaa-958d-a5305101eefd)  
   
- ![image](https://github.com/user-attachments/assets/eafc5285-6a9e-45d7-975a-5d61768fa0a5)  
-  
- ![image](https://github.com/user-attachments/assets/ed6abc95-9488-4eaa-958d-a5305101eefd)  
-  
- ![image](https://github.com/user-attachments/assets/42bf8fa0-b1b4-479d-b47e-b05a3afac143)  
-  
+   - ![image](https://github.com/user-attachments/assets/42bf8fa0-b1b4-479d-b47e-b05a3afac143)  
+
+  <summary>  
+    
  https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
 
    
