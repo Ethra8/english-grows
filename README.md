@@ -299,6 +299,7 @@ Whithin the shopping bag, users can update quantity of service packs to buy, and
 ## SEO 
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
 
+### KEYWORDS AND METATAGS
 The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and SEO relevant info:  
 ```$python
 <meta name="theme-color" content="teal">
@@ -308,7 +309,22 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
    learning, corporate, reduced, live">
 <meta name="author" content="Edna Torres Munill">
 ```
-  
+### sitemap.xml
+This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery.  
+To create the file, follow these steps:
+1. Go to [Xml-sitemaps.com](https://www.xml-sitemaps.com/), and include the site's url to generate the xml file, and click on START:  
+
+   ![image](https://github.com/user-attachments/assets/7479ba77-1d7f-454d-b07e-a9bd9541d636)
+
+2. The file will automatically be generated after the tool crawls all the site's urls (could take a moment, depending on site's complexity). Once completed, click on 'view sitemap details':  
+
+   ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
+ 
+3. Download the file, and include it in the site's main root directory
+
+
+
+### robots.txt
   
 ## Admin Console
 The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
@@ -494,21 +510,21 @@ Admin users can **Delete** a service, with confirmation step, and success messag
   
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 The following have been used for the development of this site:  
-  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on the libraies and modules, refer to *requirements.py* on the root directory.
-  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** reports to check and improve core web vitals, including accessibility issues.
-  - [Remove.bg](https://www.remove.bg/) to remove background from logo image.
-  - [Favicon](https://favicon.io/) - To create the logo, and the icon on the title included in each page of this site
-  - [Font Awesome](https://fontawesome.com/) - For the icons used
-  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
-  - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory.
+  - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** tool's reports to check and improve core web vitals.
+  - [Favicon](https://favicon.io/) - To create the logo on the title of each page on the site.
+  - [Font Awesome](https://fontawesome.com/) - For the navigation and footer icons.
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them on the site
+  - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku.
   - [Heroku](https://heroku.com) - To deploy this python site.
-  - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all info related to this site, such as user info, orders, available services, users' contact requests, and more.
-  - [AWS](https://aws.amazon.com/) - Amazon Web Services has been used to create an ***s3 bucket*** to store all media and static files of this site.
+  - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all the site's data, such as user personal data, order details, available services, users' contact requests, and more.
+  - [AWS](https://aws.amazon.com/) - Amazon Web Services have been used to create an ***s3 bucket*** to store all media and static files of this site.
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) - Tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorythm.
   - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
+  - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
  
 # CREDITS & ACKNOWEDGEMENTS
 - All the images are free copyright, and have been taken from [Pexels.com].
