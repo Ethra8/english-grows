@@ -15,7 +15,7 @@ This site is an e-commerce that sells services. The services provided are the fo
 - You can check the Github repository [here](https://github.com/Ethra8/english-grows)
 
 ## Author
-EDNA TORRES MUNILL
+Edna Torres Munill
 
 
 # TABLE OF CONTENTS
@@ -30,25 +30,30 @@ EDNA TORRES MUNILL
     * [User Stories](#user-stories)
     * [User Profiles](#user-profiles)
  - [UI](#ui)
-    - [Agile Methodology](#agile-development)
+    - [Agile Methodology](#agile-methodology)
+    - [Structure](#structure)
+      * [Data Structure](#data-structure)
+      * [Pages](#pages)
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
       * [Typography](#typography)
     - [Wireframes](#wireframes)
-    - [FeaturesS](#features)
+    - [Features](#features)
       * [Implemented Features](#implemented-features)
+        - [Responsiveness](#responsiveness)
+        - [Accessibility](#accessibility)
         - [Navigation Bar](#navigation-bar)
         - [User Authentication](#user-authentication)
         - [Contact Form](#contact-form)
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
         - [Shopping Bag](#shopping-bag)
-        - [CRUD Funtionality](#crud-functionality)
+        - [CRUD Functionality](#crud-functionality)
         - [Online Payments - Stripe Integration](#online-payments---stripe)
         - [404 Error Page](#404-error-page)
-        - [SEO](#seo)
-        - [Admin Console](#admin-console)
+        - [Admin Console - CRUD Functionality](#admin-console)
+        - [SEO Techniques](#seo-techniques)
       * [Future Features](#future-features)
  - [TESTING](#testing)
    * [Defect Tracking](#defect-tracking)
@@ -135,15 +140,76 @@ Any individual person wanting to improve their level of English tfor one of the 
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
   
+
+# UI
+
   
-### AGILE DEVELOPMENT
+## AGILE METHODOLOGY
 This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology to a full extent.
 - [User stories](#user-stories) have been created and implemented one at a time, and have been labelled following the **MoSCoW priorization logic**: ***Must*** & ***Should*** have. Future features have been, and will be, created following the same logic, adding ***Could*** and ***Won't/Wish*** labels.  
 - Keeping in line with the Agile development methodology, a Kanban board has been created, and used to track user sttories, and bugs during development: [Kanban Project](https://github.com/users/Ethra8/projects/7)
+
+
+## STRUCTURE
+The site contains the following apps which form its overall structure. Each app contains the following structure detailed in these [Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), and/or also below:
+
+  
+#### BAG
+This app does not contain any model in itself, but contains different ***views***, ***templates*** and ***urls*** to **add items in bag**, **update de quatity** of an item in the bag, or **delete** a preselected item. For further detail, please check this [Google Slide] 
+  
+### DATA STRUCTURE
+Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the PostgreSQL database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1496689178#gid=1496689178). Check this site's app:   
   
 
-# UI
-  
+#### CHECKOUT
+
+#### HOME
+This app has been created to store the index template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views. The B2B form model is as follows:  
+```
+class CompanyContact(models.Model):
+    
+    email = models.EmailField(blank=False, null=False)
+    company_name = models.CharField(max_length=60, blank=True, null=True)
+    name = models.CharField(max_length=60, blank=False, null=False)
+    individual_packs = models.BooleanField(default=False)
+    reduced_groups = models.BooleanField(default=False)
+    message = models.TextField()
+    date = models.DateTimeField(auto_now_add=True)
+    
+
+    def get_absolute_url(self):
+        """Returns users to the contact page on successful creation."""
+        return reverse('companies')
+    
+    def save(self, *args, **kwargs):
+        """Saves the email to the database and sends it to the admin."""
+        email = self.email
+        name = self.name
+        subject = 'New Request from Company'
+        message = self.message
+
+        # Fills in the email templates and then send the email.
+        contact_subject = render_to_string(
+            'contact/emails/contact_subject.txt',
+            {'subject': subject})
+        contact_body = render_to_string(
+            'contact/emails/contact_body.txt',
+            {'name': name, 'email': email, 'message': message})
+        send_mail(contact_subject,
+            contact_body,
+            email,
+            [settings.DEFAULT_FROM_EMAIL])
+        super().save(*args, **kwargs)
+    def __str__(self):
+        """Display the name and email in the admin panel."""
+        return f'{self.name} ({self.email})'
+```
+#### INDIVIDUAL SERVICES
+#### PROFILES
+
+
+
+    
 ## DESIGN CHOICES
 The design of this site has been thought to reflect professionality and inspire trust.
   
@@ -332,7 +398,7 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
   
   
-## SEO 
+## SEO Techniques
   
 ### KEYWORDS AND METATAGS
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
@@ -368,8 +434,8 @@ This files disallows crawler spiders to crawl to certain urls in the site, which
 - Profile
   
   
-## Admin Console
-The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
+## Admin Console - CRUD Funtionality
+The admin console reflects most of the models present in this site, and also some features from django-allauth module's user model. All the models which can directly be accessed via the admin panel are detailed below, and CRUD functionality can be performed by a superuser (admin user) with the necessary permissions:
   
  ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
   
