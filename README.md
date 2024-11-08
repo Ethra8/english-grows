@@ -59,17 +59,17 @@ EDNA TORRES MUNILL
    * [Languages](#languages)
    * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 - [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
-
-
-
+  
+  
 # UX
-You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site. 
+You will find in the points stated below a brief study aiming at providing the user with the best possible experience when visiting this site.  
+  
 ## Target Audience
 ### B2B
 Any company interested in improving their employees' level of English for one of the following reasons:
 * Wants to compete in the international market
 * Locally works with international customers
-
+  
 ### B2C  
 Any individual person wanting to improve their level of English tfor one of the following reasons:  
 * Travel
@@ -77,13 +77,12 @@ Any individual person wanting to improve their level of English tfor one of the 
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
   
 ## Project Goal
-  1. The site aims at providing B2B and B2C users with services they can buy: live online lessons in individual or reduced groups format.
-  2. All users can register for an account.
-  3. B2B users can send a contact form to receive customized offers on the type of service desired.
+  1. The site aims at providing B2B and B2C customers with services they can buy: live online lessons in individual or reduced groups format.
+  2. Any user can register for an account.
+  3. B2B users can send a contact form to receive customized offers on the type of service desired for their company.
   4. B2C services available can be stored in a shopping bag and bought online through Stripe API.
-  5. All users can subscribe to the monthly newsletter.
-  6. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
-
+  5. All users can subscribe to the monthly newsletter. Members of the monthly newsletter are informed of interesting cultural events, and social and historic facts related to the British culture, and English speaking countries around the world.
+  
   
 ## USER STORIES
   
@@ -92,10 +91,10 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [ ] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
 - [X] 2. **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
 - [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***  
-
+  
 #### B2B
-- [X] 4. **MUST:** I want to seamlessly ***contact the site*** to receive a customized training plan and quote.  
-   
+- [X] 4. **MUST:** I want to be able to easily ***contact the site*** to receive a customized training plan and quote.  
+     
 #### B2C
 ##### Viewing and Navigation
 - [X] 5. **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
@@ -132,34 +131,36 @@ N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
   
   
 ### AGILE DEVELOPMENT
-This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology at a hundred percent.
+This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology to a full extent.
 - [User stories](#user-stories) have been created and implemented one at a time, and have been labelled following the **MoSCoW priorization logic**: ***Must*** & ***Should*** have. Future features have been, and will be, created following the same logic, adding ***Could*** and ***Won't/Wish*** labels.  
 - Keeping in line with the Agile development methodology, a Kanban board has been created, and used to track user sttories, and bugs during development: [Kanban Project](https://github.com/users/Ethra8/projects/7)
-
-
+  
+  
 # DESIGN CHOICES
 The design of this site is thought to inspire professionality and trust. Dark tones of blues foster a state of relaxation and of wellbeeing. 
-
+  
 ## COLOUR PALETTE
 This is the palette used, contrasting with white fonts on darjker backgrounds:
-
-![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)
-
+  
+![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)  
+  
 ## TYPOGRAPHY
 The following fonts have been used, all from Google Fonts:
 - **Montserrat**: Used for all main text in the site
-- **Big Shoulders Display**: On the main heading on the landing page (index template), and the allauth headings:
+- **Big Shoulders Display**: On the main heading on the landing page (index template), and the allauth headings:  
+  
   ![image](https://github.com/user-attachments/assets/8b7761aa-fd76-4b64-bcc8-3252927468e4)
-
-- **Charmonman**: Used in main title, and in services page for 'you':  
+  
+- **Charmonman**: Used in main title, and in services page for 'you':
+  
  ![image](https://github.com/user-attachments/assets/6b04f839-e95e-4aa0-a583-998f7cfa57d5)
   
  ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
   
 # WIREFRAMES
-
+  
 ## MOBILE & TABLET (Portrait)
-
+  
 <details>
 <summary>Click here to see the Mobile & Tablet (portrait) Wireframes</summary>
 - HOME Page
@@ -223,7 +224,7 @@ The following fonts have been used, all from Google Fonts:
    ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
 
 
-  - COMPANIES CONTACT Page (form)
+  - COMPANIES Page (B2B contact form)
   
 
   - ABOUT Page
@@ -231,11 +232,11 @@ The following fonts have been used, all from Google Fonts:
 
 
 </details>  
-
   
+    
 # FEATURES
 The following features have been implemented in this site:
-  
+    
 ## Navigation Bar
 There are two navigation bars and both are fully responsive:
 1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
@@ -244,11 +245,11 @@ There are two navigation bars and both are fully responsive:
 2. The second, ***nav***, is only present in the individual services page, accessed through the *For You* button on the home page. It has a search bar to search for specific words within all the services names and descriptions.  
   
 https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
-
   
+    
 ## User Authentication
 Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
-
+  
 <details>
 <summary>CLICK HERE to see the customised templates</summary>
   
@@ -271,24 +272,24 @@ Django ***all-auth*** module has been implemented in the site. It allows to easi
 </details>  
     
  https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
-
+  
    
-## Contact Form
-
+## B2B Contact Form
+  
 https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
-
+  
 ## Product Sorting
-
+  
 https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
-
+  
 ## Search Bar
 The search bar is on the ***for you*** service page:
-
+  
   ![image](https://github.com/user-attachments/assets/58f3b28c-3e3d-46cc-a2fc-81a298bd6c82)
-
-
+  
+  
 ## Shopping Bag
-Whithin the shopping bag, users can update quantity of service packs to buy, and eliminate any service from the bag as well. The subtototal is updated too depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the following videos and screen captures to see all these features in action.  
+Whithin the shopping bag, users can **update quantity** of service packs to buy, and **delete any service** from the bag as well. The **subtototal is updated too** depending on the quantity of each item. Then the user can check out, or return to services. Please refer to the following videos and screen captures to see all these features in action.  
   
   https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05   
   
@@ -300,21 +301,22 @@ Whithin the shopping bag, users can update quantity of service packs to buy, and
 
 
 ## Online Payments - STRIPE API  
+[Stripe](https://www.stripe.com) secure payment platform has been implemented in this site, and is fully functional. Users receive a confirmation email after the purchase, and webhooks have also been implemented:  
   
   ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
-  
+    
   ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)  
   
   
 ## 404 Error Page
   
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
-
+  
   
 ## SEO 
-To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used.
-
+  
 ### KEYWORDS AND METATAGS
+To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
 The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and SEO relevant info:  
 ```$python
 <meta name="theme-color" content="teal">
@@ -324,27 +326,29 @@ The lighthouse web report (displayed in the ***Testing*** section below) passed 
    learning, corporate, reduced, live">
 <meta name="author" content="Edna Torres Munill">
 ```
-### sitemap.xml
-This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery.  
-To create the file, follow these steps:
-1. Go to [Xml-sitemaps.com](https://www.xml-sitemaps.com/), and include the site's url to generate the xml file, and click on START:  
-
-   ![image](https://github.com/user-attachments/assets/7479ba77-1d7f-454d-b07e-a9bd9541d636)
-
-2. The file will automatically be generated after the tool crawls all the site's urls (could take a moment, depending on site's complexity). Once completed, click on 'view sitemap details':  
-
-   ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
- 
-3. Download the file, and include it in the site's main root directory
   
+### sitemap.xml
+This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery. Having included this file, improves the site quality, allowing for a better SEO indexing.  
+  
+To create the file, follow these steps:  
+1. Go to [Xml-sitemaps.com](https://www.xml-sitemaps.com/), and include the site's url to generate the xml file, and click on START:  
+  
+   ![image](https://github.com/user-attachments/assets/7479ba77-1d7f-454d-b07e-a9bd9541d636)
+  
+2. The file will automatically be generated after the tool crawls all the site's urls (could take a moment, depending on site's complexity). Once completed, click on 'view sitemap details':  
+  
+   ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
+   
+3. Download the file, and include it in the site's main root directory
+    
   
 ### robots.txt
 This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
 - Account
 - Bag
 - Profile
-
-    
+  
+  
 ## Admin Console
 The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
   
@@ -359,16 +363,16 @@ From django User model, stores **registered users' emails** for future emailing 
    ![image](https://github.com/user-attachments/assets/da898b54-7842-40b4-aa9b-4ad09b7bdafd)  
   
 ### Profiles
- * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:
+ * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:  
    
    ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
   
 ### Individual Services
  * The model for the Individual Services can be directly accessed via the admin. Thus, **Services can be created, updated, or deleted**:  
   
-   ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)
+   ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)    
   
-   ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)  
+   ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)    
   
   
 ### Home
@@ -384,13 +388,12 @@ The orders created by the Order model are recorded in the admin panel:
   ![image](https://github.com/user-attachments/assets/27bff2b5-0fdf-49f3-a2c0-b235e22f4017)  
   
   ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
-
+  
   
 ## FUTURE FEATURES
 These future features are thought of as being user or admin ***wishes***:  
   
-* [ ] **WISH**: As a **returning visitor**, I want to be able to **subscribe to the newsletter**, so that I can **receive updated on special offers, new courses or extra contents**.
-* [ ] **WISH**: As an **admin user**,I want to include additional fields in the user profile to track the student's progress.
+* [ ] **WISH**: As an **admin user**, I want to include additional fields in the user profile to track the student's progress.
   
   
 # STRUCTURE
@@ -459,22 +462,37 @@ This website is compliant with all international standards, as proved after ***E
 
 ## MANUAL TESTING
 ### USER ACCOUNT
-1. [X] Registration process completed:
-   * Form is posted to the databse reflected in the admin, as user is created.
-   * User receives verification email  
+
+- [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
+    * Form is posted to the database reflected in the admin, as user is created.
+    * User receives verification email  
      
      ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)  
+    
+    * Verification url works as expected
+    * Once user clicks on 'verify', he is redirected to home page, already logged in.
+    
+- [X] 12. **Easily login and logout**.
+- [X] 13. **Easily recover user password**:
+    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:
+    
+    ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)
+     
+    * User receives an email with link to restore password:  
+     
+    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
+  
+- [X] 14. **Have a personalized user profile**.
+- [X] 15. **Update and save my personal account information on my user profile**.
+- [X] 16. **Access my bag, and update or delete any items in it**.
+- [X] 17. **Users' personal data is secured**: No one else can access a user's profile, nor order urls, which also contain personal data.
+- [X] 18. **Receive a confirmation email after a purchase, with details of the order**.
+- [x] 19. **View past orders, and read their full information on th user's personal profile**.
 
-   * Verification url works as expected
-   * Once user clicks on 'verify', he is redirected to home page, already logged in.
-2. [X] Password Reset / forgotten
-   * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:
-     
-     ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)
-     
-   * User receives an email with link to restore password.
-     
-     ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
+
+   
+
+   
 
 ### USER PROFILE
 
