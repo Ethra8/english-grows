@@ -74,6 +74,11 @@ def individual_services(request):
 
 @login_required
 def add_service(request):
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('individual_services'))
+
     service = None  # Initialize service to None for GET requests
     if request.method == 'POST':
         form = IndivServiceForm(request.POST)

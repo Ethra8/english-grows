@@ -11,8 +11,9 @@ from checkout.models import Order
 def profile(request):
     """ Display the user profile """
     profile = get_object_or_404(UserProfile, user=request.user)
-    orders = profile.orders.all()  # Ensure you're fetching the orders associated with the user's profile
-
+    orders = Order.objects.filter(user=request.user)  # Sort by date
+    
+    # Update user profile info via POST in form
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
@@ -22,6 +23,8 @@ def profile(request):
             messages.error(request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
+
+    orders = orders.order_by('-date')
 
     template = 'profiles/profile.html'
     context = {
@@ -43,6 +46,10 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    '''
+    Display one single order's detail once
+    user clicks on an order on profile.
+    '''
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (f'This is a past confirmation for order {order_number}\
