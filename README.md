@@ -32,6 +32,9 @@ EDNA TORRES MUNILL
  - [UI](#ui)
     - [Agile Methodology](#agile-development)
     - [Design Choices](#design-choices)
+      * [Hero Image](#hero-image)
+      * [Color Palette](#color-palette)
+      * [Typography](#typography)
     - [Wireframes](#wireframes)
     - [FeaturesS](#features)
       * [Implemented Features](#implemented-features)
@@ -54,7 +57,7 @@ EDNA TORRES MUNILL
      - [Outstanding Defects](#outstanding-defects)
    * [Core Web Vitals](#core-web-vitals)
      - [Lighthouse Reports](#lighthouse-reports)
-   * [Accessibility](#accessibility)
+   * [Accessibility Testing](#accessibility-testing)
      - [Contrast Validation Reports](#contrast-validation-reports)
      - [General WCAG 2.1 Report](#general-wcag-2.1-report)
    * [Manual Testing](#manual-testing)
@@ -69,9 +72,9 @@ You will find in the points stated below a brief study aiming at providing the u
   
 ## Target Audience
 ### B2B
-Any company interested in improving their employees' level of English for one of the following reasons:
+Any company interested in improving its employees' level of English for one of the following reasons:
 * Wants to compete in the international market
-* Locally works with international customers
+* Operates locally with international customers
   
 ### B2C  
 Any individual person wanting to improve their level of English tfor one of the following reasons:  
@@ -138,22 +141,24 @@ This project has been development with the Agile development method in mind, alt
 - [User stories](#user-stories) have been created and implemented one at a time, and have been labelled following the **MoSCoW priorization logic**: ***Must*** & ***Should*** have. Future features have been, and will be, created following the same logic, adding ***Could*** and ***Won't/Wish*** labels.  
 - Keeping in line with the Agile development methodology, a Kanban board has been created, and used to track user sttories, and bugs during development: [Kanban Project](https://github.com/users/Ethra8/projects/7)
   
-  
-# DESIGN CHOICES
-The design of this site has been thought to reflect professionality and inspire trust.
 
-## HERO IMAGE
-The following image has been created to be the hero image. The globe is the same as in the logo, and has been selected to represent both the global reach that online classes have, and the global importance of English as a *lingua franca*. Three small birds have been included to the image, to represent the *freedom* that learning English can bring to people (traveling, business, etc.), the *communication capability* boost, and all three form a small group, to represent the small group learning format offered.
+# UI
+  
+## DESIGN CHOICES
+The design of this site has been thought to reflect professionality and inspire trust.
+  
+### HERO IMAGE
+The following image has been created to be the hero image. The globe is the same as in the logo, and has been selected to represent both the global reach that online classes have, and the global importance of English as a *lingua franca*. Three small birds have been included to the image, to represent the *freedom* that learning English can bring to people (traveling, business, etc.), the *communication capability* boost, and all three form a small group, to represent the small group learning format offered. The colours of the hero image match the look and feel of the site, also in harmony with the logo.
 
   ![image](https://github.com/user-attachments/assets/d8a08d0d-a9bb-43d8-a56f-7c3d1467d481)
 
   
-## COLOUR PALETTE
+### COLOUR PALETTE
 This is the palette used, contrasting with white fonts on darker backgrounds. Blue tones are proven to foster a state of relaxation and wellbeeing, optimal for the learning process:
   
 ![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)  
   
-## TYPOGRAPHY
+### TYPOGRAPHY
 The following fonts have been used, all from Google Fonts:
 - **Montserrat**: Used for all main text in the site
 - **Big Shoulders Display**: On the main heading on the landing page (index template), and the allauth headings:  
@@ -166,9 +171,9 @@ The following fonts have been used, all from Google Fonts:
   
  ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
   
-# WIREFRAMES
+## WIREFRAMES
   
-## MOBILE & TABLET (Portrait)
+### MOBILE & TABLET (Portrait)
   
 <details>
 <summary>CLICK HERE to see the Mobile & Tablet (portrait) Wireframes</summary>
@@ -203,7 +208,7 @@ The following fonts have been used, all from Google Fonts:
   
 </details>  
   
-## DESKTOP & TABLET (Landscape)
+### DESKTOP & TABLET (Landscape)
   
 <details>
 <summary>CLICK HERE to see the Desktop and Tablet (Landscape) Wireframes</summary>
@@ -239,14 +244,19 @@ The following fonts have been used, all from Google Fonts:
   - ABOUT Page
   
 
-
 </details>  
   
-    
-# FEATURES
+  
+## FEATURES
 The following features have been implemented in this site:
+
+### Responsiveness
+This site has been designed and coded to be fully responsive, even in extra small devices.
+  
+### Accessibility
+This site has been coded by always keeping accessibility in mind, and achieving good results during the testing phase. For further reference, please check the accessibility reports [here](#accessibility-testing).
     
-## Navigation Bar
+### Navigation Bar
 There are two navigation bars and both are fully responsive:
 1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
   * [**user icon**](https://fontawesome.com/icons/user?f=classic&s=solid): Has a ***dropdown*** menu whose options link to the user's ***profile*** (when signed in) and ***logout*** (when signed in, ***login*** if logged out). When the user is logged in, the user name displays below the icon.
@@ -400,9 +410,11 @@ The orders created by the Order model are recorded in the admin panel:
   
   
 ## FUTURE FEATURES
-These future features are thought of as being user or admin ***wishes***:  
+These future features are thought of as being some of the user's imagined ***wishes***:  
   
-* [ ] **WISH**: As an **admin user**, I want to include additional fields in the user profile to track the student's progress.
+* [ ] **WISH**: As an **admin user**, I want to **include additional fields in the user profile**, in order to be able to **track students' progress**.
+* [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
+* [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
   
   
 # STRUCTURE
@@ -454,9 +466,11 @@ No critical errors were found whe passing the validator [JShint](http://www.jshi
 - **static/js/quantity_selector.js** :
   ![image](https://github.com/user-attachments/assets/f67fed89-1d45-4f2e-a343-4f05fb732e02)
   
-  
+
+
+
    
-## ACCESSIBILITY
+## ACCESSIBILITY TESTING
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
 
 ### CONTRAST VALIDATION REPORTS
@@ -570,13 +584,14 @@ Admin users can **Delete** a service, with confirmation step, and success messag
 The following have been used for the development of this site:  
   - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory.
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** tool's reports to check and improve core web vitals.
-  - [Favicon](https://favicon.io/) - To create the logo on the title of each page on the site.
-  - [Font Awesome](https://fontawesome.com/) - For the navigation and footer icons.
-  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them on the site
   - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku.
   - [Heroku](https://heroku.com) - To deploy this python site.
   - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all the site's data, such as user personal data, order details, available services, users' contact requests, and more.
   - [AWS](https://aws.amazon.com/) - Amazon Web Services have been used to create an ***s3 bucket*** to store all media and static files of this site.
+  - [Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used Google's emailing platform as email provider to send emails to users and customers, by implementing *smtp*.
+  - [Favicon](https://favicon.io/) - To create the logo on the title of each page on the site.
+  - [Font Awesome](https://fontawesome.com/) - For the navigation and footer icons.
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them on the site
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
   - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
@@ -585,7 +600,8 @@ The following have been used for the development of this site:
   - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
  
 # CREDITS & ACKNOWEDGEMENTS
-- All the images are free copyright, and have been taken from [Pexels.com].
+- All the images are free copyright, and have been taken from [Pexels.com]
+- The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
 - I have researched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
 - I have found inspiration and revieved material from Code Institute Full Stack Web development course.
 
