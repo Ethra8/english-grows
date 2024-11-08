@@ -3,4 +3,4 @@ Disallow: /accounts/
 Disallow: /bag/
 Disallow: /profiles/
 disallow: /checkout/
-Sitemap: 
+Sitemap: https://english-grows-477471d17e50.herokuapp.com/sitemap.xml
