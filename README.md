@@ -213,7 +213,7 @@ The following fonts have been used, all from Google Fonts:
     ![image](https://github.com/user-attachments/assets/65efcf9a-dd87-45d0-ba5c-a644dfd90075)
 
 
-  - SHOPPING BAG Page (form)
+  - SHOPPING BAG Page
 
     ![image](https://github.com/user-attachments/assets/af85acb3-c0a7-4dc7-ae64-50767a7003e4)
 
