@@ -214,19 +214,25 @@ The following fonts have been used, all from Google Fonts:
 
 
   - SHOPPING BAG Page (form)
-  
+
+    ![image](https://github.com/user-attachments/assets/af85acb3-c0a7-4dc7-ae64-50767a7003e4)
+
 
   - MY PROFILE Page
-   
 
-- COMPANIES CONTACT Page (form)
-  - 
+   ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
 
-- ABOUT Page
-  - 
+
+  - COMPANIES CONTACT Page (form)
+  
+
+  - ABOUT Page
+  
 
 
 </details>  
+
+  
 # FEATURES
 The following features have been implemented in this site:
   
