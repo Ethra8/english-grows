@@ -249,8 +249,8 @@ https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10
 ## User Authentication
 Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
 
-  <details>
-  <summary>CLICK HERE to see the customised templates</summary>
+<details>
+<summary>CLICK HERE to see the customised templates</summary>
   
    - ![image](https://github.com/user-attachments/assets/90ed2427-bbf5-4117-bf76-0ca0f0859436)   
     
@@ -268,7 +268,7 @@ Django ***all-auth*** module has been implemented in the site. It allows to easi
   
    - ![image](https://github.com/user-attachments/assets/42bf8fa0-b1b4-479d-b47e-b05a3afac143)  
 
-  <summary>  
+</details>  
     
  https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
 
