@@ -36,7 +36,7 @@ textarea {
 }
 
 .main-bg {
-    margin: 120px 0 40px;
+    margin: 120px 0 auto;
     flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
     min-height: calc(100vh - 280px) !important;  /* nav + main nav + footer height */
 }
@@ -693,7 +693,7 @@ a.btt-link:hover {
     }
 
     .main-bg {
-        margin: 70px 0 70px;
+        margin: 70px 0 auto;
         flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
         min-height: calc(100vh - 280px) !important;  /* nav + main nav + footer height */
     }
