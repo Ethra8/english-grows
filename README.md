@@ -336,11 +336,15 @@ To create the file, follow these steps:
    ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
  
 3. Download the file, and include it in the site's main root directory
-
-
-
-### robots.txt
   
+  
+### robots.txt
+This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
+- Account
+- Bag
+- Profile
+
+    
 ## Admin Console
 The admin console reflects most of the models present in this site, and user features from django-allauth. All the editable models are detailed below:
   
