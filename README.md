@@ -41,6 +41,7 @@ EDNA TORRES MUNILL
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
         - [Shopping Bag](#shopping-bag)
+        - [CRUD Funtionality](#crud-functionality)
         - [Online Payments - Stripe Integration](#online-payments---stripe)
         - [404 Error Page](#404-error-page)
         - [SEO](#seo)
@@ -139,10 +140,16 @@ This project has been development with the Agile development method in mind, alt
   
   
 # DESIGN CHOICES
-The design of this site is thought to inspire professionality and trust. Dark tones of blues foster a state of relaxation and of wellbeeing. 
+The design of this site has been thought to reflect professionality and inspire trust.
+
+## HERO IMAGE
+The following image has been created to be the hero image. The globe is the same as in the logo, and has been selected to represent both the global reach that online classes have, and the global importance of English as a *lingua franca*. Three small birds have been included to the image, to represent the *freedom* that learning English can bring to people (traveling, business, etc.), the *communication capability* boost, and all three form a small group, to represent the small group learning format offered.
+
+  ![image](https://github.com/user-attachments/assets/d8a08d0d-a9bb-43d8-a56f-7c3d1467d481)
+
   
 ## COLOUR PALETTE
-This is the palette used, contrasting with white fonts on darjker backgrounds:
+This is the palette used, contrasting with white fonts on darker backgrounds. Blue tones are proven to foster a state of relaxation and wellbeeing, optimal for the learning process:
   
 ![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)  
   
