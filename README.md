@@ -307,36 +307,40 @@ The following fonts have been used, all from Google Fonts:
 <summary>CLICK HERE to see the Desktop and Tablet (Landscape) Wireframes</summary>
 
   - HOME Page
-    
+      
     ![image](https://github.com/user-attachments/assets/ddc49bf0-a2bb-4c75-a50f-dc3a601540de)
-
-  
+    
+    
   - INDIVIDUAL SERVICES Page
-
+    
     ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
-
-
+    
+    
   - PACK DETAILS Page
-
+    
     ![image](https://github.com/user-attachments/assets/65efcf9a-dd87-45d0-ba5c-a644dfd90075)
-
-
+    
+    
   - SHOPPING BAG Page
-
-    ![image](https://github.com/user-attachments/assets/af85acb3-c0a7-4dc7-ae64-50767a7003e4)
-
-
-  - MY PROFILE Page
-
-   ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
-
-
-  - COMPANIES Page (B2B contact form)
   
-
+    ![image](https://github.com/user-attachments/assets/af85acb3-c0a7-4dc7-ae64-50767a7003e4)
+      
+      
+  - MY PROFILE Page
+  
+   ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
+    
+    
+  - COMPANIES Page (B2B contact form)
+      
+    ![image](https://github.com/user-attachments/assets/afcbbd36-4516-4cfa-8dab-a262eb891603)
+      
+    
   - ABOUT Page
   
-
+  ![image](https://github.com/user-attachments/assets/17847ec0-0fbd-4035-a543-e8ab1f83d300)
+    
+    
 </details>  
   
   
