@@ -26,7 +26,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DEVELOPMENT", "False") == "True"
+# Check if running in production on Heroku
+IN_PRODUCTION = os.getenv("DEVELOPMENT") == "1"
+
+# DEBUG setting logic
+if IN_PRODUCTION:
+    DEBUG = False  # Ensure DEBUG is always False in production
+else:
+    DEBUG = os.getenv("DEBUG", "False") == "True"  # Use DEBUG from env.py in development
 
 
 ALLOWED_HOSTS = ['8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com', 'https://amiresponsive.co.uk/']
@@ -129,10 +136,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 
-if DEBUG == True:
-    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'englishgrows@example.com'
-else:
+if IN_PRODUCTION:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
     EMAIL_PORT = 587
@@ -140,8 +144,9 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
     DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
-
-
+else:
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+    DEFAULT_FROM_EMAIL = 'englishgrows@example.com'
 
 WSGI_APPLICATION = 'english_grows.wsgi.application'
 
