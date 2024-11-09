@@ -279,11 +279,13 @@ footer a:hover {
 /** BUTTTONS **/
 
 .btn-custom,
-.allauth-form-inner-content button {
+.allauth-form-inner-content button,
+.allauth-form-inner-content input.btn,
+.allauth-form-inner-content form input.btn {
     background: #003366;
     color: white;
     text-transform: uppercase;
-    padding-right: 1rem;
+    padding: 0.5rem 1rem;
     border: outset 2px aquamarine;
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -294,7 +296,10 @@ footer a:hover {
 .btn-custom:focus,
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content button:active,
-.allauth-form-inner-content button:focus {
+.allauth-form-inner-content button:focus,
+.allauth-form-inner-content form input.btn:hover,
+.allauth-form-inner-content form input.btn:active,
+.allauth-form-inner-content form input.btn:focus {
     background: teal;
     color: white;
 }
