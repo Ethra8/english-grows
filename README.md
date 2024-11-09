@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/eab8bbbb-b673-4784-a4e2-ce05f111d178
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
@@ -138,12 +140,13 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
 - [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
 - [X] 24. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
+- [X] 25. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
+- [X] 26. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected. 
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
+    
   
-
 # UI
-
   
 ## AGILE METHODOLOGY
 This project has been development with the Agile development method in mind, although at times, it might not have fully followed the methodology to a full extent.
@@ -633,8 +636,20 @@ Manual testing of the site has been performed following the user's stories:
 - [X] 18. **Receive a confirmation email after a purchase, with details of the order**.
 - [x] 19. **View past orders, and read their full information on th user's personal profile**.
 
-
-
+### ADMIN 
+- [X] 20. **Sort orders by users**
+- [X] 21. **Order is automatically linked to the authenticated user** making it.
+- [x] 22. **User's email is stored in an email list**, to easen up future emailing campaigns.
+- [X] 23. **Store data in admin from company contact requests**
+- [X] 24. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
+  
+  https://github.com/user-attachments/assets/93e2744f-ae24-4779-a48b-deb5dfb6f039
+  
+- [X] 25. **Add service directly through the site** 
+- [X] 26. **Only authenticated users can make an order**, so that personal data from all users is protected. 
+  
+  https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
+  
 
 
 
