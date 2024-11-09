@@ -438,13 +438,17 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
   
 ### KEYWORDS AND METATAGS
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
-The lighthouse web report (displayed in the ***Testing*** section below) passed the SEO at 100. I have included the following meta tags and SEO relevant info:  
+- **Keywords and phrases have been included in the about page** within <strong> tags to highlight their importance to the SE:  
+  
+  ![image](https://github.com/user-attachments/assets/d895403c-90d8-4be6-b074-bd5c145a88aa)
+  
+- I have included the following **meta tags** and other SEO relevant info:
+  
 ```$python
 <meta name="theme-color" content="teal">
 <meta name="description" content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering     
    individual lesson packs and reduced group formats">
-<meta name="keywords" content="English, teaching, learning, learn, lessons, tutor, teacher, education, private, groups, online groups, e-  
-   learning, corporate, reduced, live">
+<meta name="keywords" content="English learning, teaching English, English classes online, English lessons online, English tutor, online teacher, English teacher, private lessons online, reduced group classes, online reduced groups, e-learning, corporate English lessons, online reduced classes, live English lessons">
 <meta name="author" content="Edna Torres Munill">
 ```
   
@@ -599,14 +603,37 @@ This website is compliant with all international standards, as proved after ***E
 ## MANUAL TESTING
 Manual testing of the site has been performed following the user's stories:
   
-- [X] 1. **Check the social media links to see the site's social media profile**
+- [ ] 1. **Check the social media links to see the site's social media profile**
 - [X] 2. **Check the about page**
+  
+  ![image](https://github.com/user-attachments/assets/cdb6beac-340d-4249-8ad7-6bf67ca64fc1)
+  
 - [X] 3. **See at first glance the part of the site that is specially dedicated to me (B2B or B2C)**
-- [X] 4. **B2B can contact the site to receive a customized training plan**.  
+
+  ![image](https://github.com/user-attachments/assets/25e596c0-b804-439b-93b4-3a7db8906a32)
+
+- [X] 4. **B2B can contact the site to receive a customized training plan**.
+
+  https://github.com/user-attachments/assets/e203231d-416a-48f2-ae6e-bd445409c255
+    
 - [X] 5. **All available services are listed**
+
+  https://github.com/user-attachments/assets/fdd602da-0263-4d3e-9783-050ddd8607c2
+        
 - [X] 6. **View specific type of service**
+  
+  https://github.com/user-attachments/assets/60b8cf12-8fc6-4cbd-9fc0-bf22cc73700f
+    
 - [X] 7. **View individual service details**
+
+  https://github.com/user-attachments/assets/7899e77f-0e75-4f2d-baf4-3eaa44a5ee57
+    
 - [X] 8. **view the total of my pending purchase at any time**
+
+  
+https://github.com/user-attachments/assets/3ca7b314-2375-428f-bf65-e1d390d48025
+
+
 - [X] 9. **sort the full list of available services ***by categories*** or ***by price*****
 - [X] 10. **sort specific category of services *by price*, or *alphabetically***
 - [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
