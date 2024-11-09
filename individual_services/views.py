@@ -31,7 +31,9 @@ def individual_services(request):
                 services = services.order_by('name')
             elif sort == 'price':
                 services = services.order_by('price')
-
+            elif sort == 'type':  # Sort by type of service
+                services = services.order_by('type__friendly_name')  # Sort by type's friendly name
+        
         # Sorting direction
         if 'direction' in request.GET:
             direction = request.GET['direction']
