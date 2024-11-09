@@ -1,5 +1,4 @@
 
-https://github.com/user-attachments/assets/eab8bbbb-b673-4784-a4e2-ce05f111d178
 # ENGLISH GROWS
 ![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
 
@@ -645,7 +644,10 @@ Manual testing of the site has been performed following the user's stories:
   
   https://github.com/user-attachments/assets/93e2744f-ae24-4779-a48b-deb5dfb6f039
   
-- [X] 25. **Add service directly through the site** 
+- [X] 25. **Add service directly directly from the site**
+  
+  https://github.com/user-attachments/assets/bce43c89-e04b-4024-b9bd-1687f4fd18f6
+      
 - [X] 26. **Only authenticated users can make an order**, so that personal data from all users is protected. 
   
   https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
