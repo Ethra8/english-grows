@@ -750,23 +750,24 @@ Manual testing of the site has been performed following the user's stories:
    ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)  
   
   
-### INDIVIDUAL SERVICE - CRUD Functionality
+### INDIVIDUAL SERVICE - CRUD Full Functionality
     
 #### Create Service
 - The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.
-- Only authoried users can add/update/delete service.
+- Only authorized users can add/update/delete service.
   
+  https://github.com/user-attachments/assets/55f780fb-778c-4d62-b354-0d0dd5bb3d81
   
 #### Read Service
-Any user can **Read** the service created:  
-
+- Services created can be **Read**, or viewed:  
   
+  https://github.com/user-attachments/assets/298dd3fe-2ec1-4745-9c94-021c244506d7
+    
 #### Update Service
 Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page, both with a success message to inform user of the action completed:  
   
-  https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a  
-  
-  
+  https://github.com/user-attachments/assets/e8e13700-7d55-4a26-8ec4-03d31c0a9f20
+    
 #### Delete Service
 Admin users can **Delete** a service, with confirmation step, and success message:  
   
