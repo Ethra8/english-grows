@@ -12,44 +12,54 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the\
      shopping bag """
-    service = get_object_or_404(IndivService, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
-    bag = request.session.get('bag', {})
+    try:
+        service = get_object_or_404(IndivService, pk=item_id)
+        quantity = int(request.POST.get('quantity'))
+        redirect_url = request.POST.get('redirect_url')
+        bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-        messages.success(request, f'Updated {service.name}\
-         to {bag[item_id]}')
-    else:
-        bag[item_id] = quantity
-        messages.success(request, f'Added {service.name}\
-         to your bag')
+        if item_id in list(bag.keys()):
+            bag[item_id] += quantity
+            messages.success(request, f'Updated {service.name}\
+            to {bag[item_id]}')
+        else:
+            bag[item_id] = quantity
+            messages.success(request, f'Added {service.name} \
+            to your bag')
 
-    request.session['bag'] = bag
+        request.session['bag'] = bag
 
-    return redirect(redirect_url)
-
+        return redirect(redirect_url)
+        
+    except Exception as e:
+        messages.error(request, f'Error adding \
+        item to bag: {e}')
+        return HttpResponse(status=500)
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the\
      specified amount"""
-    service = get_object_or_404(IndivService, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
-    bag = request.session.get('bag', {})
+    try:
+        service = get_object_or_404(IndivService, pk=item_id)
+        quantity = int(request.POST.get('quantity'))
+        bag = request.session.get('bag', {})
 
 
-    if quantity >= 1:
-        bag[item_id] = quantity
-        messages.success(request, f'Quantity of {service.name}\
-         successfully updated')
-    else:
-        messages.error(request, f'Failed to update\
-         {service.name}')
+        if quantity >= 1:
+            bag[item_id] = quantity
+            messages.success(request, f'Quantity of \
+            {service.name} successfully updated')
+        else:
+            messages.error(request, f'Failed to update \
+            {service.name}')
 
-    request.session['bag'] = bag
-    return redirect(reverse('bag'))
-
+        request.session['bag'] = bag
+        return redirect(reverse('bag'))
+    
+    except Exception as e:
+        messages.error(request, f'Error updating \
+        item: {e}')
+        return HttpResponse(status=500)
 
 def remove_bag_item(request, item_id):
     """Remove the item from the shopping bag"""
@@ -58,12 +68,12 @@ def remove_bag_item(request, item_id):
         bag = request.session.get('bag', {})
 
         bag.pop(item_id)  
-        messages.success(request, f'Successfully removed\
-         {service.name} from your bag')
+        messages.success(request, f'Successfully removed \
+        {service.name} from your bag')
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Error removing\
-         item: {e}')
+        messages.error(request, f'Error removing \
+        item: {e}')
         return HttpResponse(status=500)
