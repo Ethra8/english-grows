@@ -33,6 +33,7 @@ Edna Torres Munill
     - [Agile Methodology](#agile-methodology)
     - [Structure](#structure)
       * [Data Structure](#data-structure)
+      * [Site Structure](#site-structure)
       * [Pages](#pages)
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
@@ -151,19 +152,34 @@ This project has been development with the Agile development method in mind, alt
 
 
 ## STRUCTURE
-The site contains the following apps which form its overall structure. Each app contains the following structure detailed in these [Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), and/or also below:
 
+### Site Structure
+The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the following apps which form its overall structure. Each app contains the following structure detailed in these [Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), and/or also below:
+- **DJANGO APPS** - The site contains five ***django apps***, each one in charge of performing specific functionalities. Within the apps, different ***models***, ***views***, ***urls***, and ***templates*** ally to create the logic of each functionality of the site:
+  * **Profiles** -
+  * **Bag** - 
+  * **Checkout** - 
+  * **Home** - 
+  * **Individual_services** - 
+    
   
-#### BAG
-This app does not contain any model in itself, but contains different ***views***, ***templates*** and ***urls*** to **add items in bag**, **update de quatity** of an item in the bag, or **delete** a preselected item. For further detail, please check this [Google Slide] 
+#### BAG APP
+This app does not contain any model in itself, but contains different ***views***, ***templates*** and ***urls*** to perfomr the following functions. For further detail, please check this [Google Slide]:
+- **Add items in bag**
+- **Update de quantity** of a specific item in the bag
+- **Delete** a specific item. 
   
 ### DATA STRUCTURE
 Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the PostgreSQL database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1496689178#gid=1496689178). Check this site's app:   
   
 
-#### CHECKOUT
+#### CHECKOUT APP
 
-#### HOME
+
+
+  
+
+#### HOME APP
 This app has been created to store the index template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views. The B2B form model is as follows:  
 ```
 class CompanyContact(models.Model):
@@ -205,11 +221,19 @@ class CompanyContact(models.Model):
         return f'{self.name} ({self.email})'
 ```
 #### INDIVIDUAL SERVICES
+
+
+
+
+  
+  
 #### PROFILES
 
 
 
-    
+
+
+      
 ## DESIGN CHOICES
 The design of this site has been thought to reflect professionality and inspire trust.
   
@@ -223,6 +247,7 @@ The following image has been created to be the hero image. The globe is the same
 This is the palette used, contrasting with white fonts on darker backgrounds. Blue tones are proven to foster a state of relaxation and wellbeeing, optimal for the learning process:
   
 ![English Grows color palette](https://github.com/user-attachments/assets/e4736fe3-98b4-4a52-9692-04e88e3bf1f9)  
+
   
 ### TYPOGRAPHY
 The following fonts have been used, all from Google Fonts:
@@ -236,6 +261,7 @@ The following fonts have been used, all from Google Fonts:
  ![image](https://github.com/user-attachments/assets/6b04f839-e95e-4aa0-a583-998f7cfa57d5)
   
  ![image](https://github.com/user-attachments/assets/ef1af512-1f94-4702-b03c-294db44bf5eb)
+
   
 ## WIREFRAMES
   
@@ -273,6 +299,7 @@ The following fonts have been used, all from Google Fonts:
   
   
 </details>  
+
   
 ### DESKTOP & TABLET (Landscape)
   
@@ -316,12 +343,15 @@ The following fonts have been used, all from Google Fonts:
 ## FEATURES
 The following features have been implemented in this site:
 
+  
 ### Responsiveness
 This site has been designed and coded to be fully responsive, even in extra small devices.
+
   
 ### Accessibility
 This site has been coded by always keeping accessibility in mind, and achieving good results during the testing phase. For further reference, please check the accessibility reports [here](#accessibility-testing).
-    
+
+  
 ### Navigation Bar
 There are two navigation bars and both are fully responsive:
 1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
@@ -331,7 +361,7 @@ There are two navigation bars and both are fully responsive:
   
 https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
   
-    
+  
 ## User Authentication
 Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
   
@@ -358,7 +388,7 @@ Django ***all-auth*** module has been implemented in the site. It allows to easi
     
  https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
   
-   
+  
 ## B2B Contact Form
   
 https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
@@ -379,12 +409,12 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
   https://github.com/user-attachments/assets/c5d745df-9c5d-490b-afe4-098bc30c4d05   
   
   ![image](https://github.com/user-attachments/assets/33e28d23-3d08-4886-b6e8-9658dde6d3b5)  
-
+  
   ![image](https://github.com/user-attachments/assets/9c2d5574-e4e5-4a82-b32e-741e31c64035)  
-
+  
   https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
-
+  
 ## Online Payments - STRIPE API  
 [Stripe](https://www.stripe.com) secure payment platform has been implemented in this site, and is fully functional. Users receive a confirmation email after the purchase, and webhooks have also been implemented:  
   
@@ -425,7 +455,7 @@ To create the file, follow these steps:
    ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
    
 3. Download the file, and include it in the site's main root directory
-    
+   
   
 ### robots.txt
 This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
@@ -438,19 +468,23 @@ This files disallows crawler spiders to crawl to certain urls in the site, which
 The admin console reflects most of the models present in this site, and also some features from django-allauth module's user model. All the models which can directly be accessed via the admin panel are detailed below, and CRUD functionality can be performed by a superuser (admin user) with the necessary permissions:
   
  ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
+
   
 ### Accounts
 From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
+
      
 ### Authenticatin and Authorization 
  * These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current Englih language level, fr instance:  
   
    ![image](https://github.com/user-attachments/assets/da898b54-7842-40b4-aa9b-4ad09b7bdafd)  
+
   
 ### Profiles
  * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:  
    
    ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
+
   
 ### Individual Services
  * The model for the Individual Services can be directly accessed via the admin. Thus, **Services can be created, updated, or deleted**:  
@@ -466,6 +500,7 @@ As the contact form on the 'For Companies' page is stored in the *home* app, thi
  ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
  
  ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
+
  
 ### Checkout
 The orders created by the Order model are recorded in the admin panel:  
@@ -483,47 +518,48 @@ These future features are thought of as being some of the user's imagined ***wis
 * [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
   
   
-# STRUCTURE
-The site has been built using Django 5.1 in Python 3.12, and has the following structure:
-- **DJANGO APPS** : The site contains five ***django apps*** (*profiles*, *bag*, *checkout*, *home*  and *individual_services*) with multiple ***models***, ***views***, ***urls***, and ***templates*** in each app. Please check each app's files for further reference.
-- **MODULES** : Please refer to the ***requirements.txt*** file to check all the modules used for the development of this site, and their correspondent versions.
-- **DATABASE** : PostgreSQL database has been used for this project, for being a relational database that supports both SQL (relational) and JSON (non-relational) querying.
-- **STORAGE** : Static and media files have been stored in a AWS s3 bucket.
   
-     
+  
 # TESTING  
 ## DEFECT TRACKING
   
 ### GITHUB ISSUES
 All issues have been solved, and closed in Github by the creator of this site.  
   
+  
 ### DEFECTS OF NOTE
 No defects of note have been detected on this site.  
   
+  
 ### OUTSTANDING DEFECTS
 No outstanding defects have been detected in this site.  
+  
   
 ## GENERAL PERFORMANCE
 The following tests have been run for this project:  
 ## Lighthouse Report  
 **To improve my first report, the following actions have been taken:**  
 - Include a ***site.manifest***
-
+  
+  
 ### Tablet & Mobile Device
-
+  
  ![image](https://github.com/user-attachments/assets/472387ec-a029-4864-9620-fb502980a630)  
 
-### Laptop and Desktop
- 
- ![image](https://github.com/user-attachments/assets/536ad464-d0c7-4a8c-b663-affdbc528ad7)
   
-
+### Laptop and Desktop
+  
+ ![image](https://github.com/user-attachments/assets/536ad464-d0c7-4a8c-b663-affdbc528ad7)  
+  
+  
 ## CODE
+  
 ## CSS
 No critical errors were found whe passing the [W3C validator](https://jigsaw.w3.org/css-validator/)  
  
  ![image](https://github.com/user-attachments/assets/4b7cae97-029b-4268-8734-c5c9bb8dc913)  
 
+  
 ## JS ES6
 No critical errors were found whe passing the validator [JShint](http://www.jshint.com)  
 - **checkout/static/checkout/js/stripe_elementss.js** :  
@@ -531,29 +567,32 @@ No critical errors were found whe passing the validator [JShint](http://www.jshi
 
 - **static/js/quantity_selector.js** :
   ![image](https://github.com/user-attachments/assets/f67fed89-1d45-4f2e-a343-4f05fb732e02)
+
+
+
+
+
+
+
   
-
-
-
-   
 ## ACCESSIBILITY TESTING
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
-
+  
 ### CONTRAST VALIDATION REPORTS
-Font and backgroud colors have passed at level AAA. The following reports have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php)
-
-![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374) ![image](https://github.com/user-attachments/assets/0502fbeb-d05e-4e57-843e-e883d2786fce)
-
-
+Font and backgroud colors have passed at level AAA. The following reports have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php)  
+  
+![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374) ![image](https://github.com/user-attachments/assets/0502fbeb-d05e-4e57-843e-e883d2786fce)  
+  
+  
 ### GENERAL WCAG 2.1 REPORT
 This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site.  
-
- ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)
-
-
+  
+ ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)  
+  
+  
 ## MANUAL TESTING
 Manual testing of the site has been performed following the user's stories:
-
+  
 - [X] 1. **Check the social media links to see the site's social media profile**
 - [X] 2. **Check the about page**
 - [X] 3. **See at first glance the part of the site that is specially dedicated to me (B2B or B2C)**
@@ -568,20 +607,20 @@ Manual testing of the site has been performed following the user's stories:
     * Form is posted to the database reflected in the admin, as user is created.
     * User receives verification email  
      
-     ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)  
+     ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)   
     
     * Verification url works as expected
     * Once user clicks on 'verify', he is redirected to home page, already logged in.
     
 - [X] 12. **Easily login and logout**.
 - [X] 13. **Easily recover user password**:
-    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:
+    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:  
     
-    ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)
+    ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)  
      
     * User receives an email with link to restore password:  
      
-    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
+    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)  
   
 - [X] 14. **Have a personalized user profile**.
 - [X] 15. **Update and save my personal account information on my user profile**.
@@ -591,14 +630,20 @@ Manual testing of the site has been performed following the user's stories:
 - [x] 19. **View past orders, and read their full information on th user's personal profile**.
 
 
-   
 
-   
 
+
+
+
+  
 ### USER PROFILE
 
 
 
+
+
+
+  
 ### CHECKOUT PROCESS
 1. User includes service in bag
 2. User can Update service item quantity in bag
@@ -608,27 +653,30 @@ Manual testing of the site has been performed following the user's stories:
 6. Order is successfully accessible on the user profile
    
 7. Order confirmation email is sent to the user with the order details  
-   ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)
-
+   ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)  
+  
 20. User's ***personal data in order is secured***, and order url can only be accessed by the same authenticated user who made the order. Otherwise, warning message appears:
     
-    ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)
-
+    ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)  
+  
 21. 
-
+  
 ### INDIVIDUAL SERVICE - CRUD Functionality
+    
 #### Create Service
 The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.  
   
   ![image](https://github.com/user-attachments/assets/175c722c-0390-4285-b2c1-d90c178de847)  
 
+  
 #### Read Service
 Any user can **Read** the service created:  
 
+  
 #### Update Service
 Admin users can **Update** a service directly through the site, without need to access the admin panel, for a better UX. This can be done on the general services page, or on the service details page, both with a success message to inform user of the action completed:  
   
-  https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a
+  https://github.com/user-attachments/assets/2686e846-d016-47b6-9ae3-d2a82c1d558a  
   
   
 #### Delete Service
@@ -644,7 +692,7 @@ Admin users can **Delete** a service, with confirmation step, and success messag
 - **JS ES6**
 - **CSS3**
 - **HTML5**
-
+  
   
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 The following have been used for the development of this site:  
@@ -664,7 +712,8 @@ The following have been used for the development of this site:
   - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) - Tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorythm.
   - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
   - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
- 
+
+   
 # CREDITS & ACKNOWEDGEMENTS
 - All the images are free copyright, and have been taken from [Pexels.com]
 - The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
