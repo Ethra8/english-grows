@@ -52,7 +52,7 @@
                             {% for order in orders %}
                             <tr>
                                 <td>
-                                    <a href="{% url 'order_history' order.order_number %}" 
+                                    <a href="{% url 'order_history' order.order_number %}" aria-label="view the order's details"
                                     title="{{ order.date }}">
                                         {{ order.date|date:"d/m/Y" }}
                                     </a>

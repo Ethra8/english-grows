@@ -86,8 +86,8 @@
                                             </div>
                                         </form>
                                         <div id="cart-update" class="row d-flex justify-content-space-evenly">
-                                            <a class="update-link text-info"><i class="fas fa-cart-arrow-down fa-lg"></i></a>
-                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fas fa-times-circle fa-lg"></i></a>    
+                                            <a class="update-link text-info"><i class="fas fa-cart-arrow-down fa-lg" aria-label="click to update item quantity in bag"></i></a>
+                                            <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" aria-label="click to remove item from bag"><i class="fas fa-times-circle fa-lg"></i></a>    
                                         </div>
                                     </td>
                                     <td class="py-3">
@@ -111,7 +111,7 @@
                             <span class="text-uppercase">Go BAck</span>
                         </a>
 
-                        <a href="{% url 'checkout' %}" class="btn btn-custom-teal rounded-pill btn-lg mx-auto mr-sm-0 mt-5 order-first order-sm-2">
+                        <a href="{% url 'checkout' %}" class="btn btn-custom-teal rounded-pill btn-lg mx-auto mr-sm-0 mt-5 order-first order-sm-2" aria-label="go to secure checkout page, which has stripe secure payment platform technology integrated">
                             <span class="text-uppercase">Secure Checkout</span>
                             <span class="icon">
                                 <i class="fas fa-lock"></i>

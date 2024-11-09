@@ -37,7 +37,7 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
-                            <a href="{% url 'pack_details' item.service.id %}">
+                            <a href="{% url 'pack_details' item.service.id %}" aria-label="go to service details page">
                                 {% if item.service.image %}
                                     <img class="w-100" src="{{ item.service.image.url }}" alt="{{ service.name }}">
                                 {% else %}
@@ -85,7 +85,7 @@
                     </fieldset>
 
                     <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'bag' %}" class="btn btn-outline-black rounded-0">
+						<a href="{% url 'bag' %}" class="btn btn-outline-black rounded-0" aria-label="return to bag in order to adjust it">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
