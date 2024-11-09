@@ -612,10 +612,15 @@ Manual testing of the site has been performed following the user's stories:
 
   ![image](https://github.com/user-attachments/assets/25e596c0-b804-439b-93b4-3a7db8906a32)
 
+
+### CONTACT FORM (B2B customers)
 - [X] 4. **B2B can contact the site to receive a customized training plan**.
 
   https://github.com/user-attachments/assets/e203231d-416a-48f2-ae6e-bd445409c255
-    
+
+  
+### VIEW AND SORT SERVICES
+  
 - [X] 5. **All available services are listed**
 
   https://github.com/user-attachments/assets/fdd602da-0263-4d3e-9783-050ddd8607c2
@@ -630,20 +635,35 @@ Manual testing of the site has been performed following the user's stories:
     
 - [X] 8. **view the total of my pending purchase at any time**
 
+  https://github.com/user-attachments/assets/3ca7b314-2375-428f-bf65-e1d390d48025
   
-https://github.com/user-attachments/assets/3ca7b314-2375-428f-bf65-e1d390d48025
+- [X] 9. **sort the full list of available services ***by categories (types)*** or ***by price*****
+  
+  * ***By Types***:  
 
+    ![image](https://github.com/user-attachments/assets/7c83a272-210b-44a9-8a6c-beb8f82a52dc)
 
-- [X] 9. **sort the full list of available services ***by categories*** or ***by price*****
+  * ***By price***:
+
+    https://github.com/user-attachments/assets/17f2d278-6e01-40f4-9bd7-c4418695c0b3
+      
 - [X] 10. **sort specific category of services *by price*, or *alphabetically***
+  
+    https://github.com/user-attachments/assets/714e410d-55d2-45ea-9bd3-1cfea9a64e63
+
+
+### ACCOUNT - USER AUTHENTICATION
 - [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
-    * Form is posted to the database reflected in the admin, as user is created.
-    * User receives verification email  
+  * Once a new user is registered, its data is automatically stored in the database.
+
+    https://github.com/user-attachments/assets/386b7ac4-0856-4a36-b26c-872b15fd74ae
+        
+  * User receives verification email  
      
-     ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)   
+    ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)   
     
-    * Verification url works as expected
-    * Once user clicks on 'verify', he is redirected to home page, already logged in.
+  * Verification url works as expected
+  * Once user clicks on 'verify', he is redirected to home page, already logged in.
     
 - [X] 12. **Easily login and logout**.
 - [X] 13. **Easily recover user password**:
