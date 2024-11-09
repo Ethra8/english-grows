@@ -484,6 +484,13 @@ a.btt-link:hover {
     min-height: 60px;
 }
 
+.card-body h3 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
 .card-body > p {
     font-size: 1.2rem;
     padding: 5px 35px;
@@ -492,10 +499,6 @@ a.btt-link:hover {
 .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-.card-footer small>p>a>i {
-    font-size: 2rem;
 }
 
 .service-name {

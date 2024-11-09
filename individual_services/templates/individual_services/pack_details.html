@@ -17,13 +17,11 @@
         <div class="col-12 col-md-6 col-lg-4 pffset-lg-2">
             <div class="image-container my-5">
                 {% if service.image %}
-                <a href="{{ service.image.url }}" target="_blank">
+                <a href="{{ service.image.url }}" target="_blank" aria-label="see image in full size in a new tab">
                     <img class="img-details img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
                 </a>
                 {% else %}
-                <a href="">
-                    <img class="img-details img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
-                </a>
+                <img class="img-details img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
                 {% endif %}
             </div>
         </div>
@@ -37,7 +35,7 @@
                 
                 {% if service.type %}
                 <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}">
+                    <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}" aria-label="see list of this type of service">
                     {% if service.type.name == "individuals_private" or service.type.name == "individuals_groups" %}
                         <i class="fas fa-desktop mr-1"></i>
                     {% else %}
@@ -51,8 +49,8 @@
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
                     <p>
-                        <a href="{% url 'edit_service' service.id %}" class="pr-2" aria-label="edit the service"><i class="fas fa-pencil-square fa-lg"></i></a> | 
-                        <a href="{% url 'delete_service' service.id %}" class="text-danger fa-lg pl-2" aria-label="delete service"><i class="fas fa-times-circle"></i></a>    
+                        <a href="{% url 'edit_service' service.id %}" class="pr-2" aria-label="edit the service"><i class="fas fa-pencil-square fa-2x"></i></a> | 
+                        <a href="{% url 'delete_service' service.id %}" class="text-danger fa-lg pl-2" aria-label="delete service"><i class="fas fa-times-circle fa-2x"></i></a>    
                     </p>
                 </small>
                 {% endif %}
@@ -92,7 +90,7 @@
                         </div>
 
                         <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill mt-5">
+                            <a href="{% url 'individual_services' %}" class="btn btn-custom rounded-pill mt-5" aria-label="return to list of services">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>

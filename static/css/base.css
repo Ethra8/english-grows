@@ -487,6 +487,8 @@ a.btt-link:hover {
 .card-body h3 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .card-body > p {
@@ -539,9 +541,6 @@ a.btt-link:hover {
     border-radius: 25px !important;
 }
 
-.card-footer small>p>a>i {
-    font-size: 2rem;
-}
 
 /* BAG */
 .img-bag {
