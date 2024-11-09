@@ -534,6 +534,10 @@ a.btt-link:hover {
     border-radius: 25px !important;
 }
 
+.card-footer small>p>a>i {
+    font-size: 2rem;
+}
+
 /* BAG */
 .img-bag {
     border-radius: 25px !important;
