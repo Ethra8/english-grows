@@ -81,7 +81,9 @@ def add_service(request):
 
     service = None  # Initialize service to None for GET requests
     if request.method == 'POST':
-        form = IndivServiceForm(request.POST)
+        # Also include request.FILES to allow file upload, in this case
+        # the service image.
+        form = IndivServiceForm(request.POST, request.FILES)
         if form.is_valid():
             service = form.save()
             messages.success(request, "Service created successfully!")
