@@ -655,17 +655,21 @@ Manual testing of the site has been performed following the user's stories:
 ### ACCOUNT - USER AUTHENTICATION
 - [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
   * Once a new user is registered, its data is automatically stored in the database.
-
+  
     https://github.com/user-attachments/assets/386b7ac4-0856-4a36-b26c-872b15fd74ae
-        
+  
   * User receives verification email  
      
-    ![image](https://github.com/user-attachments/assets/e7016d88-602c-4bd8-91ff-a9abdabd497d)   
+    ![image](https://github.com/user-attachments/assets/71fea570-d858-4a0d-978d-28a19945e781)
     
-  * Verification url works as expected
-  * Once user clicks on 'verify', he is redirected to home page, already logged in.
+  * Verification url in email works as expected, and once user clicks on 'verify', he is redirected to home page, already logged in:
+    
+    https://github.com/user-attachments/assets/803fe5ce-6cb5-42fe-946c-582734f2064c
     
 - [X] 12. **Easily login and logout**.
+    
+    https://github.com/user-attachments/assets/c35028e9-868c-455e-9d6f-f880d6a7e611
+        
 - [X] 13. **Easily recover user password**:
     * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:  
     
@@ -673,7 +677,9 @@ Manual testing of the site has been performed following the user's stories:
      
     * User receives an email with link to restore password:  
      
-    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)  
+    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
+
+    * Link to restore password works as expected:  
   
 - [X] 14. **Have a personalized user profile**.
 - [X] 15. **Update and save my personal account information on my user profile**.
