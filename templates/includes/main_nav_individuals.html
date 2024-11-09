@@ -41,11 +41,13 @@
         </ul>    
     </div>
 
-    <div class="col-12 col-lg-2 my-auto py-1 py-lg-0 mb-4 mb-md-0 pl-md-0">
+    {% if user.is_authenticated and user.is_superuser %}
+    <div class="col-12 col-md-6 col-lg-2 my-auto py-1 py-lg-0 mb-4 mb-md-0 pl-md-0">
         <a href="{% url 'add_service' %}" class="btn btn-custom rounded-pill m-2 m-lg-0" >Add Service</a>
     </div>
+    {% endif %}
 
-    <div class="col-12 col-sm-6 col-lg-2 my-auto py-2 py-lg-0 mb-4 mb-md-0">
+    <div class="col-12 col-sm-6 {% if user.is_authenticated and user.is_superuser %}col-lg-2{% else %}col-lg-4{% endif %} my-auto py-2 py-lg-0 mb-4 mb-md-0">
         <form action="{% url 'individual_services' %}" method="GET">
             <div class="input-group w-100">
                 <input type="text" class="form-control rounded-searchbar" name="q"
