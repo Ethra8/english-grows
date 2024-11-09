@@ -33,6 +33,14 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    if not request.user.is_authenticated:
+        # If the user is not authenticated, 
+        # show an error message and redirect to login page.
+        messages.error(request, "For your dafety, and data \
+        protection, please ogin or create an account to \
+        proceed to checkout.")
+        return redirect('login')  # noqa - redirect to login page
+    
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -94,10 +102,12 @@ def checkout(request):
             request.session['bag'] = {}
 
             # Redirect to checkout success page
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse('checkout_success',
+            args=[order.order_number]))
         else:
             print(order_form.errors)
-            messages.error(request, 'There was an error with your form. Please double-check your information.')
+            messages.error(request, 'There was an error \
+            with your form. Please double-check your information.')
 
         # If form is invalid, render the checkout page again
         template = 'checkout/checkout.html'
@@ -110,7 +120,8 @@ def checkout(request):
     else:  # Handle GET request
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "There's nothing in \
+            your bag at the moment")
             return redirect(reverse('individual_services'))
 
         current_bag = bag_contents(request)
