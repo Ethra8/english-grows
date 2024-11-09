@@ -153,6 +153,7 @@ a.text-white:hover {
     margin-top: 60px;
 }
 
+
 footer a {
     color: aqua !important;
     text-decoration: none;
@@ -396,6 +397,7 @@ a.btt-link:hover {
     font-weight: bold;
 }
 
+
 /* Overlays - transparencies to improve accessibility/ readibility */
 
 .overlay {
@@ -445,6 +447,19 @@ a.btt-link:hover {
     border-radius: 50px !important;
     height: 40px;
     padding: 0 15px;
+}
+
+
+/* Index */
+#index .footer {
+    bottom: 0;
+    background-color: #003366;
+    width: 100%;
+    padding: 17px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-top: auto;
 }
 
 
@@ -703,7 +718,7 @@ a.btt-link:hover {
     .main-bg {
         margin: 70px 0 auto;
         flex-grow: 1 !important; /* forces content area to grow and fill remaining space between nav and footer */
-        min-height: calc(100vh - 228px) !important;  /* nav + main nav + footer height */
+        min-height: calc(100vh - 257px) !important;  /* nav + main nav + footer height */
     }
 
     /* col with order list w. details */
