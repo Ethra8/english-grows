@@ -1,8 +1,9 @@
 
 # ENGLISH GROWS
-![image](https://github.com/user-attachments/assets/1a6c74a7-3d00-41f3-8b85-4028db94a56b)  
-
   
+![image](https://github.com/user-attachments/assets/0285cb28-7da0-41d7-ab82-a6fe9640e6d2)
+  
+    
 ## Overview
 This site is an e-commerce that sells services. The services provided are the following:
 - Live online lessons for B2B and B2C customers:
@@ -155,21 +156,35 @@ This project has been development with the Agile development method in mind, alt
 
 ## STRUCTURE
 
-### Site Structure
-The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the following apps which form its overall structure. Each app contains the following structure detailed in these [Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), and/or also below:
+### SITE Structure
+The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps (detailed below), which form its overall structure. Each app's structure is detailed in [these Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), or also below:
 - **DJANGO APPS** - The site contains five ***django apps***, each one in charge of performing specific functionalities. Within the apps, different ***models***, ***views***, ***urls***, and ***templates*** ally to create the logic of each functionality of the site:
-  * **Profiles** -
-  * **Bag** - 
-  * **Checkout** - 
-  * **Home** - 
-  * **Individual_services** - 
+  
+  * **Bag** 
+  * **Checkout** 
+  * **Home**
+  * **Individual_services**
+  * **Profiles**
     
   
-#### BAG APP
-This app does not contain any model in itself, but contains different ***views***, ***templates*** and ***urls*** to perfomr the following functions. For further detail, please check this [Google Slide]:
+#### BAG app
+This app does not contain any model, but contains different ***views***, ***templates*** and ***urls*** to perform the following functions:
 - **Add items in bag**
+- **Show styled bag to user**
 - **Update de quantity** of a specific item in the bag
 - **Delete** a specific item. 
+  
+For further reference, please check [this Google Slide]()
+  
+#### CHECKOUT app
+This app is linked to the bag app, contains the following models:
+- Order
+- OrderLineItem
+
+#### HOME app
+#### INDIVIDUAL SERVICES app
+#### PROFILES app
+
   
 ### DATA STRUCTURE
 Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the PostgreSQL database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1496689178#gid=1496689178). Check this site's app:   
