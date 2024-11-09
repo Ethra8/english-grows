@@ -494,6 +494,10 @@ a.btt-link:hover {
     border-top-right-radius: 20px;
 }
 
+.card-footer small>p>a>i {
+    font-size: 2rem;
+}
+
 .service-name {
     font-size: 2rem;
 }
@@ -534,9 +538,6 @@ a.btt-link:hover {
     border-radius: 25px !important;
 }
 
-.card-footer small>p>a>i {
-    font-size: 2rem;
-}
 
 /* BAG */
 .img-bag {
