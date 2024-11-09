@@ -36,10 +36,10 @@ def checkout(request):
     if not request.user.is_authenticated:
         # If the user is not authenticated, 
         # show an error message and redirect to login page.
-        messages.error(request, "For your dafety, and data \
-        protection, please ogin or create an account to \
-        proceed to checkout.")
-        return redirect('login')  # noqa - redirect to login page
+        messages.error(request, "For your own security \
+        and data protection, please login or create an \
+        account to proceed to checkout.")
+        return redirect('account_login')  # noqa: redirect to login page
     
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY

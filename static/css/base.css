@@ -150,6 +150,7 @@ a.text-white:hover {
     position: relative;
     left: 0;
     right: 0;
+    margin-top: 60px;
 }
 
 footer a {
