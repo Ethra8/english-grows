@@ -622,47 +622,47 @@ Manual testing of the site has been performed following the user's stories:
 ### VIEW AND SORT SERVICES
   
 - [X] 5. **All available services are listed**
-
+  
   https://github.com/user-attachments/assets/fdd602da-0263-4d3e-9783-050ddd8607c2
         
 - [X] 6. **View specific type of service**
   
   https://github.com/user-attachments/assets/60b8cf12-8fc6-4cbd-9fc0-bf22cc73700f
-    
+      
 - [X] 7. **View individual service details**
-
+  
   https://github.com/user-attachments/assets/7899e77f-0e75-4f2d-baf4-3eaa44a5ee57
-    
+      
 - [X] 8. **view the total of my pending purchase at any time**
-
+  
   https://github.com/user-attachments/assets/3ca7b314-2375-428f-bf65-e1d390d48025
   
 - [X] 9. **sort the full list of available services ***by categories (types)*** or ***by price*****
-  
-  * ***By Types***:  
-
-    ![image](https://github.com/user-attachments/assets/7c83a272-210b-44a9-8a6c-beb8f82a52dc)
-
-  * ***By price***:
-
-    https://github.com/user-attachments/assets/17f2d278-6e01-40f4-9bd7-c4418695c0b3
       
+  * ***By Types***:  
+    
+    https://github.com/user-attachments/assets/35f2ce28-7356-4233-b839-b18f61fc66c5
+    
+  * ***By price***:
+    
+    https://github.com/user-attachments/assets/17f2d278-6e01-40f4-9bd7-c4418695c0b3
+        
 - [X] 10. **sort specific category of services *by price*, or *alphabetically***
   
     https://github.com/user-attachments/assets/714e410d-55d2-45ea-9bd3-1cfea9a64e63
-
-
+  
+  
 ### ACCOUNT - USER AUTHENTICATION
 - [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
   * Once a new user is registered, its data is automatically stored in the database.
-  
+    
     https://github.com/user-attachments/assets/386b7ac4-0856-4a36-b26c-872b15fd74ae
-  
+    
   * User receives verification email  
-     
+       
     ![image](https://github.com/user-attachments/assets/71fea570-d858-4a0d-978d-28a19945e781)
     
-  * Verification url in email works as expected, and once user clicks on 'verify', he is redirected to home page, already logged in:
+  * Verification url in email works as expected, and once user clicks on 'verify', he is redirected to home page, already logged in:   
     
     https://github.com/user-attachments/assets/803fe5ce-6cb5-42fe-946c-582734f2064c
     
@@ -671,28 +671,55 @@ Manual testing of the site has been performed following the user's stories:
     https://github.com/user-attachments/assets/c35028e9-868c-455e-9d6f-f880d6a7e611
         
 - [X] 13. **Easily recover user password**:
-    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed:  
+    * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed
+    * User receives an email with link to restore password     
+    * Link to restore password works as expected  
     
-    ![image](https://github.com/user-attachments/assets/9ac13d2f-4dd1-4e00-abf6-a24ee0bd1445)  
-     
-    * User receives an email with link to restore password:  
-     
-    ![image](https://github.com/user-attachments/assets/cfdf883c-a180-4d89-8c4a-73d176b7dcc4)
-
-    * Link to restore password works as expected:  
+    https://github.com/user-attachments/assets/1f96dfc6-27cd-4202-a3b7-3394d4d988d7
+         
+- [X] 14. **Have a personalized user profile**:  
   
-- [X] 14. **Have a personalized user profile**.
-- [X] 15. **Update and save my personal account information on my user profile**.
-- [X] 16. **Access my bag, and update or delete any items in it**.
-- [X] 17. **Users' personal data is secured**: No one else can access a user's profile, nor order urls, which also contain personal data.
-- [X] 18. **Receive a confirmation email after a purchase, with details of the order**.
-- [x] 19. **View past orders, and read their full information on th user's personal profile**.
+  ![image](https://github.com/user-attachments/assets/359d6421-941e-4ef2-bfe6-e7ba3243d3ff)
+  
+- [X] 15. **Update and save my personal account information on my user profile**:  
+  
+  https://github.com/user-attachments/assets/5e701fe1-f151-472b-991e-be666ad0d15e
+    
+- [X] 16. **Access my bag, and update or delete any items in it**:
+  
+  https://github.com/user-attachments/assets/1a2f3d9d-1068-471f-87e6-bd876d82900c
+    
+- [X] 17. **Users' personal data is secured**: No one else can access a user's profile, nor order urls, which also contain personal data:
+  
+  https://github.com/user-attachments/assets/6a691416-ecde-4719-a3df-d81dc41f77e7
+    
+- [X] 18. **Receive a confirmation email after a purchase, with details of the order**:
+  
+  https://github.com/user-attachments/assets/8b745505-3301-40fa-a746-bdab04d73abe
+    
+- [x] 19. **View past orders, and read their full information on th user's personal profile**:
+  
+  https://github.com/user-attachments/assets/76f75603-112f-42c5-bb5a-c5d2936be615
 
+  
 ### ADMIN 
-- [X] 20. **Sort orders by users**
-- [X] 21. **Order is automatically linked to the authenticated user** making it.
-- [x] 22. **User's email is stored in an email list**, to easen up future emailing campaigns.
-- [X] 23. **Store data in admin from company contact requests**
+- [X] 20. **Sort orders by users**:
+  
+  https://github.com/user-attachments/assets/e8786ea1-12e5-4c27-a1b7-5985f6a7ddb3
+  
+- [X] 21. **Order is automatically linked to the authenticated user** who made it:
+
+  ![image](https://github.com/user-attachments/assets/536a66bb-fae0-41bf-916b-c029261b1f39)
+  
+- [x] 22. **User's email is stored in an email list**, to easen up future **emailing campaigns**.
+  
+  ![image](https://github.com/user-attachments/assets/0f59e72b-054d-43a2-a5d3-5fcf2b3c8b6f)
+    
+- [X] 23. **Store data in admin from company contact requests**:
+
+  ![image](https://github.com/user-attachments/assets/b65e47d7-bea6-4a02-b88b-873bbc33e11a)
+
+  
 - [X] 24. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
   
   https://github.com/user-attachments/assets/93e2744f-ae24-4779-a48b-deb5dfb6f039
@@ -704,44 +731,31 @@ Manual testing of the site has been performed following the user's stories:
 - [X] 26. **Only authenticated users can make an order**, so that personal data from all users is protected. 
   
   https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
+
+
+### ONLINE PAYMENT - STRIPE API
+- [X] 27. **User can easily access the checkout page and proceed to checkout** (video below num. 29)
   
-
-
-
-
+- [X] 28. **Stripe API works as expected and payment intent is successfully reflected on Stripe API, without any errors** (video below num. 29)     
+- [X] 29. **User views an order confirmation message and order details on the screen**
   
-### USER PROFILE
-
-
-
-
-
-
+  https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
+    
+- [X] 30. **Order is automatically accessible on the user profile**
   
-### CHECKOUT PROCESS
-1. User includes service in bag
-2. User can Update service item quantity in bag
-3. User can Delete service item from bag
-4. User can easily access the checkout page and proceed to checkout
-5. User views his order confirmation on the screen
-6. Order is successfully accessible on the user profile
+  https://github.com/user-attachments/assets/45e9dc71-3dfa-4213-843e-ce0b9f81df60
+    
+- [X] 31. **Order confirmation email is sent to the user with the order details**:  
    
-7. Order confirmation email is sent to the user with the order details  
    ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)  
   
-20. User's ***personal data in order is secured***, and order url can only be accessed by the same authenticated user who made the order. Otherwise, warning message appears:
-    
-    ![image](https://github.com/user-attachments/assets/1450833b-3267-49a0-bab8-f27ed5cc497e)  
-  
-21. 
   
 ### INDIVIDUAL SERVICE - CRUD Functionality
     
 #### Create Service
-The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.  
+- The Admin user can easily create a service directly through the admin, with no need to upload fixtures, as initially.
+- Only authoried users can add/update/delete service.
   
-  ![image](https://github.com/user-attachments/assets/175c722c-0390-4285-b2c1-d90c178de847)  
-
   
 #### Read Service
 Any user can **Read** the service created:  
