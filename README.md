@@ -1,9 +1,8 @@
 
 # ENGLISH GROWS
   
-![image](https://github.com/user-attachments/assets/0285cb28-7da0-41d7-ab82-a6fe9640e6d2)
-  
-    
+![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
+      
 ## Overview
 This site is an e-commerce that sells services. The services provided are the following:
 - Live online lessons for B2B and B2C customers:
