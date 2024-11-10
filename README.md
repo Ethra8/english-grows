@@ -186,15 +186,15 @@ This app contains the following models:
 
 ### PAGES
 The following fully responsive pages form the structure of this site:
-
+  
 #### HOME Page
   
   https://github.com/user-attachments/assets/a3283894-c476-4bd6-98bf-72cc7ab3c06f
-
+  
 #### BAG Page
-
-
-
+  
+  https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
+  
 #### COMPANIES Page
   
   https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
@@ -202,10 +202,18 @@ The following fully responsive pages form the structure of this site:
 #### INDIVIDUAL SERVICES Page
   
   https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
-
+  
 #### SERVICE DETAILS Page
+- **SMALL Devices**:  
+  
+  ![image](https://github.com/user-attachments/assets/0028de3f-f2e7-471e-9542-5191e66ce054)  
+  
+- **TABLETS**:  
+  
+  ![image](https://github.com/user-attachments/assets/b3dc3e04-7973-47d6-8f8d-c0ae2c93f132)  
 
-
+#### ACCOUNT Pages
+User authentication has been implemented in this site by installing django-allauth, whose User model is also used. An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time new User instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.
 
   
 ### DATA STRUCTURE - MODELS
