@@ -156,15 +156,14 @@ This project has been development with the Agile development method in mind, alt
 ## STRUCTURE
 
 ### SITE Structure
-The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps (detailed below), which form its overall structure. Each app's structure is detailed in [these Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing), or also below:
-- **DJANGO APPS** - The site contains five ***django apps***, each one in charge of performing specific functionalities. Within the apps, different ***models***, ***views***, ***urls***, and ***templates*** ally to create the logic of each functionality of the site:
+The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps (detailed below), which form its overall structure. Each app's structure is detailed in [these Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing) or below. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site:
+- **APPs:**  
+  * **Bag**  
+  * **Checkout**  
+  * **Home**  
+  * **Individual_services**  
+  * **Profiles**  
   
-  * **Bag** 
-  * **Checkout** 
-  * **Home**
-  * **Individual_services**
-  * **Profiles**
-    
   
 #### BAG app
 This app does not contain any model, but contains different ***views***, ***templates*** and ***urls*** to perform the following functions:
@@ -176,7 +175,7 @@ This app does not contain any model, but contains different ***views***, ***temp
 For further reference, please check [this Google Slide]()
   
 #### CHECKOUT app
-This app is linked to the bag app, contains the following models:
+This app contains the following models:
 - Order
 - OrderLineItem
 
@@ -184,18 +183,45 @@ This app is linked to the bag app, contains the following models:
 #### INDIVIDUAL SERVICES app
 #### PROFILES app
 
+
+### PAGES
+The following fully responsive pages form the structure of this site:
+
+#### HOME Page
   
-### DATA STRUCTURE
-Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the PostgreSQL database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1496689178#gid=1496689178). Check this site's app:   
+  https://github.com/user-attachments/assets/a3283894-c476-4bd6-98bf-72cc7ab3c06f
+
+#### BAG Page
+
+
+
+#### COMPANIES Page
+  
+  https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
+  
+#### INDIVIDUAL SERVICES Page
+  
+  https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
+
+#### SERVICE DETAILS Page
+
+
+
+  
+### DATA STRUCTURE - MODELS
+Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
+  
+  
+#### CHECKOUT App - Models
+This app has the following models:
+
+  ![image](https://github.com/user-attachments/assets/c3de7eae-a040-46be-adef-095ce6ff703d)
+
+- To create an instance of the **Order** model, the user must be authentified. The **OrderLineItem** links to the **Order** model, as it is the latter which includes the services
+
   
 
-#### CHECKOUT APP
-
-
-
-  
-
-#### HOME APP
+#### HOME App - Models
 This app has been created to store the index template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views. The B2B form model is as follows:  
 ```
 class CompanyContact(models.Model):
