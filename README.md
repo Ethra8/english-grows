@@ -33,9 +33,9 @@ Edna Torres Munill
  - [UI](#ui)
     - [Agile Methodology](#agile-methodology)
     - [Structure](#structure)
-      * [Data Structure](#data-structure)
-      * [Site Structure](#site-structure)
       * [Pages](#pages)
+      * [Site Structure](#site-structure)
+      * [Data Structure](#data-structure)
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
@@ -160,7 +160,7 @@ This project has been development with the Agile development method in mind, alt
 
 ### SITE Structure
 The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps stated below, forming its overall structure. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site. The User model from django all-auth has also been used:
-- **CUSTOM APPs:**  
+- **DJANGO CUSTOM APPs:**  
   * **Bag**  
   * **Checkout**  
   * **Home**  
@@ -169,7 +169,7 @@ The site has been developed using ***Django 5.1*** framework for ***Python 3.12*
   
   
 #### BAG app
-This app does not contain any model, but contains different ***views***, ***templates*** and ***urls*** to perform the following functions:
+This app does not contain any model, but contains different ***views***, ***templates*** and ***urls*** to perform the following functionalities:
 - **Add items in bag**
 - **Show styled bag to user**
 - **Update de quantity** of a specific item in the bag
@@ -177,17 +177,65 @@ This app does not contain any model, but contains different ***views***, ***temp
   
   
 #### CHECKOUT app
-This app contains the following functionality:
-- **Create an order if user if authenticated, for data protection**
-- **Include items of bag and quantity
-
+This app contains the following pages *(templates)* and functionalities *(models & views)*:  
+- **PAGES:**
+  * **Checkout page**
+  * **Checkout Success page *(order details)***
+  * **Checkout Confirmation Email *(template used to send order confirmation email to user)***
   
-
+- **FUNCTIONALITIES:**
+  * **Create an order if user if authenticated, for data protection**
+  * **Include in the order the items in the bag**
+  * **Stripe API Integration to allow secure online payments**
+  * **Checkout functionality**
+  * **Sends order confirmation email to user**
+  
+  
 #### HOME app
+This app contains the following pages *(templates & urls)* and functionalities *(models & views)*:  
+- **PAGES:**
+  * **Home page**
+  * **Companies page**
+  * **About page**
+  
+- **FUNCTIONALITIES:**
+  * **Users can navigate to different sections of the site from the home page**
+  * **Users can check the about page**
+  * **B2C customers can go to the service page for individuals from the home page**
+  * **BCB customers can go to the companies section from the home page**
+  * **B2B can send a contact request via the form in the companies page**
+  
+  
 #### INDIVIDUAL SERVICES app
+This app contains the following pages *(templates & urls)* and **CRUD functionalities** *(models & views)*:  
+- **PAGES:**
+  * **View all individual services**
+  * **View service details page**
+  * **Add a new service page**
+  * **Update a service page**
+  * **Delete a service page**
+  
+- **CRUD FUNCTIONALITIES**
+  * **Authorized users can CREATE *(add)* a service**
+  * **Users can READ (view) all services for individuals**
+  * **Authorized users can UPDATE a service**
+  * **Authorized users can DELETE a service**
+  * **Users can sort services by type or price, and sort within a certain type by price or alphabetical order**
+  * **Users can search the site for a specific word**
+  * **Users can check each service's details page**
+  * **Users can adjust quantity of a specific service to include in the bag**
+    
+
 #### PROFILES app
+This app contains the following pages *(templates & urls)* and **CRUD functionalities** *(models & views)*:  
+- **PAGES:**
+  * **Profile page**
 
-
+- **FUNCTIONALITIES:**
+  * **Users can update their personal information**
+  * **Users can view past order details**
+  
+  
 ### PAGES
 The following fully responsive pages form the structure of this site:
   
