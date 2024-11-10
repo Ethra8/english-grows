@@ -167,12 +167,12 @@ The following fully responsive pages form the structure of this site:
   
 #### INDIVIDUAL SERVICES Page
   
-  https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
+  https://github.com/user-attachments/assets/56db04fd-8737-46c1-899b-8afe30d44451
   
 #### SERVICE DETAILS Page
   
-  https://github.com/user-attachments/assets/56db04fd-8737-46c1-899b-8afe30d44451
-      
+  https://github.com/user-attachments/assets/0c807135-ca7d-4d4f-bc54-47af789c394e
+        
 #### BAG Page
   
   https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
