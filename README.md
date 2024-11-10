@@ -157,6 +157,82 @@ This project has been development with the Agile development method in mind, alt
 
 
 ## STRUCTURE
+  
+### PAGES
+The following fully responsive pages form the structure of this site:
+  
+#### HOME Page
+  
+  https://github.com/user-attachments/assets/a3283894-c476-4bd6-98bf-72cc7ab3c06f
+  
+#### INDIVIDUAL SERVICES Page
+  
+  https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
+  
+#### SERVICE DETAILS Page
+  
+  https://github.com/user-attachments/assets/56db04fd-8737-46c1-899b-8afe30d44451
+      
+#### BAG Page
+  
+  https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
+
+#### CHECKOUT Page
+- MOBILE:
+  
+  https://github.com/user-attachments/assets/2f8fd19e-c285-4dee-860b-7150cd71fd62
+    
+- TABLETS:
+  
+  ![image](https://github.com/user-attachments/assets/e073b890-7571-4666-b1d7-c885eeac99d1)
+  
+- DESKTOP:
+  
+  ![image](https://github.com/user-attachments/assets/110f6110-6966-4874-9b6d-c9a55620af93)
+  
+    
+#### COMPANIES Page
+    
+  https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
+  
+#### ABOUT Page
+  
+  ![image](https://github.com/user-attachments/assets/d1defeb8-b45c-4522-965b-1874f8011f43)
+  
+#### 404 ERROR Page
+  
+  ![image](https://github.com/user-attachments/assets/4ed25394-ce01-4613-be51-bda7f8e5e6b1)
+  
+  
+#### ACCOUNT Pages
+- User authentication has been implemented in this site by installing django-allauth, whose User model is also used.
+- An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time a new **User** model instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.  
+- The django default templates have been customized to match the look and feel of the site.  
+   * <details>
+    <summary>CLICK HERE to view a sample of the MOBILE customized account pages</summary>
+      
+    - ![image](https://github.com/user-attachments/assets/4bd20d72-cf95-4614-a0aa-1dd6f7ea26ef)
+    - ![image](https://github.com/user-attachments/assets/cb69672f-148a-4c84-b11a-667785cdc76f)
+    - ![image](https://github.com/user-attachments/assets/9c292026-7189-449b-afe2-532bee0b61e1)
+    </details>
+   
+
+   * <details>
+    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
+    
+     - ![image](https://github.com/user-attachments/assets/7c2323a0-d419-4b86-b96c-ec2dd6b8216e)
+     - ![image](https://github.com/user-attachments/assets/5dabb85a-6fed-4d6d-b22b-d17639d3a94a)
+     - ![image](https://github.com/user-attachments/assets/5a07d5de-e971-4418-9c4b-dc1c06ed4707)
+    </details>
+    
+
+   * <details>
+    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
+    
+     - ![image](https://github.com/user-attachments/assets/f4459c3f-bd66-41ed-80d4-b6399b5dfc15)
+     - ![image](https://github.com/user-attachments/assets/39b9a0ec-ae6f-4bf2-ae3a-ede2e7275879)
+     - ![image](https://github.com/user-attachments/assets/3a538725-93c4-4c40-892e-0bf197a18db5)
+    </details>
 
 ### SITE Structure
 The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps stated below, forming its overall structure. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site. The User model from django all-auth has also been used:
@@ -234,84 +310,6 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
 - **FUNCTIONALITIES:**
   * **Users can update their personal information**
   * **Users can view past order details**
-  
-  
-### PAGES
-The following fully responsive pages form the structure of this site:
-  
-#### HOME Page
-  
-  https://github.com/user-attachments/assets/a3283894-c476-4bd6-98bf-72cc7ab3c06f
-  
-#### INDIVIDUAL SERVICES Page
-  
-  https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
-  
-#### SERVICE DETAILS Page
-  
-  https://github.com/user-attachments/assets/e3e492e5-1521-48eb-85f6-3422979c974f
-    
-#### BAG Page
-  
-  https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
-
-#### CHECKOUT Page
-- MOBILE:
-  
-  https://github.com/user-attachments/assets/2f8fd19e-c285-4dee-860b-7150cd71fd62
-    
-- TABLETS:
-  
-  ![image](https://github.com/user-attachments/assets/e073b890-7571-4666-b1d7-c885eeac99d1)
-  
-- DESKTOP:
-  
-  ![image](https://github.com/user-attachments/assets/110f6110-6966-4874-9b6d-c9a55620af93)
-  
-    
-#### COMPANIES Page
-    
-  https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
-  
-#### ABOUT Page
-  
-  ![image](https://github.com/user-attachments/assets/d1defeb8-b45c-4522-965b-1874f8011f43)
-  
-#### 404 ERROR Page
-  
-  ![image](https://github.com/user-attachments/assets/4ed25394-ce01-4613-be51-bda7f8e5e6b1)
-  
-  
-#### ACCOUNT Pages
-- User authentication has been implemented in this site by installing django-allauth, whose User model is also used.
-- An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time a new **User** model instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.  
-- The django default templates have been customized to match the look and feel of the site.  
-   * <details>
-    <summary>CLICK HERE to view a sample of the MOBILE customized account pages</summary>
-      
-    - ![image](https://github.com/user-attachments/assets/4bd20d72-cf95-4614-a0aa-1dd6f7ea26ef)
-    - ![image](https://github.com/user-attachments/assets/cb69672f-148a-4c84-b11a-667785cdc76f)
-    - ![image](https://github.com/user-attachments/assets/9c292026-7189-449b-afe2-532bee0b61e1)
-    </details>
-   
-
-   * <details>
-    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
-    
-     - ![image](https://github.com/user-attachments/assets/7c2323a0-d419-4b86-b96c-ec2dd6b8216e)
-     - ![image](https://github.com/user-attachments/assets/5dabb85a-6fed-4d6d-b22b-d17639d3a94a)
-     - ![image](https://github.com/user-attachments/assets/5a07d5de-e971-4418-9c4b-dc1c06ed4707)
-    </details>
-    
-
-   * <details>
-    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
-    
-     - ![image](https://github.com/user-attachments/assets/f4459c3f-bd66-41ed-80d4-b6399b5dfc15)
-     - ![image](https://github.com/user-attachments/assets/39b9a0ec-ae6f-4bf2-ae3a-ede2e7275879)
-     - ![image](https://github.com/user-attachments/assets/3a538725-93c4-4c40-892e-0bf197a18db5)
-    </details>
-
     
 ### DATA STRUCTURE - MODELS
 Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
