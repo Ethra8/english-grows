@@ -3,8 +3,8 @@ from django.db import models
 
 
 class IndivService(models.Model):
-    type = models.ForeignKey('IndividualType', null=True, blank=True, on_delete=models.SET_NULL) # on_delete type, product don't delete, but set type to null
-    id = models.IntegerField(primary_key=True, unique=True, editable=False)  # Add default=uuid.uuid4
+    type = models.ForeignKey('IndividualType', null=True, blank=True, on_delete=models.SET_NULL)  # noaq on_delete type, product don't delete, but set type to null
+    id = models.IntegerField(primary_key=True, unique=True, editable=False)
     name = models.CharField(max_length=255, unique=True)  
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
@@ -35,7 +35,7 @@ class IndivService(models.Model):
 class IndividualType(models.Model):
 
     name = models.CharField(max_length=254)
-    friendly_name = models.CharField(max_length=254, null=True, blank=True) # is optional: null/blank=True
+    friendly_name = models.CharField(max_length=254, null=False, blank=False, default=name)
 
     def __str__(self):
         return self.name
