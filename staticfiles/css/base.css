@@ -8,7 +8,8 @@ body {
     flex-direction: column;  
 }
 
-h4 {
+h4,
+h2 {
     line-height: 2;
 }
 
@@ -465,7 +466,7 @@ a.btt-link:hover {
 
 /* service card */
 
-.card{
+.card {
     margin: 15px;
 }
 
@@ -493,7 +494,7 @@ a.btt-link:hover {
 
 .card-body > p {
     font-size: 1.2rem;
-    padding: 5px 35px;
+    padding: 0.5rem 35px;
 }
 
 .card-img-top {
@@ -782,7 +783,7 @@ a.btt-link:hover {
     
     #pack-details,
     #individual-services {
-        padding: 0 2%;
+        padding: 0 4%;
     }
 
     #pack-details .col-12,
@@ -826,7 +827,8 @@ a.btt-link:hover {
 
     #pack-details, 
     #individual-services {
-        padding: 0%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
 }
