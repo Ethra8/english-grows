@@ -864,6 +864,10 @@ span.vertical-line {
         padding-right: 15px;
     }
 
+    .eg-title {
+        font-size: 2.5rem;
+    }
+
     .logo {
         height: 4.5rem;
         width: 4.5rem;
