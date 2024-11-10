@@ -510,7 +510,7 @@ a.btt-link:hover {
     border-top-right-radius: 20px;
 }
 
-.service-name {
+span.vertical-line {
     font-size: 2rem;
 }
 
