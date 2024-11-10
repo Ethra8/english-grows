@@ -192,14 +192,6 @@ The following fully responsive pages form the structure of this site:
   
   https://github.com/user-attachments/assets/a3283894-c476-4bd6-98bf-72cc7ab3c06f
   
-#### BAG Page
-  
-  https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
-  
-#### COMPANIES Page
-  
-  https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
-  
 #### INDIVIDUAL SERVICES Page
   
   https://github.com/user-attachments/assets/12685b77-8ad8-47e1-9a1c-d72771ed02e2
@@ -212,13 +204,33 @@ The following fully responsive pages form the structure of this site:
 - **TABLETS**:  
   
   ![image](https://github.com/user-attachments/assets/b3dc3e04-7973-47d6-8f8d-c0ae2c93f132)  
-
+  
+#### BAG Page
+  
+  https://github.com/user-attachments/assets/c9ef0617-dd11-48c8-b93a-ca5bdd9b9bba
+  
+#### COMPANIES Page
+    
+  https://github.com/user-attachments/assets/cc97328c-17c1-4754-bc7f-b57c525c3553
+  
+#### ABOUT Page
+  
+  ![image](https://github.com/user-attachments/assets/d1defeb8-b45c-4522-965b-1874f8011f43)
+  
+#### 404 ERROR Page
+  
+  ![image](https://github.com/user-attachments/assets/4ed25394-ce01-4613-be51-bda7f8e5e6b1)
+  
+  
 #### ACCOUNT Pages
-User authentication has been implemented in this site by installing django-allauth, whose User model is also used. An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time new User instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.
+- User authentication has been implemented in this site by installing django-allauth, whose User model is also used.
+- An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time a new **User** model instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.  
+- The django default templates have been customized to match the look and feel of the site.  
+
 
   
 ### DATA STRUCTURE - MODELS
-Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. For further reference about the site's data models, please refer to [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
+Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
   
   
 #### CHECKOUT App - Models
