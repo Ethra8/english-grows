@@ -14,11 +14,11 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container">
+    <div id="checkout-page" class="container">
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="eg-title mb-4">Checkout</h2>
+                <h2 class="eg-title">Checkout</h2>
                 <hr>
             </div>
         </div>
@@ -68,13 +68,13 @@
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
-                    <fieldset class="rounded px-3 mb-5">
+                    <fieldset class="rounded px-0 px-md-3 mb-5">
                         <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     
-                    <fieldset class="px-3">
+                    <fieldset class="px-0 px-md-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
@@ -84,30 +84,35 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="text-right d-flex justify-content-between mt-5 mb-2 pl-3 pr-3">
+                    <div class="row d-flex justify-content-between mt-5">
                         <div class="col-12 col-md-5">
                             <a href="{% url 'bag' %}" class="btn-custom-teal btn rounded-pill" aria-label="return to bag in order to adjust it">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="font-weight-bold">Adjust Bag</span>
+                                Adjust Bag</span>
                             </a>
                         </div>
-                        <div class="col-12 col-md-5">
-                            <button id="submit-button" class="btn btn-custom rounded-pill col-12 col-sm-5">
-                                <span class="font-weight-bold">Complete Order</span>
-                                <span class="icon">
-                                    <i class="fas fa-lock"></i>
-                                </span>
-                            </button>
+                        <div class="col-12 col-md-7 order-first order-md-2 mb-5 mb-md-0">
+                            <div class="col-12 px-0">
+                                <button id="submit-button" class="btn btn-custom rounded-pill mb-3">
+                                    <span>Complete Order</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <p class="small text-danger my-0 text-right py-0">
+                                    <span class="icon">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </span>
+                                    <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <p class="small text-danger my-0 text-right pr-3">
-                        <span class="icon">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </span>
-                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
-                    </p>
+                    
                     
 					</div>
                 </form>

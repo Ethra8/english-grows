@@ -8,6 +8,10 @@ body {
     flex-direction: column;  
 }
 
+.container {
+    max-width: 100% !important;
+}
+
 h4,
 h2 {
     line-height: 2;
@@ -285,6 +289,9 @@ footer a:hover {
 .allauth-form-inner-content button,
 .allauth-form-inner-content input.btn,
 .allauth-form-inner-content form input.btn {
+    width: 100%;
+    max-width: 320px; 
+    font-size: 1.1rem;
     background: #003366;
     color: white;
     text-transform: uppercase;
@@ -305,9 +312,12 @@ footer a:hover {
 .allauth-form-inner-content form input.btn:focus {
     background: teal;
     color: white;
+    font-weight: 600;
 }
 
 .btn-custom-teal {
+    width: 100%;
+    max-width: 320px;
     background: teal;
     color: white;
     text-transform: uppercase;
@@ -798,6 +808,20 @@ span.vertical-line {
 
 @media (max-width: 767px) {
 
+    .btn-custom,
+    .btn-custom-teal, 
+    .allauth-form-inner-content button,
+    .allauth-form-inner-content input.btn,
+    .allauth-form-inner-content form input.btn {
+        width: 100% !important; 
+        max-width: 100% !important; 
+    }
+
+    #checkout-page {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .table tbody tr {
         display: block;
         margin-bottom: 1rem;
@@ -874,11 +898,6 @@ span.vertical-line {
     .card-body > p {
         font-size: 1.2rem;
         padding: 5px 12px;
-    }
-
-    .btn-custom,
-    .btn-custom-teal {
-        width: 100% !important;
     }
     
     .font-xs-small {
