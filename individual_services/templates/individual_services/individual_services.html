@@ -108,7 +108,7 @@
                                             {% if request.user.is_superuser %}
                                             <small class="ml-3">
                                                 <p>
-                                                    <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square fa-2x pr-3" aria-label="update this service"></i></a> class="vertical-line" 
+                                                    <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square fa-2x pr-3" aria-label="update this service"></i></a><span class="vertical-line"> | </span> 
                                                     <a href="{% url 'delete_service' service.id %}" class="text-danger font-weight-bold" aria-label="delete this service"><i class="fas fa-times-circle fa-2x pl-3"></i></a>    
                                                 </p>
                                             </small>

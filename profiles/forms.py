@@ -1,4 +1,7 @@
 from django import forms
+from crispy_forms.helper import FormHelper
+from crispy_forms.layout import Submit
+
 from .models import UserProfile
 
 
@@ -13,7 +16,10 @@ class UserProfileForm(forms.ModelForm):
         labels, and set autofocus on first field
         """
         super().__init__(*args, **kwargs)
-
+        self.helper = FormHelper()
+        self.helper.form_method = 'POST'
+        self.helper.add_input(Submit('submit', 'Update Profile'))
+        
         placeholders = {
             'default_full_name': 'Full Name',
             'default_email': 'Email',

@@ -356,7 +356,8 @@ footer a:hover {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #003366 !important;
+    border-radius: 5px !importatn!important;
 }
 
 /* back to top button */
@@ -515,6 +516,15 @@ span.vertical-line {
 }
 
 
+/* Companies */
+
+#companies h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+
 /* Django Messages */
 
 .messages {
@@ -559,8 +569,8 @@ span.vertical-line {
 
 /* Allauth form formatting */
 
-.allauth-headings-custom,
-.eg-title {
+.eg-title,
+.allauth-headings-custom {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 500;
     color: #003366;
@@ -572,6 +582,7 @@ span.vertical-line {
     color: #555;
 }
 
+.form-group input,
 .allauth-form-inner-content input:not([type='checkbox']) {
     border-color: #003366;
     border-radius: 5px;
