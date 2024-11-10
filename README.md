@@ -250,11 +250,10 @@ The following fully responsive pages form the structure of this site:
 #### SERVICE DETAILS Page
 - **SMALL Devices**:  
   
-  ![image](https://github.com/user-attachments/assets/0028de3f-f2e7-471e-9542-5191e66ce054)  
-  
+ 
 - **TABLETS**:  
   
-  ![image](https://github.com/user-attachments/assets/b3dc3e04-7973-47d6-8f8d-c0ae2c93f132)  
+   
   
 #### BAG Page
   
@@ -277,9 +276,33 @@ The following fully responsive pages form the structure of this site:
 - User authentication has been implemented in this site by installing django-allauth, whose User model is also used.
 - An instance of the ***UserProfile model*** in the ***profile app*** is automatically created each time a new **User** model instance is created. Therefore, each time a user registers for an account, a personalized user profile is created, which includes basic user personal information, and past order details.  
 - The django default templates have been customized to match the look and feel of the site.  
+   * <details>
+    <summary>CLICK HERE to view a sample of the MOBILE customized account pages</summary>
+      
+    - ![image](https://github.com/user-attachments/assets/4bd20d72-cf95-4614-a0aa-1dd6f7ea26ef)
+    - ![image](https://github.com/user-attachments/assets/cb69672f-148a-4c84-b11a-667785cdc76f)
+    - ![image](https://github.com/user-attachments/assets/9c292026-7189-449b-afe2-532bee0b61e1)
+    </details>
+   
 
+   * <details>
+    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
+    
+     - ![image](https://github.com/user-attachments/assets/7c2323a0-d419-4b86-b96c-ec2dd6b8216e)
+     - ![image](https://github.com/user-attachments/assets/5dabb85a-6fed-4d6d-b22b-d17639d3a94a)
+     - ![image](https://github.com/user-attachments/assets/5a07d5de-e971-4418-9c4b-dc1c06ed4707)
+    </details>
+    
 
-  
+   * <details>
+    <summary>CLICK HERE to view a sample of the TABLET customized account pages</summary>
+    
+     - ![image](https://github.com/user-attachments/assets/f4459c3f-bd66-41ed-80d4-b6399b5dfc15)
+     - ![image](https://github.com/user-attachments/assets/39b9a0ec-ae6f-4bf2-ae3a-ede2e7275879)
+     - ![image](https://github.com/user-attachments/assets/3a538725-93c4-4c40-892e-0bf197a18db5)
+    </details>
+
+    
 ### DATA STRUCTURE - MODELS
 Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
   
