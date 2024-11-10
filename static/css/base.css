@@ -247,6 +247,7 @@ footer a:hover {
 
 .larger-title {
     font-size: 2.8rem;
+    color: #003366;
 }
 
 .charmonman-regular {
@@ -310,7 +311,7 @@ footer a:hover {
     background: teal;
     color: white;
     text-transform: uppercase;
-    padding-right: 1rem;
+    padding: 0.5rem 1rem;
     border: outset 2px aquamarine;
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -558,7 +559,8 @@ a.btt-link:hover {
 
 /* Allauth form formatting */
 
-.allauth-headings-custom {
+.allauth-headings-custom,
+.eg-title {
     font-family: "Big Shoulders Display", sans-serif;
     font-weight: 500;
     color: #003366;

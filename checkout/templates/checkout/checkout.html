@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
+                <h2 class="eg-title mb-4">Checkout</h2>
                 <hr>
             </div>
         </div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 {% endfor %}
-                <hr class="my-0">
+                <hr class="my-3">
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Grand Total:</p>
@@ -84,25 +84,27 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
 
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'bag' %}" class="btn btn-outline-black rounded-0" aria-label="return to bag in order to adjust it">
-							<span class="icon">
-								<i class="fas fa-chevron-left"></i>
-							</span>
-							<span class="font-weight-bold">Adjust Bag</span>
-						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
-							<span class="font-weight-bold">Complete Order</span>
-							<span class="icon">
-								<i class="fas fa-lock"></i>
-							</span>
-						</button>
-						<p class="small text-danger my-0">
-							<span class="icon">
-								<i class="fas fa-exclamation-circle"></i>
-							</span>
-							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
-						</p>
+                    <div class="text-right d-flex justify-content-between mt-5 mb-2 pl-3 pr-3">
+                        <a href="{% url 'bag' %}" class="btn-custom-teal btn rounded-pill" aria-label="return to bag in order to adjust it">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="font-weight-bold">Adjust Bag</span>
+                        </a>
+                        <button id="submit-button" class="btn btn-custom rounded-pill">
+                            <span class="font-weight-bold">Complete Order</span>
+                            <span class="icon">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="small text-danger my-0 text-right pr-3">
+                        <span class="icon">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </span>
+                        <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
+                    
 					</div>
                 </form>
             </div>

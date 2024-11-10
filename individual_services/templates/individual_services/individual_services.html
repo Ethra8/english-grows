@@ -34,7 +34,7 @@
       <div id="individual-services" class="container-fluid">
         <div class="row">
             <div class="col text-center mt-2">
-                <h2 class="pt-5"><span class="text-uppercase">Packs Made for </span><span class="charmonman-bold larger-title">you</span></h2>
+                <h2 class="pt-5"><span class="eg-title">Packs Made </span><span class="charmonman-bold larger-title">for you</span></h2>
                 {% for c in current_types %}
                     <a class="type-badge text-decoration-none" href="{% url 'individual_services' %}?q={{ c.name }}" aria-label="check all services of this type">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
