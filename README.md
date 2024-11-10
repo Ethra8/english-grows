@@ -56,7 +56,7 @@ Edna Torres Munill
         - [404 Error Page](#404-error-page)
         - [Admin Console - CRUD Functionality](#admin-console)
       * [Future Features](#future-features)
-- [WEB MARKETING TECHNIQUES](#web-marketing)
+- [WEB MARKETING TECHNIQUES](#web-marketing-techniques)
   * [Search Engine Optimization (SEO)](#search-engine-optimization-(SEO))
   * [Social Media Markting](#social-media-marketing)
   * [Email Marketing](#email-marketing)
@@ -532,46 +532,6 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
   
   
-## SEO Techniques
-  
-### KEYWORDS AND METATAGS
-To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
-- **Keywords and phrases have been included in the about page** within <strong> tags to highlight their importance to the SE:  
-  
-  ![image](https://github.com/user-attachments/assets/d895403c-90d8-4be6-b074-bd5c145a88aa)
-  
-- I have included the following **meta tags** and other SEO relevant info:
-  
-```$python
-<meta name="theme-color" content="teal">
-<meta name="description" content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering     
-   individual lesson packs and reduced group formats">
-<meta name="keywords" content="English learning, teaching English, English classes online, English lessons online, English tutor, online teacher, English teacher, private lessons online, reduced group classes, online reduced groups, e-learning, corporate English lessons, online reduced classes, live English lessons">
-<meta name="author" content="Edna Torres Munill">
-```
-  
-### sitemap.xml
-This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery. Having included this file, improves the site quality, allowing for a better SEO indexing.  
-  
-To create the file, follow these steps:  
-1. Go to [Xml-sitemaps.com](https://www.xml-sitemaps.com/), and include the site's url to generate the xml file, and click on START:  
-  
-   ![image](https://github.com/user-attachments/assets/7479ba77-1d7f-454d-b07e-a9bd9541d636)
-  
-2. The file will automatically be generated after the tool crawls all the site's urls (could take a moment, depending on site's complexity). Once completed, click on 'view sitemap details':  
-  
-   ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
-   
-3. Download the file, and include it in the site's main root directory
-   
-  
-### robots.txt
-This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
-- Account
-- Bag
-- Profile
-  
-  
 ## Admin Console - CRUD Funtionality
 The admin console reflects most of the models present in this site, and also some features from django-allauth module's user model. All the models which can directly be accessed via the admin panel are detailed below, and CRUD functionality can be performed by a superuser (admin user) with the necessary permissions:
   
@@ -625,9 +585,65 @@ These future features are thought of as being some of the user's imagined ***wis
 * [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
 * [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
   
+
+# WEB MARKETING
+  
+## SEARCH ENGINE OPTIMIZATION (SEO)
+    
+### KEYWORDS AND METATAGS
+To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
+- **Keywords and phrases have been included in the about page** within <strong> tags to highlight their importance to the SE:  
+  
+  ![image](https://github.com/user-attachments/assets/d895403c-90d8-4be6-b074-bd5c145a88aa)
+  
+- I have included the following **meta tags** and other SEO relevant info:
+  
+```$python
+<meta name="theme-color" content="teal">
+<meta name="description" content="English Grows is a site that offers English teaching services online to B2B and B2C customers, offering     
+   individual lesson packs and reduced group formats">
+<meta name="keywords" content="English learning, teaching English, English classes online, English lessons online, English tutor, online teacher, English teacher, private lessons online, reduced group classes, online reduced groups, e-learning, corporate English lessons, online reduced classes, live English lessons">
+<meta name="author" content="Edna Torres Munill">
+```
+  
+### sitemap.xml
+This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery. Having included this file, improves the site quality, allowing for a better SEO indexing.  
+  
+To create the file, follow these steps:  
+1. Go to [Xml-sitemaps.com](https://www.xml-sitemaps.com/), and include the site's url to generate the xml file, and click on START:  
+  
+   ![image](https://github.com/user-attachments/assets/7479ba77-1d7f-454d-b07e-a9bd9541d636)
+  
+2. The file will automatically be generated after the tool crawls all the site's urls (could take a moment, depending on site's complexity). Once completed, click on 'view sitemap details':  
+  
+   ![image](https://github.com/user-attachments/assets/5cda3f5f-ee2e-4edc-96e9-bbcb7d13c107)
+   
+3. Download the file, and include it in the site's main root directory
+   
+  
+### robots.txt
+This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
+- Account
+- Bag
+- Profile
   
   
+## SOCIAL MEDIA MARKETING
+To promote this site's visibility and to improve customer reach, a mockup profile has been created in the social media platform of facebook:  
+
+
+
+
+
+
   
+  
+## EMAIL MARKETING
+In order to facilitate email marketing, and easen an emailing campaign, all the users' emails are stored separately. Therefore, each time a user registers for an account, the user's email is stored in the admin on a separate model (database table) together with the user name, for future emailing campaigns:
+
+  ![image](https://github.com/user-attachments/assets/da997270-11c6-472d-a80c-aca7a258bb87)
+
+     
 # TESTING  
 ## DEFECT TRACKING
   
