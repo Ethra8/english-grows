@@ -470,11 +470,14 @@ a.btt-link:hover {
     margin: 15px;
 }
 
+.card a:hover {
+    text-decoration: none !important;
+}
+
 .card,
 .card-footer  {
     border-radius: 20px !important;
     border: inset 3px teal;
-    /* min-width: fit-content; */
 }
 
 .card-body {
@@ -482,7 +485,11 @@ a.btt-link:hover {
     border-top: solid 2px #003366;
     background-color: teal;
     color: white;
-    min-height: 60px;
+    min-height: 120px !important;
+    /* Flexbox centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-body h3 {
