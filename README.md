@@ -661,7 +661,8 @@ No outstanding defects have been detected in this site.
   
 ## GENERAL PERFORMANCE
 The following tests have been run for this project:  
-## Lighthouse Report  
+  
+## LIGHTHOUSE REPORTS 
 **To improve my first report, the following actions have been taken:**  
 - Include a ***site.manifest***
     
@@ -689,15 +690,22 @@ You can access full report: [Lighthouse report DESKTOP - Companies page.pdf](htt
 
 ### ABOUT Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - About page.pdf](https://github.com/user-attachments/files/17693311/Lighthouse.report.MOBILE.-.About.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/340301f6-7d3d-464d-af64-711cbf6c561e)
+  
 #### Desktop & Tablet (landscape)
-You can access full report: 
+You can access full report: [Lighthouse report DESKTOP - About page.pdf](https://github.com/user-attachments/files/17693322/Lighthouse.report.DESKTOP.-.About.page.pdf)
+
+
+  ![image](https://github.com/user-attachments/assets/91966ef9-767c-4eac-90da-d857a6e7787b)
 
 
 ### INDIVIDUAL SERVICES Page
 #### Mobile & Tablet (portrait)
 You can access full report: 
+
+  
 
 #### Desktop & Tablet (landscape)
 You can access full report: 
@@ -982,12 +990,75 @@ The following have been used for the development of this site:
   - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
   - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
 
+
+    
+# DEPLOYMENT
+## VERSION CONTROL
+The site was created using Gitpod editor and pushed to Github to the remote repository **‘english-grows**.  
+The following git commands were given to the terminal throughout development to push updated code to the remote repo on Github:
+1. ```git add .``` - Command to add the updated file(s) to the staging area before they are committed to the *main branch*, represented by a '**.**'.
+2. ```git commit -m “commit text”``` - Command to commit changes to the local repository queue ready for the final push.
+3. ```git push``` - Command to push all updated code to the remote repository on Github.
+4. ```python3 manage.py runserver``` - Command to run **python** app on local server.
+
+### SECRETS
+To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, SECRET_KEY) to Github:
+1. Create an ***env.py*** file on the main directory of the app.
+2. Ensure that env.py is included in the ***.gitignore*** file.
+3. To include secret variables on the env.py file:
+   - (i) On the top of the file, include the imports:
+   -```import os
+       from pathlib import Path```
+   - (ii) Include eac hsecret var following this example:
+   - ```os.environ.setdefault('DATABASE_URL', 'your-data-base-url')```
+   - (iii) Import Operational System to your ***settings.py***, so it can access the system variables secretly stored in your env.py file:
+   - ```import os```
+   - (iv) To access the system variables in your settings.py file, use the following method to store them in other safe variables:
+   - ```DATABASE_URL = os.environ.get("DATABASE_URL")```
+4. BEFORE COMMITTING TO GITHUB:
+   - On the terminal, type ```git add .```, then ```git status``` and make sure the env.py file is not in the list. Once you are reassured that it is not in the list of files to be committed, safely commit.
+
+## HEROKU
+### App Preparation
+1. Create and add the **'Procfile'** to the root directory of the app, and include ```web: gunicorn candlelight.wsgi --log-file -```  Heroku relies on this file to determine how to run your application, ensuring the correct setup of your web server. Use commands like ```web: gunicorn PROJ_NAME.wsgi``` in the 'Procfile' to instruct Heroku on starting your web server with Gunicorn.
+2. If you haven't done so yet, create a ***requirements.txt*** file to store necessary modules and libraries:
+   - ```pip3 install -r requirements.txt```
+3. Ensure you have updated the ***requirements.txt*** file listing all project dependencies. The comnmand to update the file is ```pip3 freeze > requirements.txt```
+4. Set up necessary **configuration variables** in Heroku ***setting tab > Config Vars*** *(eg. SECRET_KEY, DATABASE_URL, etc.)*.
+5. Add Heroku to your ALLOWED_HOSTS in your app's *'settings.py'* file: ```candlelight-worlds.herokuapp.com```.
+   
+### Create Heroku App
+1. Sign up to an account on [Heroku](https://heroku.com)
+2. Create new app. Remember that app name must be unique on the whole of Heroku site.
+3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**:
+### Deployment Method
+1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github before deploying to Heroku.
+2. **On Heroku**, click the **deploy** tab on the top navigation bar.
+3. Scroll down and select Github as 'Deployment method'
+4. Use the github link and type in the name of your repository
+5. Scroll down, to **'Manual Deploy'** configuration and select ***main*** on the dropdown for the ***branch the deploy***
+6. Then click on **deploy from branch**
+7. Once the app is loaded, click on the 'View' button that appears only then.
+8. Once your application is running, you can switch to **Automatic Deploys** so that any changes in the repositori are automatically reflected in Heroku deployed app.  
+  
+  
    
 # CREDITS & ACKNOWEDGEMENTS
+## Images
 - All the images are free copyright, and have been taken from [Pexels.com]
 - The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
-- I have researched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
+
+## Acknowledgements
+- Some nice tutors and mentor Patrick Sheridan at Code Institude for their patiente, and insights.
+- I have searched thorough [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/).
+- I have searched thorough [Django 5.1 documentation](https://docs.djangoproject.com/en/5.1/).
+- I have searched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
 - I have found inspiration and revieved material from Code Institute Full Stack Web development course.
+- I have searched throughout [Google Developers documentation](https://developers.google.com)
+- I have read [how to make links crawlable](https://developers.google.com/search/docs/crawling-indexing/links-crawlable?visit_id=638668769044808898-1063643142&rd=1) on Google Developers documentation to improve SEO.
+- I have read on how to [make select element accessible](https://dequeuniversity.com/rules/axe/4.10/select-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
+- I have read on how to [include discernible text in links](https://dequeuniversity.com/rules/axe/4.10/link-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
+- 
 
 
 
