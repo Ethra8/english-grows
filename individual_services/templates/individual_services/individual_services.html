@@ -88,31 +88,33 @@
                                     <h3 class="mb-0">{{ service.name }}</h3>
                                 </div>
                                 <div class="card-footer bg-white pt-4 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ service.price }}</p>
-                                            {% if service.type %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}" aria-label="see all services of this type">
-                                                    {% if service.type.name == "individuals_private" or service.type.name == "individuals_groups" %}
-                                                    <i class="fas fa-desktop mr-1"></i>
-                                                    {% else %}
-                                                    <i class="fas fa-graduation-cap mr-1"></i>
-                                                    {% endif %}
-                                                    {{ service.type.friendly_name }}
-                                                </a>
-                                            </p>
-                                            {% endif %}
-                                            {% if request.user.is_superuser %}
-                                            <small class="ml-3">
-                                                <p>
-                                                    <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square fa-2x pr-3" aria-label="update this service"></i></a> | 
-                                                    <a href="{% url 'delete_service' service.id %}" class="text-danger font-weight-bold" aria-label="delete this service"><i class="fas fa-times-circle fa-2x pl-3"></i></a>    
+                                    <a  href="{% url 'pack_details' service.id %}" aria-label="click to go to the service details page">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="lead mb-0 text-left font-weight-bold">${{ service.price }}</p>
+                                                {% if service.type %}
+                                                <p class="small mt-1 mb-0">
+                                                    <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}" aria-label="see all services of this type">
+                                                        {% if service.type.name == "individuals_private" or service.type.name == "individuals_groups" %}
+                                                        <i class="fas fa-desktop mr-1"></i>
+                                                        {% else %}
+                                                        <i class="fas fa-graduation-cap mr-1"></i>
+                                                        {% endif %}
+                                                        {{ service.type.friendly_name }}
+                                                    </a>
                                                 </p>
-                                            </small>
-                                            {% endif %}
+                                                {% endif %}
+                                                {% if request.user.is_superuser %}
+                                                <small class="ml-3">
+                                                    <p>
+                                                        <a href="{% url 'edit_service' service.id %}"><i class="fas fa-pencil-square fa-2x pr-3" aria-label="update this service"></i></a> | 
+                                                        <a href="{% url 'delete_service' service.id %}" class="text-danger font-weight-bold" aria-label="delete this service"><i class="fas fa-times-circle fa-2x pl-3"></i></a>    
+                                                    </p>
+                                                </small>
+                                                {% endif %}
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
