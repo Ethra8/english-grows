@@ -156,8 +156,8 @@ This project has been development with the Agile development method in mind, alt
 ## STRUCTURE
 
 ### SITE Structure
-The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps (detailed below), which form its overall structure. Each app's structure is detailed in [these Google Slides](https://docs.google.com/presentation/d/1RscaFUqb60KP7I-trtCvbEdX0wgcE4M9uNC7q2x9L1I/edit?usp=sharing) or below. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site:
-- **APPs:**  
+The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps stated below, forming its overall structure. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site. The User model from django all-auth has also been used:
+- **CUSTOM APPs:**  
   * **Bag**  
   * **Checkout**  
   * **Home**  
@@ -172,12 +172,13 @@ This app does not contain any model, but contains different ***views***, ***temp
 - **Update de quantity** of a specific item in the bag
 - **Delete** a specific item. 
   
-For further reference, please check [this Google Slide]()
   
 #### CHECKOUT app
-This app contains the following models:
-- Order
-- OrderLineItem
+This app contains the following functionality:
+- **Create an order if user if authenticated, for data protection**
+- **Include items of bag and quantity
+
+  
 
 #### HOME app
 #### INDIVIDUAL SERVICES app
@@ -221,69 +222,30 @@ Several apps have been created to store the different modules that have been cre
   
   
 #### CHECKOUT App - Models
-This app has the following models:
-
+This app has the following models:  
+  
   ![image](https://github.com/user-attachments/assets/c3de7eae-a040-46be-adef-095ce6ff703d)
-
+  
 - To create an instance of the **Order** model, the user must be authentified. The **OrderLineItem** links to the **Order** model, as it is the latter which includes the services
-
+    
   
-
 #### HOME App - Models
-This app has been created to store the index template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views. The B2B form model is as follows:  
-```
-class CompanyContact(models.Model):
-    
-    email = models.EmailField(blank=False, null=False)
-    company_name = models.CharField(max_length=60, blank=True, null=True)
-    name = models.CharField(max_length=60, blank=False, null=False)
-    individual_packs = models.BooleanField(default=False)
-    reduced_groups = models.BooleanField(default=False)
-    message = models.TextField()
-    date = models.DateTimeField(auto_now_add=True)
-    
-
-    def get_absolute_url(self):
-        """Returns users to the contact page on successful creation."""
-        return reverse('companies')
-    
-    def save(self, *args, **kwargs):
-        """Saves the email to the database and sends it to the admin."""
-        email = self.email
-        name = self.name
-        subject = 'New Request from Company'
-        message = self.message
-
-        # Fills in the email templates and then send the email.
-        contact_subject = render_to_string(
-            'contact/emails/contact_subject.txt',
-            {'subject': subject})
-        contact_body = render_to_string(
-            'contact/emails/contact_body.txt',
-            {'name': name, 'email': email, 'message': message})
-        send_mail(contact_subject,
-            contact_body,
-            email,
-            [settings.DEFAULT_FROM_EMAIL])
-        super().save(*args, **kwargs)
-    def __str__(self):
-        """Display the name and email in the admin panel."""
-        return f'{self.name} ({self.email})'
-```
-#### INDIVIDUAL SERVICES
-
-
-
-
+This app has been created to store the home page *index.html* template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views.  
+The form posts the user request via the CompanyContactform model, and CompanyContact model takes all the data and is registered to the admin to be stored:  
+  
+  ![image](https://github.com/user-attachments/assets/49482143-bdde-4bab-95f9-c77ab11fb233)
   
   
-#### PROFILES
-
-
-
-
-
-      
+#### INDIVIDUAL SERVICES App - Models
+  
+  ![image](https://github.com/user-attachments/assets/4f56a1f6-f387-4e71-86b7-f043e5f7dd71)
+  
+  
+#### PROFILES App - Models
+  
+  ![image](https://github.com/user-attachments/assets/0e6956b9-e197-49dc-86f6-ef96b4f4a6c6)
+  
+   
 ## DESIGN CHOICES
 The design of this site has been thought to reflect professionality and inspire trust.
   
@@ -856,5 +818,6 @@ The following have been used for the development of this site:
 - The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
 - I have researched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
 - I have found inspiration and revieved material from Code Institute Full Stack Web development course.
+
 
 
