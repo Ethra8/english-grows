@@ -74,6 +74,9 @@ Edna Torres Munill
 - [TECHNOLOGIES USED](#technologies-used)
   * [Languages](#languages)
   * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+- [DEPLOYMENT](#deployment)
+  * [Version Control](#version-control)
+  * [Heroku](#heroku)
 - [CREDITS & ACKNOWEDGEMENTS](#credits-and-acknowledgements)
   
   
