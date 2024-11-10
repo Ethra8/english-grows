@@ -357,7 +357,7 @@ footer a:hover {
 
 .border-black {
     border: 1px solid #003366 !important;
-    border-radius: 5px !importatn!important;
+    border-radius: 5px !important;
 }
 
 /* back to top button */
@@ -582,7 +582,8 @@ span.vertical-line {
     color: #555;
 }
 
-.form-group input,
+.form-group input:not([type='checkbox']),
+.form-group textarea,
 .allauth-form-inner-content input:not([type='checkbox']) {
     border-color: #003366;
     border-radius: 5px;
