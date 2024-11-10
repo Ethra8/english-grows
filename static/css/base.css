@@ -562,8 +562,26 @@ span.vertical-line {
 
 
 /* BAG */
+
 .img-bag {
     border-radius: 25px !important;
+}
+
+/* Keep table headers on BAG template visible on all screens */
+.table thead {
+    display: table-header-group;
+}
+
+.qty-input {
+    min-width: 32px !important;
+    width: 32px !important;
+    max-width: 32px !important;
+    text-align: center;
+}
+
+/* make update/delete icons display properly, avoid overlapping */
+#cart-update {
+    min-width: 120px !important;
 }
 
 
@@ -583,6 +601,7 @@ span.vertical-line {
 }
 
 .form-group input:not([type='checkbox']),
+.form-group input:not([class='qty-input']),
 .form-group textarea,
 .allauth-form-inner-content input:not([type='checkbox']) {
     border-color: #003366;
@@ -646,7 +665,7 @@ span.vertical-line {
   height: 40px;
   padding: 10px 12px;
   border: 1px solid gray;
-  border-radius: 25px;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
@@ -676,6 +695,7 @@ span.vertical-line {
 #card-element {
     color: #000;
     border: 1px solid #000;
+    border-radius: 5px;
 }
 
 
@@ -703,6 +723,9 @@ span.vertical-line {
     font-weight: 600;
 }
 
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Larger container on xl screens */
@@ -726,11 +749,17 @@ span.vertical-line {
     #index {
         padding: 60px 7%;
     }
+}
 
+@media (min-width: 576px) {
+    #bag.container, 
+    #bag.container-sm {
+        max-width: 98%;
+    }
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 991.99px) {
     .logo {
         height: 5rem;
         width: 5rem;
@@ -767,15 +796,45 @@ span.vertical-line {
 }
 
 
-@media (min-width: 576px) {
-    #bag.container, 
-    #bag.container-sm {
-        max-width: 98%;
+@media (max-width: 767px) {
+
+    .table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .table td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        position: relative;
+        padding-left: 1rem;
+        border: none;
+    }
+
+    /* Add header labels above each cell using the data-label attribute */
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Optional class to force display as a block on small screens */
+    .d-sm-table-cell {
+        display: block !important;
+    }
+
+    /* Hide table header on small screens */
+    .table thead {
+        display: none;
     }
 }
 
 
-@media (max-width: 575.98px) { /* Extra small devices (max-width: 575.98px) */
+@media (max-width: 575px) { /* Extra small devices */
+    
     body {
         padding-left: 15px;
         padding-right: 15px;
@@ -801,7 +860,6 @@ span.vertical-line {
         padding-left: 0 !important;
     }
 
-    
     #pack-details,
     #individual-services {
         padding: 0 4%;
@@ -816,6 +874,11 @@ span.vertical-line {
     .card-body > p {
         font-size: 1.2rem;
         padding: 5px 12px;
+    }
+
+    .btn-custom,
+    .btn-custom-teal {
+        width: 100% !important;
     }
     
     .font-xs-small {
@@ -851,5 +914,4 @@ span.vertical-line {
         padding-left: 12px;
         padding-right: 12px;
     }
-
 }

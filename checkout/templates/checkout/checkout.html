@@ -85,18 +85,22 @@
                     </fieldset>
 
                     <div class="text-right d-flex justify-content-between mt-5 mb-2 pl-3 pr-3">
-                        <a href="{% url 'bag' %}" class="btn-custom-teal btn rounded-pill" aria-label="return to bag in order to adjust it">
-                            <span class="icon">
-                                <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="font-weight-bold">Adjust Bag</span>
-                        </a>
-                        <button id="submit-button" class="btn btn-custom rounded-pill">
-                            <span class="font-weight-bold">Complete Order</span>
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
-                        </button>
+                        <div class="col-12 col-md-5">
+                            <a href="{% url 'bag' %}" class="btn-custom-teal btn rounded-pill" aria-label="return to bag in order to adjust it">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="font-weight-bold">Adjust Bag</span>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <button id="submit-button" class="btn btn-custom rounded-pill col-12 col-sm-5">
+                                <span class="font-weight-bold">Complete Order</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <p class="small text-danger my-0 text-right pr-3">
                         <span class="icon">
