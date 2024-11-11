@@ -689,31 +689,30 @@ You can access full report: [Lighthouse report MOBILE - Companies page.pdf](http
 #### Desktop & Tablet (landscape)
 You can access full report: [Lighthouse report DESKTOP - Companies page.pdf](https://github.com/user-attachments/files/17692333/Lighthouse.report.DESKTOP.-.Companies.page.pdf)
   
-  ![image](https://github.com/user-attachments/assets/2c228032-6ab4-4db8-bef2-caeedafd5fd8)
+  ![image](https://github.com/user-attachments/assets/2c228032-6ab4-4db8-bef2-caeedafd5fd8)    
 
 ### ABOUT Page
 #### Mobile & Tablet (portrait)
 You can access full report: [Lighthouse report MOBILE - About page.pdf](https://github.com/user-attachments/files/17693311/Lighthouse.report.MOBILE.-.About.page.pdf)
   
-  ![image](https://github.com/user-attachments/assets/340301f6-7d3d-464d-af64-711cbf6c561e)
+  ![image](https://github.com/user-attachments/assets/340301f6-7d3d-464d-af64-711cbf6c561e)    
   
 #### Desktop & Tablet (landscape)
 You can access full report: [Lighthouse report DESKTOP - About page.pdf](https://github.com/user-attachments/files/17693322/Lighthouse.report.DESKTOP.-.About.page.pdf)
-
-
-  ![image](https://github.com/user-attachments/assets/91966ef9-767c-4eac-90da-d857a6e7787b)
-
-
+  
+  ![image](https://github.com/user-attachments/assets/91966ef9-767c-4eac-90da-d857a6e7787b)    
+  
 ### INDIVIDUAL SERVICES Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
+You can access full report: [Lighthouse report MOBILE - Individual services page.pdf](https://github.com/user-attachments/files/17693991/Lighthouse.report.MOBILE.-.Individual.services.page.pdf)
 
+  ![image](https://github.com/user-attachments/assets/7cf0a171-ed7c-4af3-91cf-89106bfdc6ee)    
   
-
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-
+You can access full report: [Lighthouse report DESKTOP - Individual services page.pdf](https://github.com/user-attachments/files/17694123/Lighthouse.report.DESKTOP.-.Individual.services.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/303329b8-836f-4a36-ba0a-706b3187b5e8)
+  
 ### SERVICE DETAILS Page
 #### Mobile & Tablet (portrait)
 You can access full report: 
@@ -1052,7 +1051,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 - The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
 
 ## Acknowledgements
-- Some nice tutors and mentor Patrick Sheridan at Code Institude for their patiente, and insights.
+- Some nice tutors and mentor Patrick Sheridan at Code Institude for their patience and useful insights.
 - I have searched thorough [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/).
 - I have searched thorough [Django 5.1 documentation](https://docs.djangoproject.com/en/5.1/).
 - I have searched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
@@ -1061,7 +1060,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 - I have read [how to make links crawlable](https://developers.google.com/search/docs/crawling-indexing/links-crawlable?visit_id=638668769044808898-1063643142&rd=1) on Google Developers documentation to improve SEO.
 - I have read on how to [make select element accessible](https://dequeuniversity.com/rules/axe/4.10/select-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
 - I have read on how to [include discernible text in links](https://dequeuniversity.com/rules/axe/4.10/link-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
-- 
+- I have read this article about [robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/?utm_source=lighthouse&utm_medium=devtools) on *Chrome for Developers*, to fix invalid text and improve SEO.
 
 
 
