@@ -76,11 +76,11 @@
                             <div class="card">
                                 <a href="{% url 'pack_details' service.id %}" aria-label="click to go to the service details page">
                                 {% if service.image %}
-                                    <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}" width="100%" height="220">
                                 {% elif service.image_url %}
-                                    <img class="card-img-top img-fluid" src="{{ service.image_url }}" alt="{{ service.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ service.image_url }}" alt="{{ service.name }}" width="100%" height="220">
                                 {% else %}
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}" width="100%" height="220">
                                 {% endif %}
                                 </a>
                                 
