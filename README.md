@@ -801,10 +801,13 @@ This file contains some CSS specific for the profiles app. It is in the director
 The validation of the code has been successful. The validator used has been [JShint](https://jshint.com/). In order to remove inaccurate warnings related solely to the fact that it by itself does not support JS ES6, I [found the helpful and easy way](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6#:~:text=By%20default%2C%20JSHint%20gives%20you%20warnings%20if%20you%20use%20new%20ES6%20features) to make the tool read and analyse the ES6 code effectively, by simply adding this comment to the top of the code:  
 ```// jshint esversion: 6```  
   
-- [**checkout/static/checkout/js/stripe_elementss.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/checkout/js/stripe_elements.js) - No errors found:  
+- [**checkout/static/checkout/js/stripe_elementss.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/checkout/js/stripe_elements.js) - Initial errors fixed:
+  * JShint was not recognizing $ JQuery, so I click on 'CONFIGURE' at the top, and activate JQuery.
+  * JSHint was flagging Stripe as an undefined variable because it didn't know that Stripe is defined in the Stripe.js library, which is loaded externally. To fix this in JSHint, I declared Stripe as a global variable by adding a JSHint directive at the top of the file. This way, JSHint understands that Stripe is expected to be available globally:
+    ```/* global Stripe */```
   
-  ![image](https://github.com/user-attachments/assets/2c36b0b4-a6c7-415d-a265-3cc1dd1910e8)
-  
+  ![image](https://github.com/user-attachments/assets/0db221e6-19bc-4bdc-856b-e7c60ae38f9a)
+
 - [**static/js/quantity_selector.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/js/quantity_selector.js) - No errors found:  
   
   ![image](https://github.com/user-attachments/assets/7e984c1b-0a06-46fd-b45a-55ea72535065)
