@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="container">
-    <h2 class="my-4 text-white eg-font ">Delete Service</h2>
+    <h2 class="my-4 text-white eg-eg-title">Delete Service</h2>
     <p class="text-white">Are you sure you want to delete the service <strong>{{ service.name }}</strong>?</p>
     
     <form method="POST" action="{% url 'delete_service' service.id %}">
