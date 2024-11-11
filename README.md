@@ -709,59 +709,67 @@ You can access full report: [Lighthouse report MOBILE - Individual services page
   ![image](https://github.com/user-attachments/assets/c2092868-2142-45a9-aaf4-f7a36d181c95)
        
 #### Desktop & Tablet (landscape)
-You can access full report: [Lighthouse report DESKTOP - Individual services page.pdf](https://github.com/user-attachments/files/17694123/Lighthouse.report.DESKTOP.-.Individual.services.page.pdf)
+You can access full report: [Lighthouse report DESKTOP - Individual services page.pdf](https://github.com/user-attachments/files/17694842/Lighthouse.report.DESKTOP.-.Individual.services.page.pdf)
   
-  ![image](https://github.com/user-attachments/assets/303329b8-836f-4a36-ba0a-706b3187b5e8)
-  
+  ![image](https://github.com/user-attachments/assets/bc69b4f9-141c-4815-9cc3-98e6e87fc696)
+    
 ### SERVICE DETAILS Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - Individual services page.pdf](https://github.com/user-attachments/files/17694205/Lighthouse.report.MOBILE.-.Individual.services.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/e9560995-bee0-4507-9f10-53bd80356860)
-  
+You can access full report: [Lighthouse report MOBILE - services details page.pdf](https://github.com/user-attachments/files/17694849/Lighthouse.report.MOBILE.-.services.details.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/0937dbf7-726a-402a-a22d-30f5cab49bf8)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: [Lighthouse report DESKTOP - services details page.pdf](https://github.com/user-attachments/files/17694279/Lighthouse.report.DESKTOP.-.services.details.page.pdf)
-    
-  ![image](https://github.com/user-attachments/assets/d6683ea0-e367-471f-be43-0be825d8c266)
-    
+You can access full report: [Lighthouse report DESKTOP - services details page.pdf](https://github.com/user-attachments/files/17694856/Lighthouse.report.DESKTOP.-.services.details.page.pdf)
+      
+  ![image](https://github.com/user-attachments/assets/5f9e8ca7-35a8-454d-8df8-2feb9c185575)
+      
 ### BAG Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - bag page.pdf](https://github.com/user-attachments/files/17694693/Lighthouse.report.MOBILE.-.bag.page.pdf)
+You can access full report: [Lighthouse report MOBILE - bag page.pdf](https://github.com/user-attachments/files/17694864/Lighthouse.report.MOBILE.-.bag.page.pdf)
   
-  ![image](https://github.com/user-attachments/assets/7d0d92a0-618d-4aee-94d0-eb8624c3cd05)
-  
+  ![image](https://github.com/user-attachments/assets/0ca3b56c-d165-429e-8d8a-9c9ec527e0b9)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: [Lighthouse report DESKTOP - bag page.pdf](https://github.com/user-attachments/files/17694703/Lighthouse.report.DESKTOP.-.bag.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/de9cf689-7c57-4898-89b2-b960b2ca42e9)
-  
+You can access full report: [Lighthouse report DESKTOP - bag page.pdf](https://github.com/user-attachments/files/17694870/Lighthouse.report.DESKTOP.-.bag.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/f35662fa-883f-47e2-8d7c-fced834a4610)
+    
 ### CHECKOUT Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - checkout page.pdf](https://github.com/user-attachments/files/17694707/Lighthouse.report.MOBILE.-.checkout.page.pdf)
+You can access full report: [Lighthouse report MOBILE - checkout page.pdf](https://github.com/user-attachments/files/17694903/Lighthouse.report.MOBILE.-.checkout.page.pdf)
+      
+  ![image](https://github.com/user-attachments/assets/42af3b52-25c2-4254-a9fc-fecb837667a6)
     
-  ![image](https://github.com/user-attachments/assets/f3e75187-bdd0-4d7b-86eb-b6ffd6e186b3)
-  
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-  ![image](https://github.com/user-attachments/assets/90a40b1c-be1b-4556-a881-9c12c3e6d368)
-
+You can access full report: [Lighthouse report DESKTOP - checkout page.pdf](https://github.com/user-attachments/files/17694912/Lighthouse.report.DESKTOP.-.checkout.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/d86bf50c-f019-4be1-b2af-96c0d4d376a3)
+  
 ### PROFILE Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - Profile page.pdf](https://github.com/user-attachments/files/17694918/Lighthouse.report.MOBILE.-.Profile.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/f618ea97-3fc2-42eb-b091-4cb42881246e)
+  
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-
+You can access full report: [Lighthouse report DESKTOP - Profile page.pdf](https://github.com/user-attachments/files/17694923/Lighthouse.report.DESKTOP.-.Profile.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/b3970150-8c6f-4796-9de2-1564770f3e0e)
+  
 ### 404 ERROR Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - 404 Error page.pdf](https://github.com/user-attachments/files/17694937/Lighthouse.report.MOBILE.-.404.Error.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/297edcde-4f79-437e-8ed3-199e73d3b550)
+  
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-#### LOGIN Page
+You can access full report: [Lighthouse report DESKTOP - 404 Error page.pdf](https://github.com/user-attachments/files/17694945/Lighthouse.report.DESKTOP.-.404.Error.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/f42b142f-5f60-4a31-926e-a9e149c414f2)
+  
+#### Account Pages
+As these are django built-in templates which have only been styled using some CSS classes, only one page has been tested, as to reflect their overall performanco"
 #### Mobile & Tablet (portrait)
 You can access full report:  [Lighthouse report MOBILE - login page.pdf](https://github.com/user-attachments/files/17694737/Lighthouse.report.MOBILE.-.login.page.pdf)
   
