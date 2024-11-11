@@ -592,9 +592,9 @@ span.vertical-line {
 }
 
 #bag-grand-total {
+    font-family: "Big Shoulders Display", sans-serif;
     color: #fff;
-    font-size; 1.5rem;
-    text-align: right;
+    font-size; 2rem;
 }
 
 /* make update/delete icons display properly, avoid overlapping */
