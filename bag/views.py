@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import get_object_or_404
 from django.contrib import messages
 
 from individual_services.models import IndivService
@@ -30,11 +31,12 @@ def add_to_bag(request, item_id):
         request.session['bag'] = bag
 
         return redirect(redirect_url)
-        
+
     except Exception as e:
         messages.error(request, f'Error adding \
         item to bag: {e}')
         return HttpResponse(status=500)
+
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the\
@@ -43,7 +45,6 @@ def adjust_bag(request, item_id):
         service = get_object_or_404(IndivService, pk=item_id)
         quantity = int(request.POST.get('quantity'))
         bag = request.session.get('bag', {})
-
 
         if quantity >= 1:
             bag[item_id] = quantity
@@ -55,11 +56,12 @@ def adjust_bag(request, item_id):
 
         request.session['bag'] = bag
         return redirect(reverse('bag'))
-    
+
     except Exception as e:
         messages.error(request, f'Error updating \
         item: {e}')
         return HttpResponse(status=500)
+
 
 def remove_bag_item(request, item_id):
     """Remove the item from the shopping bag"""
@@ -67,7 +69,7 @@ def remove_bag_item(request, item_id):
         service = get_object_or_404(IndivService, pk=item_id)
         bag = request.session.get('bag', {})
 
-        bag.pop(item_id)  
+        bag.pop(item_id)
         messages.success(request, f'Successfully removed \
         {service.name} from your bag')
         request.session['bag'] = bag

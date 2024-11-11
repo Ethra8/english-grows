@@ -19,15 +19,22 @@ class Order(models.Model):
     ]
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.CASCADE, null=True, blank=True, related_name='orders')
+    user_profile = models.ForeignKey(UserProfile,
+                                     on_delete=models.CASCADE,
+                                     null=True, blank=True,
+                                     related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     date = models.DateTimeField(auto_now_add=True)
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
-    grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2,
+                                      null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2,
+                                      null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
-    status = models.CharField(max_length=20, choices=ORDER_STATUS_CHOICES, default='pending')
+    stripe_pid = models.CharField(max_length=254, null=False, blank=False,
+                                  default='')
+    status = models.CharField(max_length=20, choices=ORDER_STATUS_CHOICES,
+                              default='pending')
 
     def _generate_order_number(self):
         """
@@ -39,7 +46,8 @@ class Order(models.Model):
         """
         Update grand total each time a line item is added.
         """
-        order_total_sum = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        result = self.lineitems.aggregate(Sum('lineitem_total'))
+        order_total_sum = result['lineitem_total__sum'] or 0
         self.order_total = order_total_sum
         self.grand_total = self.order_total  # Adjust this if needed
 
@@ -58,7 +66,8 @@ class Order(models.Model):
         from_email = settings.DEFAULT_FROM_EMAIL
         to_email = self.email
 
-        send_mail(subject, plain_message, from_email, [to_email], html_message=message)
+        send_mail(subject, plain_message, from_email, [to_email],
+                  html_message=message)
 
     def save(self, *args, **kwargs):
         """
@@ -85,10 +94,15 @@ class Order(models.Model):
 
 
 class OrderLineItem(models.Model):
-    order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
-    service = models.ForeignKey(IndivService, null=False, blank=False, on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, null=False, blank=False,
+                              on_delete=models.CASCADE,
+                              related_name='lineitems')
+    service = models.ForeignKey(IndivService, null=False, blank=False,
+                                on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
+                                         null=False, blank=False,
+                                         editable=False)
 
     def save(self, *args, **kwargs):
         """
