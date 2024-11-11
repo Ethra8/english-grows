@@ -627,6 +627,10 @@ span.vertical-line {
     min-width: 280px;
 }
 
+#id_remember {
+    min-width: 15px !important;
+}
+
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
 }
