@@ -784,36 +784,115 @@ You can access full report: [Lighthouse report DESKTOP - login page.pdf](https:/
   
 ## CODE VALIDATION
   
-## CSS 3
+### CSS 3
 No errors were found whe passing the [W3C validator](https://jigsaw.w3.org/css-validator/):    
   
-### Main CSS
+#### Main CSS
 This file contains the main CSS of the site. It is in the directory: */static/css/base.css*. [Check the file here](https://english-grows1.s3.eu-west-3.amazonaws.com/static/css/base.css)
   
   ![image](https://github.com/user-attachments/assets/747b3bf3-b11a-4d63-9495-8144057b3888)
 
-### Profiles CSS
+#### Profiles CSS
 This file contains some CSS specific for the profiles app. It is in the directory: */profiles/static/profiles/css/profiles.css*. [Check the file here](https://english-grows1.s3.eu-west-3.amazonaws.com/static/profiles/css/profiles.css):  
   
   ![image](https://github.com/user-attachments/assets/ecc0fc73-5581-4838-9aba-37f32f70f946)
   
-## JS ES6
+### JS ES6
 The validation of the code has been successful. The validator used has been [JShint](https://jshint.com/). In order to remove inaccurate warnings related solely to the fact that it by itself does not support JS ES6, I [found the helpful and easy way](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6#:~:text=By%20default%2C%20JSHint%20gives%20you%20warnings%20if%20you%20use%20new%20ES6%20features) to make the tool read and analyse the ES6 code effectively, by simply adding this comment to the top of the code:  
 ```// jshint esversion: 6```  
   
-- **checkout/static/checkout/js/stripe_elementss.js** :  
-  ![image](https://github.com/user-attachments/assets/08cc8fd3-6fad-4f7c-993e-fa3ab76f9be9)
-
-- **static/js/quantity_selector.js** :
-  ![image](https://github.com/user-attachments/assets/f67fed89-1d45-4f2e-a343-4f05fb732e02)
-
-
-
-
-
-
-
+- [**checkout/static/checkout/js/stripe_elementss.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/checkout/js/stripe_elements.js) - No errors found:  
   
+  ![image](https://github.com/user-attachments/assets/2c36b0b4-a6c7-415d-a265-3cc1dd1910e8)
+  
+- [**static/js/quantity_selector.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/js/quantity_selector.js) - No errors found:  
+  
+  ![image](https://github.com/user-attachments/assets/7e984c1b-0a06-46fd-b45a-55ea72535065)
+  
+
+### PYTHON 3.12
+**Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**  
+
+#### BAG APP
+  * contexts.py - No errors found:
+    
+    ![image](https://github.com/user-attachments/assets/a1c7e008-f1b0-41e8-bec5-551d2115f27b)
+    
+  * views.py - 
+    
+     ![image](https://github.com/user-attachments/assets/2cf5b3d1-6255-4bd5-9e2a-dd45b5dd66b2)
+    
+#### CHECKOUT APP
+  * admin.py
+    
+    ![image](https://github.com/user-attachments/assets/fe158cab-bf16-4eee-abbf-63d702a5e51e)
+        
+  * forms.py
+    
+     ![image](https://github.com/user-attachments/assets/6b498a0c-9c0a-4e3a-bd19-b99d051c1f16)
+    
+  * models.py - The only line that is too long, is due to the unability to separate the operation in two lines
+
+     ![image](https://github.com/user-attachments/assets/d007159f-2697-4ac9-9d76-5235dc09ada8)
+    
+  * views.py
+    
+     ![image](https://github.com/user-attachments/assets/a2e4ba93-fd8e-4b22-9737-b939b198bc14)
+    
+#### ENGLISH GROWS PROJECT
+  * settings.py
+    
+     ![image](https://github.com/user-attachments/assets/f916b47a-7065-4f08-96e8-0afa1e0e5f50)
+    
+#### HOME APP
+  * forms.py
+    
+     ![image](https://github.com/user-attachments/assets/bdef9fa2-74fd-4cca-aff8-46ec0ad768d0)
+    
+  * models.py
+    
+     ![image](https://github.com/user-attachments/assets/ac981373-f0ed-4e53-b7ba-1669b583839e)
+    
+  * views.py
+    
+    ![image](https://github.com/user-attachments/assets/6d40320e-7f84-44d2-a164-f33766f543f9)
+      
+#### INDIVIDUAL SERVICES APP
+  * admin.py
+  
+    ![image](https://github.com/user-attachments/assets/92174d30-15f8-4d23-a6dc-05141e46f98b)
+  
+  * forms.py
+    
+    ![image](https://github.com/user-attachments/assets/72d641bb-e218-46a6-9404-7e77002eb237)
+    
+  * models.py
+    
+    ![image](https://github.com/user-attachments/assets/32265043-49a6-4889-a10a-05498994477c)
+    
+  * views.py
+  
+    ![image](https://github.com/user-attachments/assets/9284aa0d-8c59-4dbc-96e3-5b6b6cf625a3)
+  
+       
+#### PROFILES APP
+  * admin.py
+  
+    ![image](https://github.com/user-attachments/assets/a1de9736-cd86-45f1-b819-46dd49a28860)
+  
+  * forms.py
+    
+    ![image](https://github.com/user-attachments/assets/bc74c7fc-dae1-457d-b82e-91f4bfe20c2b)
+    
+  * models.py
+    
+     ![image](https://github.com/user-attachments/assets/8c68a1bd-8ab9-47ad-9acf-6c4b26c85712)
+    
+  * views.py
+    
+     ![image](https://github.com/user-attachments/assets/de0f810e-84ad-4586-8d88-31a84d3eb2ae)
+
+      
 ## ACCESSIBILITY TESTING
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
   
@@ -968,6 +1047,8 @@ Manual testing of the site has been performed following the user's stories:
 - [X] 28. **Stripe API works as expected and payment intent is successfully reflected on Stripe API, without any errors** (video below num. 29)     
 - [X] 29. **User views an order confirmation message and order details on the screen**
   
+  ![image](https://github.com/user-attachments/assets/333f2309-98d1-4d95-818d-7035faa56a77)
+
   https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
     
 - [X] 30. **Order is automatically accessible on the user profile**
