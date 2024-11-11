@@ -810,8 +810,8 @@ The validation of the code has been successful. The validator used has been [JSh
 
 - [**static/js/quantity_selector.js**](https://english-grows1.s3.eu-west-3.amazonaws.com/js/quantity_selector.js) - No errors found:  
   
-  ![image](https://github.com/user-attachments/assets/7e984c1b-0a06-46fd-b45a-55ea72535065)
-  
+  ![image](https://github.com/user-attachments/assets/a3eae4bd-9b32-4a9d-9f03-b972b11a1934)
+   
 
 ### PYTHON 3.12
 **Validation has been done using [CI Python Linter by Code Institute](https://pep8ci.herokuapp.com/), and the results have been the following:**  
