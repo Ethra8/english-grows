@@ -11,7 +11,7 @@ from checkout.models import Order
 def profile(request):
     """ Display the user profile """
     profile = get_object_or_404(UserProfile, user=request.user)
-    orders = Order.objects.filter(user_profile=profile).order_by('-date')  # Use user_profile here
+    orders = Order.objects.filter(user_profile=profile).order_by('-date')
     
     # Update user profile info via POST in form
     if request.method == 'POST':
