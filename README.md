@@ -453,28 +453,27 @@ The following fonts have been used, all from Google Fonts:
 </details>  
   
   
-## FEATURES
-The following features have been implemented in this site:
+# FEATURES
 
-  
-### Responsiveness
-This site has been designed and coded to be fully responsive, even in extra small devices.
+  - [User Authentication](#user-authentication)
+  - [Online Payments - Stripe Integration](#online-payments---stripe)
+  - [CRUD Functionality](#crud-functionality)
+  - [Navigation Bar](#navigation-bar)
+  - [Contact Form](#contact-form)
+  - [Service Sorting](#service-sorting)
+  - [Search Bar](#search-bar)
+  - [Shopping Bag](#shopping-bag)
+  - [404 Error Page](#404-error-page)
+  - [Admin Console - CRUD Functionality](#admin-console)
 
-  
-### Accessibility
+
+## IMPLEMENTED FEATURES  
+## Responsiveness
+This site has been designed and coded to be fully responsive, even in extra small devices of the range of a 250px wide viewport, assuring that the site has an optimal display to virtually every device in the market.  
+    
+## Accessibility
 This site has been coded by always keeping accessibility in mind, and achieving good results during the testing phase. For further reference, please check the accessibility reports [here](#accessibility-testing).
-
-  
-### Navigation Bar
-There are two navigation bars and both are fully responsive:
-1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
-  * [**user icon**](https://fontawesome.com/icons/user?f=classic&s=solid): Has a ***dropdown*** menu whose options link to the user's ***profile*** (when signed in) and ***logout*** (when signed in, ***login*** if logged out). When the user is logged in, the user name displays below the icon.
-  * [**bag icon**](https://fontawesome.com/icons/bag-shopping?f=classic&s=solid): Links to the shopping bag. Below the icon, the total amount of items stored in the bag is displayed.
-2. The second, ***nav***, is only present in the individual services page, accessed through the *For You* button on the home page. It has a search bar to search for specific words within all the services names and descriptions.  
-  
-https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
-  
-  
+    
 ## User Authentication
 Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
   
@@ -499,16 +498,51 @@ Django ***all-auth*** module has been implemented in the site. It allows to easi
 
 </details>  
     
- https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
+  https://github.com/user-attachments/assets/a05ad833-22d2-4918-af9c-399ab638847e
+    
+## Online Payments - STRIPE API  
+[Stripe](https://www.stripe.com) secure payment platform has been implemented in this site, and is fully functional. Users receive a confirmation email after the purchase, and webhooks have also been implemented:  
   
+  ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
+    
+  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)  
+
+## CRUD Functionalities
+### Admin Console - CRUD Funtionalities
+The admin console reflects most of the models present in this site, and also some features from django-allauth module's user model. Authorized users (admin *superusers*) can ***create***,***read***,***update*** and ***delete*** ***(CRUD)*** any data model from the admin panel. Therefore, admin users with the necessary permissions can perform full CRUD functionalities on the following data models stored in its postgreSQL database: 
   
+  * Services
+  * Types of Services
+  * Users
+  * User Profiles (profile model)
+  * Contact Requests (via B2B contact form)
+  * Orders
+
+    ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
+  
+### Services - CRUD
+ * To improve UX and the overall UI, authorized users (admin *superusers*) can ***create***,***read***,***update*** and ***delete*** ***(CRUD)*** the data model for Individual Services, including the service image, directly through the site without need to enter the lesser user-friendly admin panel. Thus, **Services can be created, read, updated, or/and deleted** through the main service page in the site:  
+  
+   ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)    
+  
+   ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)    
+  
+## Navigation Bar
+There are two navigation bars and both are fully responsive:
+1. The first, ***topnav***, is fixed to the top of each page in the site, including the 404 error page, for an improved UX. It has a dark blue *#003366* background color, with white font and icons. It contains the logo on the left, which links to the home page, and two icons taken from [Fontawesome](https://fontawesome.com/):
+  * [**user icon**](https://fontawesome.com/icons/user?f=classic&s=solid): Has a ***dropdown*** menu whose options link to the user's ***profile*** (when signed in) and ***logout*** (when signed in, ***login*** if logged out). When the user is logged in, the user name displays below the icon.
+  * [**bag icon**](https://fontawesome.com/icons/bag-shopping?f=classic&s=solid): Links to the shopping bag. Below the icon, the total amount of items stored in the bag is displayed.
+2. The second, ***nav***, is only present in the individual services page, accessed through the *For You* button on the home page. It has a search bar to search for specific words within all the services names and descriptions.  
+  
+  https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
+    
 ## B2B Contact Form
   
-https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
+  https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
   
 ## Product Sorting
   
-https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
+  https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
   
 ## Search Bar
 The search bar is on the ***for you*** service page:
@@ -528,26 +562,13 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
   https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
   
-## Online Payments - STRIPE API  
-[Stripe](https://www.stripe.com) secure payment platform has been implemented in this site, and is fully functional. Users receive a confirmation email after the purchase, and webhooks have also been implemented:  
-  
-  ![image](https://github.com/user-attachments/assets/cc65c560-fec2-431c-8a76-39c68e2e3694)  
-    
-  ![image](https://github.com/user-attachments/assets/8697aa36-0ae5-4dd3-a9bd-18b5e21c3301)  
-  
-  
 ## 404 Error Page
+To improve UX, the 404 error page has been styled to the look and feel of the site.
   
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
-  
-  
-## Admin Console - CRUD Funtionality
-The admin console reflects most of the models present in this site, and also some features from django-allauth module's user model. All the models which can directly be accessed via the admin panel are detailed below, and CRUD functionality can be performed by a superuser (admin user) with the necessary permissions:
-  
- ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
 
   
-### Accounts
+## Accounts
 From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
 
      
@@ -562,14 +583,7 @@ From django User model, stores **registered users' emails** for future emailing 
    
    ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
 
-  
-### Individual Services
- * The model for the Individual Services can be directly accessed via the admin. Thus, **Services can be created, updated, or deleted**:  
-  
-   ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)    
-  
-   ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)    
-  
+
   
 ### Home
 As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
