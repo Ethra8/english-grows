@@ -33,12 +33,18 @@ IN_PRODUCTION = os.getenv("DEVELOPMENT") == "1"
 if IN_PRODUCTION:
     DEBUG = False  # Ensure DEBUG is always False in production
 else:
-    DEBUG = os.getenv("DEBUG", "False") == "True"  # Use DEBUG from env.py in development
+    DEBUG = os.getenv("DEBUG", "False") == "True"  # noqa use DEBUG from env.py in development
 
 
-ALLOWED_HOSTS = ['8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net', 'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com', 'https://amiresponsive.co.uk/']
+ALLOWED_HOSTS = [
+    '8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net',
+    'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com',
+    'https://amiresponsive.co.uk/'
+    ]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net'
+    ]
 
 # Application definition
 
@@ -167,18 +173,31 @@ else:
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'UserAttributeSimilarityValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'MinimumLengthValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'CommonPasswordValidator'
+        ),
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': (
+            'django.contrib.auth.password_validation.'
+            'NumericPasswordValidator'
+        ),
     },
 ]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
@@ -233,7 +252,7 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs to point to S3
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-    
+
     # Update STORAGES dictionary for S3
     STORAGES = {
         "default": {"BACKEND": "custom_storages.MediaStorage"},
