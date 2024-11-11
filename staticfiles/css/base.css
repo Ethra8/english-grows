@@ -1,5 +1,5 @@
 body {
-    background: url('/media/bg_4.jpg') no-repeat center center fixed;
+    background: url('/media/bg_4.png') no-repeat center center fixed;
     background-size: cover;
     color: #555;
     font-family: "Montserrat", sans-serif;
@@ -584,9 +584,9 @@ span.vertical-line {
 }
 
 .qty-input {
-    min-width: 32px !important;
-    width: 32px !important;
-    max-width: 32px !important;
+    min-width: 52px !important;
+    width: 52px !important;
+    max-width: 52px !important;
     text-align: center;
 }
 
