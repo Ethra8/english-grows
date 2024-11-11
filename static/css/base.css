@@ -583,11 +583,18 @@ span.vertical-line {
     display: table-header-group;
 }
 
+/* not to get confused with .qty_input for JS */
 .qty-input {
     min-width: 52px !important;
     width: 52px !important;
     max-width: 52px !important;
     text-align: center;
+}
+
+#bag-grand-total {
+    color: #fff;
+    font-size; 1.5rem;
+    text-align: right;
 }
 
 /* make update/delete icons display properly, avoid overlapping */
