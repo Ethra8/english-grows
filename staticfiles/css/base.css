@@ -182,7 +182,7 @@ footer a:hover {
 .icons-social:hover {
     color: white; 
     transform: scale(1.2);
-    rotate: 4deg;
+    transform: rotate(4deg);
 }
 
 /* style searchbar */
