@@ -302,12 +302,14 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
   * **Users can READ (view) all services for individuals**
   * **Authorized users can UPDATE a service**
   * **Authorized users can DELETE a service**
+  
+- **OTHER FUNCTIONALITIES**
   * **Users can sort services by type or price, and sort within a certain type by price or alphabetical order**
   * **Users can search the site for a specific word**
   * **Users can check each service's details page**
   * **Users can adjust quantity of a specific service to include in the bag**
     
-
+  
 #### PROFILES app
 This app contains the following pages *(templates & urls)* and **CRUD functionalities** *(models & views)*:  
 - **PAGES:**
