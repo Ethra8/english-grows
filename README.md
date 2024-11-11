@@ -747,27 +747,28 @@ You can access full report: [Lighthouse report DESKTOP - checkout page.pdf](http
     
   ![image](https://github.com/user-attachments/assets/9de1129c-26e7-4de5-ae74-d691a367c0f3)
     
-### PROFILE Page
+### PROFILES Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
+You can access full report: [Lighthouse report MOBILE - Profile page.pdf](https://github.com/user-attachments/files/17708017/Lighthouse.report.MOBILE.-.Profile.page.pdf)
   
-  
-  
+  ![image](https://github.com/user-attachments/assets/5a9e0045-7d1f-4d99-ac4d-4895414ece90)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: 
-  
- 
-  
+You can access full report: [Lighthouse report DESKTOP - Profile page.pdf](https://github.com/user-attachments/files/17708028/Lighthouse.report.DESKTOP.-.Profile.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/3b8f6225-7b63-4b82-aea6-63b14a31373c)
+    
 ### 404 ERROR Page
 #### Mobile & Tablet (portrait)
 You can access full report: 
+
   
   
 #### Desktop & Tablet (landscape)
 You can access full report: 
   
   
-#### Account Pages
+#### ACCOUNT Pages
 As these are django built-in templates which have only been styled using some CSS classes, only one page has been tested, as to reflect their overall performanco"
 #### Mobile & Tablet (portrait)
 You can access full report:  [Lighthouse report MOBILE - login page.pdf](https://github.com/user-attachments/files/17694737/Lighthouse.report.MOBILE.-.login.page.pdf)
@@ -1172,7 +1173,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 - The logo had previously been created by the creator of this site with the free version of [Canva](www.canva.com) for her personal freelance website as a certified teacher of English as a second language.
 
 ## Acknowledgements
-- Some nice tutors and mentor Patrick Sheridan at Code Institude for their patience and useful insights.
+- Some nice tutors and mentor [Rory Patrick Sheridan](https://github.com/Ri-Dearg) at Code Institute for their patience and useful insights.
 - I have searched thorough [Bootstrap 4 documentation](https://getbootstrap.com/docs/4.6/getting-started/introduction/).
 - I have searched thorough [Django 5.1 documentation](https://docs.djangoproject.com/en/5.1/).
 - I have searched Stackoverflow, Youtube, W3School, Geeksforgeeks among other sites when encountering issues or knowledge blockers.
