@@ -4,10 +4,13 @@
 ![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
       
 ## Overview
-This site is an e-commerce that sells services. The services provided are the following:
-- Live online lessons for B2B and B2C customers:
+This site is an e-commerce that offers services in the education industry, both to B2C and B2B potential customers. More specifically, online English teaching services by live qualified English teachers. The services provided are the following:
+- **B2C**
   * Individual Lesson Packs
   * Reduced Group courses
+
+- **B2B**
+  * Customized corporate professional training plans
 
 ## Live Site
 - You can view the deployed site on Heroku [here](https://english-grows-477471d17e50.herokuapp.com/)
@@ -759,15 +762,18 @@ You can access full report: [Lighthouse report DESKTOP - Profile page.pdf](https
   ![image](https://github.com/user-attachments/assets/3b8f6225-7b63-4b82-aea6-63b14a31373c)
     
 ### 404 ERROR Page
+This customized 404 error page has received a 100% score in accessibilitty, although, of course, SEO and Best Practices encounter the 404 error in the system and therefore reesult in a lower percentage due, precisely at fact of it being a 404 error page. <small>(pardon the redundancy)</small>.  
+  
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - 404 Error page.pdf](https://github.com/user-attachments/files/17708349/Lighthouse.report.MOBILE.-.404.Error.page.pdf)
   
-  
+  ![image](https://github.com/user-attachments/assets/359989e7-56a5-4d43-8539-69161042d383)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: 
+You can access full report: [Lighthouse report DESKTOP - 404 Error page.pdf](https://github.com/user-attachments/files/17708354/Lighthouse.report.DESKTOP.-.404.Error.page.pdf)
   
-  
+  ![image](https://github.com/user-attachments/assets/f09847fb-abf3-4c30-b95c-8377f1548eef)
+    
 #### ACCOUNT Pages
 As these are django built-in templates which have only been styled using some CSS classes, only one page has been tested, as to reflect their overall performanco"
 #### Mobile & Tablet (portrait)
