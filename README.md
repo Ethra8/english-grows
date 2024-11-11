@@ -671,43 +671,43 @@ The following tests have been run for this project:
     
 ### HOME Page  
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://github.com/user-attachments/files/17692317/Lighthouse.report.MOBILE.-.Home.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/86c46a5a-5e1a-45c5-b66f-ac0b4d14640d)
+You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://github.com/user-attachments/files/17694778/Lighthouse.report.MOBILE.-.Home.page.pdf)
     
+  ![image](https://github.com/user-attachments/assets/2178cdde-c5dd-462c-93b6-7df98a4ce39c)
+      
 #### Laptop and Desktop
-You can access full report: [Lighthouse report DESKTOP - Home page.pdf](https://github.com/user-attachments/files/17692321/Lighthouse.report.DESKTOP.-.Home.page.pdf)
+You can access full report: [Lighthouse report DESKTOP - Home page.pdf](https://github.com/user-attachments/files/17694782/Lighthouse.report.DESKTOP.-.Home.page.pdf)
   
-  ![image](https://github.com/user-attachments/assets/880687eb-e33c-42d4-bf2b-d55add22f041)
-   
+  ![image](https://github.com/user-attachments/assets/f4be1aaa-2730-4fd9-9e43-27250e959177)
+     
 ### COMPANIES Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - Companies page.pdf](https://github.com/user-attachments/files/17692330/Lighthouse.report.MOBILE.-.Companies.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/0a7d7266-328e-4f58-9b89-b42d90b0528b)
-  
+You can access full report: [Lighthouse report MOBILE - Companies page.pdf](https://github.com/user-attachments/files/17694791/Lighthouse.report.MOBILE.-.Companies.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/d03912a4-53cf-4408-aee5-6f8d73f900cd)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: [Lighthouse report DESKTOP - Companies page.pdf](https://github.com/user-attachments/files/17692333/Lighthouse.report.DESKTOP.-.Companies.page.pdf)
+You can access full report: [Lighthouse report DESKTOP - Companies page.pdf](https://github.com/user-attachments/files/17694802/Lighthouse.report.DESKTOP.-.Companies.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/f1bf1996-2613-41e7-a6e6-d592ded2ab95)
   
-  ![image](https://github.com/user-attachments/assets/2c228032-6ab4-4db8-bef2-caeedafd5fd8)    
-
 ### ABOUT Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - About page.pdf](https://github.com/user-attachments/files/17693311/Lighthouse.report.MOBILE.-.About.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/340301f6-7d3d-464d-af64-711cbf6c561e)    
-  
+You can access full report: [Lighthouse report MOBILE - About page.pdf](https://github.com/user-attachments/files/17694805/Lighthouse.report.MOBILE.-.About.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/c42245ef-5ed0-40de-aa94-7fe7aa0b1e44)
+    
 #### Desktop & Tablet (landscape)
-You can access full report: [Lighthouse report DESKTOP - About page.pdf](https://github.com/user-attachments/files/17693322/Lighthouse.report.DESKTOP.-.About.page.pdf)
-  
-  ![image](https://github.com/user-attachments/assets/91966ef9-767c-4eac-90da-d857a6e7787b)    
-  
+You can access full report: [Lighthouse report DESKTOP - About page.pdf](https://github.com/user-attachments/files/17694810/Lighthouse.report.DESKTOP.-.About.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/8e4a1970-4bf8-41e2-a93e-a34d0172c356)
+    
 ### INDIVIDUAL SERVICES Page
 #### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - Individual services page.pdf](https://github.com/user-attachments/files/17693991/Lighthouse.report.MOBILE.-.Individual.services.page.pdf)
-
-  ![image](https://github.com/user-attachments/assets/7cf0a171-ed7c-4af3-91cf-89106bfdc6ee)    
-  
+You can access full report: [Lighthouse report MOBILE - Individual services page.pdf](https://github.com/user-attachments/files/17694753/Lighthouse.report.MOBILE.-.Individual.services.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/c2092868-2142-45a9-aaf4-f7a36d181c95)
+       
 #### Desktop & Tablet (landscape)
 You can access full report: [Lighthouse report DESKTOP - Individual services page.pdf](https://github.com/user-attachments/files/17694123/Lighthouse.report.DESKTOP.-.Individual.services.page.pdf)
   
@@ -715,26 +715,36 @@ You can access full report: [Lighthouse report DESKTOP - Individual services pag
   
 ### SERVICE DETAILS Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - Individual services page.pdf](https://github.com/user-attachments/files/17694205/Lighthouse.report.MOBILE.-.Individual.services.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/e9560995-bee0-4507-9f10-53bd80356860)
+  
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-
+You can access full report: [Lighthouse report DESKTOP - services details page.pdf](https://github.com/user-attachments/files/17694279/Lighthouse.report.DESKTOP.-.services.details.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/d6683ea0-e367-471f-be43-0be825d8c266)
+    
 ### BAG Page
 #### Mobile & Tablet (portrait)
-You can access full report:  
-
+You can access full report: [Lighthouse report MOBILE - bag page.pdf](https://github.com/user-attachments/files/17694693/Lighthouse.report.MOBILE.-.bag.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/7d0d92a0-618d-4aee-94d0-eb8624c3cd05)
+  
 #### Desktop & Tablet (landscape)
-You can access full report: 
-
-
+You can access full report: [Lighthouse report DESKTOP - bag page.pdf](https://github.com/user-attachments/files/17694703/Lighthouse.report.DESKTOP.-.bag.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/de9cf689-7c57-4898-89b2-b960b2ca42e9)
+  
 ### CHECKOUT Page
 #### Mobile & Tablet (portrait)
-You can access full report: 
-
+You can access full report: [Lighthouse report MOBILE - checkout page.pdf](https://github.com/user-attachments/files/17694707/Lighthouse.report.MOBILE.-.checkout.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/f3e75187-bdd0-4d7b-86eb-b6ffd6e186b3)
+  
 #### Desktop & Tablet (landscape)
 You can access full report: 
+
+  ![image](https://github.com/user-attachments/assets/90a40b1c-be1b-4556-a881-9c12c3e6d368)
 
 ### PROFILE Page
 #### Mobile & Tablet (portrait)
@@ -751,7 +761,18 @@ You can access full report:
 #### Desktop & Tablet (landscape)
 You can access full report: 
 
+#### LOGIN Page
+#### Mobile & Tablet (portrait)
+You can access full report:  [Lighthouse report MOBILE - login page.pdf](https://github.com/user-attachments/files/17694737/Lighthouse.report.MOBILE.-.login.page.pdf)
+  
+  ![image](https://github.com/user-attachments/assets/1c823916-db42-4d7c-b188-1bc10ed06e6a)
+  
+#### Desktop & Tablet (landscape)
+You can access full report: [Lighthouse report DESKTOP - login page.pdf](https://github.com/user-attachments/files/17694721/Lighthouse.report.DESKTOP.-.login.page.pdf)
+    
+  ![image](https://github.com/user-attachments/assets/28d14efb-fb13-42a6-ac7e-116b81ae0259)
 
+  
 ## CODE
   
 ## CSS
@@ -1059,8 +1080,10 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 - I have searched throughout [Google Developers documentation](https://developers.google.com)
 - I have read [how to make links crawlable](https://developers.google.com/search/docs/crawling-indexing/links-crawlable?visit_id=638668769044808898-1063643142&rd=1) on Google Developers documentation to improve SEO.
 - I have read on how to [make select element accessible](https://dequeuniversity.com/rules/axe/4.10/select-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
+- I have read about [ARIA searchbox role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/searchbox_role) in *Developer Mozilla* to make search bar accessible to screen readers, and improve accessibility.
 - I have read on how to [include discernible text in links](https://dequeuniversity.com/rules/axe/4.10/link-name) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
 - I have read this article about [robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/?utm_source=lighthouse&utm_medium=devtools) on *Chrome for Developers*, to fix invalid text and improve SEO.
+- I have read on [aria-labels for buttons](https://dequeuniversity.com/rules/axe/4.10/label) article from [Deke University](https://dequeuniversity.com/) to improve accessibility.
 
 
 
