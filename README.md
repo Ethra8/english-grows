@@ -67,6 +67,7 @@ Edna Torres Munill
     - [Outstanding Defects](#outstanding-defects)
   * [Core Web Vitals](#core-web-vitals)
     - [Lighthouse Reports](#lighthouse-reports)
+  * [Code Validation](#code-validation)
   * [Accessibility Testing](#accessibility-testing)
     - [Contrast Validation Reports](#contrast-validation-reports)
     - [General WCAG 2.1 Report](#general-wcag-2.1-report)
@@ -662,7 +663,7 @@ No defects of note have been detected on this site.
 No outstanding defects have been detected in this site.  
   
   
-## GENERAL PERFORMANCE
+## CORE VITALS
 The following tests have been run for this project:  
   
 ## LIGHTHOUSE REPORTS 
@@ -781,16 +782,25 @@ You can access full report: [Lighthouse report DESKTOP - login page.pdf](https:/
   ![image](https://github.com/user-attachments/assets/28d14efb-fb13-42a6-ac7e-116b81ae0259)
 
   
-## CODE
+## CODE VALIDATION
   
-## CSS
-No critical errors were found whe passing the [W3C validator](https://jigsaw.w3.org/css-validator/)  
- 
- ![image](https://github.com/user-attachments/assets/4b7cae97-029b-4268-8734-c5c9bb8dc913)  
+## CSS 3
+No errors were found whe passing the [W3C validator](https://jigsaw.w3.org/css-validator/):    
+  
+### Main CSS
+This file contains the main CSS of the site. It is in the directory: */static/css/base.css*. [Check the file here](https://english-grows1.s3.eu-west-3.amazonaws.com/static/css/base.css)
+  
+  ![image](https://github.com/user-attachments/assets/747b3bf3-b11a-4d63-9495-8144057b3888)
 
+### Profiles CSS
+This file contains some CSS specific for the profiles app. It is in the directory: */profiles/static/profiles/css/profiles.css*. [Check the file here](https://english-grows1.s3.eu-west-3.amazonaws.com/static/profiles/css/profiles.css):  
+  
+  ![image](https://github.com/user-attachments/assets/ecc0fc73-5581-4838-9aba-37f32f70f946)
   
 ## JS ES6
-No critical errors were found whe passing the validator [JShint](http://www.jshint.com)  
+The validation of the code has been successful. The validator used has been [JShint](https://jshint.com/). In order to remove inaccurate warnings related solely to the fact that it by itself does not support JS ES6, I [found the helpful and easy way](https://teamtreehouse.com/community/why-does-jshint-give-me-these-warnings-about-es6#:~:text=By%20default%2C%20JSHint%20gives%20you%20warnings%20if%20you%20use%20new%20ES6%20features) to make the tool read and analyse the ES6 code effectively, by simply adding this comment to the top of the code:  
+```// jshint esversion: 6```  
+  
 - **checkout/static/checkout/js/stripe_elementss.js** :  
   ![image](https://github.com/user-attachments/assets/08cc8fd3-6fad-4f7c-993e-fa3ab76f9be9)
 
