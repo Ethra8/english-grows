@@ -663,7 +663,7 @@ No defects of note have been detected on this site.
 No outstanding defects have been detected in this site.  
   
   
-## CORE VITALS
+## CORE WEB VITALS
 The following tests have been run for this project:  
   
 ## LIGHTHOUSE REPORTS 
