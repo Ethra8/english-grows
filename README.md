@@ -1239,8 +1239,15 @@ The following git commands were given to the terminal throughout development to 
 3. ```git push``` - Command to push all updated code to the remote repository on Github.
 4. ```python3 manage.py runserver``` - Command to run **python** app on local server.
 
+### REQUIREMENTS
+- Make sure all the modules and requirements have been correctly installed by:
+    * Install the necessary modules with command:
+      ```pip3 install module```
+    * Make sure you install versions that are compatible, to avoid system issues. Check the requirements file in this repository for surther reference, and type the command on the terminal:
+      ```pip3 install -r requirements.txt```
+  
 ### SECRETS
-To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, SECRET_KEY) to Github:
+**WARNING - DATA PROTECTION** To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, SECRET_KEY) to Github:
 1. Create an ***env.py*** file on the main directory of the app.
 2. Ensure that env.py is included in the ***.gitignore*** file.
 3. To include secret variables on the env.py file:
@@ -1258,7 +1265,7 @@ To avoid pushing sensible credentials stores in variables (e.g.: DATABASE_URL, S
 
 ## HEROKU
 ### App Preparation
-1. Create and add the **'Procfile'** to the root directory of the app, and include ```web: gunicorn candlelight.wsgi --log-file -```  Heroku relies on this file to determine how to run your application, ensuring the correct setup of your web server. Use commands like ```web: gunicorn PROJ_NAME.wsgi``` in the 'Procfile' to instruct Heroku on starting your web server with Gunicorn.
+1. Create and add the **'Procfile'** to the root directory of the app, and include ```web: gunicorn candlelight.wsgi --log-file -```  Heroku relies on this file to determine how to run your application, ensuring the correct setup of your web server. Use commands like ```web: gunicorn PROJECT_NAME.wsgi``` in the 'Procfile' to instruct Heroku on starting your web server with Gunicorn.
 2. If you haven't done so yet, create a ***requirements.txt*** file to store necessary modules and libraries:
    - ```pip3 install -r requirements.txt```
 3. Ensure you have updated the ***requirements.txt*** file listing all project dependencies. The comnmand to update the file is ```pip3 freeze > requirements.txt```
