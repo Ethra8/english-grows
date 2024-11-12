@@ -123,35 +123,36 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 4. **MUST:** I want to ***subscribe to the newsletter*** to receive special offers and tips.
   
 #### B2B
-- [X] 4. **MUST:** I want to be able to easily ***contact the site*** to receive a customized training plan and quote.  
+- [X] 5. **MUST:** I want to be able to easily ***contact the site*** to receive a customized training plan and quote.  
      
 #### B2C
 ##### Viewing and Navigation
-- [X] 5. **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
-- [X] 6. **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
-- [X] 7. **MUST:** I want to be able to ***view individual service details***, so that I can read a more detailed description, and check further details.
-- [X] 8. **SHOULD:** I want to be able to easily ***view the total of my purchase at any time***, so that I can avoid spending too much.
+- [X] 6. **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
+- [X] 7. **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
+- [X] 8. **MUST:** I want to be able to ***view individual service details***, so that I can read a more detailed description, and check further details.
+- [X] 9. **SHOULD:** I want to be able to easily ***view the total of my purchase at any time***, so that I can avoid spending too much.
     
 ##### Sorting and Searching
-- [X] 9. **SHOULD:** I want to ***sort the full list*** of available services ***by categories*** or ***by price***, so that I can easily identify the one that suits me best.
-- [X] 10. **SHOULD:** I want to ***sort*** a ***specific category*** of services ***by price***, or ***alphabetically*** so that I can identify the best-priced services in a specific category.
+- [X] 10. **SHOULD:** I want to ***sort the full list*** of available services ***by categories*** or ***by price***, so that I can easily identify the one that suits me best.
+- [X] 11. **SHOULD:** I want to ***sort*** a ***specific category*** of services ***by price***, or ***alphabetically*** so that I can identify the best-priced services in a specific category.
   
 ### AS A RETURNING VISITOR
-- [X] 11. **MUST:** I want to be able to easily **register for an account**, and ***receive an email confirmation*** after registering, so that I can verify that my account registration was successful.
+- [X] 12. **MUST:** I want to be able to easily **register for an account**, and ***receive an email confirmation*** after registering, so that I can verify that my account registration was successful.
   
 ### AS AN AUTHENTICATED USER & SHOPPER
-- [X] 12. **MUST:** I want to be able to ***easily login and logout***, so that I can access my personal account information.
-- [X] 13. **MUST:** I want to be able to ***easily recover my password*** in case I forget it, so that I can recover access to my ccount.
-- [X] 14. **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
-- [X] 15. **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
-- [X] 16. **MUST:** I want to able to easily ***access my bag, and update or delete*** any items in it.
-- [X] 17. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
-- [X] 18. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
-- [x] 19. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
+- [X] 13. **MUST:** I want to be able to ***easily login and logout***, so that I can access my personal account information.
+- [X] 14. **MUST:** I want to be able to ***easily recover my password*** in case I forget it, so that I can recover access to my ccount.
+- [X] 15. **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
+- [X] 16. **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
+- [X] 17. **MUST:** I want to able to easily ***access my bag, and update or delete*** any items in it.
+- [X] 18. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
+- [X] 19 **MUST:** I want to make ***secure online payments*** to be able to purchase online teaching services.
+- [X] 20. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
+- [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
     
   
 ### AS A SITE OWNER OR ADMIN USER:
-- [X] 20. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
+- [X] 22. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
 - [X] 21. **MUST:** Each **order is automatically linked to the authenticated user** making it.
 - [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
 - [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
@@ -333,7 +334,7 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
   * **Users can view past order details**
     
 ### DATA STRUCTURE - MODELS
-Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?usp=sharing)
+Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076)
   
   
 #### CHECKOUT App - Models
@@ -962,15 +963,15 @@ The validation of the code has been successful. The validator used has been [JSh
 This site has been tested to be ADA compliant, and has achieved **WCAG 2.1 validation**. Find below the contrast audits from ***Juicy Studio*** website and the general accessibility reports generated by ***EqualWeb Accessibility Checker*** Chrome extension, which have all achieved positive results. 
   
 ### CONTRAST VALIDATION REPORTS
-Font and backgroud colors have passed at level AAA. The following reports have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php)  
+Font and backgroud colors have passed at AAA and AA levels, as can be seen in the following reports that have been generated by [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php):  
   
-![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374) ![image](https://github.com/user-attachments/assets/0502fbeb-d05e-4e57-843e-e883d2786fce)  
+  ![image](https://github.com/user-attachments/assets/4d7ec2f4-1ef4-4814-b928-761bf5f6d374) ![image](https://github.com/user-attachments/assets/0502fbeb-d05e-4e57-843e-e883d2786fce)  
   
   
 ### GENERAL WCAG 2.1 REPORT
 This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site.  
   
- ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)  
+  ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)  
   
   
 ## MANUAL TESTING
@@ -979,38 +980,46 @@ Manual testing of the site has been performed following the user's stories:
 - [ ] 1. **Check the social media links to see the site's social media profile**
 - [X] 2. **Check the about page**
   
-  ![image](https://github.com/user-attachments/assets/cdb6beac-340d-4249-8ad7-6bf67ca64fc1)
-  
+  https://github.com/user-attachments/assets/e8feecd2-bda6-44d9-828e-4a4ab6dba8da
+    
 - [X] 3. **See at first glance the part of the site that is specially dedicated to me (B2B or B2C)**
 
   ![image](https://github.com/user-attachments/assets/25e596c0-b804-439b-93b4-3a7db8906a32)
 
-
+- [X] 4. **Users can subscribe to the newsletter**
+      - Users can register to the newsletter via the form, and get success message:
+  
+    https://github.com/user-attachments/assets/1dcfb229-a354-4ae6-b03a-7bc1b8fc3918
+      - ***Admin user can perform CRUD functionality on subscribers via the admin panel***:
+    
+    https://github.com/user-attachments/assets/f1ed2455-708a-442f-834e-7fc76ad79554
+    
+    
 ### CONTACT FORM (B2B customers)
-- [X] 4. **B2B can contact the site to receive a customized training plan**.
+- [X] 5. **B2B can contact the site to receive a customized training plan**.
 
   https://github.com/user-attachments/assets/e203231d-416a-48f2-ae6e-bd445409c255
 
   
 ### VIEW AND SORT SERVICES
   
-- [X] 5. **All available services are listed**
+- [X] 6. **All available services are listed**
   
   https://github.com/user-attachments/assets/fdd602da-0263-4d3e-9783-050ddd8607c2
         
-- [X] 6. **View specific type of service**
+- [X] 7. **View specific type of service**
   
   https://github.com/user-attachments/assets/60b8cf12-8fc6-4cbd-9fc0-bf22cc73700f
       
-- [X] 7. **View individual service details**
+- [X] 8. **View individual service details**
   
   https://github.com/user-attachments/assets/7899e77f-0e75-4f2d-baf4-3eaa44a5ee57
       
-- [X] 8. **view the total of my pending purchase at any time**
+- [X] 9. **view the total of my pending purchase at any time**
   
   https://github.com/user-attachments/assets/3ca7b314-2375-428f-bf65-e1d390d48025
   
-- [X] 9. **sort the full list of available services ***by categories (types)*** or ***by price*****
+- [X] 10. **sort the full list of available services ***by categories (types)*** or ***by price*****
       
   * ***By Types***:  
     
@@ -1020,13 +1029,13 @@ Manual testing of the site has been performed following the user's stories:
     
     https://github.com/user-attachments/assets/17f2d278-6e01-40f4-9bd7-c4418695c0b3
         
-- [X] 10. **sort specific category of services *by price*, or *alphabetically***
+- [X] 11. **sort specific category of services *by price*, or *alphabetically***
   
     https://github.com/user-attachments/assets/714e410d-55d2-45ea-9bd3-1cfea9a64e63
   
   
 ### ACCOUNT - USER AUTHENTICATION
-- [X] 11. **Register for an account**, and **receive an email confirmation** after registering.
+- [X] 12. **Register for an account**, and **receive an email confirmation** after registering.
   * Once a new user is registered, its data is automatically stored in the database.
     
     https://github.com/user-attachments/assets/386b7ac4-0856-4a36-b26c-872b15fd74ae
@@ -1039,34 +1048,43 @@ Manual testing of the site has been performed following the user's stories:
     
     https://github.com/user-attachments/assets/803fe5ce-6cb5-42fe-946c-582734f2064c
     
-- [X] 12. **Easily login and logout**.
+- [X] 13. **Easily login and logout**.
     
     https://github.com/user-attachments/assets/c35028e9-868c-455e-9d6f-f880d6a7e611
         
-- [X] 13. **Easily recover user password**:
+- [X] 14. **Easily recover user password**:
     * After user clicks on 'forgotten password", user inputs the account email and confirmation message is displayed
     * User receives an email with link to restore password     
     * Link to restore password works as expected  
     
     https://github.com/user-attachments/assets/1f96dfc6-27cd-4202-a3b7-3394d4d988d7
          
-- [X] 14. **Have a personalized user profile**:  
+- [X] 15. **Have a personalized user profile**:  
   
   ![image](https://github.com/user-attachments/assets/359d6421-941e-4ef2-bfe6-e7ba3243d3ff)
   
-- [X] 15. **Update and save my personal account information on my user profile**:  
+- [X] 16. **Update and save my personal account information on my user profile**:  
   
   https://github.com/user-attachments/assets/5e701fe1-f151-472b-991e-be666ad0d15e
     
-- [X] 16. **Access my bag, and update or delete any items in it**:
+- [X] 17. **Access my bag, and update or delete any items in it**:
   
   https://github.com/user-attachments/assets/1a2f3d9d-1068-471f-87e6-bd876d82900c
     
-- [X] 17. **Users' personal data is secured**: No one else can access a user's profile, nor order urls, which also contain personal data:
+- [X] 18. **Users' personal data is secured**: No one else can access a user's profile, nor order urls, which also contain personal data:
   
   https://github.com/user-attachments/assets/6a691416-ecde-4719-a3df-d81dc41f77e7
     
-- [X] 18. **Receive a confirmation email after a purchase, with details of the order**:
+- [X] 19. **ONLINE PAYMENT - STRIPE API** - Users can make secure online payments
+      * **User can easily access the checkout page and proceed to checkout** *(video below)*
+      * **Stripe API works as expected and payment intent is successfully reflected on Stripe API, without any errors** *(video below)*   
+      * **User views an order confirmation message and order details on the screen**
+      ![image](https://github.com/user-attachments/assets/333f2309-98d1-4d95-818d-7035faa56a77)
+
+https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
+    
+
+- [X] 20. **Receive a confirmation email after a purchase, with details of the order**:
   
   https://github.com/user-attachments/assets/8b745505-3301-40fa-a746-bdab04d73abe
     
@@ -1106,16 +1124,6 @@ Manual testing of the site has been performed following the user's stories:
   https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
 
 
-### ONLINE PAYMENT - STRIPE API
-- [X] 27. **User can easily access the checkout page and proceed to checkout** (video below num. 29)
-  
-- [X] 28. **Stripe API works as expected and payment intent is successfully reflected on Stripe API, without any errors** (video below num. 29)     
-- [X] 29. **User views an order confirmation message and order details on the screen**
-  
-  ![image](https://github.com/user-attachments/assets/333f2309-98d1-4d95-818d-7035faa56a77)
-
-  https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
-    
 - [X] 30. **Order is automatically accessible on the user profile**
   
   https://github.com/user-attachments/assets/45e9dc71-3dfa-4213-843e-ce0b9f81df60
@@ -1150,7 +1158,7 @@ Admin users can **Delete** a service, with confirmation step, and success messag
 
   
 ### MARKETING STRATEGIES
-### TEMPLATE CREATION
+#### SUBSCRIPTION to NEWSLETTER  
 All the functionalities described below reñlated to marketing have been tested, and work as expected. Please refer to the video below num. 29 which includes the three features testing: 
 - [X] 27. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
 - [X] 28. **send marketing campaigns to subscribed users.**
