@@ -77,10 +77,10 @@ Edna Torres Munill
   * [Core Web Vitals](#core-web-vitals)
     - [Lighthouse Reports](#lighthouse-reports)
   * [Code Validation](#code-validation)
-    - [HTML](#html)
+    - [HTML 5](#html-5)
     - [CSS 3](#css-3)
     - [JS ES6](#js-es6)
-    - [Python](#python)
+    - [Python 3.12](#python-3.12)
   * [Accessibility Testing](#accessibility-testing)
     - [Contrast Validation Reports](#contrast-validation-reports)
     - [General WCAG 2.1 Report](#general-wcag-2.1-report)
@@ -723,6 +723,7 @@ The following tests have been run for this project:
 **To improve my first report, the following actions have been taken:**  
 - Include a ***site.manifest***
 
+  
 <details>
 <summary>Click HERE to check the HOME PAGE Lighthouse Reports</summary>
     
@@ -738,6 +739,7 @@ The following tests have been run for this project:
   
 </details>   
 
+  
 <details>
 <summary>Click HERE to check the COMPANIES PAGE Lighthouse Reports</summary>
   
@@ -753,6 +755,7 @@ The following tests have been run for this project:
 
 </details> 
 
+  
 <details>
 <summary>Click HERE to check the ABOUT PAGE Lighthouse Reports</summary>  
   - Mobile & Tablet (portrait)
@@ -767,6 +770,7 @@ The following tests have been run for this project:
 
 </details>
 
+  
 <details>
 <summary>Click HERE to check the INDIVIDUAL SERVICES PAGE Lighthouse Reports</summary> 
   - Mobile & Tablet (portrait)
@@ -781,6 +785,7 @@ The following tests have been run for this project:
   
 </details>
 
+  
 <details>
 <summary>Click HERE to check the SERVICE DETAILS PAGE Lighthouse Reports</summary> 
   - Mobile & Tablet (portrait)
@@ -794,6 +799,7 @@ The following tests have been run for this project:
   ![image](https://github.com/user-attachments/assets/bc13a15d-6bca-4ca0-ae55-7a8d70c9a732)
 
 </details>
+
   
 <details>
 <summary>Click HERE to check the SERVICE DETAILS PAGE Lighthouse Reports</summary> 
@@ -810,6 +816,7 @@ The following tests have been run for this project:
 
 
 </details>
+
   
 <details>
 <summary>Click HERE to check the CHECKOUT PAGE Lighthouse Reports</summary> 
@@ -824,6 +831,7 @@ You can access full report: [Lighthouse report DESKTOP - checkout page.pdf](http
   ![image](https://github.com/user-attachments/assets/9de1129c-26e7-4de5-ae74-d691a367c0f3)
   
 </details>
+
   
 <details>
 <summary>Click HERE to check the PROFILES PAGE Lighthouse Reports</summary> 
@@ -839,6 +847,7 @@ You can access full report: [Lighthouse report DESKTOP - checkout page.pdf](http
   ![image](https://github.com/user-attachments/assets/3b8f6225-7b63-4b82-aea6-63b14a31373c)
   
 </details>
+
   
 <details>
 <summary>Click HERE to check the 404 ERROR PAGE Lighthouse Reports</summary> 
@@ -872,11 +881,12 @@ You can access full report: [Lighthouse report DESKTOP - 404 Error page.pdf](htt
   ![image](https://github.com/user-attachments/assets/28d14efb-fb13-42a6-ac7e-116b81ae0259)
 
 </details>
+
   
 ## CODE VALIDATION
-
+  
 ### HTML 5
-No errors have been found when passing [HTML validator](https://validator.w3.org/nu/):  
+No errors nor warnings have been found when passing [HTML validator](https://validator.w3.org/nu/):  
   
   - **BAG App**
     * ***bag.html***
