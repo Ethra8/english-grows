@@ -52,6 +52,7 @@ Edna Torres Munill
         - [Online Payments - Stripe Integration](#online-payments---stripe)
         - [CRUD Functionality](#crud-functionality)
         - [Navigation Bar](#navigation-bar)
+        - [Footer](#footer)
         - [Contact Form](#contact-form)
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
@@ -454,19 +455,7 @@ The following fonts have been used, all from Google Fonts:
   
   
 # FEATURES
-
-  - [User Authentication](#user-authentication)
-  - [Online Payments - Stripe Integration](#online-payments---stripe)
-  - [CRUD Functionality](#crud-functionality)
-  - [Navigation Bar](#navigation-bar)
-  - [Contact Form](#contact-form)
-  - [Service Sorting](#service-sorting)
-  - [Search Bar](#search-bar)
-  - [Shopping Bag](#shopping-bag)
-  - [404 Error Page](#404-error-page)
-  - [Admin Console - CRUD Functionality](#admin-console)
-
-
+  
 ## IMPLEMENTED FEATURES  
 ## Responsiveness
 This site has been designed and coded to be fully responsive, even in extra small devices of the range of a 250px wide viewport, assuring that the site has an optimal display to virtually every device in the market.  
@@ -535,7 +524,19 @@ There are two navigation bars and both are fully responsive:
 2. The second, ***nav***, is only present in the individual services page, accessed through the *For You* button on the home page. It has a search bar to search for specific words within all the services names and descriptions.  
   
   https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
-    
+
+## Footer
+The footer is pushed to the bottom of every page, including the customized 404 error page. It includes the following features and links:
+
+  - Links to the following pages of the site, as some sort of **secondary navigation bar**:
+    * About Page
+    * Services Page for B2C customers (*your you*)
+    * Companies page *(B2B contact form)*
+
+  - Social media **icons** for *facebook*, *instagram*, *youtube*, and *twitter*
+  - Copyright notice
+  - Newsletter subscription form
+  
 ## B2B Contact Form
   
   https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
@@ -662,10 +663,14 @@ To promote this site's visibility and to improve customer reach, a mockup profil
   
   
 ## EMAIL MARKETING
+This site is prepared to undertake different types of emailing campaigns: within users, within newsletter subscribers, or within both.
+  
+### WITHIN USERS
 In order to facilitate email marketing, and easen an emailing campaign, all the users' emails are stored separately. Therefore, each time a user registers for an account, the user's email is stored in the admin on a separate model (database table) together with the user name, for future emailing campaigns:
 
   ![image](https://github.com/user-attachments/assets/da997270-11c6-472d-a80c-aca7a258bb87)
 
+### WITHIN SUBSCRIBERS
      
 # TESTING  
 ## DEFECT TRACKING
@@ -871,15 +876,22 @@ The validation of the code has been successful. The validator used has been [JSh
 #### HOME APP
   * forms.py
     
-     ![image](https://github.com/user-attachments/assets/bdef9fa2-74fd-4cca-aff8-46ec0ad768d0)
+     ![image](https://github.com/user-attachments/assets/de1088a7-9a6a-4ea9-8100-90896cfa2fcb)
+
     
   * models.py
     
-     ![image](https://github.com/user-attachments/assets/ac981373-f0ed-4e53-b7ba-1669b583839e)
+     ![image](https://github.com/user-attachments/assets/ca2edfe6-f30c-456b-a6ed-38dd92fdfedb)
+
     
+  * utils.py
+
+    ![image](https://github.com/user-attachments/assets/33b81c10-de64-4675-9a56-d452334b16b9)
+            
   * views.py
     
-    ![image](https://github.com/user-attachments/assets/6d40320e-7f84-44d2-a164-f33766f543f9)
+    ![image](https://github.com/user-attachments/assets/240d9e03-108b-4048-8e6b-a216d1be95ad)
+
       
 #### INDIVIDUAL SERVICES APP
   * admin.py
