@@ -77,6 +77,10 @@ Edna Torres Munill
   * [Core Web Vitals](#core-web-vitals)
     - [Lighthouse Reports](#lighthouse-reports)
   * [Code Validation](#code-validation)
+    - [HTML](#html)
+    - [CSS 3](#css-3)
+    - [JS ES6](#js-es6)
+    - [Python](#python)
   * [Accessibility Testing](#accessibility-testing)
     - [Contrast Validation Reports](#contrast-validation-reports)
     - [General WCAG 2.1 Report](#general-wcag-2.1-report)
@@ -870,9 +874,61 @@ You can access full report: [Lighthouse report DESKTOP - 404 Error page.pdf](htt
 </details>
   
 ## CODE VALIDATION
+
+### HTML 5
+No errors have been found when passing [HTML validator](https://validator.w3.org/nu/):  
   
+  - **BAG App**
+    * ***bag.html***
+      
+      ![image](https://github.com/user-attachments/assets/af72a27b-5601-46cc-bcb6-e02e9c3b6c51)    
+        
+  - **CHECKOUT App**
+    * ***checkout.html***
+      ![image](https://github.com/user-attachments/assets/6f66cdc1-38ae-418c-8edc-c4c4c9c1e983)    
+
+    * ***checkout_success***
+      ![image](https://github.com/user-attachments/assets/8b555fae-510d-4a59-8aaf-ed0031ebee6b)    
+
+    * ***order_confirmation_email.html***
+      ![image](https://github.com/user-attachments/assets/86a0c277-e202-4ad8-a030-3c79baf28673)    
+        
+  - **HOME App**
+    * ***about.html***
+      ![image](https://github.com/user-attachments/assets/b9bfed42-e43d-44f7-9755-b7c29aeb9304)    
+      
+    * ***companies.html***
+      ![image](https://github.com/user-attachments/assets/152ab0a9-5148-4c8f-a509-f001575e1804)    
+      
+    * ***index.html***
+      ![image](https://github.com/user-attachments/assets/d2c97972-9c87-4a75-85ba-c6ae2c39a7fe)    
+      
+    * ***subscribe_form-html***
+      ![image](https://github.com/user-attachments/assets/576eaaf1-7e0f-48bb-b9a6-5c8b6b713331)    
+      
+  - **INDIVIDUAL SERVICES App**
+    * ***add_service.html***
+      ![image](https://github.com/user-attachments/assets/e1357e5b-694b-488e-94b7-ebe9771fe159)    
+
+    * ***delete_confirmation.html***
+      ![image](https://github.com/user-attachments/assets/7f183237-3a82-4d8c-8dc1-cfdb2abf9caa)    
+
+    * ***edit_service.html***
+      ![image](https://github.com/user-attachments/assets/d86814b5-0da8-4a45-aa22-5d1e0f79c622)    
+      
+    * ***individual_services.html***
+    ![image](https://github.com/user-attachments/assets/2fc5efa9-f899-49d5-a853-69abaf217fc0)    
+
+    * ***pack_details.html***    
+    ![image](https://github.com/user-attachments/assets/6499d192-04a4-4155-a3bd-c070e00e71f1)    
+
+  - **PROFILES App**
+    * ***profiles.html***
+      ![image](https://github.com/user-attachments/assets/7bc8145d-2958-4d13-8cb2-ce95692f1128)  
+
+      
 ### CSS 3
-No errors were found whe passing the [W3C validator](https://jigsaw.w3.org/css-validator/):    
+No errors were found when passing the [W3C validator](https://jigsaw.w3.org/css-validator/):    
   
 #### Main CSS
 This file contains the main CSS of the site. It is in the directory: */static/css/base.css*. [Check the file here](https://english-grows1.s3.eu-west-3.amazonaws.com/static/css/base.css)
