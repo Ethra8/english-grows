@@ -721,17 +721,19 @@ The following tests have been run for this project:
 
 <details>
 <summary>Click HERE to check the HOME PAGE Lighthouse Reports</summary>
-### HOME Page  
-#### Mobile & Tablet (portrait)
-You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://github.com/user-attachments/files/17694778/Lighthouse.report.MOBILE.-.Home.page.pdf)
-    
-  ![image](https://github.com/user-attachments/assets/2178cdde-c5dd-462c-93b6-7df98a4ce39c)
+  - Mobile & Tablet (portrait)
+    You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://github.com/user-attachments/files/17694778/Lighthouse.report.MOBILE.-.Home.page.pdf)
       
-#### Laptop and Desktop
-You can access full report: [Lighthouse report DESKTOP - Home page.pdf](https://github.com/user-attachments/files/17694782/Lighthouse.report.DESKTOP.-.Home.page.pdf)
-  
+  ![image](https://github.com/user-attachments/assets/2178cdde-c5dd-462c-93b6-7df98a4ce39c)
+        
+  - Laptop and Desktop
+    You can access full report: [Lighthouse report DESKTOP - Home page.pdf](https://github.com/user-attachments/files/17694782/Lighthouse.report.DESKTOP.-.Home.page.pdf)
+    
   ![image](https://github.com/user-attachments/assets/f4be1aaa-2730-4fd9-9e43-27250e959177)
-</details>     
+
+</details>   
+
+  
 ### COMPANIES Page
 #### Mobile & Tablet (portrait)
 You can access full report: [Lighthouse report MOBILE - Companies page.pdf](https://github.com/user-attachments/files/17694791/Lighthouse.report.MOBILE.-.Companies.page.pdf)
