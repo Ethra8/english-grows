@@ -128,7 +128,7 @@ Any individual person wanting to improve their level of English tfor one of the 
 #### B2C
 ##### Viewing and Navigation
 - [X] 6. **MUST:** I want to view ***all the available services listed***, so that I can easily choose what service suits me best.
-- [X] 7. **SHOULD:** I want to be able to view specific type of service, so that I can quickly find services I'm interested in without having to go through all the services (e.g.: individual exam preparation classes)
+- [X] 7. **SHOULD:** I want to be able to ***view specific type of service, so that I can quickly find services I'm interested in*** without having to go through all the services (e.g.: individual exam preparation classes)
 - [X] 8. **MUST:** I want to be able to ***view individual service details***, so that I can read a more detailed description, and check further details.
 - [X] 9. **SHOULD:** I want to be able to easily ***view the total of my purchase at any time***, so that I can avoid spending too much.
     
@@ -148,20 +148,21 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 18. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
 - [X] 19 **MUST:** I want to make ***secure online payments*** to be able to purchase online teaching services.
 - [X] 20. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
-- [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
-    
+- [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.    
   
 ### AS A SITE OWNER OR ADMIN USER:
 - [X] 22. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
-- [X] 21. **MUST:** Each **order is automatically linked to the authenticated user** making it.
-- [x] 22. **SHOULD:** Each user's email is stored in an email list, to easen up future emailing campaigns.
-- [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
-- [X] 24. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
-- [X] 25. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
-- [X] 26. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected.
-- [X] 27. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
-- [X] 28. **SHOULD:** I want to be able to send marketing campaigns to subscribed users.
-- [X] 29. **SHOULD:** I want to be able to send a newsletter to users that are subscribed.
+- [X] 23. **MUST:** Each **order is automatically linked to the authenticated user** making it.
+- [x] 24. **SHOULD:** Each **user's email is stored in a separate email list**, to easen up future emailing campaigns.
+- [X] 25. **MUST:** I want to be able to **store data in admin from B2B contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
+- [X] 26. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
+- [X] 27. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
+- [X] 28. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected.
+
+### AS A MARKETER
+- [X] 29. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
+- [X] 30. **SHOULD:** I want to be able to send marketing campaigns to subscribed users.
+- [X] 31. **SHOULD:** I want to be able to send a newsletter to users that are subscribed.
 
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
@@ -1088,49 +1089,48 @@ https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
   
   https://github.com/user-attachments/assets/8b745505-3301-40fa-a746-bdab04d73abe
     
-- [x] 19. **View past orders, and read their full information on th user's personal profile**:
+- [x] 21. **View past orders, and read their full information on the user's personal profile**:
   
   https://github.com/user-attachments/assets/76f75603-112f-42c5-bb5a-c5d2936be615
 
   
 ### ADMIN 
-- [X] 20. **Sort orders by users**:
+- [X] 22. **Sort orders by users (by profiles)**:
   
   https://github.com/user-attachments/assets/e8786ea1-12e5-4c27-a1b7-5985f6a7ddb3
   
-- [X] 21. **Order is automatically linked to the authenticated user** who made it:
+- [X] 23. **Order is automatically linked to the authenticated user** who made it:
 
   ![image](https://github.com/user-attachments/assets/536a66bb-fae0-41bf-916b-c029261b1f39)
   
-- [x] 22. **User's email is stored in an email list**, to easen up future **emailing campaigns**.
+- [x] 24. **User's email is stored in a separate email list**, to easen up future **emailing campaigns**.
   
   ![image](https://github.com/user-attachments/assets/0f59e72b-054d-43a2-a5d3-5fcf2b3c8b6f)
     
-- [X] 23. **Store data in admin from company contact requests**:
+- [X] 25. **Store data in admin from B2B contact requests**:
 
   ![image](https://github.com/user-attachments/assets/b65e47d7-bea6-4a02-b88b-873bbc33e11a)
 
   
-- [X] 24. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
+- [X] 26. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
   
   https://github.com/user-attachments/assets/93e2744f-ae24-4779-a48b-deb5dfb6f039
   
-- [X] 25. **Add service directly directly from the site**
+- [X] 27. **Add service directly directly from the site**
   
   https://github.com/user-attachments/assets/bce43c89-e04b-4024-b9bd-1687f4fd18f6
       
-- [X] 26. **Only authenticated users can make an order**, so that personal data from all users is protected. 
+- [X] 28. **Only authenticated users can make an order**, so that personal data from all users is protected. 
   
   https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
 
 
-- [X] 30. **Order is automatically accessible on the user profile**
-  
-  https://github.com/user-attachments/assets/45e9dc71-3dfa-4213-843e-ce0b9f81df60
-    
-- [X] 31. **Order confirmation email is sent to the user with the order details**:  
-   
-   ![image](https://github.com/user-attachments/assets/36c521a3-9317-449f-80a5-6bc80de8453b)  
+### MARKETING STRATEGIES
+#### SUBSCRIPTION to NEWSLETTER  
+All the functionalities described below reñlated to marketing have been tested, and work as expected. Please refer to the video below num. 29 which includes the three features testing: 
+- [X] 29. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
+- [X] 30. **send marketing campaigns to subscribed users.**
+- [X] 31. **send a newsletter to users that are subscribed.**
   
   
 ### INDIVIDUAL SERVICE - CRUD Full Functionality
