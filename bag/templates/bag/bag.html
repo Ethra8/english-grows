@@ -132,8 +132,9 @@
                         </a>
 
                     </div>
-
+                </div>
                 {% else %}
+                <div>
                     <p class="lead mb-5">Your bag is empty.</p>
                 </div>
                 {% endif %}
@@ -146,7 +147,7 @@
 {{ block.super }}
 <script src="https://english-grows1.s3.eu-west-3.amazonaws.com/static/js/quantity_selector.js"></script>
 
-<script type="text/javascript">
+<script>
     // Update quantity on click
     $(document).ready(function() {
         $('.update-link').click(function(e) {

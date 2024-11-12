@@ -48,7 +48,7 @@
             <div class="col-12">
                 <div class="row mt-2 mb-3 mt-md-1 mb-md-2">
                     <div class="col-12 col-md-6 col-lg-4 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-                        <div class="sort-select-wrapper w-100 w-md-50 w-lg-25" id="sort-bar">
+                        <div class="sort-select-wrapper w-100 w-md-50 w-lg-25" id="sort-bar" aria-label="sort-bar">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-labelledby="sort-bar" title="sort services" aria-label="sort services">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
@@ -76,11 +76,11 @@
                             <div class="card">
                                 <a href="{% url 'pack_details' service.id %}" aria-label="click to go to the service details page">
                                 {% if service.image %}
-                                    <img class="card-img-top img-fluid" src="{{ service.image.url }}" alt="{{ service.name }}" width="100%" height="220">
+                                    <img class="card-img-top img-fluid w-100" src="{{ service.image.url }}" alt="{{ service.name }}" height="220">
                                 {% elif service.image_url %}
-                                    <img class="card-img-top img-fluid" src="{{ service.image_url }}" alt="{{ service.name }}" width="100%" height="220">
+                                    <img class="card-img-top img-fluid w-100" src="{{ service.image_url }}" alt="{{ service.name }}"  height="220">
                                 {% else %}
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}" width="100%" height="220">
+                                    <img class="card-img-top img-fluid w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}" height="220">
                                 {% endif %}
                                 </a>
                                 
@@ -135,13 +135,13 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 	</script>
     
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             var selector = $(this);
             var currentUrl = new URL(window.location);
