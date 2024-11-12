@@ -715,7 +715,7 @@ No outstanding defects have been detected in this site.
 ## CORE WEB VITALS
 The following tests have been run for this project:  
   
-## LIGHTHOUSE REPORTS 
+### LIGHTHOUSE REPORTS 
 **To improve my first report, the following actions have been taken:**  
 - Include a ***site.manifest***
 
@@ -866,7 +866,8 @@ You can access full report: [Lighthouse report DESKTOP - 404 Error page.pdf](htt
     * You can access full report: [Lighthouse report DESKTOP - login page.pdf](https://github.com/user-attachments/files/17694721/Lighthouse.report.DESKTOP.-.login.page.pdf)
     
   ![image](https://github.com/user-attachments/assets/28d14efb-fb13-42a6-ac7e-116b81ae0259)
-  
+
+</details>
   
 ## CODE VALIDATION
   
