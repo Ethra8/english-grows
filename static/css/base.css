@@ -164,6 +164,7 @@ a.text-white:hover {
 footer a {
     color: aqua !important;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
 footer a:hover {
@@ -172,6 +173,33 @@ footer a:hover {
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+#subscribe-link a {
+    color: #fff !important;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+#subscribe-link {
+    background-color: teal;
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#subscribe-link:hover{
+    background-color: aquamarine;
+    color: #003366 !important;
+    font-weight: 600;
+}
+
+#subscribe-link a:hover {
+    color: #003366 !important;
+    font-weight: 600;
+} 
 
 .icons-social {
     color: #c1f7e3;
@@ -316,6 +344,7 @@ footer a:hover {
     font-weight: 600;
 }
 
+#contact-form .btn-custom,
 #subscribe-form .btn-custom {
     max-width: 100% !important;
     width: 100% !important;
