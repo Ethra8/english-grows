@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django_countries',
     'allauth',
     'allauth.account',
+    'django_summernote',
     'crispy_forms',
     # Optional -- requires install using `django-allauth[socialaccount]`.
     'allauth.socialaccount',
@@ -80,6 +81,23 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+SUMMERNOTE_CONFIG = {
+    'summernote': {
+        'toolbar': [
+            ['style', ['style']],
+            ['font', ['bold', 'italic', 'underline', 'clear']],
+            ['fontsize', ['fontsize']],  # Dropdown for font size
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']],
+        ],
+        'fontSizes': ['8', '9', '10', '11', '12', '14', '16', '18', '20', '24',
+                      '28', '36', '48', '64', '82', '100'],
+    },
+}
+
+SUMMERNOTE_THEME = 'bs4'
 
 ROOT_URLCONF = 'english_grows.urls'
 

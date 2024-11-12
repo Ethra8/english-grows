@@ -62,7 +62,8 @@ textarea {
     padding: 10px 0;
 }
 
-#contact-form {
+#contact-form,
+#subscribe-form {
     background-color: rgba(225,235,235,0.9);
     height: fit-content;
     padding: 25px 15px;
@@ -71,6 +72,7 @@ textarea {
     width: inherit;
     max-width: 500px;
 }
+
 
 .justify-content-space-evenly {
     justify-content: space-evenly;
@@ -169,7 +171,6 @@ footer a:hover {
     text-decoration: none;
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
 }
 
 .icons-social {
@@ -185,7 +186,7 @@ footer a:hover {
     transform: rotate(4deg);
 }
 
-/* style searchbar */
+/* Searchbar */
 
 .fa-search {
     font-size: 1.5rem;
@@ -313,6 +314,11 @@ footer a:hover {
     background: teal;
     color: white;
     font-weight: 600;
+}
+
+#subscribe-form .btn-custom {
+    max-width: 100% !important;
+    width: 100% !important;
 }
 
 .btn-custom-teal {
@@ -498,7 +504,7 @@ span.btt-link:hover {
     border-top: solid 2px #003366;
     background-color: teal;
     color: white;
-    min-height: 120px !important;
+    height: 142px !important;
     /* Flexbox centering */
     display: flex;
     align-items: center;
@@ -508,7 +514,7 @@ span.btt-link:hover {
 .card-body h3 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -529,7 +535,8 @@ span.vertical-line {
 
 /* Companies */
 
-#companies h2 {
+#companies h2,
+#subscribe-page h2 {
     font-size: 1.5rem;
     line-height: 1.5;
     padding-left: 20px;
@@ -624,10 +631,11 @@ span.vertical-line {
 .allauth-form-inner-content input:not([type='checkbox']) {
     border-color: #003366;
     border-radius: 5px;
-    min-width: 280px;
 }
 
-#id_remember {
+#id_remember,
+#id_reduced_groups,
+#id_individual_packs {
     min-width: 15px !important;
 }
 
@@ -919,10 +927,19 @@ span.vertical-line {
     .font-xs-small {
       font-size: 2.5rem;
     }
+}
 
-    #contact-form {
-        margin-right: -10px !important;
-        margin-left: auto;
+
+@media (max-width: 476px) {
+    /* to override the 15px and allow more vv */
+    .card {
+        margin: 0;
+    }
+
+    #companies,
+    #subscribe-page {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -948,5 +965,13 @@ span.vertical-line {
     #individual-services {
         padding-left: 12px;
         padding-right: 12px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .navbar-toggler {
+        margin-right: 15px !important;
+        margin-left: auto !important;
     }
 }

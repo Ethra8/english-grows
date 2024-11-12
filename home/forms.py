@@ -3,7 +3,7 @@ from .models import CompanyContact
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 
-from .models import CompanyContact
+from .models import CompanyContact, Subscription
 
 
 class CompanyContactForm(forms.ModelForm):
@@ -26,3 +26,12 @@ class CompanyContactForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(CompanyContactForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
+
+
+class SubscriptionForm(forms.ModelForm):
+    """
+    Form for the model subscription on footer
+    """
+    class Meta:
+        model = Subscription
+        fields = ['name', 'email']
