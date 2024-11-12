@@ -151,7 +151,11 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 23. **MUST:** I want to be able to **store data in admin from company contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
 - [X] 24. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
 - [X] 25. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
-- [X] 26. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected. 
+- [X] 26. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected.
+- [X] 27. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
+- [X] 28. **SHOULD:** I want to be able to send marketing campaigns to subscribed users.
+- [X] 29. **SHOULD:** I want to be able to send a newsletter to users that are subscribed.
+
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
     
@@ -526,17 +530,20 @@ There are two navigation bars and both are fully responsive:
   https://github.com/user-attachments/assets/71ea8143-fb09-4948-8eb5-bf2eeeb86a10  
 
 ## Footer
-The footer is pushed to the bottom of every page, including the customized 404 error page. It includes the following features and links:
-
+The fully responsive footer is pushed to the bottom of every page, including the customized 404 error page. It includes the following features and links:
+    
+  ![image](https://github.com/user-attachments/assets/bd08a7ec-d693-4769-bb56-746afc5b1804)
+  
   - Links to the following pages of the site, as some sort of **secondary navigation bar**:
     * About Page
     * Services Page for B2C customers (*your you*)
     * Companies page *(B2B contact form)*
-
+  - Banner links to newsletter subscription form
   - Social media **icons** for *facebook*, *instagram*, *youtube*, and *twitter*
   - Copyright notice
-  - Newsletter subscription form
   
+  https://github.com/user-attachments/assets/e62d886d-13a4-4de8-a3b6-32719accf8ea
+    
 ## B2B Contact Form
   
   https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
@@ -1118,6 +1125,15 @@ Admin users can **Update** a service directly through the site, without need to 
 Admin users can **Delete** a service, with confirmation step, and success message:  
   
   https://github.com/user-attachments/assets/b2efff85-51fb-46c8-a5c3-9689b65c14b4  
+
+  
+### MARKETING STRATEGIES
+### TEMPLATE CREATION
+All the functionalities described below reñlated to marketing have been tested, and work as expected. Please refer to the video below num. 29 which includes the three features testing: 
+- [X] 27. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
+- [X] 28. **send marketing campaigns to subscribed users.**
+- [X] 29. **send a newsletter to users that are subscribed.**
+
   
   
 # TECHNOLOGIES USED
