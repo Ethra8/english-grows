@@ -4,7 +4,10 @@
 ![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
       
 ## Overview
-This site is an e-commerce that offers services in the education industry, both to B2C and B2B potential customers. More specifically, online English teaching services by live qualified English teachers. The services provided are the following:
+This site is an e-commerce with an integrated functionality that allowes authorized users to **create customized email templates, and send an email campaign or newsletter to all the subscribers**.  
+  
+The site offers services in the education industry, both to B2C and B2B potential customers. More specifically, online English teaching services by live qualified English teachers. The services provided are the following:  
+  
 - **B2C**
   * Individual Lesson Packs
   * Reduced Group courses
