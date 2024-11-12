@@ -485,6 +485,10 @@ This site has been designed and coded to be fully responsive, even in extra smal
 This site has been coded by always keeping accessibility in mind, and achieving good results during the testing phase. For further reference, please check the accessibility reports [here](#accessibility-testing).
     
 ## User Authentication
+* These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current English language level, for instance:  
+  
+   ![image](https://github.com/user-attachments/assets/da898b54-7842-40b4-aa9b-4ad09b7bdafd)  
+    
 Django ***all-auth*** module has been implemented in the site. It allows to easily secure user personal imnformation stored in the profile, or to restrict access to order url to the same authenticated user. **Templates have been customized to match the *look and feel* of the site**.
   
 <details>
@@ -530,6 +534,29 @@ The admin console reflects most of the models present in this site, and also som
 
     ![image](https://github.com/user-attachments/assets/e291b79f-118a-4056-ae2d-e5ee263cc1b6)  
   
+#### Accounts
+From django User model, stores **registered users' emails** for future emailing campaigns.
+ 
+#### Profile
+ * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:  
+   
+   ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
+    
+#### Home
+As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
+ 
+ ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
+ 
+ ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
+   
+### Checkout
+The orders created by the Order model are stored in the database, and reflected in the admin panel:  
+  
+  ![image](https://github.com/user-attachments/assets/27bff2b5-0fdf-49f3-a2c0-b235e22f4017)  
+  
+  ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
+
+ 
 ### Services - CRUD
  * To improve UX and the overall UI, authorized users (admin *superusers*) can ***create***,***read***,***update*** and ***delete*** ***(CRUD)*** the data model for Individual Services, including the service image, directly through the site without need to enter the lesser user-friendly admin panel. Thus, **Services can be created, read, updated, or/and deleted** through the main service page in the site:  
   
@@ -597,40 +624,7 @@ To improve UX, the 404 error page has been styled to the look and feel of the si
   
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
 
-  
-## Accounts
-From django User model, stores **registered users' emails** for future emailing campaigns, and to send the users the free monthly newsletter (as per future feature).
-
-     
-### Authenticatin and Authorization 
- * These models also come from django-allauth, and is used to give certain permissions to users, to verify them manually, update information, or delete them. Groups can be created to group users by current Englih language level, fr instance:  
-  
-   ![image](https://github.com/user-attachments/assets/da898b54-7842-40b4-aa9b-4ad09b7bdafd)  
-
-  
-### Profiles
- * After each user is created, a profile is automatically created as well, and is stored in the admin. The user can update their information through their 'profile', but the admin can  also update each user profile manually:  
    
-   ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
-
-
-  
-### Home
-As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
- 
- ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
- 
- ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
-
- 
-### Checkout
-The orders created by the Order model are recorded in the admin panel:  
-  
-  ![image](https://github.com/user-attachments/assets/27bff2b5-0fdf-49f3-a2c0-b235e22f4017)  
-  
-  ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
-  
-  
 ## FUTURE FEATURES
 These future features are thought of as being some of the user's imagined ***wishes***:  
   
