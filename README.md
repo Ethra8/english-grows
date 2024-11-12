@@ -556,10 +556,15 @@ The fully responsive footer is pushed to the bottom of every page, including the
   
   https://github.com/user-attachments/assets/e62d886d-13a4-4de8-a3b6-32719accf8ea
     
-## B2B Contact Form
+## Forms
+### B2B CONTACT Form
   
   https://github.com/user-attachments/assets/148b0e3d-b0d0-4f58-9eed-d86b26624faa  
-  
+
+### SUBSCRIBE FORM
+
+  ![image](https://github.com/user-attachments/assets/0db91451-d214-4648-829d-40ea3100b523)
+
 ## Product Sorting
   
   https://github.com/user-attachments/assets/bafbf9ec-4e4d-4802-9856-65bd3ae02a98  
@@ -682,15 +687,17 @@ To promote this site's visibility and to improve customer reach, a mockup profil
   
   
 ## EMAIL MARKETING
-This site is prepared to undertake different types of emailing campaigns: within users, within newsletter subscribers, or within both.
+### NEWLETTER 
+A form has been included to enable users to subscribe in order to receive special offers and tips. Only a name a an email is requested, and the data is stored and easily accessed through the admin panel. A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for a newsletter, in this case.
   
-### WITHIN USERS
-In order to facilitate email marketing, and easen an emailing campaign, all the users' emails are stored separately. Therefore, each time a user registers for an account, the user's email is stored in the admin on a separate model (database table) together with the user name, for future emailing campaigns:
+### EMAIL MARKETING CAMPAIGNS
+A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for emailing campaigns, in this case. A fucntion hsa been added, so that when a specific email is checked (selected), and the option *send email campaign* is selected on the dropdown in the email templates model, when the user clicks on ***go***, the email template selected gets automatically sent to all the users who subscribed to the newsletter.
+  
+This way, this function has a double purpose: To send the newsletter, and to send other marketing campaigns.
+  
+  https://github.com/user-attachments/assets/22b75b97-b13c-4c99-9b23-2bd8f1cb2f03
 
-  ![image](https://github.com/user-attachments/assets/da997270-11c6-472d-a80c-aca7a258bb87)
-
-### WITHIN SUBSCRIBERS
-     
+       
 # TESTING  
 ## DEFECT TRACKING
   
