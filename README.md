@@ -718,7 +718,9 @@ The following tests have been run for this project:
 ## LIGHTHOUSE REPORTS 
 **To improve my first report, the following actions have been taken:**  
 - Include a ***site.manifest***
-    
+
+<details>
+<summary>Click HERE to check the HOME PAGE Lighthouse Reports</summary>
 ### HOME Page  
 #### Mobile & Tablet (portrait)
 You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://github.com/user-attachments/files/17694778/Lighthouse.report.MOBILE.-.Home.page.pdf)
@@ -729,7 +731,7 @@ You can access full report: [Lighthouse report MOBILE - Home page.pdf](https://g
 You can access full report: [Lighthouse report DESKTOP - Home page.pdf](https://github.com/user-attachments/files/17694782/Lighthouse.report.DESKTOP.-.Home.page.pdf)
   
   ![image](https://github.com/user-attachments/assets/f4be1aaa-2730-4fd9-9e43-27250e959177)
-     
+</details>     
 ### COMPANIES Page
 #### Mobile & Tablet (portrait)
 You can access full report: [Lighthouse report MOBILE - Companies page.pdf](https://github.com/user-attachments/files/17694791/Lighthouse.report.MOBILE.-.Companies.page.pdf)
