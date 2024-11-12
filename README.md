@@ -53,7 +53,9 @@ Edna Torres Munill
         - [CRUD Functionality](#crud-functionality)
         - [Navigation Bar](#navigation-bar)
         - [Footer](#footer)
-        - [Contact Form](#contact-form)
+        - [Forms](#forms)
+            * [B2B Contact Form](#contact-form)
+            * [Newsletter Form](#newsletter-form)
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
         - [Shopping Bag](#shopping-bag)
@@ -114,7 +116,8 @@ Any individual person wanting to improve their level of English tfor one of the 
 #### B2C and B2B
 - [ ] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
 - [X] 2. **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
-- [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***  
+- [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***
+- [X] 4. **MUST:** I want to ***subscribe to the newsletter*** to receive special offers and tips.
   
 #### B2B
 - [X] 4. **MUST:** I want to be able to easily ***contact the site*** to receive a customized training plan and quote.  
@@ -279,18 +282,20 @@ This app contains the following pages *(templates)* and functionalities *(models
   
   
 #### HOME app
-This app contains the following pages *(templates & urls)* and functionalities *(models & views)*:  
+This app contains the following pages *(templates)* and functionalities *(models & views)*:  
 - **PAGES:**
   * **Home page**
-  * **Companies page**
+  * **Companies page *(B2B contact form)***
   * **About page**
+  * **Subscribe form page**
   
 - **FUNCTIONALITIES:**
-  * **Users can navigate to different sections of the site from the home page**
+  * **Users can navigate to different sections of the site from the home page, which is the landing page**
   * **Users can check the about page**
-  * **B2C customers can go to the service page for individuals from the home page**
-  * **BCB customers can go to the companies section from the home page**
+  * **B2C & B2B customers can identify their dedicated section, and can navigate anywhere on the site**
   * **B2B can send a contact request via the form in the companies page**
+  * **Users can subscribe to the newsletter**
+  * **Admin Users can create email templates for a newsletter or an emaling campaign**
   
   
 #### INDIVIDUAL SERVICES app
@@ -338,9 +343,16 @@ This app has the following models:
   
 #### HOME App - Models
 This app has been created to store the home page *index.html* template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views.  
-The form posts the user request via the CompanyContactform model, and CompanyContact model takes all the data and is registered to the admin to be stored:  
+This app contains 2 forms, whose data is stored, and CRUD can be performed from the admin panel by an authorized user:  
   
-  ![image](https://github.com/user-attachments/assets/49482143-bdde-4bab-95f9-c77ab11fb233)
+- The **B2B Contact Form** takes user input in the *companies page* form, and posts the user request from CompanyContactform model, passing data to CompanyContact model whihc takes all the data and is registered to the admin model.
+- The **Subcribe Form** only takes the name and email of any user, and stores it to create marketing campaigns, more specifically, emailing campaings. The data is reflected in the admin.
+- The **EmailTemplate** model allows authorized users to perform CRUD functionality, to create email templates for marketing campaigns.
+- The function send_email_campaign in the utils file is included in the options dropdown of the Email Template model in the admin panel.
+- To conduct a marketing campaign (emailing), the authorized user only has to create or edit an existing email template, then save it, select it, select the option *send email campaign* on the dropdown, click on ***go***, and the email template selected is automatically and instantly sent to all subscribers.
+  
+   ![image](https://github.com/user-attachments/assets/bacf0bfd-957f-4ed3-b56d-ee3b6ab070ed)
+
   
   
 #### INDIVIDUAL SERVICES App - Models
