@@ -1156,11 +1156,16 @@ https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
 
 ### MARKETING STRATEGIES
 #### SUBSCRIPTION to NEWSLETTER  
-All the functionalities described below reñlated to marketing have been tested, and work as expected. Please refer to the video below num. 29 which includes the three features testing: 
+All the functionalities described below related to marketing have been tested, and work as expected. Please refer to the video below num. 31 which includes the three features testing: 
 - [X] 29. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
 - [X] 30. **send marketing campaigns to subscribed users.**
 - [X] 31. **send a newsletter to users that are subscribed.**
   
+  https://github.com/user-attachments/assets/0faa4b3a-89f6-4b62-87c9-9f1c085f4d33  
+
+  ![image](https://github.com/user-attachments/assets/6072cb60-adad-4490-98c0-08f229639044)
+
+  ![image](https://github.com/user-attachments/assets/e013ca55-d82b-4f46-9dbe-591b2a8143cb)
   
 ### INDIVIDUAL SERVICE - CRUD Full Functionality
     
