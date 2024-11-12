@@ -970,11 +970,10 @@ Font and backgroud colors have passed at AAA and AA levels, as can be seen in th
   
   
 ### GENERAL WCAG 2.1 REPORT
-This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site.  
+This website is compliant with all international standards, as proved after ***EqualWeb Accessibility Checker*** scan of the site, which gave no errors:  
   
-  ![image](https://github.com/user-attachments/assets/64965aba-bc48-466c-9533-a345275bdc0c) ![image](https://github.com/user-attachments/assets/88ca69be-deb3-4f2d-9480-8416cf898756)  
-  
-  
+  ![image](https://github.com/user-attachments/assets/c2345929-ca26-4995-a2b9-3fc32b71d119)
+    
 ## MANUAL TESTING
 Manual testing of the site has been performed following the user's stories:
   
