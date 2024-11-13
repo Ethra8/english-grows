@@ -44,8 +44,11 @@
             <div class="row mt-2 mb-3 mt-md-1 mb-md-2">
                 <div class="col-12 col-md-6 col-lg-4 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-100 w-md-50 w-lg-25" id="sort-bar">
-                        <label for="sort-selector" class="sr-only">Sort services by selected option</label>
-                        <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-labelledby="sort-bar" title="sort services">
+                        <!-- Use aria-label instead of aria-labelledby -->
+                        <select id="sort-selector" 
+                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" 
+                            aria-label="Sort services by selected option" 
+                            title="sort services">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                             <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -131,32 +134,37 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script>
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-	</script>
-    
-    <script>
-        $('#sort-selector').change(function() {
-            var selector = $(this);
-            var currentUrl = new URL(window.location);
+    <script type="text/javascript">
+        // Ensure DOM is ready before executing scripts
+        $(document).ready(function () {
+            // Back to Top functionality
+            $('.btt-link').click(function (e) {
+                e.preventDefault(); // Prevent default behavior
+                window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scrolling
+            });
 
-            var selectedVal = selector.val();
-            if(selectedVal != "reset"){
-                var sort = selectedVal.split("_")[0];
-                var direction = selectedVal.split("_")[1];
+            // Sort selector functionality
+            $('#sort-selector').change(function () {
+                console.log("Sort option changed:", $(this).val());
+                var selector = $(this);
+                var currentUrl = new URL(window.location); // Parse current URL
 
-                currentUrl.searchParams.set("sort", sort);
-                currentUrl.searchParams.set("direction", direction);
+                var selectedVal = selector.val();
+                if (selectedVal != "reset") {
+                    var sort = selectedVal.split("_")[0];
+                    var direction = selectedVal.split("_")[1];
 
-                window.location.replace(currentUrl);
-            } else {
-                currentUrl.searchParams.delete("sort");
-                currentUrl.searchParams.delete("direction");
+                    currentUrl.searchParams.set("sort", sort);
+                    currentUrl.searchParams.set("direction", direction);
 
-                window.location.replace(currentUrl);
-            }
-        })
+                    window.location.replace(currentUrl); // Update page with new sort
+                } else {
+                    currentUrl.searchParams.delete("sort");
+                    currentUrl.searchParams.delete("direction");
+
+                    window.location.replace(currentUrl); // Reset sort parameters
+                }
+            });
+        });
     </script>
 {% endblock %}
