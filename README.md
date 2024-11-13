@@ -41,7 +41,7 @@ Edna Torres Munill
     - [Structure](#structure)
       * [Pages](#pages)
       * [Site Structure](#site-structure)
-      * [Data Structure](#data-structure)
+      * [Database Structure](#database-structure)
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
@@ -258,7 +258,8 @@ The following fully responsive pages form the structure of this site:
  - ![image](https://github.com/user-attachments/assets/3a538725-93c4-4c40-892e-0bf197a18db5)
 </details>
 
-### SITE Structure
+  
+### SITE STRUCTURE
 The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps stated below, forming its overall structure. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site. The User model from django all-auth has also been used:
 - **DJANGO CUSTOM APPs:**  
   * **Bag**  
@@ -339,17 +340,19 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
   * **Users can update their personal information**
   * **Users can view past order details**
     
-### DATA STRUCTURE - MODELS
-Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076)
+### DATABASE STRUCTURE - MODELS
+- A PostgreSQL database has been used to build this project from scratch. For th initial stages of the developments, the sjango sqlite3 was utilized at first, but quickly moved to PostgreSQL database.
+- Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All the data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076), as well as the following data relationship diagram, which can also be cheked in more detail [on this sheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1982826762#gid=1982826762):
   
-  
+  ![image](https://github.com/user-attachments/assets/db850fec-8b21-4362-97b0-582904ee39c0)
+
+      
 #### CHECKOUT App - Models
 This app has the following models:  
   
   ![image](https://github.com/user-attachments/assets/c3de7eae-a040-46be-adef-095ce6ff703d)
-  
-- To create an instance of the **Order** model, the user must be authentified. The **OrderLineItem** links to the **Order** model, as it is the latter which includes the services
-    
+
+
   
 #### HOME App - Models
 This app has been created to store the home page *index.html* template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views.  
