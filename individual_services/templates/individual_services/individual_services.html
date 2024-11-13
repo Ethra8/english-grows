@@ -44,19 +44,18 @@
             <div class="row mt-2 mb-3 mt-md-1 mb-md-2">
                 <div class="col-12 col-md-6 col-lg-4 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-100 w-md-50 w-lg-25" id="sort-bar">
-                        <!-- Use aria-label instead of aria-labelledby -->
-                        <select id="sort-selector" 
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" 
-                            aria-label="Sort services by selected option" 
-                            title="sort services">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                            <option value="type_asc" {% if current_sorting == 'type_asc' %}selected{% endif %}>Type (A-Z)</option>
-                            <option value="type_desc" {% if current_sorting == 'type_desc' %}selected{% endif %}>Type (Z-A)</option>
-                        </select>
+                        <form method="GET" action="{% url 'individual_services' %}">
+                            <label for="sort-selector" class="sr-only">Sort services by selected option</label>
+                            <select id="sort-selector" name="sort" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" title="Sort services">
+                                <option value="" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                <option value="type_asc" {% if current_sorting == 'type_asc' %}selected{% endif %}>Type (A-Z)</option>
+                                <option value="type_desc" {% if current_sorting == 'type_desc' %}selected{% endif %}>Type (Z-A)</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-8 float-left order-md-first">
@@ -133,38 +132,33 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
+{{ block.super }}
     <script type="text/javascript">
-        // Ensure DOM is ready before executing scripts
-        $(document).ready(function () {
-            // Back to Top functionality
-            $('.btt-link').click(function (e) {
-                e.preventDefault(); // Prevent default behavior
-                window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scrolling
-            });
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+    
+    <script>
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
 
-            // Sort selector functionality
-            $('#sort-selector').change(function () {
-                console.log("Sort option changed:", $(this).val());
-                var selector = $(this);
-                var currentUrl = new URL(window.location); // Parse current URL
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
 
-                var selectedVal = selector.val();
-                if (selectedVal != "reset") {
-                    var sort = selectedVal.split("_")[0];
-                    var direction = selectedVal.split("_")[1];
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
 
-                    currentUrl.searchParams.set("sort", sort);
-                    currentUrl.searchParams.set("direction", direction);
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
 
-                    window.location.replace(currentUrl); // Update page with new sort
-                } else {
-                    currentUrl.searchParams.delete("sort");
-                    currentUrl.searchParams.delete("direction");
-
-                    window.location.replace(currentUrl); // Reset sort parameters
-                }
-            });
-        });
+                window.location.replace(currentUrl);
+            }
+        })
     </script>
 {% endblock %}
