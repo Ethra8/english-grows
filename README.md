@@ -1239,6 +1239,10 @@ All the functionalities described below related to marketing have been tested, a
 
   ![image](https://github.com/user-attachments/assets/e013ca55-d82b-4f46-9dbe-591b2a8143cb)
 
+  **PROOF of EMAILING CAMPAIGN FUNCTIONING: One subscription was made using test@test.co email (does not exist), and when sending campaign to all subscribers, I receive an error email informing that email could not be delivered to inexistent email test@test.co:
+
+  ![image](https://github.com/user-attachments/assets/975f0be1-331a-43c7-ba2f-153a70f4cd44)
+
   
 ### INDIVIDUAL SERVICE - CRUD Full Functionality
     
