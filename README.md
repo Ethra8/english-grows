@@ -1,6 +1,3 @@
-
-https://github.com/user-attachments/assets/ecf46c5c-5a16-4aff-bdfc-8f516008fec2
-
 # ENGLISH GROWS
   
 ![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
@@ -780,57 +777,69 @@ Please find the correspondent **compatibility and responsive testing** reflected
 | TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
 |---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
 | [1](#test-1)        | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117 |Windows 11  |360 x 740             | 
-| [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Edge    |Android 11.0 |360 x 800           |
+| [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Samsung    |Android 10.0 |360 x 800           |
 | [3](#test-3)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
 | [4](#test-4)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
-| [5](#test-5)        | BrowserStack       | [Samsung Galaxy S22 Ultra](https://blisk.io/devices/details/galaxy-s22-ultra)| Chrome | Android 13.0  |384 x 824  |
-| [6](#test-6)        | BrowserStack       | [iPhone 14](https://blisk.io/devices/details/iphone-14) | Safari 16.5  | iOS    |390 x 844                   |
+| [5](#test-5)        | BrowserStack       | [Samsung Galaxy S23 Ultra](https://blisk.io/devices/details/galaxy-s23-ultra)| Chrome | Android 13.0  |384 × 824  |
+| [6](#test-6)        | BrowserStack       | [iPhone 15  Pro](https://blisk.io/devices/details/iphone-15-pro) | Safari 17  | iOS    |393 × 852                   |
 | [7](#test-7)        | REAL Laptop Device | HP Laptop 15s-fq4xxx| Chrome 129.0.6668.72    |Windows 11 Home|1536 x 776                    |
 | [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Firefox 131      | Windows 11 -64bit           |1536 x 776                    |
-
+| [9](#test-9)       | BrowserStack               | MAC         | Safari 17      | MacOs Sequoia           |                   1536 x 776 |
 
 ### TEST RESULT VIDEOS
-#### TEST 1
-
+TEST 1
+-
+  
+  https://github.com/user-attachments/assets/d089cf81-eb38-4f1e-9a4a-9a6494fc520b
+  
+      
 TEST 2
 -
-
-https://github.com/user-attachments/assets/974cfbd9-25ab-4338-8c72-54f99c63d793
-
-
+  
+  https://github.com/user-attachments/assets/e666756c-da6d-4a52-a38b-cce301d781b0
+  
+  
 TEST 3
 -
+
+  https://github.com/user-attachments/assets/c917bd4f-0cc7-47c9-a595-a94e8b155e22
+
+  
 TEST 4
 -
 
-https://github.com/user-attachments/assets/23fa1a68-13d4-40b8-8cca-e5cecfb7778a
+
 
 
 TEST 5
 -  
-
-
-
+  
+  https://github.com/user-attachments/assets/e456158b-6422-466b-8d27-fcde917aebd6
+  
   
 TEST 6
 -  
-
-
-
-
-
+  
+  https://github.com/user-attachments/assets/45d67030-1556-41cd-ad68-64845575983a
+  
+  
 TEST 7
 -
   
   https://github.com/user-attachments/assets/b2202841-1519-44f0-a89c-57c71d90a100
-
-
+  
   
 TEST 8
 -
-
+  
   https://github.com/user-attachments/assets/0e9551a3-1d0f-4f7f-9f8d-2bc2e2f9fec2
   
+  
+TEST 9
+- 
+  
+  https://github.com/user-attachments/assets/2c14d3b4-de0a-415a-8f51-8b0c156de0f9
+
     
 ## CORE WEB VITALS
 The following tests have been run for this project:  
