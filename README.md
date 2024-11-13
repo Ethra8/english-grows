@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
       
 ## Overview
-This site is an e-commerce with integrated marketing tools capable of creating a marketing emailing campaign, apart from creating and sending a newsletter to subscribers. This functionality allows authorized users to **create customized email templates, and send an email campaign/newsletter to all subscribers**.  
+This site is an **e-commerce*** with integrated **marketing tools** capable of creating a **marketing emailing campaign**, apart from creating and sending a newsletter to subscribers. This functionality allows authorized users to **create customized email templates, and send an email campaign/newsletter to all subscribers**.  
   
 The site offers services in the education industry, both to B2C and B2B potential customers. More specifically, online English teaching services by live qualified English teachers. The services provided are the following:  
   
