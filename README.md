@@ -449,9 +449,9 @@ The following fonts have been used, all from Google Fonts:
     
   - INDIVIDUAL SERVICES Page
     
-    ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
-    
-    
+    ![image](https://github.com/user-attachments/assets/04878b1f-6993-4c48-bc4d-6210c8f8b0e4)
+
+        
   - PACK DETAILS Page
     
     ![image](https://github.com/user-attachments/assets/65efcf9a-dd87-45d0-ba5c-a644dfd90075)
@@ -464,18 +464,22 @@ The following fonts have been used, all from Google Fonts:
       
   - MY PROFILE Page
   
-   ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
-    
-    
+    ![image](https://github.com/user-attachments/assets/162a3e7b-32a0-41c3-9311-2b01521d4e91)
+
+        
   - COMPANIES Page (B2B contact form)
       
-    ![image](https://github.com/user-attachments/assets/afcbbd36-4516-4cfa-8dab-a262eb891603)
-      
+    ![image](https://github.com/user-attachments/assets/6a8065bb-a2c1-46c5-9d2f-7217acbb1504)
+          
     
   - ABOUT Page
   
-  ![image](https://github.com/user-attachments/assets/17847ec0-0fbd-4035-a543-e8ab1f83d300)
-    
+    ![image](https://github.com/user-attachments/assets/277e3916-d1dc-43a7-8781-00530ebde3ce)
+
+  - SUBSCRIBE Page (newsletter susbscription form)
+
+    ![image](https://github.com/user-attachments/assets/7854e1d7-4c38-4f69-9b6f-44350ba031b1)
+
     
 </details>  
   
@@ -548,12 +552,17 @@ From django User model, stores **registered users' emails** for future emailing 
    ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
     
 #### Home
-As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
+- As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
  
  ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
  
  ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
-   
+
+- This app also features the subscription form, and the functionality to create an emailing campaign directly and easily from the admin panel. Authorized users can create an email template with user-friendly editable text area (used *django-summernote* for this purpose), and a function sends the email to all subscribers with just one click:
+
+  https://github.com/user-attachments/assets/982ba163-91f3-4da2-8747-4b9ca192a019
+
+    
 ### Checkout
 The orders created by the Order model are stored in the database, and reflected in the admin panel:  
   
@@ -562,12 +571,13 @@ The orders created by the Order model are stored in the database, and reflected 
   ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
 
  
-### Services - CRUD
+### Services - CRUD from site
  * To improve UX and the overall UI, authorized users (admin *superusers*) can ***create***,***read***,***update*** and ***delete*** ***(CRUD)*** the data model for Individual Services, including the service image, directly through the site without need to enter the lesser user-friendly admin panel. Thus, **Services can be created, read, updated, or/and deleted** through the main service page in the site:  
   
    ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)    
   
    ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)    
+
   
 ## Navigation Bar
 There are two navigation bars and both are fully responsive:
