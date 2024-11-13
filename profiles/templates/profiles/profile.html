@@ -41,7 +41,7 @@
                 <h2 class="text-muted">Order History</h2>
                 <div class="order-history table-responsive">
                     {% if orders %}
-                    {% for order in orders %}
+                    
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
@@ -51,7 +51,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+                            {% for order in orders %}
                             <tr>
                                 <td>
                                     <a href="{% url 'order_history' order.order_number %}" aria-label="view the order's details"
