@@ -1412,22 +1412,30 @@ All the functionalities described below reñlated to marketing have been tested,
   
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 The following have been used for the development of this site:  
-  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory.
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** tool's reports to check and improve core web vitals.
   - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku.
   - [Heroku](https://heroku.com) - To deploy this python site.
   - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all the site's data, such as user personal data, order details, available services, users' contact requests, and more.
   - [AWS](https://aws.amazon.com/) - Amazon Web Services have been used to create an ***s3 bucket*** to store all media and static files of this site.
-  - [Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used Google's emailing platform as email provider to send emails to users and customers, by implementing *smtp*.
-  - [Favicon](https://favicon.io/) - To create the logo on the title of each page on the site.
-  - [Font Awesome](https://fontawesome.com/) - For the navigation and footer icons.
-  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them on the site
+  - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  - **Django Summernote** - To enable the site owner to easily create an email template to launch an email marketing campaign to subscribers, or a newsletter. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
+  - [Favicon](https://favicon.io/) - To create the necessary files for the logo to be on the upper part of the browser tab next to the site tir.
+  - [Font Awesome](https://fontawesome.com/) - For the icons used
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
+  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
-  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
-  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) - Tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorythm.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
+  - [Google Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used as email provider to send  emails to users and customers, also via *smtp*.  
   - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
   - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
+
 
 
     
@@ -1472,11 +1480,14 @@ The following git commands were given to the terminal throughout development to 
 3. Ensure you have updated the ***requirements.txt*** file listing all project dependencies. The comnmand to update the file is ```pip3 freeze > requirements.txt```
 4. Set up necessary **configuration variables** in Heroku ***setting tab > Config Vars*** *(eg. SECRET_KEY, DATABASE_URL, etc.)*.
 5. Add Heroku to your ALLOWED_HOSTS in your app's *'settings.py'* file: ```candlelight-worlds.herokuapp.com```.
+
    
 ### Create Heroku App
 1. Sign up to an account on [Heroku](https://heroku.com)
 2. Create new app. Remember that app name must be unique on the whole of Heroku site.
-3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**:
+3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**.
+  
+   
 ### Deployment Method
 1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github before deploying to Heroku.
 2. **On Heroku**, click the **deploy** tab on the top navigation bar.
