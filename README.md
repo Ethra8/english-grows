@@ -104,7 +104,7 @@ Any company interested in improving its employees' level of English for one of t
 * Operates locally with international customers
   
 ### B2C  
-Any individual person wanting to improve their level of English tfor one of the following reasons:  
+Any individual person wanting to improve their level of English for one of the following reasons:  
 * Travel
 * Careers
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
