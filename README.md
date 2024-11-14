@@ -121,7 +121,7 @@ Any individual person wanting to improve their level of English tfor one of the 
   
 ### AS A FIRST-TIME VISITOR 
 #### B2C and B2B
-- [ ] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
+- [X] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
 - [X] 2. **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
 - [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***
 - [X] 4. **MUST:** I want to ***subscribe to the newsletter*** to receive special offers and tips.
