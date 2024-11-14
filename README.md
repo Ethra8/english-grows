@@ -61,13 +61,14 @@ Edna Torres Munill
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
         - [Shopping Bag](#shopping-bag)
+        - [Organize Users by Groups or Levels](#organize-users-by-groups-or-levels)
         - [404 Error Page](#404-error-page)
         - [Admin Console - CRUD Functionality](#admin-console)
       * [Future Features](#future-features)
-- [WEB MARKETING TECHNIQUES](#web-marketing-techniques)
-  * [Search Engine Optimization (SEO)](#search-engine-optimization-(SEO))
-  * [Social Media Marketing](#social-media-marketing)
-  * [Email Marketing](#email-marketing)
+    - [Web Marketing Techniques](#web-marketing-techniques)
+      * [Search Engine Optimization (SEO)](#search-engine-optimization-(SEO))
+      * [Social Media Marketing](#social-media-marketing)
+      * [Email Marketing](#email-marketing)
 - [TESTING](#testing)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
@@ -654,26 +655,24 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
 
     ![image](https://github.com/user-attachments/assets/6ef294f3-b4b3-4a86-a85c-75feac016161)
 
+
+## Organize Users by Groups or Levels
+This site offers the possibility to the admin users to create groups with unique names, and include users in them:  
+
+  ![image](https://github.com/user-attachments/assets/398355f9-c657-49ee-b47c-42f43c66f20b)
+
   
 ## 404 Error Page
 To improve UX, the 404 error page has been styled to the look and feel of the site.
   
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
-
-   
-## FUTURE FEATURES
-These future features are thought of as being some of the user's imagined ***wishes***:  
   
-* [ ] **WISH**: As an **admin user**, I want to **include additional fields in the user profile**, in order to be able to **track students' progress**.
-* [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
-* [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
   
-
-# WEB MARKETING
+## WEB MARKETING
   
-## SEARCH ENGINE OPTIMIZATION (SEO)
+### SEARCH ENGINE OPTIMIZATION (SEO)
     
-### KEYWORDS AND METATAGS
+#### KEYWORDS AND METATAGS
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
 - **Keywords and phrases have been included in the about page** within <strong> tags to highlight their importance to the SE:  
   
@@ -689,7 +688,7 @@ To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) ha
 <meta name="author" content="Edna Torres Munill">
 ```
   
-### sitemap.xml
+#### sitemap.xml
 This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery. Having included this file, improves the site quality, allowing for a better SEO indexing.  
   
 To create the file, follow these steps:  
@@ -704,30 +703,38 @@ To create the file, follow these steps:
 3. Download the file, and include it in the site's main root directory
    
   
-### robots.txt
+#### robots.txt
 This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
 - Account
 - Bag
 - Profile
   
   
-## SOCIAL MEDIA MARKETING
+### SOCIAL MEDIA MARKETING
 To promote this site's visibility and to improve customer reach, a mockup profile has been created in the social media platform of facebook:  
 
   ![image](https://github.com/user-attachments/assets/8661d04c-dc81-4b23-943f-784f047823de)
 
     
-## EMAIL MARKETING
+### EMAIL MARKETING
 ### NEWLETTER 
 A form has been included to enable users to subscribe in order to receive special offers and tips. Only a name a an email is requested, and the data is stored and easily accessed through the admin panel. A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for a newsletter, in this case.
   
-### EMAIL MARKETING CAMPAIGNS
+#### EMAIL MARKETING CAMPAIGNS
 A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for emailing campaigns, in this case. A fucntion hsa been added, so that when a specific email is checked (selected), and the option *send email campaign* is selected on the dropdown in the email templates model, when the user clicks on ***go***, the email template selected gets automatically sent to all the users who subscribed to the newsletter.
   
 This way, this function has a double purpose: To send the newsletter, and to send other marketing campaigns.
   
   https://github.com/user-attachments/assets/22b75b97-b13c-4c99-9b23-2bd8f1cb2f03
-
+    
+     
+## FUTURE FEATURES
+These future features are thought of as being some of the user's imagined ***wishes***:  
+  
+* [ ] **WISH**: As an **admin user**, I want to **include additional fields in the user profile**, in order to be able to **track students' progress**.
+* [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
+* [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
+  
        
 # TESTING  
 ## DEFECT TRACKING
@@ -1129,24 +1136,30 @@ The validation of the code has been successful. The validator used has been [JSh
      ![image](https://github.com/user-attachments/assets/f916b47a-7065-4f08-96e8-0afa1e0e5f50)
     
 #### HOME APP
+  * admin.py
+
+    ![image](https://github.com/user-attachments/assets/899c3a0b-a425-47d3-81bb-7c69b8cdd8f0)
+    
+    
   * forms.py
     
-     ![image](https://github.com/user-attachments/assets/de1088a7-9a6a-4ea9-8100-90896cfa2fcb)
-
+     ![image](https://github.com/user-attachments/assets/d801c609-2bbb-4b21-8d8a-66c702707ce2)
     
+           
   * models.py
     
      ![image](https://github.com/user-attachments/assets/ca2edfe6-f30c-456b-a6ed-38dd92fdfedb)
-
+    
     
   * utils.py
-
-    ![image](https://github.com/user-attachments/assets/33b81c10-de64-4675-9a56-d452334b16b9)
-            
+    
+    ![image](https://github.com/user-attachments/assets/c1ee2afa-ac8f-4d12-a05a-c3cbda2bf50a)
+  
+              
   * views.py
     
     ![image](https://github.com/user-attachments/assets/240d9e03-108b-4048-8e6b-a216d1be95ad)
-
+    
       
 #### INDIVIDUAL SERVICES APP
   * admin.py
