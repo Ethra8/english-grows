@@ -149,7 +149,7 @@ Any individual person wanting to improve their level of English for one of the f
 - [X] 15. **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
 - [X] 16. **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
 - [X] 17. **MUST:** I want to able to easily ***access my bag, and update or delete*** any items in it.
-- [X] 18. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
+- [X] 18. **MUST:** I want to be sure that ***my personal  is secured***, and that no one else can access my profile, nor my order urls, which also contain personal .
 - [X] 19 **MUST:** I want to make ***secure online payments*** to be able to purchase online teaching services.
 - [X] 20. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
 - [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
@@ -159,10 +159,10 @@ Any individual person wanting to improve their level of English for one of the f
 - [X] 23. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
 - [X] 24. **MUST:** Each **order is automatically linked to the authenticated user** making it.
 - [x] 25. **SHOULD:** Each **user's email is stored in a separate email list**, to easen up future emailing campaigns.
-- [X] 26. **MUST:** I want to be able to **store data in admin from B2B contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
+- [X] 26. **MUST:** I want to be able to **store  in admin from B2B contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
 - [X] 27. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
 - [X] 28. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
-- [X] 29. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected.
+- [X] 29. **MUST:** I want that **only authenticated users can make an order**, so that personal  from all users is protected.
 
 ### AS A MARKETER
 - [X] 30. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
@@ -285,7 +285,7 @@ This app contains the following pages *(templates)* and functionalities *(models
   * **Checkout Confirmation Email *(template used to send order confirmation email to user)***
   
 - **FUNCTIONALITIES:**
-  * **Create an order if user if authenticated, for data protection**
+  * **Create an order if user if authenticated, for  protection**
   * **Include in the order the items in the bag**
   * **Stripe API Integration to allow secure online payments**
   * **Checkout functionality**
@@ -335,25 +335,28 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
 This app contains the following pages *(templates & urls)* and **CRUD functionalities** *(models & views)*:  
 - **PAGES:**
   * **Profile page**
-
+  
 - **FUNCTIONALITIES:**
   * **Users can update their personal information**
   * **Users can view past order details**
     
 ### DATABASE STRUCTURE - MODELS
 - A PostgreSQL database has been used to build this project from scratch. For th initial stages of the developments, the sjango sqlite3 was utilized at first, but quickly moved to PostgreSQL database.
-- Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All the data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076), as well as the following data relationship diagram, which can also be cheked in more detail [on this sheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1982826762#gid=1982826762):
-  
-  ![image](https://github.com/user-attachments/assets/db850fec-8b21-4362-97b0-582904ee39c0)
+- Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All the data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076)
 
-      
+
+#### ERD (Entity Relationship Diagram)
+Als [on this sheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1982826762#gid=1982826762):
+  
+  ![image](https://github.com/user-attachments/assets/d38ee880-f5f6-4d5a-ad92-ae515883afea)
+  
+        
 #### CHECKOUT App - Models
 This app has the following models:  
   
   ![image](https://github.com/user-attachments/assets/c3de7eae-a040-46be-adef-095ce6ff703d)
-
-
   
+    
 #### HOME App - Models
 This app has been created to store the home page *index.html* template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views.  
 This app contains 2 forms, whose data is stored, and CRUD can be performed from the admin panel by an authorized user:  
