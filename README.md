@@ -647,6 +647,10 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
   
   https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
+  * For the sake of improving UX on mobile, without loosing too much screen space, a quantity picker has been added to the bag:
+
+    ![image](https://github.com/user-attachments/assets/6ef294f3-b4b3-4a86-a85c-75feac016161)
+
   
 ## 404 Error Page
 To improve UX, the 404 error page has been styled to the look and feel of the site.
@@ -707,13 +711,9 @@ This files disallows crawler spiders to crawl to certain urls in the site, which
 ## SOCIAL MEDIA MARKETING
 To promote this site's visibility and to improve customer reach, a mockup profile has been created in the social media platform of facebook:  
 
+  ![image](https://github.com/user-attachments/assets/8661d04c-dc81-4b23-943f-784f047823de)
 
-
-
-
-
-  
-  
+    
 ## EMAIL MARKETING
 ### NEWLETTER 
 A form has been included to enable users to subscribe in order to receive special offers and tips. Only a name a an email is requested, and the data is stored and easily accessed through the admin panel. A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for a newsletter, in this case.
@@ -807,10 +807,10 @@ TEST 3
   
 TEST 4
 -
-
-
-
-
+  
+  https://github.com/user-attachments/assets/7b4cd189-a91a-4d2a-a395-09288cd7a8be
+  
+  
 TEST 5
 -  
   
