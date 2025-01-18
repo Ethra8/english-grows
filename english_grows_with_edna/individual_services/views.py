@@ -164,7 +164,6 @@ def delete_service(request, service_id):
     return render(request, template, context)
 
 
-
 def pack_details(request, service_id):
     """ A view to return the pack details page """
     service = get_object_or_404(IndivService, pk=service_id)

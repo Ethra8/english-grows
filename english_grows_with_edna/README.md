@@ -1,10 +1,9 @@
-
 # ENGLISH GROWS
   
 ![image](https://github.com/user-attachments/assets/d93bcbc5-c5b2-4834-94b3-8beb290e27f0)
       
 ## Overview
-This site is an e-commerce with an integrated functionality that allows authorized users to **create customized email templates, and send an email campaign or newsletter to all the subscribers**.  
+This site is an **e-commerce** with integrated **marketing tools** capable of easily creating a **marketing emailing campaign** within minutes, apart from creating and sending a newsletter to subscribers. This functionality allows authorized users to **create customized email templates, and send an email campaign/newsletter to all subscribers**.  
   
 The site offers services in the education industry, both to B2C and B2B potential customers. More specifically, online English teaching services by live qualified English teachers. The services provided are the following:  
   
@@ -41,7 +40,8 @@ Edna Torres Munill
     - [Structure](#structure)
       * [Pages](#pages)
       * [Site Structure](#site-structure)
-      * [Data Structure](#data-structure)
+      * [Database Structure](#database-structure)
+          - [Entity Relational Diagram (ERD)](#entity-relational-diagram-(ERD))
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
@@ -62,18 +62,20 @@ Edna Torres Munill
         - [Service Sorting](#service-sorting)
         - [Search Bar](#search-bar)
         - [Shopping Bag](#shopping-bag)
+        - [Organize Users by Groups or Levels](#organize-users-by-groups-or-levels)
         - [404 Error Page](#404-error-page)
         - [Admin Console - CRUD Functionality](#admin-console)
       * [Future Features](#future-features)
-- [WEB MARKETING TECHNIQUES](#web-marketing-techniques)
-  * [Search Engine Optimization (SEO)](#search-engine-optimization-(SEO))
-  * [Social Media Markting](#social-media-marketing)
-  * [Email Marketing](#email-marketing)
+    - [Web Marketing Techniques](#web-marketing-techniques)
+      * [Search Engine Optimization (SEO)](#search-engine-optimization-(SEO))
+      * [Social Media Marketing](#social-media-marketing)
+      * [Email Marketing](#email-marketing)
 - [TESTING](#testing)
   * [Defect Tracking](#defect-tracking)
     - [Github Issues](#github-issues)
     - [Defects of Note](#defects-of-note)
     - [Outstanding Defects](#outstanding-defects)
+  * [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
   * [Core Web Vitals](#core-web-vitals)
     - [Lighthouse Reports](#lighthouse-reports)
   * [Code Validation](#code-validation)
@@ -104,7 +106,7 @@ Any company interested in improving its employees' level of English for one of t
 * Operates locally with international customers
   
 ### B2C  
-Any individual person wanting to improve their level of English tfor one of the following reasons:  
+Any individual person wanting to improve their level of English for one of the following reasons:  
 * Travel
 * Careers
 * University Students (e.g: Students must certify a B2 level of English to apply to the Erasmus program)
@@ -121,7 +123,7 @@ Any individual person wanting to improve their level of English tfor one of the 
   
 ### AS A FIRST-TIME VISITOR 
 #### B2C and B2B
-- [ ] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
+- [X] 1. **MUST:** I want to ***check the social media links*** to see the website profile on social media platforms such as FB, for instance, to look at photos from past events, and maybe follow.
 - [X] 2. **MUST:** I want to ***check the about page***, to be informed of the site's purpose.
 - [X] 3. **MUST:** I want to clearly ***see at first glance the part of the site that is specially dedicated to me (B2B or B2C)***
 - [X] 4. **MUST:** I want to ***subscribe to the newsletter*** to receive special offers and tips.
@@ -149,24 +151,25 @@ Any individual person wanting to improve their level of English tfor one of the 
 - [X] 15. **MUST:** I want to be able to ***have a personalized user profile***, so that I can view my personal order history and order confirmations.
 - [X] 16. **MUST:** I want to be able to ***update and save my personal account information*** on my user profile.
 - [X] 17. **MUST:** I want to able to easily ***access my bag, and update or delete*** any items in it.
-- [X] 18. **MUST:** I want to be sure that ***my personal data is secured***, and that no one else can access my profile, nor my order urls, which also contain personal data.
+- [X] 18. **MUST:** I want to be sure that ***my personal  is secured***, and that no one else can access my profile, nor my order urls, which also contain personal .
 - [X] 19 **MUST:** I want to make ***secure online payments*** to be able to purchase online teaching services.
 - [X] 20. **MUST:** I want to ***receive a confirmation email after a purchase***, with the details of my order.
-- [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.    
+- [x] 21. **MUST:** I want to be able to ***view past orders, and read their full information*** from my ***personal profile***.
+- [X] 22. **MUST:** I want to ***see success or error messages for every action undertaken*** so that I can ***be informed of the state of my actions***.
   
 ### AS A SITE OWNER OR ADMIN USER:
-- [X] 22. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
-- [X] 23. **MUST:** Each **order is automatically linked to the authenticated user** making it.
-- [x] 24. **SHOULD:** Each **user's email is stored in a separate email list**, to easen up future emailing campaigns.
-- [X] 25. **MUST:** I want to be able to **store data in admin from B2B contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
-- [X] 26. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
-- [X] 27. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
-- [X] 28. **MUST:** I want that **only authenticated users can make an order**, so that personal data from all users is protected.
+- [X] 23. **MUST:** I want to be able to **sort orders by users**, so that I can easily check the orders related to a specific user.
+- [X] 24. **MUST:** Each **order is automatically linked to the authenticated user** making it.
+- [x] 25. **SHOULD:** Each **user's email is stored in a separate email list**, to easen up future emailing campaigns.
+- [X] 26. **MUST:** I want to be able to **store  in admin from B2B contact requests**, so that I can easily rewiew company requests, and have their contact emails, name, company name, and request secured and handy.
+- [X] 27. **SHOULD:** I want to be able to **edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.  
+- [X] 28. **SHOULD:** I want to be able to **add a new service directly through the site**, without having to access the lesser user-friendly admin panel.
+- [X] 29. **MUST:** I want that **only authenticated users can make an order**, so that personal  from all users is protected.
 
 ### AS A MARKETER
-- [X] 29. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
-- [X] 30. **SHOULD:** I want to be able to send marketing campaigns to subscribed users.
-- [X] 31. **SHOULD:** I want to be able to send a newsletter to users that are subscribed.
+- [X] 30. **SHOULD:** I want to be able to create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).
+- [X] 31. **SHOULD:** I want to be able to send marketing campaigns to subscribed users.
+- [X] 32. **SHOULD:** I want to be able to send a newsletter to users that are subscribed.
 
   
 N.B.: FUTURE FEATURES or 'WISHES' stated in [Future Features](#future-features)
@@ -257,7 +260,8 @@ The following fully responsive pages form the structure of this site:
  - ![image](https://github.com/user-attachments/assets/3a538725-93c4-4c40-892e-0bf197a18db5)
 </details>
 
-### SITE Structure
+  
+### SITE STRUCTURE
 The site has been developed using ***Django 5.1*** framework for ***Python 3.12***, and contains the 5 different apps stated below, forming its overall structure. Within each app, different ***models***, ***views***, ***urls***, and ***templates*** create the logic of the site. The User model from django all-auth has also been used:
 - **DJANGO CUSTOM APPs:**  
   * **Bag**  
@@ -283,7 +287,7 @@ This app contains the following pages *(templates)* and functionalities *(models
   * **Checkout Confirmation Email *(template used to send order confirmation email to user)***
   
 - **FUNCTIONALITIES:**
-  * **Create an order if user if authenticated, for data protection**
+  * **Create an order if user if authenticated, for  protection**
   * **Include in the order the items in the bag**
   * **Stripe API Integration to allow secure online payments**
   * **Checkout functionality**
@@ -333,23 +337,28 @@ This app contains the following pages *(templates & urls)* and **CRUD functional
 This app contains the following pages *(templates & urls)* and **CRUD functionalities** *(models & views)*:  
 - **PAGES:**
   * **Profile page**
-
+  
 - **FUNCTIONALITIES:**
   * **Users can update their personal information**
   * **Users can view past order details**
     
-### DATA STRUCTURE - MODELS
-Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All th data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076)
+### DATABASE STRUCTURE - MODELS
+- A PostgreSQL database has been used to build this project from scratch. For th initial stages of the developments, the sjango sqlite3 was utilized at first, but quickly moved to PostgreSQL database.
+- Several apps have been created to store the different modules that have been created, using Django 5.1 framework, in order to store the site's data in the database. All the data models of the site can be found in [this Googlesheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=956386076#gid=956386076)
+
+
+#### ERD (Entity Relationship Diagram)
+Als [on this sheet](https://docs.google.com/spreadsheets/d/1jID6FXBd1tZINHULIWNXjc0iRhyYGC6ce3y9dMppRVg/edit?gid=1982826762#gid=1982826762):
   
+  ![image](https://github.com/user-attachments/assets/d38ee880-f5f6-4d5a-ad92-ae515883afea)
   
+        
 #### CHECKOUT App - Models
 This app has the following models:  
   
   ![image](https://github.com/user-attachments/assets/c3de7eae-a040-46be-adef-095ce6ff703d)
   
-- To create an instance of the **Order** model, the user must be authentified. The **OrderLineItem** links to the **Order** model, as it is the latter which includes the services
     
-  
 #### HOME App - Models
 This app has been created to store the home page *index.html* template, views and urls. For simplicity sake, the model that store data from the ***Companies*** section form has also been included in this app. Should the companies' section be widenned in the future, an independent app would be created to store this model and the subsequent templates, urls, and views.  
 This app contains 2 forms, whose data is stored, and CRUD can be performed from the admin panel by an authorized user:  
@@ -406,33 +415,44 @@ The following fonts have been used, all from Google Fonts:
 <summary>CLICK HERE to see the Mobile & Tablet (portrait) Wireframes</summary>
 - HOME Page
   
-  - 
+  ![image](https://github.com/user-attachments/assets/f1ff2dc3-dab8-4148-8458-bca729c1103e)
+   
   
 - INDIVIDUAL SERVICES Page
 
-  - 
+  ![image](https://github.com/user-attachments/assets/a475da96-e85b-4e53-abc1-eaf8cf2bebc4)
+ 
 
 - SERVICE DETAILS Page
 
-  - 
-
+  ![image](https://github.com/user-attachments/assets/ebddef38-1203-4983-994c-65b0dc80d028)
+   
+    
 - SHOPPING BAG Page (form)
-
-  - 
-
+  
+  ![image](https://github.com/user-attachments/assets/214d0c04-16bf-45ec-ac71-6a8d12cfeff2)
+   
+  
 - MY PROFILE Page (list)
 
-  - 
-
+  ![image](https://github.com/user-attachments/assets/258e896a-4b65-4a61-972f-7443b6600b48)
+   
+  
 - COMPANIES CONTACT Page (form)
-
-  - 
-
+  
+  ![image](https://github.com/user-attachments/assets/33dbc871-2b95-4fde-a68a-a160e301f523)
+   
+  
 - ABOUT Page
 
-  - 
-  
-  
+  ![image](https://github.com/user-attachments/assets/e8288bda-5346-40d1-9825-3a9d0b4d4a57)
+
+
+- SUBSCRIBE Page
+
+  ![image](https://github.com/user-attachments/assets/7d6319d9-7b34-463d-8946-3a3e3ae7bed7)
+
+    
 </details>  
 
   
@@ -448,9 +468,9 @@ The following fonts have been used, all from Google Fonts:
     
   - INDIVIDUAL SERVICES Page
     
-    ![image](https://github.com/user-attachments/assets/443115cf-d40b-4a38-beb4-098dc1d08799)
-    
-    
+    ![image](https://github.com/user-attachments/assets/04878b1f-6993-4c48-bc4d-6210c8f8b0e4)
+
+        
   - PACK DETAILS Page
     
     ![image](https://github.com/user-attachments/assets/65efcf9a-dd87-45d0-ba5c-a644dfd90075)
@@ -463,18 +483,22 @@ The following fonts have been used, all from Google Fonts:
       
   - MY PROFILE Page
   
-   ![image](https://github.com/user-attachments/assets/fe6dcf16-93ab-452e-a622-f19b34f68d37)
-    
-    
+    ![image](https://github.com/user-attachments/assets/162a3e7b-32a0-41c3-9311-2b01521d4e91)
+
+        
   - COMPANIES Page (B2B contact form)
       
-    ![image](https://github.com/user-attachments/assets/afcbbd36-4516-4cfa-8dab-a262eb891603)
-      
+    ![image](https://github.com/user-attachments/assets/6a8065bb-a2c1-46c5-9d2f-7217acbb1504)
+          
     
   - ABOUT Page
   
-  ![image](https://github.com/user-attachments/assets/17847ec0-0fbd-4035-a543-e8ab1f83d300)
-    
+    ![image](https://github.com/user-attachments/assets/277e3916-d1dc-43a7-8781-00530ebde3ce)
+
+  - SUBSCRIBE Page (newsletter susbscription form)
+
+    ![image](https://github.com/user-attachments/assets/7854e1d7-4c38-4f69-9b6f-44350ba031b1)
+
     
 </details>  
   
@@ -547,12 +571,17 @@ From django User model, stores **registered users' emails** for future emailing 
    ![image](https://github.com/user-attachments/assets/43a9c341-bb08-45b7-9bf9-5f1438f3840c)  
     
 #### Home
-As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
+- As the contact form on the 'For Companies' page is stored in the *home* app, this model has been created to store the contact requests sent by the users:  
  
  ![image](https://github.com/user-attachments/assets/2be02964-8be9-42c6-aedc-91b253e51f93)  
  
  ![image](https://github.com/user-attachments/assets/648e5c59-0485-4ca1-92f7-16c2387e79e5)  
-   
+
+- This app also features the subscription form, and the functionality to create an emailing campaign directly and easily from the admin panel. Authorized users can create an email template with user-friendly editable text area (used *django-summernote* for this purpose), and a function sends the email to all subscribers with just one click:
+
+  https://github.com/user-attachments/assets/982ba163-91f3-4da2-8747-4b9ca192a019
+
+    
 ### Checkout
 The orders created by the Order model are stored in the database, and reflected in the admin panel:  
   
@@ -561,12 +590,13 @@ The orders created by the Order model are stored in the database, and reflected 
   ![image](https://github.com/user-attachments/assets/fee8e06e-3b76-4baf-a081-373f9f13976f)  
 
  
-### Services - CRUD
+### Services - CRUD from site
  * To improve UX and the overall UI, authorized users (admin *superusers*) can ***create***,***read***,***update*** and ***delete*** ***(CRUD)*** the data model for Individual Services, including the service image, directly through the site without need to enter the lesser user-friendly admin panel. Thus, **Services can be created, read, updated, or/and deleted** through the main service page in the site:  
   
    ![image](https://github.com/user-attachments/assets/4cf94aba-6e49-4c50-a9b3-a4bf8d2f4c55)    
   
    ![image](https://github.com/user-attachments/assets/7b238e2b-a507-47c1-bc55-bc60e9bfaa82)    
+
   
 ## Navigation Bar
 There are two navigation bars and both are fully responsive:
@@ -622,26 +652,28 @@ Whithin the shopping bag, users can **update quantity** of service packs to buy,
   
   https://github.com/user-attachments/assets/75625e41-44d3-4b62-b630-76f3f1d1a89a  
 
+  * For the sake of improving UX on mobile, without loosing too much screen space, a quantity picker has been added to the bag:
+
+    ![image](https://github.com/user-attachments/assets/6ef294f3-b4b3-4a86-a85c-75feac016161)
+
+
+## Organize Users by Groups or Levels
+This site offers the possibility to the admin users to create groups with unique names, and include users in them:  
+
+  ![image](https://github.com/user-attachments/assets/398355f9-c657-49ee-b47c-42f43c66f20b)
+
   
 ## 404 Error Page
 To improve UX, the 404 error page has been styled to the look and feel of the site.
   
  ![image](https://github.com/user-attachments/assets/438748da-fb3f-4c70-8655-7fc0874ac368)
-
-   
-## FUTURE FEATURES
-These future features are thought of as being some of the user's imagined ***wishes***:  
   
-* [ ] **WISH**: As an **admin user**, I want to **include additional fields in the user profile**, in order to be able to **track students' progress**.
-* [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
-* [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
   
-
-# WEB MARKETING
+## WEB MARKETING
   
-## SEARCH ENGINE OPTIMIZATION (SEO)
+### SEARCH ENGINE OPTIMIZATION (SEO)
     
-### KEYWORDS AND METATAGS
+#### KEYWORDS AND METATAGS
 To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) has been used to research keywords.  
 - **Keywords and phrases have been included in the about page** within <strong> tags to highlight their importance to the SE:  
   
@@ -657,7 +689,7 @@ To improve SEO ranking, the tool [Word Tracker](https://www.wordtracker.com/) ha
 <meta name="author" content="Edna Torres Munill">
 ```
   
-### sitemap.xml
+#### sitemap.xml
 This file lists the website’s essential pages, making sure Google can find and crawl them all. It also helps search engines understand the website structure, and can help speed up content discovery. Having included this file, improves the site quality, allowing for a better SEO indexing.  
   
 To create the file, follow these steps:  
@@ -672,34 +704,38 @@ To create the file, follow these steps:
 3. Download the file, and include it in the site's main root directory
    
   
-### robots.txt
+#### robots.txt
 This files disallows crawler spiders to crawl to certain urls in the site, which should not be shown to users on a search engine. All urls of the following directories have been disallowed for security and for a meaningfulness search:  
 - Account
 - Bag
 - Profile
   
   
-## SOCIAL MEDIA MARKETING
+### SOCIAL MEDIA MARKETING
 To promote this site's visibility and to improve customer reach, a mockup profile has been created in the social media platform of facebook:  
 
+  ![image](https://github.com/user-attachments/assets/8661d04c-dc81-4b23-943f-784f047823de)
 
-
-
-
-
-  
-  
-## EMAIL MARKETING
+    
+### EMAIL MARKETING
 ### NEWLETTER 
 A form has been included to enable users to subscribe in order to receive special offers and tips. Only a name a an email is requested, and the data is stored and easily accessed through the admin panel. A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for a newsletter, in this case.
   
-### EMAIL MARKETING CAMPAIGNS
+#### EMAIL MARKETING CAMPAIGNS
 A model allows authorized users to perform CRUD functionlity on the admin panel to create email templates for emailing campaigns, in this case. A fucntion hsa been added, so that when a specific email is checked (selected), and the option *send email campaign* is selected on the dropdown in the email templates model, when the user clicks on ***go***, the email template selected gets automatically sent to all the users who subscribed to the newsletter.
   
 This way, this function has a double purpose: To send the newsletter, and to send other marketing campaigns.
   
   https://github.com/user-attachments/assets/22b75b97-b13c-4c99-9b23-2bd8f1cb2f03
-
+    
+     
+## FUTURE FEATURES
+These future features are thought of as being some of the user's imagined ***wishes***:  
+  
+* [ ] **WISH**: As an **admin user**, I want to **include additional fields in the user profile**, in order to be able to **track students' progress**.
+* [ ] **WISH**: As an **admin user**, I want to **receive an email each time a B2B user sends a request via the contact form**, in order to be able to **easily keep track of incomming requests**.
+* [ ] **WISH**: As an **B2B user**, I want to **receive a copy of the request made via the contact form**, in order to be able to **have a reminder of my request**.
+  
        
 # TESTING  
 ## DEFECT TRACKING
@@ -714,8 +750,108 @@ No defects of note have been detected on this site.
   
 ### OUTSTANDING DEFECTS
 No outstanding defects have been detected in this site.  
+
+
+## COMPATIBILITY AND RESPONSIVE TESTING  
+
+### PRESELECTING TESTING TARGETS
+- For a meaningful testing of the site, [Stat Counter](https://gs.statcounter.com) has been used, in order to get an insight of the following:
+    
+    * **BROWSER MARKET SHARE** - Most commonly used browsers worldwide:
+
+    ![image](https://github.com/user-attachments/assets/7a7c49ff-13d3-48f9-ae03-1a4e84a70167)
+
+     * **BROWSER VERSION MARKET SHARE** - Most commonly used browser versions worldwide:
+
+    ![image](https://github.com/user-attachments/assets/05f21ad4-3469-4e97-b870-f6f6334751f5)
+
+    * **OS MARKET SHARE** - Most commonly used operation systems worldwide:
+
+    ![image](https://github.com/user-attachments/assets/217ec506-783f-455c-b6e3-821f5269c326)
+
+    * **MOBILE vs DESKTOP vs TABLET MARKET SHARE** - Most commonly used devices worldwide:
+
+    ![image](https://github.com/user-attachments/assets/7b5b8335-2f93-46a8-908b-4e470b42f2a4)
+
+    * **SCREEN RESOLUTION STATS** - Most common screen resolution (in pixels) worldwide:
+
+    ![image](https://github.com/user-attachments/assets/550ec6df-12c2-4055-8662-53c6758dc221)
+
+
+
+### TESTING TARGETS TABLE
+Following all the above information, compatibility and responsive testing has been done on the most common *browser versions*, *OS*, and *screen resolution* combinations, by using [Browser Stack](https://chrome.google.com/webstore/detail/browserstack/nkihdmlheodkdfojglpcjjmioefjahjb) Chrome extension, the *Chrome Dev tool's emulator*, and real devices. On the mobile real device, XRecorder app has been used.  
+*NB: As BrowserStack now charges for testing a device over 1 minute limit time for their free version, the following testings for this project have been adapted to this inconvenience. In case of it being a real business, I would pay the subscription to get a full-time testing account.*
+
+Please find the correspondent **compatibility and responsive testing** reflected in the following table:
+
+| TEST no.| TOOL               | DEVICE               | BROWSER            | OS              | VIEWPORT width x height (px) |
+|---------|--------------------|----------------------|--------------------|-----------------|------------------------------|
+| [1](#test-1)        | Chrome Dev emulator| [Samsung Galaxy S8](https://blisk.io/devices/details/galaxy-s8)   | Chrome 117 |Windows 11  |360 x 740             | 
+| [2](#test-2)        | BrowserStack       | [Samsung Galaxy S20](https://blisk.io/devices/details/galaxy-s20)   | Samsung    |Android 10.0 |360 x 800           |
+| [3](#test-3)        | BrowserStack       | [iPhone XS](https://blisk.io/devices/details/iphone-xs)| Safari   | iOS 15.0   |375 x 812            |
+| [4](#test-4)        | REAL mobile device | Samsung Galaxy A22 5G| Chrome             | Android 13.0    |384 x 729                     |
+| [5](#test-5)        | BrowserStack       | [Samsung Galaxy S23 Ultra](https://blisk.io/devices/details/galaxy-s23-ultra)| Chrome | Android 13.0  |384 × 824  |
+| [6](#test-6)        | BrowserStack       | [iPhone 15  Pro](https://blisk.io/devices/details/iphone-15-pro) | Safari 17  | iOS    |393 × 852                   |
+| [7](#test-7)        | REAL Laptop Device | HP Laptop 15s-fq4xxx| Chrome 129.0.6668.72    |Windows 11 Home|1536 x 776                    |
+| [8](#test-8)       | BrowserStack               | HP Laptop 15s-fq4xxx         | Firefox 131      | Windows 11 -64bit           |1536 x 776                    |
+| [9](#test-9)       | BrowserStack               | MAC         | Safari 17      | MacOs Sequoia           |                   1536 x 776 |
+
+### TEST RESULT VIDEOS
+TEST 1
+-
+  
+  https://github.com/user-attachments/assets/d089cf81-eb38-4f1e-9a4a-9a6494fc520b
+  
+      
+TEST 2
+-
+  
+  https://github.com/user-attachments/assets/e666756c-da6d-4a52-a38b-cce301d781b0
   
   
+TEST 3
+-
+
+  https://github.com/user-attachments/assets/c917bd4f-0cc7-47c9-a595-a94e8b155e22
+
+  
+TEST 4
+-
+  
+  https://github.com/user-attachments/assets/7b4cd189-a91a-4d2a-a395-09288cd7a8be
+  
+  
+TEST 5
+-  
+  
+  https://github.com/user-attachments/assets/e456158b-6422-466b-8d27-fcde917aebd6
+  
+  
+TEST 6
+-  
+  
+  https://github.com/user-attachments/assets/45d67030-1556-41cd-ad68-64845575983a
+  
+  
+TEST 7
+-
+  
+  https://github.com/user-attachments/assets/b2202841-1519-44f0-a89c-57c71d90a100
+  
+  
+TEST 8
+-
+  
+  https://github.com/user-attachments/assets/0e9551a3-1d0f-4f7f-9f8d-2bc2e2f9fec2
+  
+  
+TEST 9
+- 
+  
+  https://github.com/user-attachments/assets/2c14d3b4-de0a-415a-8f51-8b0c156de0f9
+
+    
 ## CORE WEB VITALS
 The following tests have been run for this project:  
   
@@ -1001,24 +1137,30 @@ The validation of the code has been successful. The validator used has been [JSh
      ![image](https://github.com/user-attachments/assets/f916b47a-7065-4f08-96e8-0afa1e0e5f50)
     
 #### HOME APP
+  * admin.py
+
+    ![image](https://github.com/user-attachments/assets/899c3a0b-a425-47d3-81bb-7c69b8cdd8f0)
+    
+    
   * forms.py
     
-     ![image](https://github.com/user-attachments/assets/de1088a7-9a6a-4ea9-8100-90896cfa2fcb)
-
+     ![image](https://github.com/user-attachments/assets/d801c609-2bbb-4b21-8d8a-66c702707ce2)
     
+           
   * models.py
     
      ![image](https://github.com/user-attachments/assets/ca2edfe6-f30c-456b-a6ed-38dd92fdfedb)
-
+    
     
   * utils.py
-
-    ![image](https://github.com/user-attachments/assets/33b81c10-de64-4675-9a56-d452334b16b9)
-            
+    
+    ![image](https://github.com/user-attachments/assets/c1ee2afa-ac8f-4d12-a05a-c3cbda2bf50a)
+  
+              
   * views.py
     
     ![image](https://github.com/user-attachments/assets/240d9e03-108b-4048-8e6b-a216d1be95ad)
-
+    
       
 #### INDIVIDUAL SERVICES APP
   * admin.py
@@ -1073,7 +1215,11 @@ This website is compliant with all international standards, as proved after ***E
 ## MANUAL TESTING
 Manual testing of the site has been performed following the user's stories:
   
-- [ ] 1. **Check the social media links to see the site's social media profile**
+- [X] 1. **Check the social media links to see the site's social media profile**:
+      [Check Facebook profile](https://www.facebook.com/people/English-Grows/61561504216913/)
+
+  ![image](https://github.com/user-attachments/assets/f00aab74-e73c-4c4a-acdf-5e310a123e8c)
+
 - [X] 2. **Check the about page**
   
   https://github.com/user-attachments/assets/e8feecd2-bda6-44d9-828e-4a4ab6dba8da
@@ -1188,50 +1334,56 @@ https://github.com/user-attachments/assets/7cb762e4-d078-4aab-9eec-7a2e210c844b
   
   https://github.com/user-attachments/assets/76f75603-112f-42c5-bb5a-c5d2936be615
 
+- [X] 22. **See success or error messages for every action undertaken***:
   
 ### ADMIN 
-- [X] 22. **Sort orders by users (by profiles)**:
+- [X] 23. **Sort orders by users (by profiles)**:
   
   https://github.com/user-attachments/assets/e8786ea1-12e5-4c27-a1b7-5985f6a7ddb3
   
-- [X] 23. **Order is automatically linked to the authenticated user** who made it:
+- [X] 24. **Order is automatically linked to the authenticated user** who made it:
 
   ![image](https://github.com/user-attachments/assets/536a66bb-fae0-41bf-916b-c029261b1f39)
   
-- [x] 24. **User's email is stored in a separate email list**, to easen up future **emailing campaigns**.
+- [x] 25. **User's email is stored in a separate email list**, to easen up future **emailing campaigns**.
   
   ![image](https://github.com/user-attachments/assets/0f59e72b-054d-43a2-a5d3-5fcf2b3c8b6f)
     
-- [X] 25. **Store data in admin from B2B contact requests**:
+- [X] 26. **Store data in admin from B2B contact requests**:
 
   ![image](https://github.com/user-attachments/assets/b65e47d7-bea6-4a02-b88b-873bbc33e11a)
 
   
-- [X] 26. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
+- [X] 27. **Edit and delete existing services directly from the site**, without having to access the lesser user-friendly admin panel.
   
   https://github.com/user-attachments/assets/93e2744f-ae24-4779-a48b-deb5dfb6f039
   
-- [X] 27. **Add service directly directly from the site**
+- [X] 28. **Add service directly directly from the site**
   
   https://github.com/user-attachments/assets/bce43c89-e04b-4024-b9bd-1687f4fd18f6
       
-- [X] 28. **Only authenticated users can make an order**, so that personal data from all users is protected. 
+- [X] 29. **Only authenticated users can make an order**, so that personal data from all users is protected. 
   
   https://github.com/user-attachments/assets/fbb0422c-48af-4d08-a3fd-0c7c9b34931d
 
 
 ### MARKETING STRATEGIES
 #### SUBSCRIPTION to NEWSLETTER  
-All the functionalities described below related to marketing have been tested, and work as expected. Please refer to the video below num. 31 which includes the three features testing: 
-- [X] 29. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
-- [X] 30. **send marketing campaigns to subscribed users.**
-- [X] 31. **send a newsletter to users that are subscribed.**
+All the functionalities described below related to marketing have been tested, and work as expected, summing up to the facebook profile page created, to improve social media presence of the brand, as part of the marketing campaign (num. Please refer to the video below num. 32 which includes the three features testing: 
+- [X] 30. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
+- [X] 31. **send marketing campaigns to subscribed users.**
+- [X] 32. **send a newsletter to users that are subscribed.**
   
   https://github.com/user-attachments/assets/0faa4b3a-89f6-4b62-87c9-9f1c085f4d33  
 
   ![image](https://github.com/user-attachments/assets/6072cb60-adad-4490-98c0-08f229639044)
 
   ![image](https://github.com/user-attachments/assets/e013ca55-d82b-4f46-9dbe-591b2a8143cb)
+
+  **PROOF of EMAILING CAMPAIGN FUNCTIONING: One subscription was made using test@test.co email (does not exist), and when sending campaign to all subscribers, I receive an error email informing that email could not be delivered to inexistent email test@test.co:
+
+  ![image](https://github.com/user-attachments/assets/975f0be1-331a-43c7-ba2f-153a70f4cd44)
+
   
 ### INDIVIDUAL SERVICE - CRUD Full Functionality
     
@@ -1259,7 +1411,7 @@ Admin users can **Delete** a service, with confirmation step, and success messag
   
 ### MARKETING STRATEGIES
 #### SUBSCRIPTION to NEWSLETTER  
-All the functionalities described below reñlated to marketing have been tested, and work as expected. Please refer to the video below num. 29 which includes the three features testing: 
+All the functionalities described below reñlated to marketing have been tested, and work as expected, summing up to num. 1 story, which allows users to chceck social media profile at FB, as part of the marketing techniques. Please refer to the video below num. 29 which includes the three features testing: 
 - [X] 27. **create editable email templates for the newsletter or emailing campaigns (Marketing campaigns).**
 - [X] 28. **send marketing campaigns to subscribed users.**
 - [X] 29. **send a newsletter to users that are subscribed.**
@@ -1277,22 +1429,30 @@ All the functionalities described below reñlated to marketing have been tested,
   
 ## FRAMEWORKS, LIBRARIES AND PROGRAMS USED
 The following have been used for the development of this site:  
-  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory.
+  - **Django 5.1** - Whithin django framework, many libraries and modules have been used. For mode details on these, please refer to *requirements.py* on the root directory. - Check [Django 5.1 Documentation](https://docs.djangoproject.com/en/5.1/)
   - Chrome Dev Tools - To inspect the elements, and be able to spot what element was having an unexpected behaviour, and correct it more efficiently. Also have used **_Lighthouse_** tool's reports to check and improve core web vitals.
   - [Github](https://github.com) - To deploy the code in order to be accessed by Heroku.
   - [Heroku](https://heroku.com) - To deploy this python site.
   - [PostgreSQL](https://www.postgresql.org) - A database has been created through Code Institute handy link, to store all the site's data, such as user personal data, order details, available services, users' contact requests, and more.
   - [AWS](https://aws.amazon.com/) - Amazon Web Services have been used to create an ***s3 bucket*** to store all media and static files of this site.
-  - [Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used Google's emailing platform as email provider to send emails to users and customers, by implementing *smtp*.
-  - [Favicon](https://favicon.io/) - To create the logo on the title of each page on the site.
-  - [Font Awesome](https://fontawesome.com/) - For the navigation and footer icons.
-  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them on the site
+  - **Bootstrap 5** - Check documentation [here](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+  - **Django Summernote** - To enable the site owner to easily create an email template to launch an email marketing campaign to subscribers, or a newsletter. Documentation can be found [here](https://github.com/lqez/django-summernote/blob/main/README.md)
+  - [Favicon](https://favicon.io/) - To create the necessary files for the logo to be on the upper part of the browser tab next to the site tir.
+  - [Font Awesome](https://fontawesome.com/) - For the icons used
+  - [Google Fonts](https://fonts.google.com/) - To select fonts and implement them in the site
+  - [Github](https://github.com) - To deploy the site online, and Github desktop app to link _Visual Studio Code_ to Github.com
   - [Coolors](https://coolors.co) - To insert colors selected previously directly through visual studio code, but used this tool to display the palette beautifully, and insert it in this readme file.
-  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously, and have an overview of its responsiveness.
+  - [Amiresponsive](https://ui.dev/amiresponsive) - To display the site in all types of devices simultaneously.
   - [EqualWeb Accessibility Checker](https://chrome.google.com/webstore/detail/equalweb-accessibility-ch/imemciokfejbnonkkinhcdfigdilcllg/related?utm_source=chrome-ntp-icon) - Google Chrome extension to check general errors and contract errors for optimal accessibility.
-  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) - Tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorythm.
+  - [Juicy Studio](https://juicystudio.com/services/luminositycontrastratio.php) tool to generate accessibility reports related to contrast, following the **WCAG 2.0**'s luminosity contrast algorithm.
+  - [Blisk](https://blisk.io/devices) to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [Viewport Sizer](https://viewportsizer.com/devices/) - Used to check the viewport of multiple devices, very useful for selecting testing targets.
+  - [BrowserStack](browserstack.com) to test responsiveness by emulating different devices, operating systems and browser vendors.
+  - [XRecorder](https://videoeditor-videorecorder-screenrecorder.en.uptodown.com/android) for Android, to record the compatibility and responsiveness testing performed on real Android device.
+  - [Google Gmail](https://support.google.com/mail/answer/56256?hl=en#:~:text=Gmail-,Create%20a%20Gmail%20account,-To%20sign%20up): Used as email provider to send  emails to users and customers, also via *smtp*.  
   - [Word Tracker](https://www.wordtracker.com/) - To track the best keywords to include for SEO improved ranking.
   - [XML sitemaps](ml-sitemaps.com) - To generate the sitemap.xml file for this site
+
 
 
     
@@ -1337,11 +1497,14 @@ The following git commands were given to the terminal throughout development to 
 3. Ensure you have updated the ***requirements.txt*** file listing all project dependencies. The comnmand to update the file is ```pip3 freeze > requirements.txt```
 4. Set up necessary **configuration variables** in Heroku ***setting tab > Config Vars*** *(eg. SECRET_KEY, DATABASE_URL, etc.)*.
 5. Add Heroku to your ALLOWED_HOSTS in your app's *'settings.py'* file: ```candlelight-worlds.herokuapp.com```.
+
    
 ### Create Heroku App
 1. Sign up to an account on [Heroku](https://heroku.com)
 2. Create new app. Remember that app name must be unique on the whole of Heroku site.
-3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**:
+3. Store all the secret environment variables (secret keys) on **settings** > **Config Vars**.
+  
+   
 ### Deployment Method
 1. Ensure that in your **settings.py**, ```DEBUG = False``` before doing the last commit to Github before deploying to Heroku.
 2. **On Heroku**, click the **deploy** tab on the top navigation bar.

@@ -12,7 +12,7 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the\
-     shopping bag """
+    shopping bag """
     try:
         service = get_object_or_404(IndivService, pk=item_id)
         quantity = int(request.POST.get('quantity'))
@@ -25,7 +25,7 @@ def add_to_bag(request, item_id):
             to {bag[item_id]}')
         else:
             bag[item_id] = quantity
-            messages.success(request, f'Added {service.name} \
+            messages.success(request, f'Added {service.name}\
             to your bag')
 
         request.session['bag'] = bag
@@ -33,14 +33,15 @@ def add_to_bag(request, item_id):
         return redirect(redirect_url)
 
     except Exception as e:
-        messages.error(request, f'Error adding \
+        messages.error(request, f'Error adding\
         item to bag: {e}')
         return HttpResponse(status=500)
 
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the\
-     specified amount"""
+    specified amount"""
+    print(f"Adjusting item: {item_id}")  # Debug statement
     try:
         service = get_object_or_404(IndivService, pk=item_id)
         quantity = int(request.POST.get('quantity'))
@@ -48,34 +49,48 @@ def adjust_bag(request, item_id):
 
         if quantity >= 1:
             bag[item_id] = quantity
-            messages.success(request, f'Quantity of \
+            messages.success(request, f'Quantity of\
             {service.name} successfully updated')
         else:
-            messages.error(request, f'Failed to update \
+            messages.error(request, f'Failed to update\
             {service.name}')
 
         request.session['bag'] = bag
         return redirect(reverse('bag'))
 
     except Exception as e:
-        messages.error(request, f'Error updating \
+        messages.error(request, f'Error updating\
         item: {e}')
         return HttpResponse(status=500)
 
 
 def remove_bag_item(request, item_id):
-    """Remove the item from the shopping bag"""
+    """Remove the item from the shopping bag and redirect 
+    to the bag page.
+    """
     try:
+        # Get the service to display in messages
         service = get_object_or_404(IndivService, pk=item_id)
+
+        # Access the shopping bag session
         bag = request.session.get('bag', {})
 
-        bag.pop(item_id)
-        messages.success(request, f'Successfully removed \
-        {service.name} from your bag')
+        # Remove the item if it exists
+        if str(item_id) in bag:
+            bag.pop(str(item_id))
+            messages.success(request, f'Successfully removed\
+            "{service.name}" from your bag.')
+        else:
+            messages.warning(request, f'Item "{service.name}"\
+            was not found in your bag.')
+
+        # Update the session bag
         request.session['bag'] = bag
-        return HttpResponse(status=200)
+
+        # Redirect to the shopping bag template
+        return redirect(reverse('bag'))
 
     except Exception as e:
-        messages.error(request, f'Error removing \
-        item: {e}')
-        return HttpResponse(status=500)
+        # Handle unexpected errors and show an error message
+        messages.error(request, f'Error removing item: {e}')
+        return redirect(reverse('bag'))
