@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='emailtemplate',
             name='content',
-            field=models.CharField(),
+            field=models.CharField(max_length=5000),
         ),
     ]
