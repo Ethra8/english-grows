@@ -1,1 +1,0 @@
-web: gunicorn english_grows.wsgi:application
