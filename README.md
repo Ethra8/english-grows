@@ -41,11 +41,7 @@ Edna Torres Munill
     - [Structure](#structure)
       * [Pages](#pages)
       * [Site Structure](#site-structure)
-<<<<<<< HEAD
       * [Data Structure](#data-structure)
-=======
-      * [Database Structure](#database-structure)
->>>>>>> parent of de79750 (Update ERD)
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
