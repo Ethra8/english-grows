@@ -41,7 +41,6 @@ Edna Torres Munill
       * [Pages](#pages)
       * [Site Structure](#site-structure)
       * [Database Structure](#database-structure)
-          - [Entity Relational Diagram (ERD)](#entity-relational-diagram-(ERD))
     - [Design Choices](#design-choices)
       * [Hero Image](#hero-image)
       * [Color Palette](#color-palette)
