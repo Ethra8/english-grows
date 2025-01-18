@@ -14,12 +14,12 @@ class CompanyContactForm(forms.ModelForm):
     class Meta:
         model = CompanyContact
         fields = '__all__'
-    
+
     # Customizing the 'message' field's widget
         widgets = {
             'message': forms.Textarea(attrs={
                 'rows': 3,  # Limit the number of rows to 4
-                'placeholder': 'Enter your message here...',  # Optional: Add placeholder text
+                'placeholder': 'Enter your message here...',  # noqa Optional: Add placeholder text
             }),
         }
 

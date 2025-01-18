@@ -16,12 +16,14 @@ def trigger_email_campaign(modeladmin, request, queryset):
 
 @admin.register(Subscription)
 class SubscriptionAdmin(admin.ModelAdmin):
-    list_display = ('email','name', 'date_subscribed')
+    list_display = ('email', 'name', 'date_subscribed')
 
 
 @admin.register(EmailTemplate)
 class EmailTemplateAdmin(SummernoteModelAdmin):
-    list_display = ('name', 'subject', 'id')  # Display ID, name, and subject
+
+    # Display ID, name, and subject
+    list_display = ('name', 'subject', 'id')
     actions = ['send_campaign']
     summernote_fields = ('content',)
 
@@ -30,7 +32,8 @@ class EmailTemplateAdmin(SummernoteModelAdmin):
         for template in queryset:
             success = send_email_campaign(template.id)
             if success:
-                self.message_user(request, f"Campaign '{template.name}' sent successfully.")
+                self.message_user(request, f"Campaign\
+                '{template.name}' sent successfully.")
             else:
                 self.message_user(
                     request,
@@ -39,4 +42,3 @@ class EmailTemplateAdmin(SummernoteModelAdmin):
                 )
 
     send_campaign.short_description = "Send Email Campaign"
-
