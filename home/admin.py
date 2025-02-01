@@ -1,4 +1,4 @@
-from django.contrib import admin
+from django.contrib import admin, messages
 from django_summernote.admin import SummernoteModelAdmin
 
 from .models import CompanyContact, Subscription, EmailTemplate
