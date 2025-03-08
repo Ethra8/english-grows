@@ -78,7 +78,6 @@ a:hover {
     max-width: 500px;
 }
 
-
 .justify-content-space-evenly {
     justify-content: space-evenly;
   }
@@ -300,6 +299,7 @@ footer a {
     background-color: #c1f7e3;
 }
 
+
 /** BUTTTONS **/
 
 .btn-custom,
@@ -433,32 +433,32 @@ span.btt-link:hover {
 
 /* Overlays - transparencies to improve accessibility/ readibility */
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: rgba(240, 255, 255, 0.7);
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(240, 255, 255, 0.7);
+    z-index: -1;
 }
 
 .overlay1 {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
     background: url('/media/birds_3.png') no-repeat center center fixed;
     background-size: cover;
-	z-index: -1;
+    z-index: -1;
 }
 
 .overlay2 {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
     background: rgba(255, 235, 235, 0.8);
     background-size: cover;
 	z-index: -1;
@@ -655,8 +655,8 @@ span.vertical-line {
 }
 
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: white;
     text-align: center;
@@ -678,13 +678,13 @@ span.vertical-line {
 }
 
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #003366; /* text-info */
+    color: #003366; /* text-info */
     font-weight: 500;
 }
 
@@ -754,7 +754,7 @@ span.vertical-line {
 /* Larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
 }
 
