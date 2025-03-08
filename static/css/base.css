@@ -30,6 +30,12 @@ textarea {
     width: 100%;
 }
 
+a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -167,12 +173,11 @@ footer a {
     font-size: 1.1rem;
 }
 
-footer a:hover {
+/* footer a:hover {
     font-weight: 600;
     text-decoration: none;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
 
 #subscribe-link a {
     color: #fff !important;
@@ -198,7 +203,7 @@ footer a:hover {
 
 #subscribe-link a:hover {
     color: #003366 !important;
-    font-weight: 600;
+/*     font-weight: 600; */
 } 
 
 .icons-social {
@@ -488,7 +493,7 @@ span.btt-link:hover {
 
 .clean-link a:hover {
     font-weight: 500;
-    text-decoration: none;
+/*     text-decoration: none; */
 }
 
 #sort-selector,
@@ -516,10 +521,6 @@ span.btt-link:hover {
 
 .card {
     margin: 15px;
-}
-
-.card a:hover {
-    text-decoration: none !important;
 }
 
 .card,
@@ -710,10 +711,10 @@ span.vertical-line {
     font-weight: 500;
 }
 
-.allauth-form-inner-content a:hover {
+/* .allauth-form-inner-content a:hover {
     text-decoration: none;
     font-weight: 600;
-}
+} */
 
 
 /* Stripe Styling */
@@ -777,12 +778,10 @@ span.vertical-line {
     color: #003366;
 }
 
-#about a:hover {
+/* #about a:hover {
     text-decoration: none;
     font-weight: 600;
-}
-
-
+} */
 
 
 /* -------------------------------- Media Queries */
@@ -856,7 +855,6 @@ span.vertical-line {
 
 
 @media (max-width: 767px) {
-
     .btn-custom,
     .btn-custom-teal, 
     .allauth-form-inner-content button,
@@ -979,6 +977,11 @@ span.vertical-line {
         width: 4rem;
         margin-left: 0;
     }
+	
+    .navbar-toggler {
+        margin-right: 15px !important;
+        margin-left: auto !important;
+    }
 
     .index-cta-button {
         min-width: 100%;
@@ -994,13 +997,5 @@ span.vertical-line {
     #individual-services {
         padding-left: 12px;
         padding-right: 12px;
-    }
-}
-
-
-@media (max-width: 320px) {
-    .navbar-toggler {
-        margin-right: 15px !important;
-        margin-left: auto !important;
     }
 }
