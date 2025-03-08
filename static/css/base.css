@@ -33,7 +33,6 @@ textarea {
 a:hover {
     font-weight: 600;
     text-decoration: none;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -65,7 +64,6 @@ a:hover {
 
 #main-nav {
     background-color: teal;
-    /* margin-right: -22px !important; */
     padding: 10px 0;
 }
 
@@ -153,9 +151,7 @@ a.text-white:hover {
     color: turquoise;
 }
 
-
 /* Footer */
-
 .footer {
     bottom: 0;
     background-color: #003366;
@@ -167,22 +163,14 @@ a.text-white:hover {
     margin-top: 60px;
 }
 
-
 footer a {
     color: aqua !important;
     text-decoration: none;
     font-size: 1.1rem;
 }
 
-/* footer a:hover {
-    font-weight: 600;
-    text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-} */
-
 #subscribe-link a {
     color: #fff !important;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 } 
 
@@ -192,7 +180,6 @@ footer a {
     display: block;
     width: 100%;
     font-weight: 600;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -204,7 +191,6 @@ footer a {
 
 #subscribe-link a:hover {
     color: #003366 !important;
-/*     font-weight: 600; */
 } 
 
 .icons-social {
@@ -257,9 +243,7 @@ footer a {
     width: 1.5rem;
 }
 
-
 /* custom backgrounds */
-
 .bg-custom-dark {
     background-color: #003366;
     color: white;
@@ -273,9 +257,7 @@ footer a {
     background: #003366 !important;
 }
 
-
 /* custom fonts */
-
 .text-grey {
     color: #555 !important;
 }
@@ -332,7 +314,6 @@ footer a {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     border: outset 2px aquamarine;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -364,7 +345,6 @@ footer a {
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     border: outset 2px aquamarine;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -432,7 +412,6 @@ footer a {
     right: 13px;
     z-index: 999;
     text-decoration: none;
-    /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -452,9 +431,7 @@ span.btt-link:hover {
     font-weight: bold;
 }
 
-
 /* Overlays - transparencies to improve accessibility/ readibility */
-
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -494,7 +471,6 @@ span.btt-link:hover {
 
 .clean-link a:hover {
     font-weight: 500;
-/*     text-decoration: none; */
 }
 
 #sort-selector,
@@ -712,11 +688,6 @@ span.vertical-line {
     font-weight: 500;
 }
 
-/* .allauth-form-inner-content a:hover {
-    text-decoration: none;
-    font-weight: 600;
-} */
-
 
 /* Stripe Styling */
 
@@ -779,13 +750,6 @@ span.vertical-line {
     color: #003366;
 }
 
-/* #about a:hover {
-    text-decoration: none;
-    font-weight: 600;
-} */
-
-
-/* -------------------------------- Media Queries */
 
 /* Larger container on xl screens */
 @media (min-width: 1200px) {
