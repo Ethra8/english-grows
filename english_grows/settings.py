@@ -37,14 +37,13 @@ else:
 
 
 ALLOWED_HOSTS = [
-    '8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net',
-    'english-grows.herokuapp.com', 'english-grows-477471d17e50.herokuapp.com',
-    'https://amiresponsive.co.uk/'
+    'english-grows.herokuapp.com',
+    'english-grows.com',
+    'www.english-grows.com',
+    'localhost',
     ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net',
-    'https://english-grows-477471d17e50.herokuapp.com',
     'https://english-grows.herokuapp.com',
     'https://english-grows.com',
     'https://www.english-grows.com',    
