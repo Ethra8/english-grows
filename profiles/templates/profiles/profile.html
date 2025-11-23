@@ -142,17 +142,17 @@
                                             <!-- Items -->
                                             <div class="col-12">
                                                 <p class="font-weight-bold mb-1">
-                                                    <i class="bi bi-bag-check mr-1"></i> Item:</p>
+                                                    <i class="fa-solid fa-tag"></i> Item:</p>
                                             </div>
                                             <div class="col-12">
                                                 <ul class="list-unstyled mb-2">
                                                     {% for item in order.lineitems.all %}
-                                                        <li>{{ item.service.name }}</li>
+                                                        <li><strong>{{ item.quantity }}</strong> {{ item.service.name }}</li>
                                                     {% endfor %}
                                                 </ul>
                                             </div>
                                             <!-- Quantities -->
-                                            <div class="col-12">
+                                            <!-- <div class="col-12">
                                                 <p class="font-weight-bold mb-1">
                                                     <i class="bi bi-123 mr-1"></i> Quantity:
                                                 </p>
@@ -163,7 +163,7 @@
                                                         <li>{{ item.quantity }}</li>
                                                     {% endfor %}
                                                 </ul>
-                                            </div>
+                                            </div> -->
                                             <!-- Total -->
                                             <div class="col-12">
                                                 <p class="font-weight-bold mt-2">
