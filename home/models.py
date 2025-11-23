@@ -68,7 +68,7 @@ class EmailTemplate(models.Model):
     """
     name = models.CharField(max_length=100, unique=True)
     subject = models.CharField(max_length=200)
-    content = models.CharField()
+    content = models.TextField()
 
     def __str__(self):
         return self.name
