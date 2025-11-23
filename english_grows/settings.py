@@ -37,6 +37,7 @@ else:
 
 
 ALLOWED_HOSTS = [
+    'english-grows-477471d17e50.herokuapp.com',  # actual Heroku host
     'english-grows.herokuapp.com',
     'english-grows.com',
     'www.english-grows.com',
@@ -44,6 +45,7 @@ ALLOWED_HOSTS = [
     ]
 
 CSRF_TRUSTED_ORIGINS = [
+    'https://english-grows-477471d17e50.herokuapp.com',
     'https://english-grows.herokuapp.com',
     'https://english-grows.com',
     'https://www.english-grows.com',    
