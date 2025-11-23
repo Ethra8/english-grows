@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'django_summernote',
     'crispy_forms',
+    'crispy_bootstrap4',
     # Optional -- requires install using `django-allauth[socialaccount]`.
     'allauth.socialaccount',
     'home',
@@ -108,6 +109,7 @@ ROOT_URLCONF = 'english_grows.urls'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
