@@ -141,28 +141,28 @@
 
                                             <!-- Items -->
                                             <p class="font-weight-bold mb-1">
-                                                <i class="bi bi-bag-check mr-1"></i> Items
-                                            </p>
+                                                <i class="bi bi-bag-check mr-1"></i> Item:
+                                            </p><br>
                                             <ul class="list-unstyled mb-2">
                                                 {% for item in order.lineitems.all %}
                                                     <li>{{ item.service.name }}</li>
                                                 {% endfor %}
                                             </ul>
-
+                                            <br>
                                             <!-- Quantities -->
                                             <p class="font-weight-bold mb-1">
-                                                <i class="bi bi-123 mr-1"></i> Quantities
-                                            </p>
+                                                <i class="bi bi-123 mr-1"></i> Quantity:
+                                            </p><br>
                                             <ul class="list-unstyled mb-2">
                                                 {% for item in order.lineitems.all %}
                                                     <li>{{ item.quantity }}</li>
                                                 {% endfor %}
                                             </ul>
-
+                                            <br>
                                             <!-- Total -->
                                             <p class="font-weight-bold mt-2">
                                                 <i class="bi bi-cash-coin mr-1"></i>
-                                                Total: €{{ order.grand_total }}
+                                                Total: {{ order.grand_total }} €
                                             </p>
 
                                             <!-- View Order button -->
