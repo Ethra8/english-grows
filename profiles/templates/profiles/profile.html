@@ -48,7 +48,6 @@
                 <div class="order-history mt-3">
                     {% if orders %}
 
-                        {# DESKTOP TABLE (≥ md) #}
                         <div class="table-responsive d-none d-md-block">
                             <table class="table table-sm table-borderless">
                                 <thead>
@@ -111,7 +110,6 @@
                             </table>
                         </div>
 
-                        {# MOBILE CARDS / ACCORDION (< md) #}
                         <div class="d-md-none">
                             <div class="accordion" id="ordersAccordion">
                                 {% for order in orders %}
