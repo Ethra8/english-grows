@@ -43,7 +43,11 @@ ALLOWED_HOSTS = [
     ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net'
+    'https://8000-ethra8-englishgrows-9nql8gixry0.ws.codeinstitute-ide.net',
+    'https://english-grows-477471d17e50.herokuapp.com',
+    'https://english-grows.herokuapp.com',
+    'https://english-grows.com',
+    'https://www.english-grows.com',    
     ]
 
 # Application definition
