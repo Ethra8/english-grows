@@ -5,6 +5,8 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
+
 
 from bag.contexts import bag_contents
 from individual_services.models import IndivService
