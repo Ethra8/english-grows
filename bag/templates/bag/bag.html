@@ -58,7 +58,7 @@
                                     </td>
                                     <!-- Price Column -->
                                     <td class="py-3" data-label="Price">
-                                        <p class="my-0">${{ item.service.price }}</p>
+                                        <p class="my-0">€{{ item.service.price }}</p>
                                     </td>
                                     <!-- Quantity Column -->
                                     <td class="py-3" data-label="Qty">
@@ -85,7 +85,7 @@
                                     </td>
                                     <!-- Subtotal Column -->
                                     <td class="py-3" data-label="Subtotal">
-                                        <p class="my-0">${{ item.service.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0">€{{ item.service.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                     <!-- Remove Item -->
                                     <td>
@@ -100,7 +100,7 @@
                                 {% endfor %}
                                 <tr>
                                     <td colspan="5" class="text-right bg-custom-dark py-auto pr-3">
-                                        <p id="bag-grand-total" class="mt-4 text-right"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></p>
+                                        <p id="bag-grand-total" class="mt-4 text-right"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></p>
                                     </td>
                                 </tr>
                             </tbody>

@@ -90,7 +90,7 @@
                             <div class="card-footer bg-white pt-4 {% if user.is_authenticated and user.is_superuser %} pb-0{% else %}pb-4 {% endif %} border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="lead mb-0 text-left font-weight-bold">${{ service.price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold">€{{ service.price }}</p>
                                         {% if service.type %}
                                         <p class="small mt-1 mb-0">
                                             <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}" aria-label="View all services of type {{ service.type.friendly_name }}">
