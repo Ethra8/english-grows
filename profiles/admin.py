@@ -1,20 +1,30 @@
-from django.contrib import admin
+# profiles/admin.py
 
+from django.contrib import admin
 from .models import UserProfile
 
 
 class UserProfileAdmin(admin.ModelAdmin):
 
-    readonly_fields = ('user', 'default_full_name', 'default_email',
-                       'default_phone_number')
+    readonly_fields = ('user',)
 
-    fields = ('default_full_name', 'default_email',
-              'default_phone_number', 'default_country')
+    fields = (
+        'user',
+        'default_full_name',
+        'default_email',
+        'default_phone_number',
+        'default_country',
+    )
 
-    list_display = ('user', 'default_full_name', 'default_email',
-                    'default_phone_number', 'default_country')
+    list_display = (
+        'user',
+        'default_full_name',
+        'default_email',
+        'default_phone_number',
+        'default_country',
+    )
 
-    ordering = ('-user',)
+    ordering = ('user',)
 
 
 admin.site.register(UserProfile, UserProfileAdmin)

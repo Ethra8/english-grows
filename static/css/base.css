@@ -438,7 +438,7 @@ span.btt-link:hover {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(240, 255, 255, 0.7);
+    background: rgba(107, 172, 175, 0.7);
     z-index: -1;
 }
 
@@ -496,17 +496,17 @@ span.btt-link:hover {
 
 /* service card */
 
-.card {
+#individual-services .card {
     margin: 15px;
 }
 
-.card,
-.card-footer  {
+#individual-services .card,
+#individual-services .card-footer  {
     border-radius: 20px !important;
     border: inset 3px teal;
 }
 
-.card-body {
+#individual-services .card-body {
     border-radius: 0;
     border-top: solid 2px #003366;
     background-color: teal;
@@ -518,19 +518,19 @@ span.btt-link:hover {
     justify-content: center;
 }
 
-.card-body h3 {
+#individual-services .card-body h3 {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.card-body > p {
+#individual-services .card-body > p {
     font-size: 1.2rem;
     padding: 0.5rem 35px;
 }
 
-.card-img-top {
+#individual-services .card-img-top {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -911,7 +911,7 @@ span.vertical-line {
         padding-right: 0;
     }
 
-    .card-body > p {
+    #individual-services .card-body > p {
         font-size: 1.2rem;
         padding: 5px 12px;
     }
@@ -924,7 +924,7 @@ span.vertical-line {
 
 @media (max-width: 476px) {
     /* to override the 15px and allow more vv */
-    .card {
+    #individual-services .card {
         margin: 0;
     }
 
