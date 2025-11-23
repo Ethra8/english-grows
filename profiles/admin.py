@@ -1,30 +1,25 @@
-# profiles/admin.py
-
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.models import User
 from .models import UserProfile
 
 
-class UserProfileAdmin(admin.ModelAdmin):
-
-    readonly_fields = ('user',)
-
-    fields = (
-        'user',
-        'default_full_name',
-        'default_email',
-        'default_phone_number',
-        'default_country',
-    )
-
-    list_display = (
-        'user',
-        'default_full_name',
-        'default_email',
-        'default_phone_number',
-        'default_country',
-    )
-
-    ordering = ('user',)
+class UserProfileInline(admin.StackedInline):
+    model = UserProfile
+    can_delete = False
+    verbose_name_plural = 'Profile'
+    fk_name = 'user'
 
 
-admin.site.register(UserProfile, UserProfileAdmin)
+class CustomUserAdmin(UserAdmin):
+    inlines = (UserProfileInline,)
+
+    def get_inline_instances(self, request, obj=None):
+        if not obj:
+            return []
+        return super().get_inline_instances(request, obj)
+
+
+admin.site.unregister(User)
+admin.site.register(User, CustomUserAdmin)
+
