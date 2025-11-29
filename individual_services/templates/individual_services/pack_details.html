@@ -27,12 +27,6 @@
         </div>
         <div class="col-12 col-md-10 col-lg-7 ml-lg-5">
             <div class="product-details-container mb-5 mt-md-5">
-                <h1 class="mb-2 eg-title">{{ service.name }}</h1>
-                <p class="lead mb-0 text-left font-weight-bold">{{ service.price }} €</p>
-                <p class="small mb-0">Total Hours: {{ service.number_hours }}</p>
-                
-                <p class="small mb-0">{% if service.duration_weeks <= 99 %}Time Duration: {{ service.duration_weeks }} weeks{% else %}No expiry date{% endif %}</p>
-                
                 {% if service.type %}
                 <p class="small mt-1 mb-0">
                     <a class="text-muted" href="{% url 'individual_services' %}?type={{ service.type.name }}" aria-label="see list of this type of service">
@@ -45,6 +39,13 @@
                     </a>
                 </p>
                 {% endif %}
+
+                <h1 class="mb-2 eg-title">{{ service.name }}</h1>
+                <strong><p class="mb-0">Total Hours: {{ service.number_hours }}</p></strong>
+                <p class="lead mt-3 mb-0 text-left font-weight-bold">{{ service.price }} €</p>
+                
+                <p class="small mb-0">{% if service.duration_weeks < 999 %}Time Duration: {{ service.duration_weeks }} weeks{% else %}No expiry date{% endif %}</p>
+                
 
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
@@ -103,7 +104,7 @@
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="text-uppercase">Keep Shopping</span>
+                                <span class="text-uppercase">Go Back</span>
                             </a>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">

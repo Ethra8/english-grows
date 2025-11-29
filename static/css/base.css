@@ -438,7 +438,7 @@ span.btt-link:hover {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.4);
     z-index: -1;
 }
 
@@ -539,7 +539,7 @@ span.vertical-line {
 }
 
 #individual-services .card-footer {
-    background-color: teal !important;
+    background-color: #cfd7df !important;
     border-bottom-right-radius: 17px;
     border-bottom-left-radius: 17px;
     border: inset 3px teal;
