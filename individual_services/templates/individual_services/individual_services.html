@@ -74,17 +74,19 @@
                         <div class="card">
                             <a href="{% url 'pack_details' service.id %}" aria-label="View details for {{ service.name }}">
                             {% if service.image %}
-                                <img class="card-img-top img-fluid w-100" src="{{ service.image.url }}" alt="{{ service.name }}" height="220">
+                                <img class="card-img-top img-fluid w-80" src="{{ service.image.url }}" alt="{{ service.name }}" height="180">
                             {% elif service.image_url %}
-                                <img class="card-img-top img-fluid w-100" src="{{ service.image_url }}" alt="{{ service.name }}" height="220">
+                                <img class="card-img-top img-fluid w-80" src="{{ service.image_url }}" alt="{{ service.name }}" height="180">
                             {% else %}
-                                <img class="card-img-top img-fluid w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}" height="220">
+                                <img class="card-img-top img-fluid w-80" src="{{ MEDIA_URL }}noimage.png" alt="{{ service.name }}" height="180">
                             {% endif %}
                             </a>
                             
                             <a href="{% url 'pack_details' service.id %}" aria-label="View details for {{ service.name }}">
                                 <div class="card-body">
-                                    <h3 class="mb-0">{{ service.name }}</h3>                                    
+                                    <h3 class="mb-0">{{ service.name }}
+                                        <br>TOTAL: {{ service.number_hours }} Hours
+                                    </h3>                                    
                                 </div>
                             </a>
                             <div class="card-footer bg-white pt-4 {% if user.is_authenticated and user.is_superuser %} pb-0{% else %}pb-4 {% endif %} border-0 text-left">

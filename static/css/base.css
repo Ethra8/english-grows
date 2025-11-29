@@ -497,11 +497,10 @@ span.btt-link:hover {
 /* service card */
 
 #individual-services .card {
-    margin: 15px;
+    margin: 15px 30px;
 }
 
-#individual-services .card,
-#individual-services .card-footer  {
+#individual-services .card {
     border-radius: 20px !important;
     border: inset 3px teal;
 }
@@ -509,9 +508,9 @@ span.btt-link:hover {
 #individual-services .card-body {
     border-radius: 0;
     border-top: solid 2px #003366;
-    background-color: teal;
+    background-color: #003366;
     color: white;
-    height: 142px !important;
+    height: 100px !important;
     /* Flexbox centering */
     display: flex;
     align-items: center;
@@ -520,8 +519,8 @@ span.btt-link:hover {
 
 #individual-services .card-body h3 {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.2rem;
+    font-family: "Big Shoulders Display" !important;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -531,12 +530,19 @@ span.btt-link:hover {
 }
 
 #individual-services .card-img-top {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
 }
 
 span.vertical-line {
     font-size: 2rem;
+}
+
+#individual-services .card-footer {
+    background-color: teal !important;
+    border-bottom-right-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border: inset 3px teal;
 }
 
 
